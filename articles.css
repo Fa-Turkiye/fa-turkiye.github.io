@@ -1,0 +1,19 @@
+/* Long-form dossiers share the live site's colors and motion preferences. */
+header .headrow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}
+header .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800}
+header .brand small{font-size:.75rem;color:var(--muted)}
+header .mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#7857e8,#126f7c);color:white}
+.editorial-main{padding:30px 0 64px}.breadcrumb{margin:8px 0 24px}.long-article{max-width:880px;margin:0 auto}
+.article-heading h1,.editorial-intro h1{font-size:clamp(2rem,5vw,3.45rem);line-height:1.15;letter-spacing:-.035em;max-width:24ch;margin:18px 0}
+.article-heading .badge,.dossier-card .badge{white-space:normal;line-height:1.6;max-width:100%;overflow-wrap:anywhere}
+.article-meta{font-size:.9rem;color:var(--muted);line-height:1.8}.article-toc{border:1px solid var(--line);border-radius:20px;padding:22px 26px;margin:28px 0;background:rgba(25,30,52,.6)}
+.article-toc h2{font-size:1.1rem;margin:0 0 12px}.article-toc ol{padding-left:24px;margin:0;display:grid;gap:9px}.article-toc a{display:inline-block;padding:3px 0}
+.article-prose{max-width:73ch;margin:auto}.article-section{padding:22px 0;border-bottom:1px solid var(--line);scroll-margin-top:180px}
+.article-section h2{font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.35;margin:0 0 15px;letter-spacing:-.015em}
+.article-section p{font-size:1.075rem;line-height:1.95;color:var(--ink);margin:0 0 16px;overflow-wrap:break-word}
+.article-sources ol{padding-left:24px;display:grid;gap:14px}.article-sources a{overflow-wrap:anywhere;line-height:1.7}
+.article-related{padding:22px;border:1px solid var(--line);border-radius:18px;margin:28px 0}.article-related h2{font-size:1.2rem}.article-related li{margin-bottom:12px}
+.article-end{margin:30px 0}.editorial-intro{padding:10px 0 32px;max-width:850px}.editorial-intro>p{font-size:1.05rem;line-height:1.8}
+.dossier-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.dossier-card{display:flex;flex-direction:column;padding:26px;min-width:0;text-decoration:none;border:1px solid var(--line);border-radius:22px;background:rgba(21,27,47,.72)}
+.dossier-card h2{font-size:1.35rem;line-height:1.4;margin:18px 0 12px}.dossier-card h2 a{text-decoration:none;color:inherit}.dossier-card p{line-height:1.8;color:var(--muted);margin:0 0 22px}.dossier-card>b,.dossier-card>.textlink{margin-top:auto}
+@media(max-width:650px){.dossier-grid{grid-template-columns:1fr}.editorial-main{padding-top:16px}.article-section p{font-size:1.02rem;line-height:1.9}.article-toc{padding:20px}.dossier-card{padding:22px}.article-heading h1{font-size:2rem}.article-section{scroll-margin-top:120px}}

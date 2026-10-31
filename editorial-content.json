@@ -1,0 +1,498 @@
+{
+  "skyclarys": {
+    "title": "Skyclarys: onaylı tedavinin amacı, kanıtları ve çocuk araştırmaları",
+    "status": "ABD ve AB’de 16 yaş ve üzeri için ruhsatlı",
+    "sections": [
+      [
+        "Tedavinin hedefi ve etki yaklaşımı",
+        "Omaveloxolone, Skyclarys adıyla kullanılan ağızdan alınan bir tedavidir. Hücrelerin oksidatif strese karşı yanıtında rol alan NRF2 yolunu etkinleştirir. Etki mekanizmasının bütün ayrıntıları bilinmemektedir. FXN genindeki değişikliği düzeltmez ve vücuda yeni bir gen eklemez; hedefi, hastalığın hücre üzerindeki etkilerini azaltmaktır. Bu nedenle gen tedavileri ve frataxin yerine koyma yaklaşımlarından farklı bir araştırma çizgisini temsil eder."
+      ],
+      [
+        "Araştırmada ne ölçüldü, ne bulundu?",
+        "EMA’nın değerlendirdiği temel çalışmaya 16–40 yaşlarında 103 kişi katıldı ve 48 haftalık sonuçlar incelendi. Birincil analiz, çalışmanın pes kavus tanımını karşılamayan 82 kişiye dayanıyordu. Bu grupta mFARS skoru tedavi kolunda yaklaşık 1,6 puan azalırken plaseboda yaklaşık 0,9 puan arttı. Düşük mFARS daha az nörolojik işlev kaybını ifade eder. Bu grup ortalamaları, her kişinin aynı miktarda iyileşeceği anlamına gelmez."
+      ],
+      [
+        "Kalp ve diğer organlar açısından ne söylenebilir?",
+        "Onaylı kullanım ile her organda ayrı ayrı kanıtlanmış etki aynı şey değildir. Nörolojik ölçekteki yarardan, kalp kası hastalığının veya diyabetin düzeldiği sonucu çıkarılamaz. EMA, ileri kalp hastalığı ve diyabet gibi durumların temel çalışmadaki temsilinin sınırlı olduğuna dikkat çeker. Hastanın kalp ve metabolizma izlemi, tedavi kullanırken de kendi klinik gereksinimlerine göre sürdürülür."
+      ],
+      [
+        "Güvenlilik ve tedavinin sınırları",
+        "EMA’nın sık bildirilen yan etkileri arasında karaciğer enzimlerinde yükselme, baş ağrısı, bulantı, kusma, ishal, yorgunluk, iştah ve kilo kaybı bulunur. Başka ilaçlarla etkileşim olasılığı vardır; özellikle CYP3A üzerinden etkileşen ilaçlar değerlendirilir. Bu yazı doz seçimi veya ilaç başlama önerisi değildir. Kişiye uygun kullanım ve takip, FA konusunda deneyimli hekim tarafından belirlenir."
+      ],
+      [
+        "Firma nereye ulaştı, sırada ne var?",
+        "Reata’nın geliştirdiği program Biogen bünyesinde sürmektedir. FDA onayı 2023’te, AB ruhsatı 2024’te geldi. Çocuklar için BOLD erken faz araştırması ve BRAVE Faz III programı ayrı veri üretmektedir. BRAVE’in katılımcı alımının tamamlanması, 16 yaş altı için ruhsat verildiği veya sonuçların olumlu çıktığı anlamına gelmez. Çocuklara ilişkin kararlar kendi araştırma sonuçlarına dayanacaktır."
+      ],
+      [
+        "Türkiye’den erişim ve okuyucu için anlamı",
+        "ABD veya AB ruhsatı, Türkiye’de ruhsat, tedarik ya da geri ödeme bulunduğunu tek başına göstermez. Bu kontrol kapsamında Türkiye’ye özgü güncel erişim yolu doğrulanmadı. Tedaviye erişim ile klinik araştırmaya katılım farklı süreçlerdir. Çocuk çalışması için ayrıntılar BRAVE dosyasında, erişim soruları içinse izleyen nöroloji ekibi ve ilgili resmî kurumlarda değerlendirilmelidir."
+      ]
+    ],
+    "sources": [
+      [
+        "EMA: ruhsat, temel çalışma ve güvenlilik",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/skyclarys"
+      ],
+      [
+        "FARA: omaveloxolone geliştirme geçmişi",
+        "https://www.curefa.org/drug-development/skyclarys-omaveloxolone/"
+      ],
+      [
+        "FARA: onaylı tedavi bilgisi",
+        "https://www.curefa.org/understanding-fa/managing-fa/approved-treatment/"
+      ]
+    ]
+  },
+  "vatiquinone": {
+    "title": "Vatiquinone: MOVE-FA sonuçlarından PROVE-FA programına",
+    "status": "Deneysel · Faz III PROVE-FA; merkezlerin alım durumu ayrıca teyit edilmeli",
+    "sections": [
+      [
+        "Amaç ve mekanizma",
+        "PTC Therapeutics’in geliştirdiği vatiquinone, PTC-743 ve eski yayınlarda EPI-743 adlarıyla da geçer. Ağızdan verilen küçük molekül, 15-lipoksijenazla ilişkili oksidatif stres ve ferroptoz süreçlerini hedefler. Ferroptoz, demir ve lipit oksidasyonuyla ilişkili bir hücre ölümü yoludur. Programın hedefi hücreyi hasardan korumaktır; frataxin genini düzenleyen veya eksik proteini doğrudan yerine koyan tedavilerle aynı mekanizmaya sahip değildir."
+      ],
+      [
+        "MOVE-FA ne gösterdi, neyi gösteremedi?",
+        "Faz III MOVE-FA’da 140’tan fazla katılımcı izlendi. Genel araştırma grubunda 72. haftadaki mFARS değişimine dayanan birincil sonlanım istatistiksel olarak karşılanmadı. Dik duruş ve yorgunluk gibi bazı ölçümlerde olumlu bulgular raporlandı. Araştırmayı tamamlayanlara veya belirli alt gruplara ait sonuçlar, bütün grubun ana sonucuyla birlikte değerlendirilmelidir. Olumlu bir alt analiz, başarısız kalan birincil analizi geriye dönük olarak başarılı hâle getirmez."
+      ],
+      [
+        "Düzenleyici süreç nerede?",
+        "FDA, Ağustos 2025’te başvuru için ek kontrollü çalışma gerektiğini bildiren bir Complete Response Letter verdi. Bu, ilacın onaylandığı anlamına gelmez. PTC’nin 2026 üçüncü çeyrek raporu, yeni PROVE-FA çalışmasının üçüncü çeyrekte başlatıldığını bildiriyor. Amaç, gelecekte yeniden yapılabilecek ruhsat başvurusunu destekleyecek ek kanıt üretmektir; yeniden başvuru ve onay tarihleri kesin değildir."
+      ],
+      [
+        "PROVE-FA’nın tasarımı ve ölçümleri",
+        "Şirket raporuna göre yaklaşık 120 kişi, 7–21 yaş aralığında araştırmaya alınacak; ana değerlendirme 24 ayda mFARS değişimidir. Açık etiketli tasarımda katılımcılar tedaviyi aldıklarını bilir ve sonuçlar eşleştirilmiş doğal seyir grubuyla karşılaştırılır. Böyle bir karşılaştırmada grupların başlangıç özellikleri ve takip koşulları önem taşır. Randomize eşzamanlı plasebo koluyla aynı kanıt yapısı değildir."
+      ],
+      [
+        "Güvenlilik, ek etkiler ve belirsizlik",
+        "Yorgunluk veya dik duruş gibi alanlardaki bildirimler kendi ölçüm ve analiz bağlamında okunmalıdır; kalp, konuşma veya diğer bütün sistemlerde yarar kanıtı olarak sunulamaz. Bu dosya, vatiquinone’a özgü güncel yan etki sıklıklarını tam bir tablo hâlinde doğrulamamıştır. Katılım öncesinde bilgilendirilmiş onam belgesindeki riskler, birlikte kullanılan ilaçlar ve protokolün takip gereklilikleri çalışma hekimiyle görüşülmelidir."
+      ],
+      [
+        "Avrupa ve Türkiye’den başvuru",
+        "FARA sayfası Brüksel Hôpital Érasme, Paris Institut du Cerveau ve Barselona Hospital Sant Joan de Déu merkezlerini listeliyor; aynı sayfa hâlâ ‘henüz alım yok’ durumunu gösteriyor. Şirketin ‘çalışma başlatıldı’ açıklaması, her merkezin başvuru aldığı anlamına gelmeyebilir. PTC iletişimi medinfo@ptcbio.com ve +1 866-562-4620. Türkiye’de ikamet edenlerin kabulü ayrıca sorulmalıdır. Mevcut omaveloxolone kullanımı dışlama ölçütleri arasındadır; katılım için kendi başınıza tedavi kesmeyin."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: vatiquinone ve MOVE-FA geçmişi",
+        "https://www.curefa.org/drug-development/vatiquinone-ptc-743/"
+      ],
+      [
+        "PTC: 2026 üçüncü çeyrek resmî şirket raporu",
+        "https://ir.ptcbio.com/node/19636/ixbrl-viewer"
+      ],
+      [
+        "FARA: PROVE-FA ölçütleri, merkezler ve iletişim",
+        "https://www.curefa.org/clinical-studies/long-term-efficacy-study-of-vatiquinone-for-the-treatment-of-friedreichs-ataxia-prove-fa/"
+      ]
+    ]
+  },
+  "nomlabofusp": {
+    "title": "Nomlabofusp: frataxin yerine koyma, uzun dönem veriler ve FORWARD-FA",
+    "status": "Deneysel · Faz III FORWARD-FA; kademeli BLA başvurusunun ilk bölümü sunuldu",
+    "sections": [
+      [
+        "Tedavinin amacı ve nasıl çalıştığı",
+        "Larimar Therapeutics’in nomlabofusp programı, önceki adıyla CTI-1601, eksik frataxin proteinini yerine koymayı amaçlar. Protein, hücreye girişini ve mitokondriye yönelmesini sağlayan parçalarla birleştirilmiştir. Deri altı enjeksiyonla uygulanır. Bu yaklaşımda kişinin DNA dizisi değiştirilmez. Hedef, dışarıdan verilen frataxinin hücrenin enerji üretimiyle ilişkili işlevlerine katkı sağlamasıdır."
+      ],
+      [
+        "Geliştirme geçmişi ve biyobelirteçler",
+        "Programın erken araştırmalarını daha uzun süreli açık etiketli takipler izledi. Frataxinin dokuda artması, ilacın biyolojik hedefe ulaşıp ulaşmadığını anlamak için ölçülür. Ancak deride ölçülen protein düzeyi ile kişinin yürüme, el kullanma veya günlük yaşam işlevleri farklı sonuçlardır. Bir biyobelirteçte yükselme görülmesi bütün organlarda aynı düzeyde düzelme olduğunu kendiliğinden kanıtlamaz."
+      ],
+      [
+        "Açıklanan klinik sonuçlar ve örneklem",
+        "Larimar’ın 29 Haziran 2026 açıklamasında, açık etiketli çalışmada en az bir doz almış 43 kişi ve bir yıllık klinik izlemi bulunan 13 yetişkin bildirildi. Nörolojik işlev, günlük yaşam, el becerisi ve yorgunluk ölçümlerinde doğal seyir verilerine göre olumlu yönelimler duyuruldu. Bunlar sponsorun raporladığı, randomize eşzamanlı kontrolü bulunmayan sonuçlardır. Farklı ölçümlerin değerlendirilebilir kişi sayıları aynı olmayabilir."
+      ],
+      [
+        "Güvenlilikte önemli bulgu",
+        "Aynı şirket duyurusu 43 katılımcının 10’unda anafilaksi bildiriyor. Anafilaksi ciddi bir alerjik reaksiyondur; araştırmadaki önlem ve izlem düzenlemeleri bu nedenle önemlidir. Enjeksiyon bölgesi reaksiyonları da raporlanmıştır. Bazı katılımcıların tedaviyi bırakmış olması, uzun dönem sonuçların yalnızca tedavide kalan kişiler üzerinden yorumlanmamasını gerektirir. Yarar beklentisi ve güvenlilik birlikte değerlendirilmelidir."
+      ],
+      [
+        "Firma nereye ulaştı, sırada ne var?",
+        "Şirket, hızlandırılmış onay hedefiyle kademeli BLA dosyasının ilk bölümünü Haziran 2026’da FDA’ya sunduğunu açıkladı. İlk bölümün sunulması, bütün başvurunun tamamlandığı veya onay verildiği anlamına gelmez. FORWARD-FA Faz III araştırması, günlük nomlabofusp ile plaseboyu 72 hafta boyunca karşılaştırıyor. Bölgeler için belirlenen ana ölçümler dik duruş alt skoru veya toplam mFARS değişimini içeriyor."
+      ],
+      [
+        "Türkiye’den katılım ve Avrupa merkezleri",
+        "FARA, FORWARD-FA’yı 12–40 yaş için alım açık listeliyor. ABD merkezleri yalnızca ABD’de yaşayanları kabul ediyor; Türkiye’den doğrudan katılım varsayılamaz. ABD dışındaki merkezlerin açılması planlanmış olsa da bu kontrolde aktif Avrupa merkezi doğrulanmadı. Chicago için cynthia.poon@northwestern.edu, Eatontown için mshenouda@clinilabs.com listeleniyor. Genetik tanı, yürüme kapasitesi, kalp ve HbA1c ölçütleri dâhil bütün koşulları çalışma ekibi değerlendirir."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: nomlabofusp mekanizması ve geçmişi",
+        "https://www.curefa.org/drug-development/nomlabofusp/"
+      ],
+      [
+        "Larimar: 29 Haziran 2026 verileri ve başvuru açıklaması",
+        "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+      ],
+      [
+        "FARA: FORWARD-FA çalışma tasarımı ve merkezleri",
+        "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/"
+      ]
+    ]
+  },
+  "dt216p2": {
+    "title": "DT-216P2: FXN geninin yeniden okunması ve RESTORE-FA verileri",
+    "status": "Deneysel · Faz I/II; 12 haftalık veri için şirket beklentisi 2027 ilk çeyrek",
+    "sections": [
+      [
+        "Amaç ve mekanizma",
+        "Design Therapeutics’in GeneTAC yaklaşımı, FXN genindeki genişlemiş GAA tekrarlarını hedefleyip genin okunmasını desteklemeyi amaçlar. Hedef, kişinin kendi frataxin üretimini artırmaktır. Bu bir gen kesme ya da CRISPR düzenleme işlemi değildir. Protein miktarı, genin okunmasındaki artıştan ayrı olarak ölçülmelidir; RNA artışı tek başına işlevsel protein artışına eşit değildir."
+      ],
+      [
+        "İlk DT-216’dan P2’ye neden geçildi?",
+        "İlk nesil DT-216 programında genin okunmasına ilişkin biyolojik aktivite bildirilmişti; fakat uygulama bölgesinde tolerabilite sorunları, özellikle tromboflebit, geliştirme yönünü değiştirdi. DT-216P2 yeni formülasyon ve farmakokinetik özelliklerle ilerletildi. Önceki üründeki veriler yeni ürünün bütün güvenlilik sorularını cevaplamaz; her formülasyonun uygun doz ve uygulama yolu kendi klinik verileriyle değerlendirilir."
+      ],
+      [
+        "Dört haftalık veriler nasıl okunmalı?",
+        "18 Mayıs 2026 şirket açıklaması, dört doz grubunda toplam 16 kişinin dört haftalık damar içi tedavisini kapsıyor; her grupta dört kişi var. 1 mg/kg grubunda başlangıca göre ortalama 6,4 mFARS ve 2,7 dik duruş puanı iyileşmesi raporlandı. Bunlar dört kişinin kısa süreli değişimleridir, plaseboya göre kanıtlanmış bir etki büyüklüğü değildir. Yorgunluk ölçümleri ve frataxin biyobelirteçleri de değerlendirildi."
+      ],
+      [
+        "Güvenlilik ve henüz bilinmeyenler",
+        "Mayıs açıklamasında ciddi advers olay veya tedaviyi bırakma bildirilmedi; üç kişide geçici ALT yükselmesi raporlandı. Küçük örneklem, nadir veya geç ortaya çıkan riskleri dışlayamaz. Başlangıca göre kısa dönem ölçek değişimlerinde ölçüm değişkenliği ve tekrar test etkileri göz önüne alınır. Bulgular, bütün FA hastalarında kalıcı nörolojik düzelme veya kalp yararı gösterildiği şeklinde yorumlanamaz."
+      ],
+      [
+        "Geliştirme planı ve güncellenen takvim",
+        "3 Ağustos 2026 tarihli şirket güncellemesi, 1 mg/kg dozunu ilerletme, 12 haftalık kohorta 10 kişi alma niyeti ve daha yüksek doz araştırmasını bildiriyor. Kandaki endojen frataxin protein değişiminin ana etkinlik ölçümü olarak belirlenmesi planlanıyor. Şirket 12 haftalık sonuçları 2027’nin ilk çeyreğinde, ruhsatlandırmaya yönelik plan güncellemesini 2026 son çeyreğinde beklediğini açıkladı. Bunlar garanti edilmiş tarihler değildir."
+      ],
+      [
+        "Türkiye’den başvuru ve günlük yaşam yükü",
+        "FARA kaydı Sidney’de yürütülen çalışma için 18–65 yaş, bağımsız transfer ve en az 10 saniye desteksiz ayakta durma gibi koşullar listeliyor. Yaklaşık 14 hafta Avustralya yakınında kalmak, İngilizce yeterliliği, kas biyopsisi ve MRI gereklilikleri var. Avrupa merkezi doğrulanmadı. İletişim DT-216P2_Interest_Sydney@scientiaclinicalresearch.com.au. FARA seyahat desteği bildiriyor; kapsam ve Türkiye’den kabul ekipten teyit edilmelidir. Kullanılan tedavilerle ilgili değişiklik yalnızca hekimle kararlaştırılır."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: DT-216’dan DT-216P2’ye geliştirme",
+        "https://www.curefa.org/drug-development/dt-216p2/"
+      ],
+      [
+        "Design: dört haftalık veriler, 18 Mayıs 2026",
+        "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-four-week-iv-data-restore-fa-trial"
+      ],
+      [
+        "Design: güncellenen plan, 3 Ağustos 2026",
+        "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-provides-restore-fa-clinical-development"
+      ],
+      [
+        "FARA: katılım, seyahat ve iletişim",
+        "https://www.curefa.org/clinical-studies/a-multiple-ascending-dose-study-of-dt-216p2/"
+      ]
+    ]
+  },
+  "lx2006": {
+    "title": "LX2006: kalp hedefinden erken nörolojik bulgulara",
+    "status": "Deneysel · SUNRISE-FA 2 Faz II ruhsatlandırmaya yönelik çalışma",
+    "sections": [
+      [
+        "Başlangıçtaki hedef ve mekanizma",
+        "Lexeo Therapeutics’in LX2006 tedavisi FA’ya bağlı kardiyomiyopatiyi hedefleyerek geliştirildi. AAVrh.10 taşıyıcısıyla işlevsel FXN geni damar içinden ulaştırılır; amaç kalp hücrelerinin frataxin üretmesini desteklemektir. Bu gen ekleme yaklaşımıdır, kişinin mevcut genindeki tekrarları kesip çıkaran gen düzenlemesi değildir. Kalbin hedeflenmesi, diğer dokulardaki etkilerin ayrıca araştırılmasına engel değildir; fakat bu etkilerin kendi verileri gerekir."
+      ],
+      [
+        "Kalbe ilişkin erken araştırmalar",
+        "SUNRISE-FA ve Weill Cornell çalışmalarında kalp biyopsilerindeki frataxin, kalp MRI’ında sol ventrikül kitle indeksi, duvar kalınlığı ve troponin gibi ölçümler izlendi. Bu ölçümler farklı sorulara cevap verir: protein artışı biyolojik aktiviteyi, görüntüleme ise kalbin yapısal değişimini inceler. Küçük erken faz gruplarındaki olumlu değişimler, ölüm riskinin azaldığı veya uzun dönem klinik sonucun kesinleştiği anlamına gelmez."
+      ],
+      [
+        "Kalp dışında ne gözlendi?",
+        "MDS 2026 araştırma özetinde FA ve kardiyomiyopatisi bulunan 17 yetişkinin üç doz grubuna ait nörolojik değerlendirmeleri yer alıyor. Altı aydan uzun takibi bulunan 16 kişide mFARS’ın sabit kalması veya iyileşmesi, özellikle üst uzuv koordinasyonu alt skoruyla ilişkili olarak bildirildi. Sonuçlar UNIFAI doğal seyir çalışmasından eşleştirilmiş grupla da karşılaştırıldı. Bu, kalp odaklı geliştirme yanında araştırılan ek bir nörolojik bulgudur."
+      ],
+      [
+        "Bu bulgu neden henüz kesin kanıt değil?",
+        "Kongre özeti küçük örneklemi ve araştırma içinde eşzamanlı kontrol bulunmamasını açıkça sınırlılık olarak belirtiyor. Omaveloxolone arka plan kullanımı da değerlendirme bağlamının bir parçası. Doğal seyir eşleştirmesi gruplar arasındaki bütün farklılıkları ortadan kaldıramaz. Bu nedenle el işlevindeki bulgular ilgi çekicidir; ancak LX2006’nın bütün nörolojik belirtileri düzelttiği veya herkesin yürüyüşünü iyileştirdiği söylenemez."
+      ],
+      [
+        "Firma nereye ulaştı ve sonraki adım ne?",
+        "Lexeo’nun Ağustos 2026 güncellemesine göre SUNRISE-FA 2’nin ilk katılımcısı Haziran’da kaydedildi; merkez açılışları sürüyordu. Şirket ana sonuçları 2027’nin ikinci yarısında beklediğini açıkladı. Çalışmanın ruhsatlandırma amacı taşıması, ruhsat verildiği anlamına gelmez. FDA’nın geliştirmeyi destekleyen statüleri ve hızlandırılmış yol görüşmeleri, etkinlik-güvenlilik incelemesinin yerine geçmez."
+      ],
+      [
+        "Güvenlilik ve Türkiye’den katılım",
+        "FARA, SUNRISE-FA 2’yi alım açık listeliyor. İlk kohort 16 yaş ve üzeri, daha sonraki çocuk kohortu 6–15 yaş içindir. Ana ölçüm 26. haftada kalp MRI’ındaki sol ventrikül kitle indeksi değişimidir; nörolojik ölçümler de toplanır. Anormal kalp kitle indeksi ve en az %30 ejeksiyon fraksiyonu gibi ölçütler vardır. Tampa merkezinde Lucretia Campbell: lcampbel@usf.edu, +1 813-974-5633. Türkiye veya Avrupa’da aktif merkez bu kontrolde doğrulanmadı. Uzun dönem güvenlilik ve kişiye uygunluk çalışma ekibince değerlendirilir."
+      ]
+    ],
+    "sources": [
+      [
+        "Lexeo: program ve mekanizma",
+        "https://www.lexeotx.com/pipeline/"
+      ],
+      [
+        "FARA: LX2006 geliştirme geçmişi",
+        "https://www.curefa.org/drug-development/lx2006-gene-therapy/"
+      ],
+      [
+        "MDS 2026: 17 katılımcılı nörolojik araştırma özeti",
+        "https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/"
+      ],
+      [
+        "Lexeo: Ağustos 2026 SUNRISE-FA 2 güncellemesi",
+        "https://lexeotherapeutics.gcs-web.com/news-releases/news-release-details/lexeo-therapeutics-reports-second-quarter-2026-financial-results"
+      ],
+      [
+        "ClinicalTrials.gov: SUNRISE-FA 2",
+        "https://clinicaltrials.gov/study/NCT07721025"
+      ],
+      [
+        "FARA: SUNRISE-FA 2 güncel tasarım, ölçütler ve iletişim",
+        "https://www.curefa.org/clinical-studies/study-of-lx2006-gene-therapy-in-friedreich-ataxia-cardiomyopathy-sunrise-fa-2/"
+      ]
+    ]
+  },
+  "sgt212": {
+    "title": "SGT-212: beyin ve kalbi birlikte hedefleyen çift yollu gen tedavisi",
+    "status": "Deneysel · Faz 1b FALCON; 26 Ekim 2026 şirket güncellemesi",
+    "sections": [
+      [
+        "Hedefi neden iki uygulama yolunu içeriyor?",
+        "Solid Biosciences’in SGT-212 programı, frataxin genini hem sinir sistemi hem de kalp ve sistemik dokulara ulaştırmayı amaçlar. MRI rehberliğinde serebellumun dentat çekirdeklerine doğrudan uygulamayı damar içi uygulama izler. Bu bölgeler hareketin koordinasyonuyla ilişkilidir. Tasarımın çok sistemi hedeflemesi, her sistemde klinik yarar gösterildiği anlamına gelmez; bunlar araştırmanın sınayacağı hedeflerdir."
+      ],
+      [
+        "Nasıl bir gen tedavisi?",
+        "SGT-212, işlevsel FXN genini taşıyan AAV temelli bir gen ekleme yaklaşımıdır. Gen ekleme, hastanın mevcut gen dizisini kesip düzeltmekten farklıdır. Beklenti, ulaşılan hücrelerde frataxin üretiminin artması ve mitokondri işlevinin desteklenmesidir. Hangi dokunun ne ölçüde etkilendiği, doz ve uygulama yolu gibi unsurlar klinik araştırmanın temel soruları arasındadır."
+      ],
+      [
+        "FALCON bugüne kadar nereye ulaştı?",
+        "FARA’ya göre ilk katılımcıya uygulama Ocak 2026’da yapıldı. İlk insan araştırması olan açık etiketli Faz 1b FALCON, öncelikle güvenlilik ve tolerabiliteyi değerlendirir; uzun dönem takip beş yıla uzanır. Erken kohortların yürüme durumu gibi ölçütleri farklı olabilir. Bir kohortta katılımcı alınması, her yaş ve hastalık düzeyindeki kişinin uygun olduğu anlamına gelmez."
+      ],
+      [
+        "En yeni açıklama ve güvenlilik sınırı",
+        "26 Ekim 2026 şirket açıklamasında, 5 Ekim veri kesim tarihinde beş katılımcıya uygulama yapıldığı ve tedaviyle ilişkili ciddi advers olay gözlenmediği bildirildi. Beş kişilik erken takip, nadir veya gecikmiş riskleri dışlayamaz. Aynı duyuru ilk FALCON klinik verilerinin 2027’nin ilk çeyreğinde beklendiğini belirtiyor. Bu beklenti bir ruhsat veya piyasaya çıkış tarihi değildir."
+      ],
+      [
+        "Avrupa yetim ilaç statüsü ne değiştiriyor?",
+        "Şirket, Avrupa Komisyonu’nun SGT-212’ye yetim ilaç statüsü verdiğini duyurdu. Bu statü nadir hastalık tedavilerinin geliştirilmesini destekler; güvenlilik ve etkinliğin kanıtlandığı, ilacın satılabildiği veya Avrupa merkezlerinin başvuruya açıldığı anlamına gelmez. ABD’deki Fast Track ve diğer geliştirme statüleri de pazarlama ruhsatından ayrı tutulmalıdır."
+      ],
+      [
+        "Türkiye’den katılım ve okuyucu için anlamı",
+        "FALCON ABD’de, 18–40 yaş grubunda yürütülüyor. Bu kontrolde Türkiye ya da Avrupa’da aktif FALCON merkezi doğrulanmadı. İkamet, seyahat, cerrahi uygulama ve uzun süreli takip yükü çalışma ekibi tarafından açıklanmalıdır. Henüz kamuya açıklanmış kesin etkinlik sonucu bulunmadığından, araştırma dışında kanıtlanmış tedavi olarak sunulamaz. Katılım ve güncel merkezler resmî çalışma sayfasından teyit edilir. FARA’nın alım açık listesinde Ohio State ekibi OSUgenetherapyresearch@osumc.edu, Philadelphia merkezi WELLSM@chop.edu ve UCLA dhayward@mednet.ucla.edu adresleri yer alıyor. Merkezin yanıtı, uygunluk veya kabul garantisi değildir."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: SGT-212 mekanizma ve ilk uygulama",
+        "https://www.curefa.org/drug-development/sgt-212/"
+      ],
+      [
+        "Solid: Avrupa statüsü ve beş katılımcı, 26 Ekim 2026",
+        "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-announces-european-commission-orphan"
+      ],
+      [
+        "FARA: FALCON çalışma bilgileri",
+        "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/"
+      ]
+    ]
+  },
+  "gv101": {
+    "title": "GV101: ROCK2 yolundan frataxin üretimine uzanan araştırma",
+    "status": "Deneysel · FA için Faz II geliştirme; aktif merkez alımı bu kontrolde doğrulanmadı",
+    "sections": [
+      [
+        "İlacın hedefi ve biyolojik gerekçe",
+        "Graviton BioScience’in GV101 adayı, ağızdan alınan seçici bir ROCK2 inhibitörüdür. ROCK2 hücre içindeki farklı sinyal yollarının düzenlenmesine katılır. FA’daki araştırma gerekçesi, bu yolun baskılanmasının FXN geninin okunmasını ve frataxin üretimini etkileyebilmesidir. Bu yaklaşım gen ekleme veya gen düzenleme değildir; hücrenin mevcut üretim sürecini etkilemeyi amaçlar."
+      ],
+      [
+        "Laboratuvardan insan araştırmasına geçiş",
+        "FA hücre modellerindeki çalışmalar frataxin artışını araştırmaya değer bir biyolojik bulgu olarak ortaya koydu. Şirket, FA dışındaki insan çalışmalarında da frataxinle ilgili ölçümler bildirdi. Ancak FA tanısı olmayan bir kişide ölçülen biyobelirteç değişimi, FA hastalarında hareket veya kalp işlevinin düzeldiğini kanıtlamaz. Farklı hastalık gruplarının sonuçları birbirinin yerine kullanılamaz."
+      ],
+      [
+        "Firma nereye kadar ilerletti?",
+        "Ağustos 2026’da FA’ya yönelik araştırma başvurusu için FDA IND izni duyuruldu. Bu izin, klinik araştırmaya geçişe ilişkindir; tedavinin ruhsatlandırılması değildir. Şirketin açıkladığı tasarım yaklaşık 48 kişiye kadar, 12 haftalık, randomize plasebo kontrollü doz araştırmasıdır. Planlanan katılımcı sayısı, çalışmaya o kadar kişinin fiilen alındığı anlamına gelmez."
+      ],
+      [
+        "Hangi sonuçlar önemli olacak?",
+        "İlk sorular uygun doz, güvenlilik ve frataxinle ilişkili biyolojik aktivitedir. Daha sonra bu aktivitenin kişinin günlük işlevine karşılık gelip gelmediği anlaşılmalıdır. Klinik ölçümlerin değerlendirilmesinde plasebo karşılaştırması, takip süresi, grupların başlangıç özellikleri ve analiz planı önemlidir. Protein artışıyla nörolojik veya kardiyak faydayı aynı başlık altında kesin sonuç gibi sunmak doğru olmaz."
+      ],
+      [
+        "Güvenlilik ve organlara ilişkin iddialar",
+        "Graviton, başka alanlardaki araştırmalarda 500’den fazla kişinin GV101 aldığını bildirmiştir. Bu deneyim geliştirme için bilgi sağlar; FA’ya özgü yan etki sıklıklarını veya uzun dönem yarar-risk dengesini tek başına belirlemez. Bu kontrolde FA hastalarında kesin klinik etkinlik sonucu doğrulanmadı. Başka hastalık çalışmalarındaki karaciğer, metabolizma veya inflamasyon sonuçları FA için kanıtlanmış ek fayda olarak aktarılmaz."
+      ],
+      [
+        "Katılım, takvim ve Türkiye",
+        "NCT07870590 numaralı resmî çalışma kaydına aşağıdan ulaşılabilir. Güncel merkez alımı, başlangıç takvimi ve Türkiye’den kabul bu dosyada teyit edilmiş bilgi olarak sunulmuyor. Önceki tarih beklentileri yerine resmî kaydın son güncellemesi ve sponsor yanıtı esas alınmalıdır. Avrupa merkezi ve katılım iletişimi de başvuru öncesinde doğrulanmalıdır. Klinik çalışma izni, açık katılımcı çağrısı veya ilaca erişim garantisi değildir."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: GV101 mekanizması ve geliştirme geçmişi",
+        "https://www.curefa.org/drug-development/gv101-rock2-inhibitor/"
+      ],
+      [
+        "Graviton: resmî duyurular ve IND açıklamasına erişim",
+        "https://gravitoncorp.com/news/"
+      ],
+      [
+        "Sponsor basın açıklaması: FA araştırma planı",
+        "https://www.prnewswire.com/news-releases/graviton-bioscience-announces-clearance-of-investigational-new-drug-ind-for-gv101-for-the-treatment-of-friedreichs-ataxia-302848536.html"
+      ],
+      [
+        "ClinicalTrials.gov: NCT07870590; ayrıntıları ayrıca teyit edin",
+        "https://clinicaltrials.gov/study/NCT07870590"
+      ]
+    ]
+  },
+  "ppl001": {
+    "title": "PPL-001: gen düzenlenmiş kök hücre yaklaşımı ve klinik öncesi kanıt",
+    "status": "Klinik öncesi · İnsan araştırması için hazırlık",
+    "sections": [
+      [
+        "Ne amaçlıyor ve neden farklı?",
+        "Papillon Therapeutics’in PPL-001 programı, kişinin kan yapıcı kök ve öncül hücrelerinde FXN ile ilişkili genetik kusuru düzeltmeyi amaçlar. HSPC olarak anılan bu hücreler, kan ve bağışıklık sistemi hücrelerini oluşturabilir. Bu yaklaşım hem hücre tedavisi hem de gen düzenlemesi içerir. Damar yoluyla bir AAV taşıyıcısı verip yeni gen ekleyen programlardan farklı bir üretim ve uygulama sürecine sahiptir."
+      ],
+      [
+        "Düzenleme nerede yapılıyor?",
+        "Tasarlanan yaklaşımda hücreler toplanır, vücut dışında işlenir ve gen düzenlemesinden sonra geri verilir. Cellares’in açıklaması, FXN geninin birinci intronundaki GAA tekrar genişlemesini hedefleyen düzenlemeyi tarif eder. Buradaki amaç, düzenlenmiş hücrelerde frataxin üretimini yeniden desteklemektir. Kişinin vücudundaki bütün hücrelerin geninin aynı anda düzeltildiği anlamına gelmez."
+      ],
+      [
+        "Bugüne kadarki kanıt hangi düzeyde?",
+        "FARA, insanlardan elde edilen hücrelerle ve FA fare modelleriyle yapılan klinik öncesi çalışmaları özetliyor. Bu araştırmalarda frataxin, mitokondri işlevi ve işlevsel kurtarma gibi sonuçlar incelendi. Bunlar insanlara tedavi uygulanarak elde edilmiş klinik sonuçlar değildir. Bu nedenle ‘FA hastalarında başarılı oldu’ veya ‘son klinik sonuçlar olumlu’ şeklinde aktarılmamalıdır."
+      ],
+      [
+        "Firma nereye ulaştı?",
+        "Program IND başvurusunu destekleyecek araştırmalar aşamasındadır. 21 Temmuz 2026’da Papillon ile Cellares üretim otomasyonu ortaklığı duyurdu. Cell Shuttle ve Cell Q platformlarıyla hücre işleme ve kalite kontrolünün daha tutarlı yürütülmesi hedefleniyor. Bu adım, gelecekteki araştırmalar için üretim altyapısını güçlendirir; kendi başına klinik çalışmanın başladığı veya tedavinin etkin olduğu anlamına gelmez."
+      ],
+      [
+        "Çoklu organ hedefi ve güvenlilik soruları",
+        "FA birden fazla sistemi etkilediği için programın çoklu dokulara katkı sağlama hedefi önemlidir. Bunun insanlarda hangi organlarda, hangi ölçüde gerçekleşebileceği bilinmiyor. Gen düzenlemesinin doğruluğu, hücre ürününün kalitesi, uygulama sürecinin güvenliği ve uzun dönem izlem gibi sorular cevaplanmalıdır. Başka hastalıklarda kullanılan benzer tekniklerin başarısı, PPL-001’in FA’daki güvenlilik ve etkinlik kanıtı değildir."
+      ],
+      [
+        "Sonraki adım ve Türkiye’den katılım",
+        "Bir sonraki temel eşik, gerekli klinik öncesi ve üretim verilerinin tamamlanıp insan araştırması için izin alınmasıdır. FDA’nın yetim ilaç ve nadir pediatrik hastalık statüleri geliştirme desteğidir, ruhsat değildir. Bu kontrolde açık bir FA insan araştırması, katılımcı merkezi veya hasta başvuru adresi doğrulanmadı. Piyasaya çıkış için kesin yıl vermek mümkün değildir; Avrupa ve Türkiye’den katılım ancak bir klinik protokol açıldığında değerlendirilebilir."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: PPL-001 ve klinik öncesi araştırmalar",
+        "https://www.curefa.org/drug-development/ppl-001/"
+      ],
+      [
+        "Cellares ve Papillon: 21 Temmuz 2026 üretim ortaklığı",
+        "https://www.cellares.com/news/cellares-and-papillon-therapeutics-partner-to-automate-manufacturing-of-ppl-001-for-patients-with-friedreichs-ataxia/"
+      ],
+      [
+        "Papillon: geliştirici şirket",
+        "https://www.papillon-tx.com/"
+      ]
+    ]
+  },
+  "nbib223": {
+    "title": "NBIB-223 ve FACET: beyin ile kalbe gen ulaştırma hedefi",
+    "status": "Deneysel · Faz I; ilk klinik araştırma FACET duyuruldu",
+    "sections": [
+      [
+        "İlacın amacı ve ortakların rolleri",
+        "Neurocrine Biosciences ve Voyager Therapeutics’in ortak programı NBIB-223, işlevsel FXN genini beyin ve kalp gibi FA’dan etkilenen dokulara ulaştırmayı amaçlar. Voyager’ın TRACER platformundan seçilen AAV kapsidi taşıyıcı olarak kullanılır. Planlanan yaklaşım tek seferlik damar içi uygulamadır. Hedeflenen dağılım, insanlarda bu dokuların tamamında yarar gösterildiği anlamına gelmez."
+      ],
+      [
+        "Gen ekleme ne anlama geliyor?",
+        "FXN genindeki değişiklikler frataxin üretimini azaltabilir. Gen ekleme yaklaşımında hücreye işlevsel gen kopyası ulaştırılarak protein üretimi desteklenmeye çalışılır. Mevcut gen dizisini doğrudan kesip düzeltmekten farklıdır. Bir taşıyıcının beyne geçebilme hedefi, gerçek insanda dağılım, doz ve güvenlilik sorularının ayrıca incelenmesini gerektirir."
+      ],
+      [
+        "Firma programı nereye ilerletti?",
+        "FARA’nın geçmiş özetinde 2019 ortaklığı, 2024 geliştirme adayı seçimi ve 2026 klinik hazırlıkları yer alıyor. Ekim 2026 topluluk duyurusu FDA’nın klinik aşamaya geçişe izin verdiğini ve FACET adlı ilk insan araştırmasının planlandığını bildiriyor. Faz I etiketi, programın insanlarda erken değerlendirme aşamasını ifade eder; etkili veya ruhsatlı tedavi olduğu anlamına gelmez."
+      ],
+      [
+        "Hangi sonuçlar henüz açıklanmadı?",
+        "Bu kontrol kapsamında NBIB-223 için insanlarda yayımlanmış etkinlik sonucu, tedavi uygulanmış katılımcı sayısı veya ilaca özgü klinik yan etki tablosu doğrulanmadı. Başka gen tedavilerinin sonuçları bu programa mal edilemez. Frataxin düzeyi, nörolojik ölçekler ve kalp sonuçları gibi farklı veri türleri yayımlandığında ayrı ayrı ve ilgili protokol bağlamında değerlendirilmelidir."
+      ],
+      [
+        "Statüler ve sıradaki bilgi kaynağı",
+        "FARA, FDA yetim ilaç ve nadir pediatrik hastalık statülerini listeliyor. Bu statüler ruhsat değildir. FARA ayrıca Neurocrine’ın 4 Kasım 2026 saat 12.00 ET’de FACET hakkında bilgilendirme webinarını duyuruyor; Türkiye saatiyle 20.00’dir. Webinarın amacı yaklaşan araştırmayı açıklamaktır. Katılım ve çalışma bilgileri için FARA’nın resmî etkinlik sayfasındaki kayıt bağlantısı izlenmelidir."
+      ],
+      [
+        "Türkiye, Avrupa ve katılım belirsizlikleri",
+        "Bu kontrolde FACET’in ayrıntılı merkez listesi, yaş sınırları, Türkiye’den ikamet kabulü veya katılımcıya özel e-posta adresi doğrulanmadı. Bilgi bulunmaması, kesin olarak Avrupa’da çalışma yapılmayacağı anlamına gelmez. Araştırma duyurusu, webinar kaydı ve klinik çalışma başvurusu üç ayrı süreçtir. Klinik katılım kararı ancak yayımlanan protokol ve çalışma ekibinin uygunluk değerlendirmesiyle verilebilir."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: NBIB-223 geliştirme ve Ekim 2026 klinik duyurusu",
+        "https://www.curefa.org/drug-development/neurocrine-biosciences-voyager-therapeutics-aav-gene-therapy/"
+      ],
+      [
+        "Neurocrine: resmî geliştirme hattı",
+        "https://www.neurocrine.com/pipeline/"
+      ],
+      [
+        "FARA: 4 Kasım webinarı ve etkinlik bağlantısı",
+        "https://www.curefa.org/get-involved/fundraising-and-events/"
+      ]
+    ]
+  },
+  "brave": {
+    "title": "BRAVE: omaveloxolone’un 2–15 yaş araştırması nasıl yürütülüyor?",
+    "status": "Faz III · Katılımcı alımı tamamlandı; sonuçlar bekleniyor",
+    "sections": [
+      [
+        "BRAVE neden ayrı bir araştırma?",
+        "BRAVE yeni bir ilaç adı değil, Biogen’in omaveloxolone için yürüttüğü çocuk araştırmasının adıdır. 16 yaş ve üzerindeki ruhsat, küçük çocuklarda aynı yarar-risk dengesinin bulunduğunu otomatik olarak göstermez. Büyüme, gelişim, vücudun ilacı işlemesi ve uygun kullanım ayrı veri gerektirir. Bu nedenle çocuk programı, ruhsatlı erişkin ve ergen kullanımından ayrı değerlendirilir."
+      ],
+      [
+        "Araştırmanın yapısı",
+        "FARA çalışma sayfası iki bölüm tarif ediyor: ilk bölümde 52 hafta omaveloxolone veya plasebo, ardından bütün katılımcıların tedavi aldığı 104 haftaya kadar açık etiketli bölüm. Böylece ilk dönemde karşılaştırmalı bilgi, sonraki dönemde daha uzun takip elde edilmesi amaçlanıyor. Katılım yaklaşık üç yıla uzayabiliyor. Bu süreler protokolü anlatır; bütün katılımcıların aynı tarihte çalışmayı bitirdiği anlamına gelmez."
+      ],
+      [
+        "Neler ölçülüyor?",
+        "Çalışma denge ve stabiliteyle ilişkili belirtileri, genel güvenliliği, vücudun ilacı işleme özelliklerini ve kalp sağlığı ile ergenlik gelişimi gibi alanları izliyor. Bir ölçümün araştırma planında yer alması, o alanda olumlu etki bulunduğu anlamına gelmez. Kalp veya gelişim sonuçları ancak veriler açıklandığında değerlendirilebilir."
+      ],
+      [
+        "Firma nereye ulaştı, sırada ne var?",
+        "Biogen’in FARA’da yayımlanan 3 Ağustos 2026 açıklaması katılımcı alımının tamamlandığını bildiriyor. Yeni alımın kapanması araştırmanın bittiği veya başarılı olduğu anlamına gelmez; mevcut katılımcıların takipleri sürer. Sonraki önemli aşamalar takip, veri analizi ve sonuçların açıklanmasıdır. Çocuk ruhsatına ilişkin karar bunlardan ayrı bir düzenleyici değerlendirme gerektirir."
+      ],
+      [
+        "Güvenlilik ve Türkiye’den katılım",
+        "Bu kontrolde BRAVE’e özgü sonuç ve yan etki sıklıkları doğrulanmış olarak yayımlanmamıştır. Erişkinlerdeki güvenlilik verileri çocuk sonuçlarının yerine kullanılamaz. Alım kapalı olduğu için yeni başvuru yolu açık olarak sunulmuyor. Mevcut katılımcılar kendi merkezleriyle görüşmelidir. Türkiye’de çocuklar için tedavi erişimi veya kullanım kararı araştırma kaydı üzerinden varsayılmaz."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: BRAVE protokol özeti ve ölçümler",
+        "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/"
+      ],
+      [
+        "Biogen topluluk açıklaması: alımın tamamlanması",
+        "https://www.curefa.org/news/community-statement-update-from-biogen-4/"
+      ],
+      [
+        "EMA: mevcut ruhsatın yaş kapsamı",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/skyclarys"
+      ]
+    ]
+  },
+  "jive": {
+    "title": "Nomlabofusp açık etiketli takip: JIVE/OLE programının amacı ve katılımı",
+    "status": "Faz II açık etiketli araştırma · FARA’da alım açık; ABD ikameti gerekiyor",
+    "sections": [
+      [
+        "Aynı ilaç, farklı araştırma sorusu",
+        "JIVE/OLE olarak anılan açık etiketli çalışma, nomlabofusp programının uzun süreli takip koludur; ayrı bir ilaç değildir. FORWARD-FA’nın plasebo kontrollü tasarımından farklıdır. Günlük deri altı uygulamanın zaman içindeki tolerabilitesi, ilaç düzeyleri, frataxin ve klinik ölçümler izlenir. ‘Açık etiketli’ ifadesi katılımcı ve araştırmacının tedavinin verildiğini bilmesi anlamına gelir."
+      ],
+      [
+        "Katılım kapsamı nasıl değişti?",
+        "FARA’nın güncel sayfası yalnızca eski araştırma katılımcılarını değil, daha önce nomlabofusp almamış uygun kişileri de tarif ediyor. Önceki katılımı olmayan grup için 2–60 yaş aralığı listeleniyor; eski katılımcılar için farklı koşullar var. Bu nedenle çalışmayı yalnızca eski katılımcılara açık şeklinde anlatmak eksik olur. Kesin uygunluk, ön tarama ve çalışma hekiminin değerlendirmesine bağlıdır."
+      ],
+      [
+        "Sonuçları nasıl değerlendirmeli?",
+        "Uzun takip, kısa çalışmalarda görülmeyebilecek sorunları ve değişimlerin sürüp sürmediğini incelemeye yardımcı olur. Buna karşılık eşzamanlı kör plasebo kontrolü bulunmaması etkinlik yorumunu sınırlar. Doğal seyir karşılaştırmaları yapılırken gruplar arası farklar ve çalışmadan ayrılan katılımcılar dikkate alınmalıdır. Nomlabofusp’un biyobelirteç ve klinik bulguları ana ilaç dosyasında ayrı anlatılmıştır."
+      ],
+      [
+        "Güvenlilikte nelere dikkat ediliyor?",
+        "Nomlabofusp programında ciddi alerjik reaksiyonlar bildirildiği için ön tarama, uygulama eğitimi ve protokol güvenlilik önlemleri önemlidir. Günlük enjeksiyonu kişinin veya eğitimli bakım verenin yapabilmesi gerekir. İzin verilen diğer ilaçların sabit kullanım süreleri ve kalp, glukoz ile genetik ölçütler araştırma ekibince incelenir. Katılım için mevcut ilaçlar kendiliğinden değiştirilmemelidir."
+      ],
+      [
+        "Türkiye’den katılım ve sonraki aşama",
+        "FARA kaydı ABD ikametini açık bir koşul olarak listeliyor; ABD merkezleri yalnızca ABD’de yaşayanları alıyor. Türkiye’de yaşayan bir kişi için doğrudan katılım açık kabul edilemez. Daha önce katılmamış kişiler resmî FARA sayfasının yönlendirdiği ön taramayı, önceki katılımcılar kendi koordinatörlerini kullanır. Ön tarama kapasitesi sınırlı olabilir. Bu araştırmaya alınmak, ilacın ruhsatlandığı veya yararın garanti edildiği anlamına gelmez."
+      ]
+    ],
+    "sources": [
+      [
+        "FARA: güncel açık etiketli araştırma ve ön tarama",
+        "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/"
+      ],
+      [
+        "Larimar: Haziran 2026 uzun dönem ve güvenlilik açıklaması",
+        "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+      ],
+      [
+        "FARA: ana nomlabofusp programı",
+        "https://www.curefa.org/drug-development/nomlabofusp/"
+      ]
+    ]
+  }
+}
