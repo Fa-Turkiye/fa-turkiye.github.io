@@ -14,6 +14,7 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 .article-sources ol{padding-left:24px;display:grid;gap:14px}.article-sources a{overflow-wrap:anywhere;line-height:1.7}
 .article-related{padding:22px;border:1px solid var(--line);border-radius:18px;margin:28px 0}.article-related h2{font-size:1.2rem}.article-related li{margin-bottom:12px}
 .article-end{margin:30px 0}.editorial-intro{padding:10px 0 32px;max-width:850px}.editorial-intro>p{font-size:1.05rem;line-height:1.8}
+.article-lead{font-size:1.15rem;line-height:1.85;color:var(--muted);max-width:65ch}.guide-program h2{margin-top:18px}.guide-program h3{font-size:1.05rem;line-height:1.5;margin:24px 0 8px}.article-prose li{margin:12px 0;line-height:1.85}
 .dossier-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.dossier-card{display:flex;flex-direction:column;padding:26px;min-width:0;text-decoration:none;border:1px solid var(--line);border-radius:22px;background:rgba(21,27,47,.72)}
 .dossier-card h2{font-size:1.35rem;line-height:1.4;margin:18px 0 12px}.dossier-card h2 a{text-decoration:none;color:inherit}.dossier-card p{line-height:1.8;color:var(--muted);margin:0 0 22px}.dossier-card>b,.dossier-card>.textlink{margin-top:auto}
 @media(max-width:650px){.dossier-grid{grid-template-columns:1fr}.editorial-main{padding-top:16px}.article-section p{font-size:1.02rem;line-height:1.9}.article-toc{padding:20px}.dossier-card{padding:22px}.article-heading h1{font-size:2rem}.article-section{scroll-margin-top:120px}}
