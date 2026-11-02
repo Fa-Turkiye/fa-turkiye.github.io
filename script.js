@@ -1,7 +1,13 @@
 /* Shared enhancement: every page stays readable without JavaScript. */
 (() => {
   'use strict';
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  const systemReduce = matchMedia('(prefers-reduced-motion: reduce)');
+  let paused = false;
+  try { paused = localStorage.getItem('fa-motion-paused') === 'true'; } catch {}
+  const motionEvents = new EventTarget();
+  const reduce = { get matches() { return paused || systemReduce.matches; }, addEventListener(...args) { motionEvents.addEventListener(...args); } };
+  systemReduce.addEventListener('change', () => motionEvents.dispatchEvent(new Event('change')));
+  document.documentElement.classList.toggle('motion-paused', paused);
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
   const header = document.querySelector('header');
   const main = document.querySelector('main');
@@ -18,6 +24,12 @@
   const progress = make('div', 'reading-progress'); progress.setAttribute('aria-hidden', 'true'); document.body.prepend(progress);
   const topButton = make('button', 'to-top'); topButton.type = 'button'; topButton.textContent = '↑'; topButton.setAttribute('aria-label', 'Sayfanın başına dön'); topButton.tabIndex = -1; document.body.append(topButton);
   topButton.addEventListener('click', () => { window.scrollTo({top:0, behavior:reduce.matches ? 'instant' : 'smooth'}); document.querySelector('header a')?.focus({preventScroll:true}); });
+  const motionButton = make('button', 'motion-control');
+  motionButton.id = 'motionBtn'; motionButton.type = 'button';
+  const updateMotionButton = () => { motionButton.textContent = paused ? 'Hareketi aç' : 'Hareketi durdur'; motionButton.setAttribute('aria-pressed', String(paused)); };
+  updateMotionButton();
+  document.querySelector('header .tools')?.append(motionButton);
+  motionButton.addEventListener('click', () => { paused = !paused; document.documentElement.classList.toggle('motion-paused', paused); try { localStorage.setItem('fa-motion-paused', String(paused)); } catch {} updateMotionButton(); motionEvents.dispatchEvent(new Event('change')); });
   let menu;
   const closeMenu = () => { nav?.classList.remove('menu-open'); menu?.setAttribute('aria-expanded', 'false'); if(menu) menu.textContent='Menü ☰'; };
   if (nav && header) {
@@ -60,8 +72,6 @@
     const firstButton=document.querySelector('.hero .btn');if(firstButton){const actions=make('div','hero-actions');firstButton.before(actions);actions.append(firstButton);firstButton.textContent='İlaç kütüphanesini keşfet ↗';const news=make('a','btn secondary');news.href='haberler.html';news.textContent='Son haberler →';actions.append(news);}
     const hero=document.querySelector('.hero>div');if(hero){const line=make('p','type-line');line.setAttribute('aria-label','Kaynaklı bilgi, araştırma ve dayanışma.');const prefix=make('span','');prefix.setAttribute('aria-hidden','true');prefix.textContent='Birlikte: ';const word=make('span','type-word');word.setAttribute('aria-hidden','true');prefix.append(word);line.append(prefix);hero.append(line);const words=['bilgiye ulaşalım.','araştırmayı takip edelim.','dayanışmayı büyütelim.'];let wi=0,n=words[0].length,deleting=true,timer;word.textContent=words[0];const tick=()=>{if(reduce.matches||document.hidden)return;const text=words[wi];n+=deleting?-1:1;word.textContent=text.slice(0,n);let delay=deleting?38:72;if(n===0){deleting=false;wi=(wi+1)%words.length;delay=250;}else if(n===text.length&&!deleting){deleting=true;delay=2400;}timer=setTimeout(tick,delay);};const sync=()=>{clearTimeout(timer);if(reduce.matches){word.textContent=words[0];wi=0;n=words[0].length;deleting=true;}else if(!document.hidden)timer=setTimeout(tick,2400);};reduce.addEventListener('change',sync);document.addEventListener('visibilitychange',sync);sync();}
   }
-  // Internal page exits respect modifier keys, downloads, anchors and BFCache.
-  document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||a.target||a.hasAttribute('download')||reduce.matches)return;const u=new URL(a.href,location.href);if(u.origin!==location.origin||!u.pathname.endsWith('.html')||u.pathname===location.pathname)return;e.preventDefault();document.body.classList.add('page-leaving');setTimeout(()=>location.assign(u.href),300);});
   addEventListener('pageshow',()=>document.body.classList.remove('page-leaving'));
   // Existing drug-library filtering remains authoritative.
   const filters=document.querySelectorAll('main select,main input[type=search]');
