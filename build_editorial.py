@@ -29,8 +29,8 @@ def page(title, body, filename, description, active='ilaclar.html'):
 <title>{esc(title)} · FA Türkiye</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="https://fa-turkiye.github.io/{filename}">
 <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="articles.css">
-<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script></head><body>{nav}
-<main class="wrap editorial-main">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
+<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#f7f7ef"></head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
+<main class="wrap editorial-main" id="main-content" tabindex="-1">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
 
 def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None):
     count = sum(len(p.split()) for _, p in sections)
@@ -120,3 +120,4 @@ for path in ROOT.glob('*.html'):
     path.write_text(text)
 
 print(json.dumps({'profiles':len(profiles),'news':len(news)+1,'profile_words':{k:sum(len(p.split()) for _,p in v['sections']) for k,v in profiles.items()}},ensure_ascii=False))
+
