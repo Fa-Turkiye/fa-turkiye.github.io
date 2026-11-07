@@ -1,0 +1,987 @@
+{
+  "checked_on": "2026-11-07",
+  "programs": {
+    "lx2006": "LX2006",
+    "sgt212": "SGT-212",
+    "nbib223": "NBIB-223 FACET",
+    "ppl001": "PPL-001",
+    "dt216p2": "DT-216P2",
+    "gv101": "GV101",
+    "vatiquinone": "Vatiquinone",
+    "nomlabofusp": "Nomlabofusp",
+    "jive": "Nomlabofusp JIVE",
+    "brave": "BRAVE omaveloxolone omaveloksolon"
+  },
+  "countries": {
+    "SA": "Suudi Arabistan"
+  },
+  "trials": [
+    {
+      "id": "NCT07721025",
+      "program": "lx2006",
+      "title": "SUNRISE-FA 2 – LX2006 faz 2 kardiyomiyopati çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT07721025",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "Lexeo Therapeutics – sponsorun çalışma merkezi listesi",
+          "url": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/"
+        },
+        {
+          "label": "FARA – SUNRISE-FA 2",
+          "url": "https://www.curefa.org/clinical-studies/study-of-lx2006-gene-therapy-in-friedreich-ataxia-cardiomyopathy-sunrise-fa-2/"
+        }
+      ],
+      "locations": [
+        {
+          "name": "Arkansas Children’s Hospital",
+          "city": "Little Rock",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-little-rock-arkansas-arkansas-children-s-hospital"
+        },
+        {
+          "name": "Boston Children’s Hospital",
+          "city": "Boston",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-boston-massachusetts-boston-children-s-hospital"
+        },
+        {
+          "name": "Cincinnati Children’s Hospital",
+          "city": "Cincinnati",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-cincinnati-ohio-cincinnati-children-s-hospital-medical-center"
+        },
+        {
+          "name": "Indiana University — Riley Children’s Health",
+          "city": "Indianapolis",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-indianapolis-indiana-indiana-university-riley-hospital-for-children"
+        },
+        {
+          "name": "Mayo Clinic",
+          "city": "Rochester",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-rochester-minnesota-mayo-clinic-friedreich-s-ataxia-clinic"
+        },
+        {
+          "name": "University of California San Diego",
+          "city": "La Jolla",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-la-jolla-california-university-of-california-san-diego-la-jolla"
+        },
+        {
+          "name": "University of South Florida",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/study-of-lx2006-gene-therapy-in-friedreich-ataxia-cardiomyopathy-sunrise-fa-2/",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "Washington University School of Medicine",
+          "city": "St. Louis",
+          "country": "US",
+          "sourceUrl": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/",
+          "center": "merkez-us-st-louis-missouri-washington-university-school-of-medicine"
+        }
+      ],
+      "note": "Lexeo’nun adıyla yayımladığı sekiz ABD kurumu. Güncel tarama durumunu çalışma ekibinden öğrenebilirsiniz."
+    },
+    {
+      "id": "NCT05445323",
+      "program": "lx2006",
+      "title": "SUNRISE-FA – LX2006 faz 1/2 kardiyomiyopati çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT05445323",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "FARA – SUNRISE-FA ve çalışma merkezleri",
+          "url": "https://www.curefa.org/clinical-studies/gene-therapy-for-cardiomyopathy-associated-with-friedreichs-ataxia-lx2006/"
+        },
+        {
+          "label": "UCLA Health – çalışma sayfası",
+          "url": "https://www.uclahealth.org/clinical-trials/gene-therapy-cardiomyopathy-associated-with-friedreichs"
+        }
+      ],
+      "locations": [
+        {
+          "name": "UCLA Ataxia Center and HD Center of Excellence",
+          "city": "Los Angeles",
+          "country": "US",
+          "sourceUrl": "https://www.uclahealth.org/clinical-trials/gene-therapy-cardiomyopathy-associated-with-friedreichs",
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+        },
+        {
+          "name": "University of South Florida",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/gene-therapy-for-cardiomyopathy-associated-with-friedreichs-ataxia-lx2006/",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "Mayo Clinic",
+          "city": "Rochester",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/gene-therapy-for-cardiomyopathy-associated-with-friedreichs-ataxia-lx2006/",
+          "center": "merkez-us-rochester-minnesota-mayo-clinic-friedreich-s-ataxia-clinic"
+        }
+      ],
+      "note": "LX2006’nın ilk SUNRISE-FA çalışması için yayımlanan kurumlar."
+    },
+    {
+      "id": "NCT05302271",
+      "program": "lx2006",
+      "title": "AAVrh.10hFXN – Weill Cornell faz 1 kardiyomiyopati çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT05302271",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "Weill Cornell Medicine – araştırma kaydı",
+          "url": "https://jcto.weill.cornell.edu/open_clinical_trials/phase-ia-study-of-aavrh10hfxn-gene-therapy-for-the-cardiomyopathy-of-friedreich%E2%80%99s-ataxia"
+        },
+        {
+          "label": "FARA – Weill Cornell çalışması",
+          "url": "https://www.curefa.org/clinical-studies/phase-1-clinical-trial-of-an-investigational-gene-therapy-for-cardiac-disease-associated-with-friedreichs-ataxia-aavrh-10hfxn/"
+        }
+      ],
+      "locations": [
+        {
+          "name": "Weill Cornell Medicine / NewYork-Presbyterian Hospital",
+          "city": "New York",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/phase-1-clinical-trial-of-an-investigational-gene-therapy-for-cardiac-disease-associated-with-friedreichs-ataxia-aavrh-10hfxn/",
+          "center": "merkez-us-new-york-new-york-weill-cornell-medicine-newyork-presbyterian"
+        }
+      ],
+      "note": "Weill Cornell araştırmacılarının yürüttüğü ayrı, tek merkezli çalışma."
+    },
+    {
+      "id": "NCT07180355",
+      "program": "sgt212",
+      "title": "FALCON – SGT-212 faz 1b çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT07180355",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "Solid Biosciences – Kasım 2026 merkez güncellemesi",
+          "url": "https://www.solidbio.com/letter-to-the-fa-community-nov2026/"
+        },
+        {
+          "label": "FARA – FALCON ve çalışma merkezleri",
+          "url": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/"
+        },
+        {
+          "label": "UCLA Health – FALCON",
+          "url": "https://www.uclahealth.org/clinical-trials/study-sgt-212-gene-therapy-friedreichs-ataxia"
+        }
+      ],
+      "locations": [
+        {
+          "name": "The Ohio State University",
+          "city": "Columbus",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/",
+          "center": "merkez-us-columbus-ohio-ohio-state-university-wexner-medical-center-noroloji"
+        },
+        {
+          "name": "Children’s Hospital of Philadelphia (CHOP)",
+          "city": "Philadelphia",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/",
+          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program"
+        },
+        {
+          "name": "UCLA",
+          "city": "Los Angeles",
+          "country": "US",
+          "sourceUrl": "https://www.uclahealth.org/clinical-trials/study-sgt-212-gene-therapy-friedreichs-ataxia",
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+        }
+      ],
+      "note": "Solid Biosciences’in Kasım 2026 açıklamasında ve FARA’nın çalışmaya özel sayfasında adı verilen ABD merkezleri."
+    },
+    {
+      "id": "NCT06874010",
+      "program": "dt216p2",
+      "title": "RESTORE-FA — DT-216P2 Faz 1/2 çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT06874010",
+      "sourceLabel": "ClinicalTrials.gov · NCT06874010",
+      "extraSources": [
+        {
+          "label": "ClinicalTrials.gov — merkez kayıt verisi",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT06874010"
+        },
+        {
+          "label": "ANZCTR — kayıtlı Avustralya merkezleri",
+          "url": "https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=23914&isClinicalTrial=True"
+        },
+        {
+          "label": "Design Therapeutics — 4 Kasım 2026 güncellemesi",
+          "url": "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-third-quarter-2026-financial"
+        },
+        {
+          "label": "FARA — DT-216P2 çalışma bilgileri",
+          "url": "https://www.curefa.org/clinical-studies/a-multiple-ascending-dose-study-of-dt-216p2/"
+        }
+      ],
+      "locations": [
+        {
+          "name": "Scientia Clinical Research Ltd",
+          "city": "Sydney",
+          "country": "AU",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06874010#contacts-and-locations",
+          "center": "merkez-au-sydney-randwick-scientia-clinical-research"
+        },
+        {
+          "name": "Doherty Clinical Trials",
+          "city": "East Melbourne",
+          "country": "AU",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06874010#contacts-and-locations",
+          "center": "merkez-au-melbourne-east-melbourne-doherty-clinical-trials"
+        },
+        {
+          "name": "Nucleus Network",
+          "city": "Melbourne",
+          "country": "AU",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06874010#contacts-and-locations",
+          "center": "merkez-au-melbourne-nucleus-network-melbourne"
+        }
+      ],
+      "note": "Klinik kayıt Avustralya’da üç araştırma merkezi listeliyor. Design Therapeutics 4 Kasım 2026’da çalışmanın sürdüğünü bildirdi; merkezlerin bugün katılımcı alıp almadığını çalışma ekibinden doğrulayın."
+    },
+    {
+      "id": "NCT07870590",
+      "program": "gv101",
+      "title": "GV101 — Friedreich ataksisi Faz 2a çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT07870590",
+      "sourceLabel": "ClinicalTrials.gov · NCT07870590",
+      "extraSources": [
+        {
+          "label": "ClinicalTrials.gov — merkez kayıt verisi",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07870590"
+        },
+        {
+          "label": "Graviton BioScience — Faz 2a çalışma duyurusu",
+          "url": "https://www.prnewswire.com/news-releases/graviton-bioscience-announces-fda-fast-track-designation-for-gv101-for-the-treatment-of-friedreichs-ataxia-302926880.html"
+        },
+        {
+          "label": "Clinilabs — araştırma merkezi ve iletişim",
+          "url": "https://clinilabs.com/contact/"
+        }
+      ],
+      "locations": [
+        {
+          "name": "CLINiLABS",
+          "city": "Eatontown",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07870590#contacts-and-locations",
+          "center": "merkez-us-eatontown-new-jersey-clinilabs-eatontown"
+        }
+      ],
+      "note": "Klinik kayıt Eatontown’da bir merkez gösteriyor. 15 Ekim 2026 tarihli çalışma durumu henüz katılımcı alımı başlamadı olarak yayımlandı."
+    },
+    {
+      "id": "NCT07681713",
+      "program": "vatiquinone",
+      "title": "PROVE-FA — vatiquinone uzun dönem etkililik çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT07681713",
+      "sourceLabel": "ClinicalTrials.gov · NCT07681713",
+      "extraSources": [
+        {
+          "label": "ClinicalTrials.gov — merkez kayıt verisi",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07681713"
+        },
+        {
+          "label": "PTC Therapeutics — PROVE-FA çalışma sayfası",
+          "url": "https://clinicaltrials.ptcbio.com/trials/PTC743-FA-304"
+        },
+        {
+          "label": "EMA / CTIS — 2026-526947-37-00",
+          "url": "https://euclinicaltrials.eu/search-for-clinical-trials/?EUCT=2026-526947-37-00&lang=en"
+        }
+      ],
+      "locations": [
+        {
+          "name": "University of California Los Angeles",
+          "city": "Los Angeles",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+        },
+        {
+          "name": "University of South Florida",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "University of Iowa",
+          "city": "Iowa City",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-us-iowa-city-iowa-university-of-iowa-health-care-stead-family-children-s-hospital"
+        },
+        {
+          "name": "Children's Hospital of Philadelphia",
+          "city": "Philadelphia",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program"
+        },
+        {
+          "name": "Hôpital Érasme (Hôpital Universitaire de Bruxelles)",
+          "city": "Brussels",
+          "country": "BE",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-be-bruksel-hopital-erasme-kalitsal-ataksi-merkezi"
+        },
+        {
+          "name": "University of Campinas",
+          "city": "Campinas",
+          "country": "BR",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-br-campinas-unicamp-hospital-de-clinicas-noroloji"
+        },
+        {
+          "name": "Centre Hospitalier de l'Universite de Montreal CHUM",
+          "city": "Montreal",
+          "country": "CA",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-ca-montreal-chum-unite-des-troubles-du-mouvement-andre-barbeau"
+        },
+        {
+          "name": "Institut du Cerveau et de la Moelle Epinière",
+          "city": "Paris",
+          "country": "FR",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-fr-paris-ap-hp-hopital-de-la-pitie-salpetriere-neurogene"
+        },
+        {
+          "name": "Hospital Sant Joan de Deu",
+          "city": "Barcelona",
+          "country": "ES",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07681713#contacts-and-locations",
+          "center": "merkez-es-barselona-esplugues-de-llobregat-hospital-sant-joan-de-deu-barcelona-noroloji"
+        }
+      ],
+      "note": "Klinik kayıt altı ülkede adı açıklanan dokuz merkez listeliyor. 14 Ağustos 2026 tarihli çalışma durumu henüz katılımcı alımı başlamadı olarak yayımlandı."
+    },
+    {
+      "id": "NCT04577352",
+      "program": "vatiquinone",
+      "title": "MOVE-FA — vatiquinone etkililik ve güvenlilik çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT04577352",
+      "sourceLabel": "ClinicalTrials.gov · NCT04577352",
+      "extraSources": [
+        {
+          "label": "ClinicalTrials.gov — merkez kayıt verisi",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT04577352"
+        },
+        {
+          "label": "FARA — MOVE-FA çalışma sayfası",
+          "url": "https://www.curefa.org/clinical-studies/a-randomized-parallel-arm-double-blind-placebo-controlled-study-with-open-label-extension-to-assess-the-efficacy-and-safety-of-vatiquinone-for-the-treatment-of-friedreich-ataxia-move-fa/"
+        },
+        {
+          "label": "UNICAMP — Nöroloji Bölümünün yerleşkesi",
+          "url": "https://portal.fcm.unicamp.br/departamentos/departamento-de-neurologia/"
+        }
+      ],
+      "locations": [
+        {
+          "name": "UCLA",
+          "city": "Los Angeles",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+        },
+        {
+          "name": "University of Florida",
+          "city": "Gainesville",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-us-gainesville-florida-uf-health-norman-fixel-institute-ataxia-clinic"
+        },
+        {
+          "name": "University of South Florida",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "University of Iowa",
+          "city": "Iowa City",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-us-iowa-city-iowa-university-of-iowa-health-care-stead-family-children-s-hospital"
+        },
+        {
+          "name": "The Children's Hospital of Philadelphia",
+          "city": "Philadelphia",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program"
+        },
+        {
+          "name": "Murdoch Children's Research Institute",
+          "city": "Parkville",
+          "country": "AU",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-au-melbourne-parkville-victoria-murdoch-children-s-research-institute-bruce-lefroy-centre"
+        },
+        {
+          "name": "University of Campinas (UNICAMP) - School of Medical Sciences, Dept of Neurology",
+          "city": "Campinas",
+          "country": "BR",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "note": "Klinik kayıtta şehir São Paulo olarak geçiyor. Adı verilen UNICAMP Nöroloji Bölümü, üniversitenin yerleşke kaydına göre Campinas’ta.",
+          "center": "merkez-br-campinas-unicamp-hospital-de-clinicas-noroloji"
+        },
+        {
+          "name": "Centre de Recherche du Centre Hospitalier de l'Université de Montreal (CRCHUM)",
+          "city": "Montreal",
+          "country": "CA",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-ca-montreal-chum-unite-des-troubles-du-mouvement-andre-barbeau"
+        },
+        {
+          "name": "CHU Sainte-Justine",
+          "city": "Montreal",
+          "country": "CA",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-ca-montreal-chu-sainte-justine-montreal"
+        },
+        {
+          "name": "Hôpital Pitié-Salpêtrière, Institut du Cerveau (Paris Brain Institute)",
+          "city": "Paris",
+          "country": "FR",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-fr-paris-ap-hp-hopital-de-la-pitie-salpetriere-neurogene"
+        },
+        {
+          "name": "Department of Neurology and Hertie-Institute for Clinical Brain Research German Center of Neurodegenerative Diseases (DZNE)",
+          "city": "Tübingen",
+          "country": "DE",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-de-tubingen-universitatsklinikum-tubingen-ataksi-poliklinigi"
+        },
+        {
+          "name": "Ospedale Pediatrico Bambino Gesu' IRCCS",
+          "city": "Roma",
+          "country": "IT",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-it-roma-ospedale-pediatrico-bambino-gesu-noromuskuler-hastaliklar"
+        },
+        {
+          "name": "CBR Neurogenetic Research Clinic, University of Auckland",
+          "city": "Auckland",
+          "country": "NZ",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-nz-auckland-university-of-auckland-cbr-neurogenetics-research-clinic"
+        },
+        {
+          "name": "Hospital Sant Joan de Déu Barcelona Unidad de Enfermedades Neuromusculares",
+          "city": "Barcelona",
+          "country": "ES",
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577352#contacts-and-locations",
+          "center": "merkez-es-barselona-esplugues-de-llobregat-hospital-sant-joan-de-deu-barcelona-noroloji"
+        }
+      ],
+      "note": "Tamamlanan çalışmanın kaydında adı yayımlanan 14 kurum. Liste geçmiş çalışma katılımını gösterir."
+    },
+    {
+      "id": "NCT07778836",
+      "program": "nomlabofusp",
+      "title": "FORWARD-FA · Nomlabofusp Faz 3 çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT07778836",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "FARA – ABD merkezleri",
+          "url": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/"
+        },
+        {
+          "label": "AB klinik araştırma kaydı – CTIS",
+          "url": "https://euclinicaltrials.eu/ctis-public/view/2025-521628-31-00"
+        },
+        {
+          "label": "CTIS konum kaydının görünümü",
+          "url": "https://ctis.eu/trial/2025-521628-31-00#locations"
+        },
+        {
+          "label": "AP-HP – Pitié-Salpêtrière Nöroloji",
+          "url": "https://pitiesalpetriere.aphp.fr/neurologie-2"
+        },
+        {
+          "label": "Health Canada – FORWARD-FA araştırma kaydı",
+          "url": "https://clinical-trials-search.canada.ca/fr/node/21326"
+        }
+      ],
+      "locations": [
+        {
+          "name": "Northwestern Medical Group – Department of Neurology",
+          "city": "Chicago",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/",
+          "center": "merkez-us-chicago-illinois-northwestern-medical-group-department-of-neurology"
+        },
+        {
+          "name": "Clinilabs",
+          "city": "Eatontown",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/",
+          "center": "merkez-us-eatontown-new-jersey-clinilabs-eatontown"
+        },
+        {
+          "name": "University of Texas Southwestern Medical Center",
+          "city": "Dallas",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/",
+          "center": "merkez-us-dallas-texas-ut-southwestern-medical-center"
+        },
+        {
+          "name": "Morsani Center for Advanced Health Care, University of South Florida Health",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "AP-HP – Hôpital Pitié-Salpêtrière, Nöroloji",
+          "city": "Paris",
+          "country": "FR",
+          "sourceUrl": "https://ctis.eu/trial/2025-521628-31-00#locations",
+          "note": "CTIS konum kaydında AP-HP Nöroloji olarak geçiyor. Pitié-Salpêtrière bağlantısı hastanenin resmî adresiyle doğrulandı.",
+          "center": "merkez-fr-paris-ap-hp-hopital-de-la-pitie-salpetriere-neurogene"
+        }
+      ],
+      "note": "ABD’de FARA’nın adını verdiği dört merkez ve Fransa’da CTIS kaydındaki bir merkez."
+    },
+    {
+      "id": "NCT06447025",
+      "program": "jive",
+      "title": "JIVE · Nomlabofusp açık etiketli uzatma çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT06447025",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "FARA – JIVE çalışma bilgileri",
+          "url": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/"
+        },
+        {
+          "label": "UCSF – JIVE çalışma kaydı",
+          "url": "https://clinicaltrials.ucsf.edu/trial/NCT06447025"
+        },
+        {
+          "label": "ClinicalTrials.gov konum kaydının yansıması",
+          "url": "https://clinicaltrials.gg/study/NCT06447025"
+        },
+        {
+          "label": "Health Canada – JIVE araştırma kaydı",
+          "url": "https://clinical-trials-search.canada.ca/en/clinical-trial/300031-friedreich-ataxia"
+        }
+      ],
+      "locations": [
+        {
+          "name": "University of California Los Angeles",
+          "city": "Los Angeles",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+        },
+        {
+          "name": "University of California, San Francisco Medical Center",
+          "city": "San Francisco",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.ucsf.edu/trial/NCT06447025",
+          "center": "merkez-us-san-francisco-university-of-california-san-francisco-ucsf-medical-center"
+        },
+        {
+          "name": "Norman Fixel Institute for Neurological Diseases, UF Health",
+          "city": "Gainesville",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-gainesville-florida-uf-health-norman-fixel-institute-ataxia-clinic"
+        },
+        {
+          "name": "Morsani Center for Advanced Health Care, University of South Florida Health",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "University of Iowa Hospitals & Clinics",
+          "city": "Iowa City",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-iowa-city-iowa-university-of-iowa-health-care-stead-family-children-s-hospital"
+        },
+        {
+          "name": "Uncommon Cures",
+          "city": "Chevy Chase",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-chevy-chase-uncommon-cures-chevy-chase"
+        },
+        {
+          "name": "Clinilabs Drug Development Corporation",
+          "city": "Eatontown",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-eatontown-new-jersey-clinilabs-eatontown"
+        },
+        {
+          "name": "Ohio State University Wexner Medical Center",
+          "city": "Columbus",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+          "center": "merkez-us-columbus-ohio-ohio-state-university-wexner-medical-center-noroloji"
+        },
+        {
+          "name": "Children’s Hospital of Philadelphia",
+          "city": "Philadelphia",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.gg/study/NCT06447025",
+          "note": "Ekim 2026 kayıt görünümünde CHOP adı geçiyor. FARA aynı Philadelphia ekibini Hospital of the University of Pennsylvania adıyla listeliyor.",
+          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program"
+        },
+        {
+          "name": "ICON",
+          "city": "Salt Lake City",
+          "country": "US",
+          "sourceUrl": "https://clinicaltrials.ucsf.edu/trial/NCT06447025",
+          "center": "merkez-us-salt-lake-city-icon-clinical-research-salt-lake-city"
+        }
+      ],
+      "note": "Açık etiketli uzun dönem çalışma FORWARD-FA’dan ayrı kayıtlıdır. Burada ABD’deki adı yayımlanmış çalışma merkezleri gösterilir. Başvuru koşulları ve merkeze göre durum resmî çalışma kaydından kontrol edilebilir."
+    },
+    {
+      "id": "NCT06953583",
+      "program": "brave",
+      "title": "BRAVE · Çocuklarda omaveloksolon Faz 3 çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT06953583",
+      "sourceLabel": "ClinicalTrials.gov",
+      "extraSources": [
+        {
+          "label": "Biogen – BRAVE çalışma bilgileri",
+          "url": "https://www.biogentriallink.com/en-us/home/find-a-clinical-trial/clinical-trials-study-details.html?nctId=NCT06953583"
+        },
+        {
+          "label": "FARA – BRAVE merkezleri",
+          "url": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/"
+        },
+        {
+          "label": "AB klinik araştırma kaydı – CTIS",
+          "url": "https://euclinicaltrials.eu/ctis-public/view/2025-520896-13-00"
+        },
+        {
+          "label": "ANZCTR – Avustralya merkezleri",
+          "url": "https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=23862&isClinicalTrial=True"
+        },
+        {
+          "label": "Hindistan CDSCO – araştırma izni",
+          "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadCTApprovals/%2816%29-51520-PPD-CTNOC.pdf"
+        },
+        {
+          "label": "Health Canada – BRAVE merkezleri",
+          "url": "https://clinical-trials-search.canada.ca/fr/node/21627"
+        },
+        {
+          "label": "ClinicalTrials.gov konum kaydının yansıması",
+          "url": "https://priyalifescience.com/clinical-trials-canada/trial/NCT06953583"
+        },
+        {
+          "label": "ClinicalTrials.gov geçmiş merkez durumlarının yansıması",
+          "url": "https://ichgcp.net/clinical-trials-registry/NCT06953583"
+        }
+      ],
+      "locations": [
+        {
+          "name": "UCLA Neurology Outpatient Clinic at Westwood",
+          "city": "Los Angeles",
+          "country": "US",
+          "sourceUrl": "https://ucla.clinicaltrials.researcherprofiles.org/trial/NCT06953583",
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+        },
+        {
+          "name": "Norman Fixel Institute for Neurological Diseases, UF Health",
+          "city": "Gainesville",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-us-gainesville-florida-uf-health-norman-fixel-institute-ataxia-clinic"
+        },
+        {
+          "name": "USF Health Morsani College of Medicine – Department of Neurology",
+          "city": "Tampa",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-us-tampa-florida-usf-health-ataxia-research-center"
+        },
+        {
+          "name": "Children’s Hospital of Philadelphia – Buerger Center for Advanced Pediatric Care",
+          "city": "Philadelphia",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program"
+        },
+        {
+          "name": "St. Jude Children’s Research Hospital",
+          "city": "Memphis",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-us-memphis-tennessee-st-jude-children-s-research-hospital-pediatrik-noroloji"
+        },
+        {
+          "name": "Children’s Hospital of the King’s Daughters – Health Center at South Campus",
+          "city": "Norfolk",
+          "country": "US",
+          "sourceUrl": "https://priyalifescience.com/clinical-trials-canada/trial/NCT06953583",
+          "center": "merkez-us-norfolk-virginia-children-s-hospital-of-the-king-s-daughters"
+        },
+        {
+          "name": "Seattle Children’s Hospital",
+          "city": "Seattle",
+          "country": "US",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-us-seattle-washington-seattle-children-s-hospital"
+        },
+        {
+          "name": "Sydney Children’s Hospital – Randwick",
+          "city": "Randwick",
+          "country": "AU",
+          "sourceUrl": "https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=23862&isClinicalTrial=True",
+          "center": "merkez-au-randwick-sydney-children-s-hospital-randwick"
+        },
+        {
+          "name": "Murdoch Children’s Research Institute",
+          "city": "Parkville",
+          "country": "AU",
+          "sourceUrl": "https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=23862&isClinicalTrial=True",
+          "center": "merkez-au-melbourne-parkville-victoria-murdoch-children-s-research-institute-bruce-lefroy-centre"
+        },
+        {
+          "name": "Universitätsklinikum Innsbruck",
+          "city": "Innsbruck",
+          "country": "AT",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-at-innsbruck-medizinische-universitat-innsbruck-ataksi-poliklinigi"
+        },
+        {
+          "name": "L2IP – Instituto de Pesquisas Clínicas",
+          "city": "Brasília",
+          "country": "BR",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-br-brasilia-l2ip-instituto-de-pesquisas-clinicas"
+        },
+        {
+          "name": "University of Campinas (UNICAMP) – School of Medical Sciences",
+          "city": "Campinas",
+          "country": "BR",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-br-campinas-unicamp-hospital-de-clinicas-noroloji"
+        },
+        {
+          "name": "PSEG Centro de Pesquisa Clínica",
+          "city": "São Paulo",
+          "country": "BR",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-br-sao-paulo-pseg-centro-de-pesquisa-clinica"
+        },
+        {
+          "name": "McGill University",
+          "city": "Montréal",
+          "country": "CA",
+          "sourceUrl": "https://clinical-trials-search.canada.ca/fr/node/21627",
+          "center": "merkez-ca-montreal-mcgill-university-brave-calisma-merkezi",
+          "note": "Health Canada kaydında McGill University adı ve çalışma iletişimi yayımlanıyor."
+        },
+        {
+          "name": "CHU de Québec – Université Laval",
+          "city": "Québec",
+          "country": "CA",
+          "sourceUrl": "https://clinical-trials-search.canada.ca/fr/node/21627",
+          "center": "merkez-ca-quebec-chu-de-quebec-universite-laval"
+        },
+        {
+          "name": "Rigshospitalet – Juliane Marie Centret",
+          "city": "Kopenhag",
+          "country": "DK",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-dk-kopenhag-rigshospitalet-juliane-marie-centret"
+        },
+        {
+          "name": "CHU de Montpellier – Hôpital Gui de Chauliac",
+          "city": "Montpellier",
+          "country": "FR",
+          "sourceUrl": "https://priyalifescience.com/clinical-trials-canada/trial/NCT06953583",
+          "note": "Klinik kayıt Gui de Chauliac yerleşkesini gösteriyor. FARA aynı üniversite hastanesinin Arnaud de Villeneuve yerleşkesini listeliyor.",
+          "center": "merkez-fr-montpellier-chu-de-montpellier-hopital-gui-de-chauliac"
+        },
+        {
+          "name": "AP-HP – Hôpital Armand Trousseau",
+          "city": "Paris",
+          "country": "FR",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-fr-paris-ap-hp-hopital-armand-trousseau"
+        },
+        {
+          "name": "Universitätsklinikum Aachen",
+          "city": "Aachen",
+          "country": "DE",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-de-aachen-uniklinik-rwth-aachen-ataksi-poliklinigi"
+        },
+        {
+          "name": "UKGM – Universitätsklinikum Gießen und Marburg, Standort Gießen",
+          "city": "Gießen",
+          "country": "DE",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-de-giessen-universitatsklinikum-giessen-und-marburg-giessen"
+        },
+        {
+          "name": "Universitätsklinikum Hamburg-Eppendorf",
+          "city": "Hamburg",
+          "country": "DE",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-de-hamburg-universitatsklinikum-hamburg-eppendorf-martin-zeitz-centrum"
+        },
+        {
+          "name": "All India Institute of Medical Sciences – Department of Neurology",
+          "city": "Yeni Delhi",
+          "country": "IN",
+          "sourceUrl": "https://ichgcp.net/clinical-trials-registry/NCT06953583",
+          "note": "Kayıt geçmişinde geri çekilmiş merkez.",
+          "center": "merkez-in-yeni-delhi-all-india-institute-of-medical-sciences-aiims-ataksi-klinigi"
+        },
+        {
+          "name": "Children’s Health Ireland at Temple Street",
+          "city": "Dublin",
+          "country": "IE",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-ie-dublin-children-s-health-ireland-at-temple-street"
+        },
+        {
+          "name": "Ospedale Pediatrico Bambino Gesù IRCCS",
+          "city": "Roma",
+          "country": "IT",
+          "sourceUrl": "https://priyalifescience.com/clinical-trials-canada/trial/NCT06953583",
+          "center": "merkez-it-roma-ospedale-pediatrico-bambino-gesu-noromuskuler-hastaliklar"
+        },
+        {
+          "name": "IRCCS Eugenio Medea – Polo Scientifico Veneto",
+          "city": "Conegliano",
+          "country": "IT",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-it-conegliano-irccs-e-medea-conegliano"
+        },
+        {
+          "name": "Fondazione IRCCS Istituto Neurologico Carlo Besta",
+          "city": "Milano",
+          "country": "IT",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-it-milano-fondazione-irccs-istituto-neurologico-carlo-besta"
+        },
+        {
+          "name": "Radboud Universitair Medisch Centrum",
+          "city": "Nijmegen",
+          "country": "NL",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-nl-nijmegen-radboudumc-nadir-ve-kalitsal-hareket-bozukluklari-merkezi"
+        },
+        {
+          "name": "King Faisal Specialist Hospital & Research Centre",
+          "city": "Riyad",
+          "country": "SA",
+          "sourceUrl": "https://ichgcp.net/clinical-trials-registry/NCT06953583",
+          "note": "Kayıt geçmişinde geri çekilmiş merkez."
+        },
+        {
+          "name": "Hospital Sant Joan de Déu",
+          "city": "Esplugues de Llobregat",
+          "country": "ES",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-es-barselona-esplugues-de-llobregat-hospital-sant-joan-de-deu-barcelona-noroloji"
+        },
+        {
+          "name": "Hospital Universitario La Paz",
+          "city": "Madrid",
+          "country": "ES",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-es-madrid-hospital-universitario-la-paz-kalitsal-ataksiler-birimi"
+        },
+        {
+          "name": "İstanbul Üniversitesi İstanbul Tıp Fakültesi Hastanesi (Çapa)",
+          "city": "İstanbul",
+          "country": "TR",
+          "sourceUrl": "https://ichgcp.net/clinical-trials-registry/NCT06953583",
+          "note": "Kayıt geçmişinde geri çekilmiş merkez.",
+          "center": "merkez-tr-istanbul-istanbul-universitesi-istanbul-tip-fakultesi-hastanesi-capa-noroloji"
+        },
+        {
+          "name": "University College Hospital – PPDS",
+          "city": "Londra",
+          "country": "GB",
+          "sourceUrl": "https://priyalifescience.com/clinical-trials-canada/trial/NCT06953583",
+          "note": "Klinik araştırma kaydı University College Hospital adını, FARA ise Londra’daki çalışma ekibi için UCL Institute of Neurology adını kullanıyor.",
+          "center": "merkez-gb-londra-uclh-national-hospital-for-neurology-and-neurosurgery-ataxia-centre"
+        },
+        {
+          "name": "John Radcliffe Hospital",
+          "city": "Oxford",
+          "country": "GB",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-gb-oxford-oxford-ataxia-centre-john-radcliffe-hospital"
+        },
+        {
+          "name": "Sheffield Children’s Hospital",
+          "city": "Sheffield",
+          "country": "GB",
+          "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+          "center": "merkez-gb-sheffield-sheffield-children-s-ataxia-centre-ryegate-children-s-centre"
+        }
+      ],
+      "note": "BRAVE, 2–15 yaşta omaveloksolonu değerlendiren araştırma. Biogen çalışmanın katılımcı alımını kapattığını bildiriyor. Kayıt geçmişinde geri çekilmiş merkezler ayrıca etiketlendi."
+    }
+  ],
+  "unpublished": [
+    {
+      "program": "nbib223",
+      "text": "Neurocrine, FACET Faz 1 çalışmasını duyurdu. Voyager, 5 Kasım 2026 açıklamasında klinik başlangıcı önümüzdeki aylar için beklediğini bildirdi. 7 Kasım 2026 kontrolünde kamuya açık bir merkez adı doğrulanamadı.",
+      "source": {
+        "label": "Voyager Therapeutics – 5 Kasım 2026 program güncellemesi",
+        "url": "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
+      }
+    },
+    {
+      "program": "ppl001",
+      "text": "Papillon Therapeutics, PPL-001’in henüz insan çalışmalarında değerlendirilmediğini bildiriyor. 7 Kasım 2026 itibarıyla hasta çalışmasına ait bir merkez doğrulanamadı.",
+      "source": {
+        "label": "Papillon Therapeutics – PPL-001 programı",
+        "url": "https://papillon-tx.com/"
+      }
+    },
+    {
+      "program": "nomlabofusp",
+      "text": "FORWARD-FA planında Kanada, Birleşik Krallık ve Avustralya da yer alıyor. 7 Kasım 2026 kontrolünde bu ülkelerde kurum adı doğrulanamadı.",
+      "source": {
+        "label": "CTIS konum kaydının görünümü",
+        "url": "https://ctis.eu/trial/2025-521628-31-00#locations"
+      }
+    },
+    {
+      "program": "jive",
+      "text": "Health Canada, JIVE için sponsor iletişimini yayımlıyor. 7 Kasım 2026 kontrolünde Kanada’da adı açıklanmış bir merkez doğrulanamadı.",
+      "source": {
+        "label": "Health Canada – JIVE araştırma kaydı",
+        "url": "https://clinical-trials-search.canada.ca/en/clinical-trial/300031-friedreich-ataxia"
+      }
+    }
+  ]
+}

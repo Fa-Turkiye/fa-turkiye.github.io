@@ -16,11 +16,12 @@
   const groups = [...document.querySelectorAll(".center-country")].map(group => {
     const countryName = group.querySelector("h2").firstChild.textContent;
     const records = [...group.querySelectorAll(".center-record")].map(record => {
-      const fields = record.querySelectorAll(".center-name, .center-city, .center-person, .center-service-info");
+      const fields = record.querySelectorAll(".center-name, .center-city, .center-person, .center-service-info, .center-studies");
+      const searchable = [...fields].map(field => field.textContent + " " + (field.dataset.searchAliases || ""));
       return {
         element: record,
         types: record.dataset.types.split(" "),
-        words: searchWords([countryName, ...[...fields].map(field => field.textContent)].join(" "))
+        words: searchWords([countryName, ...searchable].join(" "))
       };
     });
     return { element: group, count: group.querySelector("[data-country-count]"), records };
@@ -47,6 +48,17 @@
     empty.hidden = total !== 0;
   }
 
+  function openLinkedCenter() {
+    const center = document.getElementById(location.hash.slice(1));
+    if (!center?.classList.contains("center-record")) return;
+    if (center.hidden) {
+      filters.reset();
+      filterCenters();
+    }
+    center.open = true;
+    center.scrollIntoView({ block: "start" });
+  }
+
   filters.addEventListener("submit", event => event.preventDefault());
   query.addEventListener("input", filterCenters);
   country.addEventListener("change", filterCenters);
@@ -54,4 +66,6 @@
   filterCenters();
   filters.hidden = false;
   result.hidden = false;
+  openLinkedCenter();
+  window.addEventListener("hashchange", openLinkedCenter);
 })();

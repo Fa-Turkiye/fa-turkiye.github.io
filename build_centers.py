@@ -8,6 +8,7 @@ from urllib.parse import urlsplit
 import json
 import re
 import unicodedata
+from study_centers import StudyCenters, center_id
 
 ROOT = Path(__file__).resolve().parent
 KINDS = {
@@ -54,7 +55,7 @@ def contact_link(contact):
     return f'{escape(label)} <a href="{escape(href)}">{escape(value)}</a>'
 
 
-def record_html(center):
+def record_html(center, study_centers):
     types = center["types"]
     tags = [kind for kind in types if kind != "genetics" or "fa-test" not in types]
     kinds = "".join(f'<span class="tag">{KINDS[kind]}</span>' for kind in tags)
@@ -80,8 +81,9 @@ def record_html(center):
     if service_items or note:
         service_list = f'<ul class="directory-items center-services">{"".join(service_items)}</ul>' if service_items else ""
         services = f'<div class="center-service-info"><h3>Birimler ve hizmetler</h3>{service_list}{note}</div>'
+    identifier = center_id(center)
     return f"""
-        <details class="center-record" data-types="{' '.join(types)}">
+        <details class="center-record" id="{identifier}" data-types="{' '.join(types)}">
           <summary>
             <span class="center-name">{escape(center["name"])}</span>
             <span class="center-city">{escape(center["city"])}</span>
@@ -90,6 +92,7 @@ def record_html(center):
           <div class="center-info">
             {address}
             {services}
+            {study_centers.card(identifier)}
             <h3>Hekimler ve araştırma ekibi</h3>
             {staff}
             <h3>İletişim</h3>
@@ -102,6 +105,7 @@ def record_html(center):
 
 def build():
     data = json.loads((ROOT / "centers.json").read_text(encoding="utf-8"))
+    study_centers = StudyCenters(ROOT, data)
     checked_on = date.fromisoformat(data["checked_on"])
     checked_label = f"{checked_on.day} {MONTHS[checked_on.month - 1]} {checked_on.year}"
     countries = data["countries"]
@@ -119,7 +123,7 @@ def build():
     sections = []
     for code in codes:
         records = sorted(groups[code], key=lambda center: (text_key(center["city"]), text_key(center["name"])))
-        cards = "".join(record_html(center) for center in records)
+        cards = "".join(record_html(center, study_centers) for center in records)
         sections.append(f"""
       <section class="center-country" data-country="{code}" id="ulke-{code.lower()}" aria-labelledby="baslik-{code.lower()}">
         <h2 id="baslik-{code.lower()}">{escape(countries[code])} <span data-country-count>{len(records)} merkez</span></h2>
@@ -162,12 +166,14 @@ def build():
         <strong>{len(codes)} ülke, {count} merkez</strong>
         <span>Kaynak kontrolü <time datetime="{checked_on}">{checked_label}</time></span>
         {turkey}
+        <a href="ilaclar.html">Tedavi ve çalışma dosyaları</a>
       </div>
     </section>
     <form class="directory-filters" role="search" aria-label="Merkezleri filtrele" hidden>
       <div class="directory-field">
-        <label for="center-query">Merkez, şehir, hekim veya hizmet</label>
-        <input id="center-query" type="search" autocomplete="off" placeholder="Örn. FXN, İzmir, Anheim">
+        <label for="center-query">Merkezlerde ara</label>
+        <input id="center-query" type="search" autocomplete="off" placeholder="Örn. İzmir, FXN, LX2006" aria-describedby="center-query-help">
+        <small id="center-query-help">Şehir, hekim, hizmet veya çalışma adı</small>
       </div>
       <div class="directory-field">
         <label for="center-country">Ülke</label>
@@ -185,6 +191,7 @@ def build():
       <h2 id="directory-sources">Rehberin kapsamı</h2>
       <p>Rehber, resmî kurum sayfalarında, ulusal nadir hastalık ağlarında veya FA çalışma kayıtlarında bağlantısı doğrulanabilen merkezleri kapsar. Hekim ve ekip bilgileri ilgili kurumun veya çalışmanın yayımladığı kapsamla sınırlıdır. Güncel görev, randevu koşulları ve ziyaret adresi için doğrudan kuruma başvurun.</p>
       <p>Tanı ve genetik birimlerinde, kaynağında yer alan FA testini veya danışmanlık hizmetini ayrı ayrı belirttik. Araştırma iletişimini çalışma hakkında bilgi almak için, randevu hatlarını klinik değerlendirme için kullanın. Ulusal listeler ve çalışma kayıtları ek merkezlere ulaşmanıza yardımcı olabilir.</p>
+      <p>Tedavi çalışması bağlantıları kurum adı doğrulanabilen kayıtları kapsar. Çalışmanın güncel katılım durumunu resmî kayıttan ve çalışma ekibinden öğrenebilirsiniz.</p>
       <ul class="directory-items">
         <li><a href="https://www.curefa.org/research/initiatives/fa-global-clinical-consortium/">FARA · Küresel FA Klinik Konsorsiyumu</a></li>
         <li><a href="https://www.orpha.net/en/expert-centres/centres/95?age=all&amp;consulting=medical&amp;diseaseName=Friedreich+ataxia&amp;official=0">Orphanet · Friedreich ataksisi uzman merkezleri</a></li>

@@ -33,6 +33,7 @@
 .directory-filters {
   display: grid;
   grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 16px;
   padding: clamp(16px, 3vw, 24px);
   background: var(--soft);
@@ -48,6 +49,10 @@
 
 .directory-field label {
   font-weight: 650;
+}
+
+.directory-field small {
+  color: var(--muted);
 }
 
 .directory-filters input,
@@ -95,6 +100,10 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 14px;
+}
+
+.center-record:target {
+  border-color: var(--blue);
 }
 
 .center-record summary {

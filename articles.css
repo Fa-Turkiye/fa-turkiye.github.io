@@ -18,3 +18,38 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 .dossier-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.dossier-card{display:flex;flex-direction:column;padding:26px;min-width:0;text-decoration:none;border:1px solid var(--line);border-radius:22px;background:rgba(21,27,47,.72)}
 .dossier-card h2{font-size:1.35rem;line-height:1.4;margin:18px 0 12px}.dossier-card h2 a{text-decoration:none;color:inherit}.dossier-card p{line-height:1.8;color:var(--muted);margin:0 0 22px}.dossier-card>b,.dossier-card>.textlink{margin-top:auto}
 @media(max-width:650px){.dossier-grid{grid-template-columns:1fr}.editorial-main{padding-top:16px}.article-section p{font-size:1.02rem;line-height:1.9}.article-toc{padding:20px}.dossier-card{padding:22px}.article-heading h1{font-size:2rem}.article-section{scroll-margin-top:120px}}
+
+.study-location-group {
+  border-top: 1px solid var(--line);
+  padding: 14px 0 4px;
+}
+
+.study-location-group h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  letter-spacing: 0;
+}
+
+.study-location-list summary {
+  display: list-item;
+  align-content: center;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.study-location-list ul {
+  margin: 0 0 12px;
+  padding-left: 1.35em;
+}
+
+.study-location-list small {
+  display: block;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.study-location-group .study-source-links {
+  font-size: .9rem;
+  overflow-wrap: anywhere;
+}

@@ -25,7 +25,8 @@
     "PL": "Polonya",
     "SE": "İsveç",
     "TR": "Türkiye",
-    "US": "Amerika Birleşik Devletleri"
+    "US": "Amerika Birleşik Devletleri",
+    "DK": "Danimarka"
   },
   "centers": [
     {
@@ -1010,6 +1011,44 @@
       ]
     },
     {
+      "country": "AU",
+      "city": "Randwick",
+      "name": "Sydney Children’s Hospital – Randwick",
+      "address": "High Street, Randwick, NSW 2031",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "url",
+          "label": "Hastane iletişimi ve ulaşım",
+          "value": "https://www.schn.health.nsw.gov.au/visiting-and-staying/our-hospitals/finding-us/directions-and-transport-to-randwick"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        },
+        {
+          "label": "NSW Sağlık · Randwick hastane adresi",
+          "url": "https://www.schn.health.nsw.gov.au/visiting-and-staying/our-hospitals/finding-us/directions-and-transport-to-randwick"
+        },
+        {
+          "label": "ANZCTR · BRAVE Avustralya merkezleri",
+          "url": "https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=23862&isClinicalTrial=True"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "Randwick çocuk hastanesi, çocuklarda omaveloksolonun araştırıldığı BRAVE kaydında yer alıyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        }
+      ]
+    },
+    {
       "name": "Royal North Shore Hospital – Neurogenetics Clinic",
       "country": "AU",
       "city": "Sydney",
@@ -1512,6 +1551,45 @@
     },
     {
       "country": "CA",
+      "city": "Montreal",
+      "name": "CHU Sainte-Justine – Montréal",
+      "address": "3175 chemin de la Côte-Sainte-Catherine, Montréal, QC",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Hastane santrali",
+          "value": "+1 514 345 4931"
+        },
+        {
+          "kind": "url",
+          "label": "Hastane başvuru sayfası",
+          "value": "https://mon.chusj.org/patient/demande-de-rendez-vous"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov · NCT04577352",
+          "url": "https://clinicaltrials.gov/study/NCT04577352"
+        },
+        {
+          "label": "CHU Sainte-Justine · Kurum adresi ve telefonu",
+          "url": "https://chusj.org/getmedia/75aea988-780e-4394-813e-12acff9bd999/F-1528-Preparation-d-un-transfert-d-embryon_web.pdf.aspx?ext=.pdf"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "Tamamlanan vatiquinone MOVE-FA çalışmasının kayıtlı hastanelerinden biri.",
+          "url": "https://clinicaltrials.gov/study/NCT04577352"
+        }
+      ]
+    },
+    {
+      "country": "CA",
       "city": "Montréal",
       "name": "CHUM – Unité des troubles du mouvement André-Barbeau",
       "address": "Pavillon C, 13e étage, 1000 rue Saint-Denis, Montréal",
@@ -1573,6 +1651,51 @@
           "url": "https://www.curefa.org/clinical-studies/friedreich-ataxia-global-clinical-consortium-unified-natural-history-study-unifai/"
         }
       ]
+    },
+    {
+      "country": "CA",
+      "city": "Montréal",
+      "name": "McGill University – BRAVE çalışma merkezi",
+      "address": "Montréal, Québec H3H 2R9 (Health Canada kayıt adresi)",
+      "types": [
+        "research"
+      ],
+      "people": [
+        {
+          "name": "Maryam Oskoui",
+          "role": "Health Canada BRAVE kaydındaki sorumlu araştırmacı"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Health Canada kaydındaki çalışma hattı",
+          "value": "+1 514 412 4466"
+        },
+        {
+          "kind": "url",
+          "label": "Kanada çalışma kaydı",
+          "value": "https://clinical-trials-search.canada.ca/fr/node/21627"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        },
+        {
+          "label": "Health Canada · BRAVE merkez ve araştırmacı kaydı",
+          "url": "https://clinical-trials-search.canada.ca/fr/node/21627"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "Health Canada, BRAVE için McGill University adını ve araştırma iletişimini yayımlıyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        }
+      ],
+      "note": "Ziyaret adresini çalışma ekibinden teyit edin."
     },
     {
       "country": "CA",
@@ -2254,6 +2377,45 @@
       ]
     },
     {
+      "country": "DE",
+      "city": "Gießen",
+      "name": "Universitätsklinikum Gießen und Marburg – Gießen",
+      "address": "Feulgenstraße 10–12, 35392 Gießen (çocuk nörolojisi adresi)",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "Çocuk nörolojisi sekreterliği",
+          "value": "kinderneurologie@paediat.med.uni-giessen.de"
+        },
+        {
+          "kind": "url",
+          "label": "Kurum iletişim sayfası",
+          "value": "https://www.ukgm.de/ugm_2/deu/ugi_kin/15489.html"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        },
+        {
+          "label": "UKGM · Gießen çocuk nörolojisi iletişimi",
+          "url": "https://www.ukgm.de/ugm_2/deu/ugi_kin/15489.html"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "BRAVE merkez listesinde üniversite hastanesinin Gießen yerleşkesi yer alıyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        }
+      ]
+    },
+    {
       "name": "Universitätsmedizin Göttingen, Zentrum für seltene neurologische und psychiatrische Erkrankungen",
       "country": "DE",
       "city": "Göttingen",
@@ -2771,6 +2933,49 @@
           "name": "Nörogenetik ve genetik ataksiler",
           "description": "Üniversite hastanesinin genetik ataksileri kapsayan nörogenetik polikliniği.",
           "url": "https://www.uniklinik-ulm.de/neurologie/sprechstunden-ambulanzen/neurogenetik-sprechstunde.html"
+        }
+      ]
+    },
+    {
+      "country": "DK",
+      "city": "Kopenhag",
+      "name": "Rigshospitalet – Juliane Marie Centret",
+      "address": "Blegdamsvej 9, 2100 København Ø",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "Juliane Marie Centret genel iletişimi",
+          "value": "jmc.rigshospitalet@regionh.dk"
+        },
+        {
+          "kind": "url",
+          "label": "Kurum iletişim sayfası",
+          "value": "https://www.rigshospitalet.dk/afdelinger-og-klinikker/julianemarie/kontakt/sider/default.aspx"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        },
+        {
+          "label": "Rigshospitalet · Juliane Marie Centret iletişimi",
+          "url": "https://www.rigshospitalet.dk/afdelinger-og-klinikker/julianemarie/kontakt/sider/default.aspx"
+        },
+        {
+          "label": "Rigshospitalet · Hastane adresi",
+          "url": "https://www.rigshospitalet.dk/praktisk-information/paaroerende/sider/kontakt-til-indlagte.aspx"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "Danimarka’daki kurum, BRAVE çocuk araştırmasının merkez kaydında yer alıyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
         }
       ]
     },
@@ -5022,6 +5227,40 @@
           "name": "UNIFAI araştırma kaydı",
           "description": "Friedreich ataksisinin seyrini izleyen uluslararası araştırmanın merkez listesinde yer alıyor.",
           "url": "https://www.curefa.org/clinical-studies/friedreich-ataxia-global-clinical-consortium-unified-natural-history-study-unifai/"
+        }
+      ]
+    },
+    {
+      "country": "IE",
+      "city": "Dublin",
+      "name": "Children’s Health Ireland at Temple Street",
+      "address": "Temple Street, Dublin 1, D01 YC67",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "url",
+          "label": "Hastane iletişimi ve ziyaret bilgileri",
+          "value": "https://www.childrenshealthireland.ie/your-hospital-visit/our-locations/temple/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
+        },
+        {
+          "label": "Children’s Health Ireland · Temple Street adresi ve iletişim",
+          "url": "https://www.childrenshealthireland.ie/your-hospital-visit/our-locations/temple/"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "BRAVE çocuk çalışması, Dublin’de CHI at Temple Street yerleşkesini listeliyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06953583"
         }
       ]
     },
@@ -10243,6 +10482,49 @@
       ]
     },
     {
+      "country": "NZ",
+      "city": "Auckland",
+      "name": "University of Auckland – CBR Neurogenetics Research Clinic",
+      "address": "85 Park Road, Grafton, Auckland (üniversite yerleşkesi)",
+      "types": [
+        "research"
+      ],
+      "people": [
+        {
+          "name": "Richard Roxburgh",
+          "role": "Nörogenetik Araştırma Kliniği sorumlusu"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "Nörogenetik araştırma kliniği",
+          "value": "cbr.nrc@auckland.ac.nz"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov · NCT04577352",
+          "url": "https://clinicaltrials.gov/study/NCT04577352"
+        },
+        {
+          "label": "Auckland Üniversitesi · Nörogenetik Araştırma Kliniği",
+          "url": "https://www.auckland.ac.nz/en/fmhs/research/our-research-centres/fmhs-university-research-centres/cbr/clinics/neurogenetics-research-clinic.html"
+        },
+        {
+          "label": "Auckland Üniversitesi · Centre for Brain Research adresi",
+          "url": "https://www.auckland.ac.nz/en/fmhs/research/our-research-centres/fmhs-university-research-centres/cbr/contact.html"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "Klinik, tamamlanan MOVE-FA çalışmasının merkez kaydında yer alıyor.",
+          "url": "https://clinicaltrials.gov/study/NCT04577352"
+        }
+      ]
+    },
+    {
       "name": "Uniwersyteckie Centrum Kliniczne, Klinika Neurologii Dorosłych",
       "country": "PL",
       "city": "Gdańsk",
@@ -10810,6 +11092,49 @@
           "name": "FA uzaktan izlem araştırması",
           "description": "FA çalışmalarında kullanılabilecek uzaktan hareket ölçüm yöntemleri geliştirir. Araştırma e-postası çalışma ekibine aittir.",
           "url": "https://www.curefa.org/clinical-studies/remote-monitoring-study-for-friedreichs-ataxia/"
+        }
+      ]
+    },
+    {
+      "country": "US",
+      "city": "Chevy Chase",
+      "name": "Uncommon Cures – Chevy Chase",
+      "address": "5550 Friendship Boulevard, Suite 580, Chevy Chase, MD 20815 (kurum adresi)",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "Kurum iletişimi",
+          "value": "contact@uncommoncures.com"
+        },
+        {
+          "kind": "url",
+          "label": "Kurum iletişim sayfası",
+          "value": "https://uncommoncures.com/contact-us/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06447025"
+        },
+        {
+          "label": "Uncommon Cures · Kurum adresi",
+          "url": "https://uncommoncures.com/imprint/"
+        },
+        {
+          "label": "FARA · JIVE merkez kaydı",
+          "url": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "Araştırma kuruluşu, nomlabofusp JIVE çalışmasının merkez listesinde yer alıyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06447025"
         }
       ]
     },
@@ -11831,6 +12156,88 @@
           "name": "SUNRISE-FA 2",
           "description": "LX2006 adlı araştırma amaçlı gen tedavisinin FA kardiyomiyopatisinde kalp işlevine ve hastalığın seyrine etkisini değerlendirir.",
           "url": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/"
+        }
+      ]
+    },
+    {
+      "country": "US",
+      "city": "Salt Lake City",
+      "name": "ICON Clinical Research – Salt Lake City",
+      "address": "Salt Lake City, Utah",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "url",
+          "label": "JIVE merkez ve çalışma iletişimi",
+          "value": "https://clinicaltrials.ucsf.edu/trial/NCT06447025"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06447025"
+        },
+        {
+          "label": "UCSF · JIVE konum listesinde ICON",
+          "url": "https://clinicaltrials.ucsf.edu/trial/NCT06447025"
+        },
+        {
+          "label": "ICON · Salt Lake City araştırma birimi",
+          "url": "https://careers.iconplc.com/job/clinical-trial-recruitment-representative-in-us-salt-lake-city-pra-jid-48173"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "UCSF’nin yayımladığı JIVE kaydı ICON’u Salt Lake City’deki çalışma yeri olarak listeliyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06447025"
+        }
+      ],
+      "note": "Ziyaret adresini çalışma ekibinden teyit edin."
+    },
+    {
+      "country": "US",
+      "city": "San Francisco",
+      "name": "University of California, San Francisco – UCSF Medical Center",
+      "address": "San Francisco, CA 94143",
+      "types": [
+        "research"
+      ],
+      "people": [],
+      "contacts": [
+        {
+          "kind": "url",
+          "label": "UCSF JIVE araştırma iletişimi",
+          "value": "https://clinicaltrials.ucsf.edu/trial/NCT06447025"
+        },
+        {
+          "kind": "email",
+          "label": "UCSF ataksi araştırmaları",
+          "value": "HD-AtaxiaTrials@ucsf.edu"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT06447025"
+        },
+        {
+          "label": "UCSF · JIVE çalışma kaydı ve konum",
+          "url": "https://clinicaltrials.ucsf.edu/trial/NCT06447025"
+        },
+        {
+          "label": "UCSF Health · Ataksi araştırmaları iletişimi",
+          "url": "https://www.ucsfhealth.org/care/services/huntingtons-disease-and-ataxia"
+        }
+      ],
+      "services": [
+        {
+          "name": "FA çalışma kaydı",
+          "description": "UCSF’nin yayımladığı klinik araştırma sayfası nomlabofusp JIVE kaydını içeriyor.",
+          "url": "https://clinicaltrials.gov/study/NCT06447025"
         }
       ]
     },
