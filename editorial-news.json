@@ -1,5 +1,57 @@
 [
   {
+    "id": "sgt212-kasim",
+    "drug": "sgt212",
+    "iso": "2026-11-04",
+    "date": "4 Kasım 2026",
+    "title": "FALCON’da beş katılımcıya SGT-212 uygulandı",
+    "summary": "Solid Biosciences, 3 Kasım itibarıyla tedaviyle ilişkili ciddi advers olay gözlenmediğini bildirdi. Şirket ilk klinik verileri 2027’nin ilk çeyreğinde açıklamayı bekliyor.",
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    },
+    "primary_source": [
+      "Solid Biosciences",
+      "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+    ],
+    "sections": [
+      [
+        "FALCON güncellemesi",
+        "Faz 1b FALCON araştırmasının temel amacı güvenlilik ve tolerabiliteyi değerlendirmek. Şirket, ilk verilerin açıklanma zamanının katılımcı alımına bağlı olduğunu belirtti."
+      ],
+      [
+        "Veri nasıl okunmalı?",
+        "Bu açıklama beş kişinin erken güvenlilik takibini kapsıyor. Klinik etkinliğin değerlendirilmesi için çalışma sonuçlarının yayımlanması bekleniyor."
+      ]
+    ]
+  },
+  {
+    "id": "dt216p2-kasim",
+    "drug": "dt216p2",
+    "iso": "2026-11-04",
+    "date": "4 Kasım 2026",
+    "title": "RESTORE-FA’nın 12 haftalık verileri 2027 başında bekleniyor",
+    "summary": "Design Therapeutics, DT-216P2 için 12 haftalık RESTORE-FA verilerini 2027’nin ilk çeyreğinde paylaşmayı öngörüyor.",
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    },
+    "primary_source": [
+      "Design Therapeutics",
+      "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-third-quarter-2026-financial"
+    ],
+    "sections": [
+      [
+        "Şirket hangi takvimi açıkladı?",
+        "Design Therapeutics, ruhsatlandırmaya yönelik geliştirme planı hakkında 2026’nın son çeyreğinde güncelleme vermeyi ve 12 haftalık RESTORE-FA verilerini 2027’nin ilk çeyreğinde açıklamayı bekliyor."
+      ],
+      [
+        "RESTORE-FA hangi soruları inceliyor?",
+        "Çalışma, DT-216P2’nin artan çoklu dozlarında güvenlilik, tolerabilite ve ilacın vücuttaki seyrini değerlendiriyor. Sonuçlar açıklandığında doz, takip süresi ve ölçülen klinik göstergeler birlikte incelenebilir."
+      ]
+    ]
+  },
+  {
     "id": "vatiquinone-prove",
     "date": "29 Ekim 2026",
     "iso": "2026-10-29",
@@ -23,6 +75,10 @@
         "Türkiye’den katılım açısından ne yapılabilir?",
         "FARA Brüksel, Paris ve Barselona merkezlerini listeliyor. Türkiye’den ikamet kabulü ayrıca sorulmalıdır; medinfo@ptcbio.com resmî iletişimidir. Genetik koşullar ve mevcut omaveloxolone kullanımı gibi ölçütler uygunluğu etkileyebilir. Katılmak için kendi başına tedavi kesmek yerine, çalışma ekibiyle ve izleyen hekimle birlikte değerlendirme yapılmalıdır. Ayrıntılı ilaç dosyası geçmiş, mekanizma ve belirsizlikleri birlikte anlatır."
       ]
+    ],
+    "primary_source": [
+      "PTC Therapeutics",
+      "https://clinicaltrials.ptcbio.com/trials/PTC743-FA-304"
     ]
   },
   {
@@ -49,6 +105,10 @@
         "Türkiye’den okuyucu neyi takip etmeli?",
         "Bir sonraki önemli bilgi, açıklanacak klinik verilerin kişi sayısı, takip süresi ve hangi ölçümleri içerdiğidir. FALCON ABD’de yürütülüyor; Türkiye’den veya Avrupa’dan kabul ayrıca teyit edilmelidir. Mekanizma, geliştirme geçmişi ve katılım konuları ayrıntılı SGT-212 dosyasında bir araya getirildi."
       ]
+    ],
+    "primary_source": [
+      "Solid Biosciences",
+      "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-announces-european-commission-orphan"
     ]
   },
   {
@@ -75,6 +135,10 @@
         "Bundan sonra ne bekleniyor?",
         "Lexeo’nun SUNRISE-FA 2 programı kalp odaklı ruhsatlandırmaya yönelik veri üretmektedir. Daha uzun izlem, ek örneklem ve önceden tanımlanmış analizler bu erken bulguları anlamlandıracaktır. Kalp biyobelirteçleri, nörolojik ölçekler ve günlük yaşam sonuçları aynı sonuç türü değildir. Ayrıntılı dosya bu ayrımı, güvenlilik sorularını ve şirketin takvim beklentilerini birlikte açıklar."
       ]
+    ],
+    "primary_source": [
+      "MDS 2026 araştırma özeti",
+      "https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/"
     ]
   },
   {

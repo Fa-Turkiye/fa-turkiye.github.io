@@ -61,18 +61,68 @@ for key, item in profiles.items():
     body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), **review)
     (ROOT / filename).write_text(page(item['title'],body,filename,item['sections'][0][1]))
 
-cards = ''.join(f'''<a class="card dossier-card" href="ilac-{k}.html"><span class="badge">{esc(v['status'])}</span><h2>{esc(names[k])}</h2><p>{esc(v['sections'][0][1].split('. ')[0])}.</p><b>Kapsamlı dosyayı oku →</b></a>''' for k,v in profiles.items())
-intro = '<div class="editorial-intro"><span class="badge">İLAÇ KÜTÜPHANESİ</span><h1>Bir özetten fazlası: FA tedavi dosyaları</h1><p>Hedef, mekanizma, geliştirme geçmişi, açıklanan sonuçlar, güvenlilik ve Türkiye’den katılım bilgileri. Her dosyada resmî kaynaklar ve kontrol tarihi bulunur.</p><p>Çalışma dosyalarındaki <strong>Resmî kaynaklar ve iletişim</strong> bölümünden firma duyurularına, çalışma kayıtlarına ve yayımlanan merkez bilgilerine ulaşabilirsiniz. <a href="merkezler.html">FA Merkezleri rehberi</a></p><p class="article-meta">9 tedavi/program dosyası ve aynı tedavilere ait 2 ayrı çalışma dosyası · 1 Kasım 2026</p></div>'
-body = intro + '<div class="dossier-grid">'+cards+'</div><p><a href="https://www.curefa.org/drug-development/">FARA’nın tam geliştirme hattı ve geçmiş programları ↗</a></p>'
+treatment_groups = {
+    'gene': 'Gen temelli tedaviler',
+    'frataxin': 'Frataxin düzeyini hedefleyen tedaviler',
+    'other': 'Diğer yaklaşımlar',
+}
+card_details = {
+    'skyclarys': ('other', 'Ruhsatlı tedavi'),
+    'vatiquinone': ('other', 'Faz III · PROVE-FA'),
+    'nomlabofusp': ('frataxin', 'Faz III · FORWARD-FA'),
+    'dt216p2': ('frataxin', 'Faz I/II · RESTORE-FA'),
+    'lx2006': ('gene', 'Faz II · SUNRISE-FA 2'),
+    'sgt212': ('gene', 'Faz 1b · FALCON'),
+    'gv101': ('other', 'Faz IIa'),
+    'ppl001': ('gene', 'Klinik öncesi'),
+    'nbib223': ('gene', 'Faz I · FACET duyurusu'),
+    'brave': ('other', 'Faz III · BRAVE'),
+    'jive': ('frataxin', 'Faz II · Açık etiketli takip'),
+}
+
+def treatment_card(key, item):
+    group, phase = card_details[key]
+    review = item.get('source_review', {})
+    checked_on = review.get('checked_on', '2026-11-01')
+    checked_label = review.get('checked_label', '1 Kasım 2026')
+    research = 'false' if key == 'skyclarys' else 'true'
+    return f'''<article class="card dossier-card treatment-card" data-treatment-group="{group}" data-research="{research}">
+<span class="badge">{esc(treatment_groups[group])}</span>
+<h2><a href="ilac-{key}.html">{esc(names[key])}</a></h2>
+<dl><div><dt>Aşama</dt><dd>{esc(phase)}</dd></div><div><dt>Geliştirici</dt><dd>{esc(sponsors[key])}</dd></div>
+<div><dt>Kaynak kontrolü</dt><dd><time datetime="{esc(checked_on)}">{esc(checked_label)}</time></dd></div></dl>
+<p>{esc(item['sections'][0][1].split('. ')[0])}.</p>
+<a class="textlink" href="ilac-{key}.html" aria-label="{esc(names[key])} dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article>'''
+
+cards = ''.join(treatment_card(key, item) for key, item in profiles.items())
+intro = '''<div class="editorial-intro treatment-intro"><span class="badge">FA Türkiye</span><h1>FA tedavi dosyaları</h1><p>Ruhsatlı tedaviyi ve araştırılan adayları inceleyin. Her dosyada tedavinin amacı, bilinen bulgular, resmî kaynaklar ve yayımlanan çalışma iletişimi bulunur.</p></div>'''
+group_options = ''.join(f'<option value="{key}">{esc(label)}</option>' for key, label in treatment_groups.items())
+filters = f'''<section class="treatment-browse" id="arastirilan" aria-labelledby="treatment-browse-title">
+<h2 id="treatment-browse-title">Tedavileri incele</h2>
+<form class="treatment-filters" id="treatment-filters" hidden>
+<label for="treatment-group">Araştırma yaklaşımı<select id="treatment-group"><option value="">Tüm yaklaşımlar</option>{group_options}</select></label>
+<label for="treatment-scope">Tedavi durumu<select id="treatment-scope"><option value="">Tüm dosyalar</option><option value="arastirma">Araştırılan tedaviler</option><option value="ruhsatli">Ruhsatlı tedavi</option></select></label>
+</form><p class="article-meta" id="treatment-result" role="status" aria-atomic="true" hidden></p>
+<div class="dossier-grid">{cards}</div>
+<p><a href="https://www.curefa.org/drug-development/">FARA’nın geliştirme hattı ve geçmiş programları ↗</a></p></section>'''
 aliases = json.dumps({k:f'ilac-{k}.html' for k in profiles})
 redirect = '<script>const dossierRoutes='+aliases+';const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script>'
-(ROOT / 'ilaclar.html').write_text(page('İlaç kütüphanesi',body,'ilaclar.html','FA için kaynaklı ve kapsamlı 11 ilaç ve çalışma profili.').replace('</body>',redirect+'</body>'))
+library = page('İlaç kütüphanesi',intro + filters,'ilaclar.html','FA için kaynaklı ilaç ve çalışma profilleri.')
+library = library.replace('</head>', '<link rel="stylesheet" href="portal.css"><script src="tedavi-filtreleri.js" defer></script></head>')
+(ROOT / 'ilaclar.html').write_text(library.replace('</body>',redirect+'</body>'))
 
 for n in news:
-    sources = profiles[n['drug']]['sources']
+    primary = n.get('primary_source') if n.get('source_review') else None
+    sources = ([primary] if primary else []) + [source for source in profiles[n['drug']]['sources'] if not primary or source[1] != primary[1]]
     extra = f'<aside class="article-related"><h2>Programın tamamını inceleyin</h2><p><a href="ilac-{n["drug"]}.html">{esc(names[n["drug"]])}: mekanizma, kanıt, güvenlilik ve katılım →</a></p></aside>'
-    sections = [('Haber tarihi ve kapsamı', f'Gelişmenin tarihi: {n["date"]}. Bu haber 1 Kasım 2026 kaynak kontrolüyle hazırlanmıştır; sonraki açıklamalar için ilgili ilaç dosyasına bakın.')] + n['sections']
-    body = article_body(n['title'],n['date'],sections,sources,'Son haberler','haberler.html',extra=extra,lead=n['summary'])
+    review = n.get('source_review', {})
+    reviewed = review.get('checked_label', '1 Kasım 2026')
+    if review:
+        scope_text = f'Gelişmenin tarihi {n["date"]}. Kaynaklar {reviewed} tarihinde kontrol edildi. Sonraki açıklamalar için ilaç dosyasına bakabilirsiniz.'
+    else:
+        scope_text = f'Gelişmenin tarihi: {n["date"]}. Bu haber 1 Kasım 2026 kaynak kontrolüyle hazırlanmıştır; sonraki açıklamalar için ilgili ilaç dosyasına bakın.'
+    sections = [('Haber tarihi ve kapsamı', scope_text)] + n['sections']
+    body = article_body(n['title'],n['date'],sections,sources,'Son haberler','haberler.html',extra=extra,lead=n['summary'], **review)
     fn = f'haber-{n["id"]}.html'
     (ROOT / fn).write_text(page(n['title'],body,fn,n['summary'],'haberler.html'))
 
@@ -81,12 +131,30 @@ g = profiles['gv101']
 gvbody = article_body('GV101 için klinik araştırma izni: ne değişti, ne henüz bilinmiyor?','11 Ağustos 2026 · Geliştirme duyurusu',g['sections'],g['sources'],'Son haberler','haberler.html',extra='<p><a href="ilac-gv101.html">GV101 ana ilaç dosyası →</a></p>')
 (ROOT / 'haber-gv101.html').write_text(page('GV101 için klinik araştırma izni',gvbody,'haber-gv101.html','GV101 IND izni, FA araştırmasının amacı ve kanıt sınırları.','haberler.html'))
 
-newscards = ''.join(f'<article class="card dossier-card"><time class="badge" datetime="{n["iso"]}">{n["date"]}</time><h2><a href="haber-{n["id"]}.html">{esc(n["title"])}</a></h2><p>{esc(n["summary"])}</p><a class="textlink" href="haber-{n["id"]}.html">Haberin tamamını oku →</a></article>' for n in sorted(news,key=lambda n:n['iso'],reverse=True))
+ordered_news = sorted(news, key=lambda item: item['iso'], reverse=True)
+newscards = ''.join(f'<article class="card dossier-card"><time class="badge" datetime="{n["iso"]}">{n["date"]}</time><h2><a href="haber-{n["id"]}.html">{esc(n["title"])}</a></h2><p>{esc(n["summary"])}</p><a class="textlink" href="haber-{n["id"]}.html">Haberin tamamını oku →</a></article>' for n in ordered_news)
+def home_news_card(item):
+    label, url = item.get('primary_source') or profiles[item['drug']]['sources'][0]
+    key = item['drug']
+    return f'''<article class="news-card">
+      <time datetime="{esc(item['iso'])}">{esc(item['date'])}</time>
+      <h3><a href="haber-{item['id']}.html">{esc(item['title'])}</a></h3>
+      <p>{esc(item['summary'])}</p>
+      <div class="dispatch-links"><a href="ilac-{key}.html">{esc(names[key])} dosyası</a><a href="{esc(url)}">{esc(label)} ↗</a></div>
+    </article>'''
+
+home_path = ROOT / 'index.html'
+home = home_path.read_text(encoding='utf-8')
+home_news = '\n    '.join(home_news_card(item) for item in ordered_news[:3])
+home = re.sub(r'<!-- home-news:start -->.*?<!-- home-news:end -->',
+              lambda _: f'<!-- home-news:start -->\n    {home_news}\n    <!-- home-news:end -->', home, count=1, flags=re.S)
+home_path.write_text(home, encoding='utf-8')
+
 # Put August GV101 news in chronological order, rather than at the end.
 gvcard = '<article class="card dossier-card"><time class="badge" datetime="2026-08-11">11 Ağustos 2026</time><h2><a href="haber-gv101.html">GV101 için FA klinik araştırma izni</a></h2><p>ROCK2 hedefi, planlanan araştırma ve henüz doğrulanmayan katılım bilgileri.</p><a class="textlink" href="haber-gv101.html">Haberin tamamını oku →</a></article>'
 marker = '<article class="card dossier-card"><time class="badge" datetime="2026-08-03">'
 newscards = newscards.replace(marker,gvcard+marker,1)
-body = '<div class="editorial-intro"><span class="badge">SON HABERLER</span><h1>Gelişmenin arkasındaki bilim</h1><p>Ne açıklandı, hangi veriye dayanıyor, hastalar için ne ifade ediyor? Kısa kartlardan kaynaklı tam haberlere geçin.</p><p class="article-meta">Haber tarihleri olayın tarihidir. Son editoryal kontrol: 1 Kasım 2026.</p></div><div class="dossier-grid">'+newscards+'</div>'
+body = '<div class="editorial-intro"><span class="badge">SON HABERLER</span><h1>Gelişmenin arkasındaki bilim</h1><p>Ne açıklandı, hangi veriye dayanıyor, hastalar için ne ifade ediyor? Kısa kartlardan kaynaklı tam haberlere geçin.</p><p class="article-meta">Haber tarihleri gelişmenin tarihini gösterir. Her yazıda kaynak kontrol tarihini bulabilirsiniz.</p></div><div class="dossier-grid">'+newscards+'</div>'
 (ROOT / 'haberler.html').write_text(page('Son haberler',body,'haberler.html','FA araştırmalarını ayrıntılı ve kaynaklı Türkçe haberlerle takip edin.','haberler.html'))
 
 # Existing dedicated GV101 address remains useful and consistent.
