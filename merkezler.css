@@ -224,10 +224,11 @@
 .directory-page .directory-intro {
   margin-top: clamp(20px, 4vw, 44px);
   padding: clamp(24px, 5vw, 56px);
-  border: 1px solid #384669;
+  border: 1px solid #b6d8e9;
+  border-top: 5px solid var(--electric);
   border-radius: 22px;
-  background: radial-gradient(ellipse at right top, #39346c, transparent 65%), #141e38;
-  color: #f4f7ff;
+  background: linear-gradient(118deg, #cde1ff, #bff4e9);
+  color: var(--ink);
 }
 
 .directory-intro h1,
@@ -237,15 +238,15 @@
 
 .directory-page .directory-intro p,
 .directory-intro .directory-facts {
-  color: #d1d9ef;
+  color: var(--muted);
 }
 
 .directory-intro a {
-  color: #a0f8e6;
+  color: var(--blue);
 }
 
 .directory-intro a:focus-visible {
-  outline-color: #a0f8e6;
+  outline-color: var(--page-accent);
 }
 
 .directory-filters {
@@ -274,4 +275,26 @@
 
 @media (max-width: 530px) {
   .directory-filters { grid-template-columns: 1fr; }
+}
+
+.center-record {
+  border-top: 3px solid var(--turquoise);
+  background: linear-gradient(145deg, #def8f2, #f7fffc 74%);
+}
+
+.center-record:nth-child(even) {
+  border-top-color: var(--electric);
+  background: linear-gradient(145deg, #e1edff, #f7faff 74%);
+}
+
+.center-record[open] {
+  border-color: var(--page-accent);
+}
+
+.directory-filters {
+  background: linear-gradient(125deg, #e3eeff, #e2f8f4);
+}
+
+.contrast :is(.center-record, .directory-filters) {
+  background: #111;
 }

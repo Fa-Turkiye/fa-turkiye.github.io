@@ -1,33 +1,23 @@
-.modern-home {
-  color-scheme: dark;
-  --paper: #101831;
-  --ink: #f4f7ff;
-  --muted: #c4cee7;
-  --blue: #9af6e4;
-  --blue2: #202b4e;
-  --soft: #1a2545;
-  --line: #485473;
-  --card: #18233e;
-  background: radial-gradient(ellipse at 90% 14%, #282655 0, transparent 38rem), var(--paper);
-}
-
-.modern-home header {
-  background: #101831;
-}
-
 .modern-home .headrow {
   min-height: 77px;
 }
-
-.modern-home .brand-mark > span { color: var(--blue); }
-.modern-home :focus-visible { outline-color: var(--blue); }
 
 .research-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
   gap: clamp(20px, 4vw, 58px);
   align-items: center;
-  padding-block: clamp(38px, 6vw, 88px);
+  --ink: #fff7ff;
+  --muted: #f2e8ff;
+  --blue: #a6fbea;
+  --line: #c6a5ee;
+  --card: #40216c;
+  margin-top: clamp(16px, 3vw, 34px);
+  padding: clamp(26px, 5.3vw, 68px);
+  border-radius: clamp(22px, 4vw, 46px) clamp(22px, 4vw, 46px) clamp(22px, 4vw, 46px) 12px;
+  background: radial-gradient(ellipse at 11% 4%, #db277766, transparent 52%),
+              radial-gradient(ellipse at 91% 74%, #2dd4bf9c, transparent 53%),
+              linear-gradient(112deg, #371650 9%, #541b87 53%, #2563eb 100%);
 }
 
 .portal-label {
@@ -59,6 +49,8 @@
   text-wrap: pretty;
 }
 
+.research-hero :focus-visible { outline-color: #ffd166; }
+
 .research-hero .hero-lead {
   max-width: 48ch;
   margin: 0;
@@ -82,16 +74,16 @@
   padding: 8px 13px;
   text-decoration: none;
   color: var(--ink);
-  background: #192442;
+  background: #efdfff;
   font-size: .87rem;
   font-weight: 700;
   transition: background-color .2s, border-color .2s, transform .2s;
 }
 
 .hero-destinations a:first-child {
-  background: var(--blue);
-  border-color: var(--blue);
-  color: #101831;
+  background: linear-gradient(115deg, #e8d7ff, #ffcbe9);
+  border-color: #e7b9ff;
+  color: #3b185e;
 }
 
 .hero-destinations a:hover {
@@ -112,7 +104,8 @@
   isolation: isolate;
   overflow: hidden;
   border-radius: 46% 54% 40% 60% / 40% 43% 57% 60%;
-  background: radial-gradient(ellipse at 26% 49%, #266e7e99, transparent 58%), radial-gradient(ellipse at 72% 44%, #694da388, transparent 60%);
+  background: radial-gradient(ellipse at 26% 48%, #bd5de59c, transparent 61%),
+              radial-gradient(ellipse at 72% 53%, #0fcebca6, transparent 65%);
 }
 
 .helix-art::before {
@@ -129,7 +122,7 @@
   width: 108%;
   max-width: none;
   transform: rotate(-24deg);
-  filter: drop-shadow(0 0 8px #8df5e380);
+  filter: drop-shadow(0 0 9px #7ef7e188);
   animation: helix-drift 4.8s ease-in-out both;
 }
 
@@ -157,14 +150,21 @@
   display: flex;
   flex-direction: column;
   padding: clamp(18px, 2.5vw, 30px);
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-top: 3px solid #8df5e3;
+  background: linear-gradient(145deg, #ffd8df, #fff5f3);
+  border: 1px solid #eac7d0;
+  border-top: 4px solid var(--coral);
   border-radius: 3px 3px 15px 15px;
 }
 
-.home-dispatch .news-card:nth-child(2) { border-top-color: #bfa9ff; }
-.home-dispatch .news-card:nth-child(3) { border-top-color: #f4cba8; }
+.home-dispatch .news-card:nth-child(2) {
+  background: linear-gradient(145deg, #ffe6a9, #fff8e4);
+  border-top-color: #c87700;
+}
+
+.home-dispatch .news-card:nth-child(3) {
+  background: linear-gradient(145deg, #f0dcff, #fff2fa);
+  border-top-color: var(--fuchsia);
+}
 
 .home-dispatch time {
   color: var(--muted);
@@ -209,8 +209,8 @@
 }
 
 .modern-home .community-band {
-  background: linear-gradient(115deg, #263457, #322750);
-  color: var(--ink);
+  background: linear-gradient(115deg, #582092, #862262 75%, #a73451);
+  color: #fff7ff;
 }
 
 .modern-home .community-symbol { color: #bfa9ff; }
@@ -219,14 +219,15 @@
 .treatment-intro {
   margin-top: clamp(20px, 4vw, 44px);
   padding: clamp(24px, 5vw, 56px);
-  border: 1px solid #384669;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--violet);
   border-radius: 22px;
-  background: radial-gradient(ellipse at right top, #39346c, transparent 65%), #141e38;
-  color: #f4f7ff;
+  background: linear-gradient(120deg, #e9d5ff, #ffd4ea);
+  color: var(--ink);
 }
 
 .treatment-intro h1 { color: inherit; }
-.treatment-intro p { color: #d1d9ef; }
+.treatment-intro p { color: var(--muted); }
 
 .treatment-browse {
   padding-top: 24px;
@@ -289,7 +290,13 @@
 .treatment-card .textlink { margin-top: auto; min-height: 44px; }
 
 @media (max-width: 800px) {
-  .research-hero { grid-template-columns: 1fr; gap: 14px; }
+  .research-hero {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    background: radial-gradient(ellipse at 10% 2%, #db277766, transparent 51%),
+                radial-gradient(ellipse at 100% 100%, #2dd4bf99, transparent 42%),
+                linear-gradient(153deg, #371650 8%, #541b87 64%, #2563eb);
+  }
   .research-hero h1 { font-size: clamp(2.55rem, 8.7vw, 4.2rem); }
   .helix-art { min-height: 145px; max-width: 460px; }
   .helix-strands { max-height: 215px; }
@@ -299,28 +306,38 @@
   .treatment-filters { grid-template-columns: 1fr; }
 }
 
-.modern-home {
-  background: radial-gradient(ellipse at 88% 12%, #56407c75, transparent 42rem),
-              radial-gradient(ellipse at 3% 48%, #205f6666, transparent 36rem), var(--paper);
-}
-
 .modern-home .hero-destinations a:nth-child(2) {
-  border-color: #a6efcf;
-  color: #bdfbe2;
+  background: linear-gradient(115deg, #dbe9ff, #baf9ec);
+  border-color: #94e3d8;
+  color: #14415d;
 }
 
 .modern-home .hero-destinations a:nth-child(3) {
-  border-color: #c3aaff;
-  color: #e0d2ff;
+  background: linear-gradient(115deg, #ffd9d4, #ffe6a3);
+  border-color: #ffd166;
+  color: #68223b;
 }
 
 .portal-discover .pathway:nth-child(1) .path-arrow { border-color: #99efd9; }
 .portal-discover .pathway:nth-child(2) .path-arrow { border-color: #c3aaff; }
 .portal-discover .pathway:nth-child(3) .path-arrow { border-color: #ffc8a9; }
 
-.treatment-card { border-top-color: #f1b891; }
-.treatment-card[data-treatment-group="gene"] { border-top-color: #bc9cf3; }
-.treatment-card[data-treatment-group="frataxin"] { border-top-color: #8addd7; }
+.treatment-card {
+  --card: linear-gradient(145deg, #ffecd9, #fffaff 65%);
+  border-top-color: #d45e5f;
+}
+
+.treatment-card[data-treatment-group="gene"] {
+  --card: linear-gradient(145deg, #e9d7ff, #ffecf7 78%);
+  border-top-color: var(--violet);
+}
+
+.treatment-card[data-treatment-group="frataxin"] {
+  --card: linear-gradient(145deg, #f9daf1, #fff2fa 78%);
+  border-top-color: var(--fuchsia);
+}
+
+.contrast .treatment-card { --card: #111; }
 
 .compare-toolbar {
   margin: 16px 0 22px;
@@ -363,7 +380,7 @@
   flex: none;
   width: 18px;
   height: 18px;
-  accent-color: #c9b7ff;
+  accent-color: var(--violet);
 }
 
 .compare-dialog {
@@ -411,4 +428,13 @@
 
 #compare-content th {
   background: var(--soft);
+}
+
+.contrast .research-hero {
+  --ink: #fff;
+  --muted: #f0f0f0;
+  --blue: #ffde8c;
+  --line: #aaa;
+  --card: #111;
+  background: #111;
 }

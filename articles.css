@@ -64,7 +64,7 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
   border: 1px solid var(--line);
   border-top: 3px solid var(--page-accent);
   border-radius: 18px;
-  background: linear-gradient(130deg, #29274d, #182642 70%);
+  background: linear-gradient(130deg, var(--page-tint), var(--page-second-tint));
 }
 
 .milestone-panel h2 {
@@ -102,7 +102,7 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 }
 
 .milestone-meta span {
-  color: #ffe0a9;
+  color: var(--page-accent);
 }
 
 .milestone-history,
@@ -125,7 +125,7 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 .milestone-planned h3 {
   margin: 15px 0 3px;
   font-size: 1.15rem;
-  color: #aee6ff;
+  color: var(--blue);
 }
 
 .milestone-planned p {
@@ -168,4 +168,43 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 
 .glossary-dialog form {
   margin-top: 18px;
+}
+
+.article-heading,
+.editorial-intro:not(.treatment-intro) {
+  padding: clamp(20px, 4vw, 38px);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--section-start);
+  border-radius: 22px;
+  background: linear-gradient(125deg, var(--page-tint), var(--page-second-tint));
+}
+
+.editorial-intro {
+  margin-bottom: 22px;
+}
+
+.article-prose {
+  max-width: 76ch;
+  padding: clamp(14px, 3vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--reading-surface);
+}
+
+.article-related {
+  background: linear-gradient(130deg, var(--page-tint), var(--reading-surface));
+}
+
+html:has(link[rel="canonical"][href$="/haberler.html"]) .dossier-card {
+  --card: linear-gradient(145deg, #ffe1e8, #fff7f1 70%);
+  border-top: 4px solid var(--coral);
+}
+
+html:has(link[rel="canonical"][href$="/haberler.html"]) .dossier-card:nth-child(even) {
+  --card: linear-gradient(145deg, #ffedc2, #fff8e9 70%);
+  border-top-color: #c87700;
+}
+
+html.contrast:has(link[rel="canonical"][href$="/haberler.html"]) .dossier-card {
+  --card: #111;
 }
