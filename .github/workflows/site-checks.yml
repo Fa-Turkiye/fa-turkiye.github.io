@@ -1,0 +1,22 @@
+name: FA Türkiye site kontrolleri
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Yayına hazırlanan dosyaları doğrula
+        run: python3 -X utf8 check_site.py
+      - name: Merkezi ve editoryal sayfaları yeniden üret
+        run: |
+          python3 -X utf8 build_centers.py
+          python3 -X utf8 build_editorial.py
+      - name: Yeniden üretilen siteyi doğrula
+        run: python3 -X utf8 check_site.py
