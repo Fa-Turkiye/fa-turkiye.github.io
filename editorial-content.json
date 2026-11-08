@@ -113,7 +113,7 @@
       ],
       [
         "Türkiye’den katılım ve Avrupa merkezleri",
-        "FARA, FORWARD-FA’yı 12–40 yaş için alım açık listeliyor. ABD merkezleri yalnızca ABD’de yaşayanları kabul ediyor; Türkiye’den doğrudan katılım varsayılamaz. ABD dışındaki merkezlerin açılması planlanmış olsa da bu kontrolde aktif Avrupa merkezi doğrulanmadı. Chicago için cynthia.poon@northwestern.edu, Eatontown için mshenouda@clinilabs.com listeleniyor. Genetik tanı, yürüme kapasitesi, kalp ve HbA1c ölçütleri dâhil bütün koşulları çalışma ekibi değerlendirir."
+        "FARA’nın listesinde ABD’deki araştırma merkezleri yer alıyor. AB CTIS kaydında Fransa için araştırma izni ve katılımcı alımının henüz başlamadığını belirten kayıt bulunuyor. Paris’teki kurum çalışma merkezleri bölümünde listeleniyor. Başvuru ve ikamet koşulları için ülke ve kurum düzeyindeki kayıtları kontrol edin."
       ]
     ],
     "sources": [
@@ -128,8 +128,20 @@
       [
         "FARA: FORWARD-FA çalışma tasarımı ve merkezleri",
         "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/"
+      ],
+      [
+        "Larimar Therapeutics",
+        "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+      ],
+      [
+        "EMA · CTIS FORWARD-FA",
+        "https://euclinicaltrials.eu/ctis-public/view/2025-521628-31-00"
       ]
-    ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   },
   "dt216p2": {
     "title": "DT-216P2: FXN geninin yeniden okunması ve RESTORE-FA verileri",
@@ -193,7 +205,7 @@
       ],
       [
         "Kalp dışında ne gözlendi?",
-        "MDS 2026 araştırma özetinde FA ve kardiyomiyopatisi bulunan 17 yetişkinin üç doz grubuna ait nörolojik değerlendirmeleri yer alıyor. Altı aydan uzun takibi bulunan 16 kişide mFARS’ın sabit kalması veya iyileşmesi, özellikle üst uzuv koordinasyonu alt skoruyla ilişkili olarak bildirildi. Sonuçlar UNIFAI doğal seyir çalışmasından eşleştirilmiş grupla da karşılaştırıldı. Bu, kalp odaklı geliştirme yanında araştırılan ek bir nörolojik bulgudur."
+        "MDS 2026 araştırma özetinde FA ve kardiyomiyopatisi bulunan 17 yetişkinin üç doz grubuna ait nörolojik değerlendirmeleri yer alıyor. Altı aydan uzun takibi bulunan 16 kişide mFARS’ın sabit kalması veya iyileşmesi, özellikle üst uzuv koordinasyonu alt skoruyla ilişkili olarak bildirildi. Sonuçlar UNIFAI doğal seyir çalışmasından eşleştirilmiş grupla da karşılaştırıldı. Bu, kalp odaklı geliştirme yanında araştırılan ek bir nörolojik bulgudur. Lexeo ayrıca 2 Kasım 2026’da, 24 aylık izlemi bulunan 11 katılımcının mFARS ölçümlerini eşleştirilmiş UNIFAI doğal seyir grubuyla karşılaştıran yeni ara veriler bildirdi. Eşleştirilmiş doğal seyir grubu, eşzamanlı rastgele atanmış bir kontrol grubundan farklı bir karşılaştırma sağlar."
       ],
       [
         "Bu bulgu neden henüz kesin kanıt değil?",
@@ -232,8 +244,16 @@
       [
         "FARA: SUNRISE-FA 2 güncel tasarım, ölçütler ve iletişim",
         "https://www.curefa.org/clinical-studies/study-of-lx2006-gene-therapy-in-friedreich-ataxia-cardiomyopathy-sunrise-fa-2/"
+      ],
+      [
+        "Lexeo Therapeutics",
+        "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
       ]
-    ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   },
   "sgt212": {
     "title": "SGT-212: beyin ve kalbi birlikte hedefleyen çift yollu gen tedavisi",
@@ -328,8 +348,16 @@
       [
         "ClinicalTrials.gov: NCT07870590; ayrıntıları ayrıca teyit edin",
         "https://clinicaltrials.gov/study/NCT07870590"
+      ],
+      [
+        "Graviton BioScience",
+        "https://www.prnewswire.com/news-releases/graviton-bioscience-announces-fda-fast-track-designation-for-gv101-for-the-treatment-of-friedreichs-ataxia-302926880.html"
       ]
-    ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   },
   "ppl001": {
     "title": "PPL-001: gen düzenlenmiş kök hücre yaklaşımı ve klinik öncesi kanıt",
@@ -345,7 +373,7 @@
       ],
       [
         "Bugüne kadarki kanıt hangi düzeyde?",
-        "FARA, insanlardan elde edilen hücrelerle ve FA fare modelleriyle yapılan klinik öncesi çalışmaları özetliyor. Bu araştırmalarda frataxin, mitokondri işlevi ve işlevsel kurtarma gibi sonuçlar incelendi. Bunlar insanlara tedavi uygulanarak elde edilmiş klinik sonuçlar değildir. Bu nedenle ‘FA hastalarında başarılı oldu’ veya ‘son klinik sonuçlar olumlu’ şeklinde aktarılmamalıdır."
+        "FARA, insanlardan elde edilen hücrelerle ve FA fare modelleriyle yapılan klinik öncesi çalışmaları özetliyor. Bu araştırmalarda frataxin, mitokondri işlevi ve işlevsel kurtarma gibi sonuçlar incelendi. Bunlar insanlara tedavi uygulanarak elde edilmiş klinik sonuçlar değildir. Bu nedenle ‘FA hastalarında başarılı oldu’ veya ‘son klinik sonuçlar olumlu’ şeklinde aktarılmamalıdır. 15 Ekim 2026’da JCI’da yayımlanan çalışma, adayın fare karşılığı mPPL-001’i insanlaştırılmış FA farelerinde inceledi. Çalışmanın sonuçları fare modeline aittir."
       ],
       [
         "Firma nereye ulaştı?",
@@ -372,8 +400,16 @@
       [
         "Papillon: geliştirici şirket",
         "https://www.papillon-tx.com/"
+      ],
+      [
+        "The Journal of Clinical Investigation",
+        "https://www.jci.org/articles/view/209546"
       ]
-    ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   },
   "nbib223": {
     "title": "NBIB-223 ve FACET: beyin ile kalbe gen ulaştırma hedefi",
@@ -389,7 +425,7 @@
       ],
       [
         "Firma programı nereye ilerletti?",
-        "FARA’nın geçmiş özetinde 2019 ortaklığı, 2024 geliştirme adayı seçimi ve 2026 klinik hazırlıkları yer alıyor. Ekim 2026 topluluk duyurusu FDA’nın klinik aşamaya geçişe izin verdiğini ve FACET adlı ilk insan araştırmasının planlandığını bildiriyor. Faz I etiketi, programın insanlarda erken değerlendirme aşamasını ifade eder; etkili veya ruhsatlı tedavi olduğu anlamına gelmez."
+        "FARA’nın geçmiş özetinde 2019 ortaklığı, 2024 geliştirme adayı seçimi ve 2026 klinik hazırlıkları yer alıyor. Ekim 2026 topluluk duyurusu FDA’nın klinik aşamaya geçişe izin verdiğini ve FACET adlı ilk insan araştırmasının planlandığını bildiriyor. Faz I etiketi, programın insanlarda erken değerlendirme aşamasını ifade eder; etkili veya ruhsatlı tedavi olduğu anlamına gelmez. Voyager 5 Kasım 2026’da, Neurocrine’in Faz I çalışmasına önümüzdeki aylarda başlamayı öngördüğünü ve ilk katılımcı verilerini 2027’de beklediğini bildirdi."
       ],
       [
         "Hangi sonuçlar henüz açıklanmadı?",
@@ -416,8 +452,16 @@
       [
         "FARA: 4 Kasım webinarı ve etkinlik bağlantısı",
         "https://www.curefa.org/get-involved/fundraising-and-events/"
+      ],
+      [
+        "Voyager Therapeutics",
+        "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
       ]
-    ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   },
   "brave": {
     "title": "BRAVE: omaveloxolone’un 2–15 yaş araştırması nasıl yürütülüyor?",
@@ -498,5 +542,37 @@
         "https://www.curefa.org/drug-development/nomlabofusp/"
       ]
     ]
+  },
+  "ati105": {
+    "title": "ATI-105 ve sağlıklı gönüllülerde Faz I araştırması",
+    "status": "Deneysel · Faz I, sağlıklı yetişkinlerde",
+    "sections": [
+      [
+        "Adayın araştırma hedefi",
+        "Adjuvia Therapeutics, ATI-105’i mitokondri işlev bozukluğunu hedefleyen araştırma programında Friedreich ataksisi için geliştiriyor."
+      ],
+      [
+        "İlk insan araştırması",
+        "NCT07869654 kayıtlı Faz I çalışması sağlıklı yetişkinlerde güvenlilik, tolerabilite ve ilacın vücutta nasıl işlendiğini inceliyor. Çalışmada tek ve çoklu artan doz grupları ile besin etkisi değerlendiriliyor."
+      ],
+      [
+        "FA hastaları için geliştirme planı",
+        "Şirket 28 Ekim 2026’da ilk sağlıklı gönüllüye doz verildiğini bildirdi ve FA hastalarında Faz I/II araştırmalarına 2027’de geçmeyi planladığını açıkladı. Bu dosyada mevcut sağlıklı gönüllü kaydı ile gelecekteki FA araştırma planı ayrı gösteriliyor."
+      ]
+    ],
+    "sources": [
+      [
+        "Adjuvia Therapeutics",
+        "https://adjuvia.com/news/adjuvia-therapeutics-initiates-phase-1-clinical-trial-of-ati-105-for-friedreichs-ataxia/"
+      ],
+      [
+        "ClinicalTrials.gov · NCT07869654",
+        "https://clinicaltrials.gov/study/NCT07869654"
+      ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   }
 }

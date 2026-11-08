@@ -23,8 +23,8 @@ esc = html.escape
 base = (ROOT / 'ilaclar.html').read_text()
 header = re.search(r'<header>.*?</header>', base, re.S).group()
 header = header.replace(' aria-current="page"', '')
-names = {'skyclarys':'Omaveloxolone · Skyclarys','vatiquinone':'Vatiquinone · PROVE-FA','nomlabofusp':'Nomlabofusp · FORWARD-FA','dt216p2':'DT-216P2 · RESTORE-FA','lx2006':'LX2006 · SUNRISE-FA 2','sgt212':'SGT-212 · FALCON','gv101':'GV101 · ROCK2 inhibitörü','ppl001':'PPL-001 · gen düzenlenmiş hücre tedavisi','nbib223':'NBIB-223 · FACET','brave':'Omaveloxolone · BRAVE','jive':'Nomlabofusp · JIVE/OLE'}
-sponsors = {'skyclarys':'Biogen','vatiquinone':'PTC Therapeutics','nomlabofusp':'Larimar Therapeutics','dt216p2':'Design Therapeutics','lx2006':'Lexeo Therapeutics','sgt212':'Solid Biosciences','gv101':'Graviton BioScience','ppl001':'Papillon Therapeutics','nbib223':'Neurocrine Biosciences / Voyager Therapeutics','brave':'Biogen','jive':'Larimar Therapeutics'}
+names = {'skyclarys':'Omaveloxolone · Skyclarys','vatiquinone':'Vatiquinone · PROVE-FA','nomlabofusp':'Nomlabofusp · FORWARD-FA','dt216p2':'DT-216P2 · RESTORE-FA','lx2006':'LX2006 · SUNRISE-FA 2','sgt212':'SGT-212 · FALCON','gv101':'GV101 · ROCK2 inhibitörü','ppl001':'PPL-001 · gen düzenlenmiş hücre tedavisi','nbib223':'NBIB-223 · FACET','brave':'Omaveloxolone · BRAVE','jive':'Nomlabofusp · JIVE/OLE','ati105':'ATI-105'}
+sponsors = {'skyclarys':'Biogen','vatiquinone':'PTC Therapeutics','nomlabofusp':'Larimar Therapeutics','dt216p2':'Design Therapeutics','lx2006':'Lexeo Therapeutics','sgt212':'Solid Biosciences','gv101':'Graviton BioScience','ppl001':'Papillon Therapeutics','nbib223':'Neurocrine Biosciences / Voyager Therapeutics','brave':'Biogen','jive':'Larimar Therapeutics','ati105':'Adjuvia Therapeutics'}
 
 def page(title, body, filename, description, active='ilaclar.html'):
     nav = header.replace(f'href="{active}"', f'href="{active}" aria-current="page"')
@@ -106,6 +106,7 @@ card_details = {
     'nbib223': ('gene', 'Faz I · FACET duyurusu'),
     'brave': ('other', 'Faz III · BRAVE'),
     'jive': ('frataxin', 'Faz II · Açık etiketli takip'),
+    'ati105': ('other', 'Faz I · Sağlıklı gönüllüler'),
 }
 
 def treatment_card(key, item):

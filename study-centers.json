@@ -10,7 +10,8 @@
     "vatiquinone": "Vatiquinone",
     "nomlabofusp": "Nomlabofusp",
     "jive": "Nomlabofusp JIVE",
-    "brave": "BRAVE omaveloxolone omaveloksolon"
+    "brave": "BRAVE omaveloxolone omaveloksolon",
+    "ati105": "ATI-105"
   },
   "countries": {
     "SA": "Suudi Arabistan"
@@ -1006,6 +1007,14 @@
         "label": "Health Canada – JIVE araştırma kaydı",
         "url": "https://clinical-trials-search.canada.ca/en/clinical-trial/300031-friedreich-ataxia"
       }
+    },
+    {
+      "program": "ati105",
+      "text": "NCT07869654 kaydı sağlıklı yetişkinler içindir. Adjuvia, FA hastalarıyla yapılacak araştırmayı ayrı bir sonraki aşama olarak planlıyor.",
+      "source": {
+        "label": "Adjuvia Therapeutics · FA araştırma planı",
+        "url": "https://adjuvia.com/news/adjuvia-therapeutics-initiates-phase-1-clinical-trial-of-ati-105-for-friedreichs-ataxia/"
+      }
     }
   ],
   "programSources": {
@@ -1115,6 +1124,16 @@
       {
         "label": "FARA – NBIB-223 programı ve FACET duyurusu",
         "url": "https://www.curefa.org/drug-development/neurocrine-biosciences-voyager-therapeutics-aav-gene-therapy/"
+      }
+    ],
+    "ati105": [
+      {
+        "label": "Adjuvia Therapeutics · ilk doz açıklaması",
+        "url": "https://adjuvia.com/news/adjuvia-therapeutics-initiates-phase-1-clinical-trial-of-ati-105-for-friedreichs-ataxia/"
+      },
+      {
+        "label": "ClinicalTrials.gov · sağlıklı gönüllülerde Faz I kaydı",
+        "url": "https://clinicaltrials.gov/study/NCT07869654"
       }
     ]
   }

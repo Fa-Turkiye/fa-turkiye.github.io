@@ -66,7 +66,8 @@
         "source": [
           "Larimar Therapeutics",
           "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
-        ]
+        ],
+        "article": "nomlabofusp-icar"
       },
       {
         "date": "2026-06-29",
@@ -154,12 +155,23 @@
   },
   "lx2006": {
     "target": "FXN gen kopyasını taşıyarak özellikle kalpte frataxin üretimini desteklemek.",
-    "results": "MDS 2026’da erken nörolojik ölçümler sunuldu. SUNRISE-FA 2’nin ana sonuçları ayrı bir veri seti olacak.",
+    "results": "Lexeo 24 aylık takipten erken mFARS verisi bildirdi. Karşılaştırma eşleştirilmiş doğal seyir grubuyla yapıldı.",
     "source": [
-      "MDS 2026: 17 katılımcılı nörolojik araştırma özeti",
-      "https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/"
+      "Lexeo Therapeutics",
+      "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
     ],
     "events": [
+      {
+        "date": "2026-11-02",
+        "title": "LX2006 için ICAR öncesi yeni ara veriler duyuruldu",
+        "summary": "Lexeo, 24 ay izlenen 11 katılımcıda mFARS değişiminin eşleştirilmiş UNIFAI doğal seyir grubuna göre olumlu olduğunu bildirdi. Sunum 11 Kasım için planlandı.",
+        "kind": "Sponsor ara verisi",
+        "source": [
+          "Lexeo Therapeutics",
+          "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
+        ],
+        "article": "lx2006-icar"
+      },
       {
         "date": "2026-10-07",
         "title": "LX2006: kalp odaklı araştırmada nörolojik bulgular nasıl yorumlanmalı?",
@@ -183,6 +195,14 @@
       }
     ],
     "expected": [
+      {
+        "window": "11 Kasım 2026",
+        "title": "LX2006 ara verilerinin ICAR’da sözlü sunumu planlandı.",
+        "source": [
+          "Lexeo Therapeutics",
+          "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
+        ]
+      },
       {
         "window": "2027 ikinci yarı",
         "title": "SUNRISE-FA 2’nin ana sonuçları için Lexeo’nun açıkladığı zaman aralığı.",
@@ -251,7 +271,8 @@
         "source": [
           "Graviton BioScience",
           "https://www.prnewswire.com/news-releases/graviton-bioscience-announces-fda-fast-track-designation-for-gv101-for-the-treatment-of-friedreichs-ataxia-302926880.html"
-        ]
+        ],
+        "article": "gv101-fast-track"
       },
       {
         "date": "2026-08-11",
@@ -268,12 +289,23 @@
   },
   "ppl001": {
     "target": "Kök ve öncül kan hücrelerini genetik olarak değiştirerek frataxin üretimini desteklemek.",
-    "results": "Mevcut kamuya açık bilgiler klinik öncesi çalışmalar ve üretim hazırlıklarını kapsıyor.",
+    "results": "Hakemli JCI makalesi, mPPL-001 ile bir fare modelinde elde edilen sonuçları bildirdi.",
     "source": [
-      "FARA: PPL-001 ve klinik öncesi araştırmalar",
-      "https://www.curefa.org/drug-development/ppl-001/"
+      "The Journal of Clinical Investigation",
+      "https://www.jci.org/articles/view/209546"
     ],
     "events": [
+      {
+        "date": "2026-10-15",
+        "title": "PPL-001 yaklaşımına ilişkin fare çalışması JCI’da yayımlandı",
+        "summary": "Araştırmacılar, gen düzenlenmiş kan yapıcı kök ve öncül hücrelerin fare modelinde frataxin ifadesini ve bazı hastalık göstergelerini etkilediğini bildirdi.",
+        "kind": "Klinik öncesi yayın",
+        "source": [
+          "The Journal of Clinical Investigation",
+          "https://www.jci.org/articles/view/209546"
+        ],
+        "article": "ppl001-jci"
+      },
       {
         "date": "2026-07-21",
         "title": "PPL-001 üretim ortaklığı: klinik başarı değil, araştırmaya hazırlık adımı",
@@ -303,7 +335,8 @@
         "source": [
           "Voyager Therapeutics",
           "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
-        ]
+        ],
+        "article": "nbib223-kasim"
       },
       {
         "date": "2026-10-07",
@@ -373,7 +406,8 @@
         "source": [
           "Larimar Therapeutics",
           "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
-        ]
+        ],
+        "article": "nomlabofusp-icar"
       },
       {
         "date": "2026-06-29",
@@ -393,6 +427,37 @@
         "source": [
           "Larimar Therapeutics",
           "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+        ]
+      }
+    ]
+  },
+  "ati105": {
+    "target": "Mitokondri işlev bozukluğunu hedefleyen araştırma adayı.",
+    "results": "Sağlıklı gönüllülerde Faz I ilk doz açıklandı. FA hastalarındaki çalışma daha sonraki aşama olarak planlanıyor.",
+    "source": [
+      "ClinicalTrials.gov · NCT07869654",
+      "https://clinicaltrials.gov/study/NCT07869654"
+    ],
+    "events": [
+      {
+        "date": "2026-10-28",
+        "title": "ATI-105 Faz I çalışmasında ilk sağlıklı gönüllüye doz verildi",
+        "summary": "Adjuvia, ilk insan araştırmasında ilk dozun verildiğini açıkladı. NCT07869654 kaydı sağlıklı yetişkinlerde güvenlilik, tolerabilite ve farmakokinetiği inceliyor.",
+        "kind": "İlk insan araştırması",
+        "source": [
+          "Adjuvia Therapeutics",
+          "https://adjuvia.com/news/adjuvia-therapeutics-initiates-phase-1-clinical-trial-of-ati-105-for-friedreichs-ataxia/"
+        ],
+        "article": "ati105-faz1"
+      }
+    ],
+    "expected": [
+      {
+        "window": "2027",
+        "title": "Adjuvia, FA hastalarında Faz I/II araştırmalarına geçmeyi planladığını bildirdi.",
+        "source": [
+          "Adjuvia Therapeutics",
+          "https://adjuvia.com/news/adjuvia-therapeutics-initiates-phase-1-clinical-trial-of-ati-105-for-friedreichs-ataxia/"
         ]
       }
     ]
