@@ -33,8 +33,8 @@ def page(title, body, filename, description, active='ilaclar.html'):
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} · FA Türkiye</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="https://fa-turkiye.github.io/{filename}">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="articles.css">
-<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#101831">{glossary}</head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
+<link rel="stylesheet" href="style.css?v=renkli-1"><link rel="stylesheet" href="articles.css?v=renkli-1">
+<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js?v=renkli-1" defer></script><meta name="theme-color" content="#101831">{glossary}</head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
 <main class="wrap editorial-main" id="main-content" tabindex="-1">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
 
 months = ('Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık')
@@ -147,7 +147,7 @@ filters = f'''<section class="treatment-browse" id="arastirilan" aria-labelledby
 aliases = json.dumps({k:f'ilac-{k}.html' for k in profiles})
 redirect = '<script>const dossierRoutes='+aliases+';const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script>'
 library = page('İlaç kütüphanesi',intro + filters,'ilaclar.html','FA için kaynaklı ilaç ve çalışma profilleri.')
-library = library.replace('</head>', '<link rel="stylesheet" href="portal.css"><script src="tedavi-filtreleri.js" defer></script></head>')
+library = library.replace('</head>', '<link rel="stylesheet" href="portal.css?v=renkli-1"><script src="tedavi-filtreleri.js" defer></script></head>')
 (ROOT / 'ilaclar.html').write_text(library.replace('</body>',redirect+'</body>'))
 
 for n in news:
