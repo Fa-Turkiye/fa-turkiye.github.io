@@ -57,3 +57,115 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 .study-location-list a[href^="mailto:"] {
   overflow-wrap: anywhere;
 }
+
+.milestone-panel {
+  margin: 30px 0 0;
+  padding: clamp(18px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--page-accent);
+  border-radius: 18px;
+  background: linear-gradient(130deg, #29274d, #182642 70%);
+}
+
+.milestone-panel h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.5rem, 4vw, 2.15rem);
+}
+
+.milestone-label {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: var(--page-accent);
+}
+
+.milestone-event h3,
+.milestone-event h4 {
+  margin: 8px 0;
+  line-height: 1.35;
+}
+
+.milestone-event h4 {
+  font-size: 1.02rem;
+}
+
+.milestone-event p {
+  margin: 0 0 8px;
+}
+
+.milestone-meta,
+.milestone-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 15px;
+  font-size: .9rem;
+}
+
+.milestone-meta span {
+  color: #ffe0a9;
+}
+
+.milestone-history,
+.milestone-planned {
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.milestone-history summary {
+  align-content: center;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.milestone-history li + li {
+  margin-top: 16px;
+}
+
+.milestone-planned h3 {
+  margin: 15px 0 3px;
+  font-size: 1.15rem;
+  color: #aee6ff;
+}
+
+.milestone-planned p {
+  margin: 0 0 4px;
+}
+
+.milestone-planned li + li {
+  margin-top: 10px;
+}
+
+.term-trigger {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--blue);
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  font: inherit;
+}
+
+.glossary-dialog {
+  max-width: min(32rem, calc(100% - 28px));
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--blue);
+  border-radius: 14px;
+  padding: 24px;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.glossary-dialog::backdrop {
+  background: #080d20cc;
+}
+
+.glossary-dialog h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.glossary-dialog form {
+  margin-top: 18px;
+}

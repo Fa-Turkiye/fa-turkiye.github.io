@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101831">
+  <title>Site araması · FA Türkiye</title>
+  <link rel="icon" type="image/svg+xml" href="fa-logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="arama.js" defer></script>
+</head>
+<body class="search-page">
+  <a class="skip-link" href="#main-content">İçeriğe geç</a>
+  <header><div class="wrap headrow"><a class="brand" href="index.html" aria-label="FA Türkiye ana sayfa"><span class="brand-mark" aria-hidden="true">fa<span>✳</span></span><span>FA Türkiye<small>Bilgiyle, birlikte.</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menü <span aria-hidden="true">☰</span></button></div><div class="navrail"><nav class="wrap nav" id="site-navigation" aria-label="Ana menü"><a href="index.html">Ana sayfa</a><a href="fa-hakkinda.html">FA’yı tanı</a><a href="tedaviler.html">Tedaviler</a><a href="ilaclar.html">İlaç kütüphanesi</a><details class="nav-group"><summary>Araştırmalar</summary><div class="nav-dropdown"><a href="klinik-arastirmalar.html">Klinik araştırmalar</a><a href="katilim-rehberi.html">Katılım rehberi</a><a href="arastirma-takvimi.html">Araştırma takvimi</a><a href="avrupa-merkezleri.html">Avrupa merkezleri</a></div></details><a href="merkezler.html">FA Merkezleri</a><a href="topluluk.html">Topluluk</a><a href="kaynaklar.html">Kaynaklar</a><a href="haberler.html">Haberler <span aria-hidden="true">↗</span></a></nav></div></header>
+  <main class="wrap" id="main-content" tabindex="-1">
+    <section aria-labelledby="search-title">
+      <h1 id="search-title">FA Türkiye’de ara</h1>
+      <p>İlaç dosyaları, araştırma haberleri, merkezler, hekimler ve site sayfaları.</p>
+      <form class="site-search-form" action="arama.html" role="search" id="site-search">
+        <label for="site-query">Arama sözcükleri</label><div>
+        <input id="site-query" name="q" type="search" placeholder="Örn. SGT-212, Ankara, FXN" required>
+        <button type="submit">Ara</button></div>
+      </form>
+      <p id="search-status" role="status" aria-atomic="true"></p>
+      <div id="search-results"></div>
+      <noscript><p>Arama için tarayıcınızda JavaScript’i etkinleştirin. <a href="ilaclar.html">Tedavi dosyaları</a>, <a href="merkezler.html">FA Merkezleri</a> ve <a href="haberler.html">haberler</a> doğrudan açılabilir.</p></noscript>
+    </section>
+  </main>
+  <footer><div class="wrap">FA Türkiye · Friedreich ataksisi bilgi merkezi.</div></footer>
+</body>
+</html>

@@ -298,3 +298,117 @@
 @media (max-width: 540px) {
   .treatment-filters { grid-template-columns: 1fr; }
 }
+
+.modern-home {
+  background: radial-gradient(ellipse at 88% 12%, #56407c75, transparent 42rem),
+              radial-gradient(ellipse at 3% 48%, #205f6666, transparent 36rem), var(--paper);
+}
+
+.modern-home .hero-destinations a:nth-child(2) {
+  border-color: #a6efcf;
+  color: #bdfbe2;
+}
+
+.modern-home .hero-destinations a:nth-child(3) {
+  border-color: #c3aaff;
+  color: #e0d2ff;
+}
+
+.portal-discover .pathway:nth-child(1) .path-arrow { border-color: #99efd9; }
+.portal-discover .pathway:nth-child(2) .path-arrow { border-color: #c3aaff; }
+.portal-discover .pathway:nth-child(3) .path-arrow { border-color: #ffc8a9; }
+
+.treatment-card { border-top-color: #f1b891; }
+.treatment-card[data-treatment-group="gene"] { border-top-color: #bc9cf3; }
+.treatment-card[data-treatment-group="frataxin"] { border-top-color: #8addd7; }
+
+.compare-toolbar {
+  margin: 16px 0 22px;
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--page-accent);
+  border-radius: 12px;
+  background: var(--soft);
+}
+
+.compare-toolbar h3,
+.compare-toolbar p:last-child {
+  margin: 0;
+}
+
+.compare-toolbar p:last-child {
+  margin-top: 8px;
+}
+
+.compare-toolbar > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.compare-choice {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.compare-choice input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  accent-color: #c9b7ff;
+}
+
+.compare-dialog {
+  width: min(1060px, calc(100% - 28px));
+  max-height: calc(100% - 28px);
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: clamp(12px, 3vw, 26px);
+}
+
+.compare-dialog::backdrop {
+  background: #080d20cc;
+}
+
+.compare-dialog-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.compare-dialog-head h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+}
+
+#compare-content {
+  overflow-x: auto;
+}
+
+#compare-content table {
+  min-width: 34rem;
+}
+
+#compare-content th,
+#compare-content td {
+  vertical-align: top;
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
+#compare-content th {
+  background: var(--soft);
+}

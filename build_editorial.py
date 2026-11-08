@@ -1,12 +1,14 @@
 """Build accessible, static Turkish research dossiers from editorial JSON."""
 import json, re, html, math
 from pathlib import Path
-from study_centers import StudyCenters
+from datetime import date
+from study_centers import StudyCenters, center_id
 
 ROOT = Path(__file__).resolve().parent
 study_centers = StudyCenters(ROOT)
 profiles = json.loads((ROOT / 'editorial-content.json').read_text())
 news = json.loads((ROOT / 'editorial-news.json').read_text())
+milestones = json.loads((ROOT / 'editorial-milestones.json').read_text())
 expansion = json.loads((ROOT / 'editorial-expansion.json').read_text())
 for key, sections in expansion.items():
     profiles[key]['sections'].extend(sections)
@@ -26,15 +28,41 @@ sponsors = {'skyclarys':'Biogen','vatiquinone':'PTC Therapeutics','nomlabofusp':
 
 def page(title, body, filename, description, active='ilaclar.html'):
     nav = header.replace(f'href="{active}"', f'href="{active}" aria-current="page"')
+    glossary = '<script src="terimler.js" defer></script>' if filename.startswith(('ilac-', 'haber-')) or filename == 'gv101.html' else ''
     return f'''<!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} · FA Türkiye</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="https://fa-turkiye.github.io/{filename}">
 <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="articles.css">
-<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#f7f7ef"></head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
+<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#101831">{glossary}</head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
 <main class="wrap editorial-main" id="main-content" tabindex="-1">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
 
-def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None, studies='', checked_on='2026-11-01', checked_label='1 Kasım 2026'):
+months = ('Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık')
+
+def source_anchor(source):
+    label, url = source
+    return f'<a href="{esc(url)}">{esc(label)} ↗</a>'
+
+def milestone_event(item, heading):
+    day = date.fromisoformat(item['date'])
+    stamp = f'{day.day} {months[day.month - 1]} {day.year}'
+    article = f' <a href="haber-{esc(item["article"])}.html">Ayrıntılı haber</a>' if item.get('article') else ''
+    return f'''<div class="milestone-event"><p class="milestone-meta"><time datetime="{day.isoformat()}">{stamp}</time> <span>{esc(item['kind'])}</span></p>
+<{heading}>{esc(item['title'])}</{heading}><p>{esc(item['summary'])}</p>
+<p class="milestone-links">{source_anchor(item['source'])}{article}</p></div>'''
+
+def treatment_updates(key):
+    item = milestones[key]
+    events = sorted(item['events'], key=lambda event: event['date'], reverse=True)
+    older = ''.join(f'<li>{milestone_event(event, "h4")}</li>' for event in events[1:])
+    timeline = f'<details class="milestone-history"><summary>Önceki gelişmeler ({len(events) - 1})</summary><ol>{older}</ol></details>' if older else ''
+    expected = ''.join(f'<li><strong>{esc(event["window"])}</strong><p>{esc(event["title"])}</p>{source_anchor(event["source"])}</li>' for event in item.get('expected', []))
+    planned = f'<div class="milestone-planned"><h3>Beklenen duyurular ve sunumlar</h3><p>Kaynakların açıkladığı planlar ve tahminler.</p><ul>{expected}</ul></div>' if expected else ''
+    return f'''<section class="milestone-panel" id="son-gelismeler" aria-labelledby="milestone-title">
+<h2 id="milestone-title">Bu tedavide ne değişti?</h2><p class="milestone-label">Son açıklanan gelişme</p>
+{milestone_event(events[0], 'h3')}{timeline}{planned}</section>'''
+
+def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None, studies='', checked_on='2026-11-01', checked_label='1 Kasım 2026', updates=''):
     count = sum(len(p.split()) for _, p in sections)
     lead_text = lead or '. '.join(sections[0][1].split('. ')[:2]).rstrip('.') + '.'
     toc = ''.join(f'<li><a href="#bolum-{i}">{esc(t)}</a></li>' for i,(t,_) in enumerate(sections,1))
@@ -46,7 +74,7 @@ def article_body(title, status, sections, sources, category, back, sponsor=None,
 <div class="article-heading"><span class="badge">{esc(status)}</span><h1>{esc(title)}</h1>
 <p class="article-meta">Son kaynak kontrolü: <time datetime="{esc(checked_on)}">{esc(checked_label)}</time> · Yaklaşık {max(2,math.ceil(count/160))} dakika okuma</p>
 {f'<p class="article-meta">Geliştirici: {esc(sponsor)}</p>' if sponsor else ''}<p class="article-lead">{esc(lead_text)}</p></div>
-<nav class="article-toc" aria-label="Yazı içindekiler"><h2>Bu yazıda</h2><ol>{toc}</ol></nav>
+{updates}<nav class="article-toc" aria-label="Yazı içindekiler"><h2>Bu yazıda</h2><ol>{toc}</ol></nav>
 <div class="article-prose">{paragraphs}{studies}{extra}<section id="kaynaklar" class="article-section article-sources"><h2>Kaynaklar ve doğrulama</h2><ol>{src}</ol><p class="article-meta">Özgün Türkçe açıklama ve değerlendirme. Şirket hedefleri, açıklanmış bulgular ve henüz doğrulanmayan noktalar metinde ayrılmıştır. Kaynak tarihleri ve merkezlerin alım durumları farklı olabilir.</p></section></div>
 <p class="article-end"><a href="{back}">← {category} sayfasına dön</a></p></article>'''
 
@@ -58,7 +86,7 @@ for key, item in profiles.items():
     if key=='brave': more += '<p><a href="ilac-skyclarys.html">Omaveloxolone’un ana ilaç dosyasını da okuyun →</a></p>'
     if key=='jive': more += '<p><a href="ilac-nomlabofusp.html">Nomlabofusp ana ilaç dosyasını da okuyun →</a></p>'
     review = item.get('source_review', {})
-    body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), **review)
+    body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), updates=treatment_updates(key), **review)
     (ROOT / filename).write_text(page(item['title'],body,filename,item['sections'][0][1]))
 
 treatment_groups = {
@@ -86,13 +114,15 @@ def treatment_card(key, item):
     checked_on = review.get('checked_on', '2026-11-01')
     checked_label = review.get('checked_label', '1 Kasım 2026')
     research = 'false' if key == 'skyclarys' else 'true'
-    return f'''<article class="card dossier-card treatment-card" data-treatment-group="{group}" data-research="{research}">
+    comparison = milestones[key]
+    return f'''<article class="card dossier-card treatment-card" data-treatment-group="{group}" data-research="{research}" data-phase="{esc(phase)}" data-target="{esc(comparison["target"])}" data-results="{esc(comparison["results"])}" data-source="{esc(comparison["source"][1])}">
 <span class="badge">{esc(treatment_groups[group])}</span>
 <h2><a href="ilac-{key}.html">{esc(names[key])}</a></h2>
 <dl><div><dt>Aşama</dt><dd>{esc(phase)}</dd></div><div><dt>Geliştirici</dt><dd>{esc(sponsors[key])}</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="{esc(checked_on)}">{esc(checked_label)}</time></dd></div></dl>
 <p>{esc(item['sections'][0][1].split('. ')[0])}.</p>
-<a class="textlink" href="ilac-{key}.html" aria-label="{esc(names[key])} dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article>'''
+<a class="textlink" href="ilac-{key}.html" aria-label="{esc(names[key])} dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="{key}"> {esc(names[key])} karşılaştırmaya ekle</label></article>'''
 
 cards = ''.join(treatment_card(key, item) for key, item in profiles.items())
 intro = '''<div class="editorial-intro treatment-intro"><span class="badge">FA Türkiye</span><h1>FA tedavi dosyaları</h1><p>Ruhsatlı tedaviyi ve araştırılan adayları inceleyin. Her dosyada tedavinin amacı, bilinen bulgular, resmî kaynaklar ve yayımlanan çalışma iletişimi bulunur.</p></div>'''
@@ -103,7 +133,15 @@ filters = f'''<section class="treatment-browse" id="arastirilan" aria-labelledby
 <label for="treatment-group">Araştırma yaklaşımı<select id="treatment-group"><option value="">Tüm yaklaşımlar</option>{group_options}</select></label>
 <label for="treatment-scope">Tedavi durumu<select id="treatment-scope"><option value="">Tüm dosyalar</option><option value="arastirma">Araştırılan tedaviler</option><option value="ruhsatli">Ruhsatlı tedavi</option></select></label>
 </form><p class="article-meta" id="treatment-result" role="status" aria-atomic="true" hidden></p>
-<div class="dossier-grid">{cards}</div>
+<aside class="compare-toolbar" id="compare-toolbar" aria-labelledby="compare-title" hidden>
+<h3 id="compare-title">Tedavileri yan yana incele</h3><p>Kartlardan 2 veya 3 dosya seçin. Her çalışmanın sonuçları kendi araştırma tasarımı içinde değerlendirilir.</p>
+<div><button class="btn" id="compare-show" type="button" disabled>Karşılaştırmayı göster</button> <button class="compare-clear" id="compare-clear" type="button">Seçimi temizle</button></div>
+<p class="article-meta" id="compare-status" role="status" aria-atomic="true"></p>
+</aside><div class="dossier-grid">{cards}</div>
+<dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-dialog-title">
+<div class="compare-dialog-head"><h2 id="compare-dialog-title">Tedavi dosyaları karşılaştırması</h2><form method="dialog"><button type="submit" autofocus>Kapat</button></form></div>
+<div id="compare-content" tabindex="0" role="region" aria-label="Karşılaştırma tablosu"></div>
+</dialog>
 <p><a href="https://www.curefa.org/drug-development/">FARA’nın geliştirme hattı ve geçmiş programları ↗</a></p></section>'''
 aliases = json.dumps({k:f'ilac-{k}.html' for k in profiles})
 redirect = '<script>const dossierRoutes='+aliases+';const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script>'
@@ -150,6 +188,36 @@ home = re.sub(r'<!-- home-news:start -->.*?<!-- home-news:end -->',
               lambda _: f'<!-- home-news:start -->\n    {home_news}\n    <!-- home-news:end -->', home, count=1, flags=re.S)
 home_path.write_text(home, encoding='utf-8')
 
+center_data = json.loads((ROOT / 'centers.json').read_text(encoding='utf-8'))
+directory_names = {'clinic': 'Klinik bakım', 'genetics': 'Tanı ve genetik', 'fa-test': 'FA genetik testi FXN', 'research': 'Klinik araştırma'}
+search_centers = []
+for center in center_data['centers']:
+    country = center_data['countries'][center['country']]
+    area = f'{center["city"]}, {country}'
+    people = ', '.join(person['name'] for person in center.get('people', []))
+    labels = [directory_names[kind] for kind in center['types']]
+    services = [service['name'] for service in center.get('services', [])]
+    search_centers.append([center['name'], f'merkezler.html#{center_id(center)}', area,
+                           ' '.join([people, *labels, *services])])
+search_data = {
+    'Tedavi dosyaları': [[names[key], f'ilac-{key}.html', sponsors[key], milestones[key]['target'] + ' ' + card_details[key][1]]
+                         for key in profiles],
+    'FA Merkezleri': search_centers,
+    'Haberler': [[item['title'], f'haber-{item["id"]}.html', item['date'], names[item['drug']]]
+                 for item in ordered_news] + [
+                     ['GV101 için FA klinik araştırma izni', 'haber-gv101.html', '11 Ağustos 2026', 'Graviton BioScience']
+                 ],
+    'Site sayfaları': [
+        ['FA’yı tanı', 'fa-hakkinda.html', 'Belirtiler, tanı ve genetik temel', 'FXN frataxin Friedreich ataksisi'],
+        ['Tedavi ve bakım', 'tedaviler.html', 'Ruhsatlı tedavi ve destekleyici bakım', 'Skyclarys'],
+        ['Araştırma takvimi', 'arastirma-takvimi.html', 'Duyurular ve beklenen gelişmeler', 'klinik çalışma'],
+        ['Klinik araştırmalar', 'klinik-arastirmalar.html', 'Çalışma kayıtları ve araştırma türleri', 'ClinicalTrials.gov'],
+        ['Topluluk', 'topluluk.html', 'FA ile yaşayan kişiler ve yakınları', 'dayanışma'],
+        ['Kaynaklar', 'kaynaklar.html', 'Kurumlar ve bilimsel kaynaklar', 'FARA'],
+    ],
+}
+(ROOT / 'arama-verileri.json').write_text(json.dumps(search_data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+
 # Put August GV101 news in chronological order, rather than at the end.
 gvcard = '<article class="card dossier-card"><time class="badge" datetime="2026-08-11">11 Ağustos 2026</time><h2><a href="haber-gv101.html">GV101 için FA klinik araştırma izni</a></h2><p>ROCK2 hedefi, planlanan araştırma ve henüz doğrulanmayan katılım bilgileri.</p><a class="textlink" href="haber-gv101.html">Haberin tamamını oku →</a></article>'
 marker = '<article class="card dossier-card"><time class="badge" datetime="2026-08-03">'
@@ -158,7 +226,7 @@ body = '<div class="editorial-intro"><span class="badge">SON HABERLER</span><h1>
 (ROOT / 'haberler.html').write_text(page('Son haberler',body,'haberler.html','FA araştırmalarını ayrıntılı ve kaynaklı Türkçe haberlerle takip edin.','haberler.html'))
 
 # Existing dedicated GV101 address remains useful and consistent.
-(ROOT / 'gv101.html').write_text(page(g['title'],article_body(g['title'],g['status'],g['sections'],g['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors['gv101'],studies=study_centers.dossier('gv101')),'gv101.html',g['sections'][0][1]))
+(ROOT / 'gv101.html').write_text(page(g['title'],article_body(g['title'],g['status'],g['sections'],g['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors['gv101'],studies=study_centers.dossier('gv101'), updates=treatment_updates('gv101')),'gv101.html',g['sections'][0][1]))
 
 # Generate a participation guide for every listed program, including closed/preclinical ones.
 guide = json.loads((ROOT / 'participation-guide.json').read_text())

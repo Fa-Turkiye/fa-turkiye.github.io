@@ -3,78 +3,97 @@
 <title>İlaç kütüphanesi · FA Türkiye</title><meta name="description" content="FA için kaynaklı ilaç ve çalışma profilleri.">
 <link rel="canonical" href="https://fa-turkiye.github.io/ilaclar.html">
 <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="articles.css">
-<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#f7f7ef"><link rel="stylesheet" href="portal.css"><script src="tedavi-filtreleri.js" defer></script></head><body><a class="skip-link" href="#main-content">İçeriğe geç</a><header><div class="wrap headrow"><a class="brand" href="index.html" aria-label="FA Türkiye ana sayfa"><span class="brand-mark" aria-hidden="true">fa<span>✳</span></span><span>FA Türkiye<small>Bilgiyle, birlikte.</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menü <span aria-hidden="true">☰</span></button></div><div class="navrail"><nav class="wrap nav" id="site-navigation" aria-label="Ana menü"><a href="index.html">Ana sayfa</a><a href="fa-hakkinda.html">FA’yı tanı</a><a href="tedaviler.html">Tedaviler</a><a href="ilaclar.html" aria-current="page">İlaç kütüphanesi</a><details class="nav-group"><summary>Araştırmalar</summary><div class="nav-dropdown"><a href="klinik-arastirmalar.html">Klinik araştırmalar</a><a href="katilim-rehberi.html">Katılım rehberi</a><a href="arastirma-takvimi.html">Araştırma takvimi</a><a href="avrupa-merkezleri.html">Avrupa merkezleri</a></div></details><a href="merkezler.html">FA Merkezleri</a><a href="topluluk.html">Topluluk</a><a href="kaynaklar.html">Kaynaklar</a><a href="haberler.html">Haberler <span aria-hidden="true">↗</span></a></nav></div></header>
+<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#101831"><link rel="stylesheet" href="portal.css"><script src="tedavi-filtreleri.js" defer></script></head><body><a class="skip-link" href="#main-content">İçeriğe geç</a><header><div class="wrap headrow"><a class="brand" href="index.html" aria-label="FA Türkiye ana sayfa"><span class="brand-mark" aria-hidden="true">fa<span>✳</span></span><span>FA Türkiye<small>Bilgiyle, birlikte.</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menü <span aria-hidden="true">☰</span></button></div><div class="navrail"><nav class="wrap nav" id="site-navigation" aria-label="Ana menü"><a href="index.html">Ana sayfa</a><a href="fa-hakkinda.html">FA’yı tanı</a><a href="tedaviler.html">Tedaviler</a><a href="ilaclar.html" aria-current="page">İlaç kütüphanesi</a><details class="nav-group"><summary>Araştırmalar</summary><div class="nav-dropdown"><a href="klinik-arastirmalar.html">Klinik araştırmalar</a><a href="katilim-rehberi.html">Katılım rehberi</a><a href="arastirma-takvimi.html">Araştırma takvimi</a><a href="avrupa-merkezleri.html">Avrupa merkezleri</a></div></details><a href="merkezler.html">FA Merkezleri</a><a href="topluluk.html">Topluluk</a><a href="kaynaklar.html">Kaynaklar</a><a href="haberler.html">Haberler <span aria-hidden="true">↗</span></a></nav></div></header>
 <main class="wrap editorial-main" id="main-content" tabindex="-1"><div class="editorial-intro treatment-intro"><span class="badge">FA Türkiye</span><h1>FA tedavi dosyaları</h1><p>Ruhsatlı tedaviyi ve araştırılan adayları inceleyin. Her dosyada tedavinin amacı, bilinen bulgular, resmî kaynaklar ve yayımlanan çalışma iletişimi bulunur.</p></div><section class="treatment-browse" id="arastirilan" aria-labelledby="treatment-browse-title">
 <h2 id="treatment-browse-title">Tedavileri incele</h2>
 <form class="treatment-filters" id="treatment-filters" hidden>
 <label for="treatment-group">Araştırma yaklaşımı<select id="treatment-group"><option value="">Tüm yaklaşımlar</option><option value="gene">Gen temelli tedaviler</option><option value="frataxin">Frataxin düzeyini hedefleyen tedaviler</option><option value="other">Diğer yaklaşımlar</option></select></label>
 <label for="treatment-scope">Tedavi durumu<select id="treatment-scope"><option value="">Tüm dosyalar</option><option value="arastirma">Araştırılan tedaviler</option><option value="ruhsatli">Ruhsatlı tedavi</option></select></label>
 </form><p class="article-meta" id="treatment-result" role="status" aria-atomic="true" hidden></p>
-<div class="dossier-grid"><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="false">
+<aside class="compare-toolbar" id="compare-toolbar" aria-labelledby="compare-title" hidden>
+<h3 id="compare-title">Tedavileri yan yana incele</h3><p>Kartlardan 2 veya 3 dosya seçin. Her çalışmanın sonuçları kendi araştırma tasarımı içinde değerlendirilir.</p>
+<div><button class="btn" id="compare-show" type="button" disabled>Karşılaştırmayı göster</button> <button class="compare-clear" id="compare-clear" type="button">Seçimi temizle</button></div>
+<p class="article-meta" id="compare-status" role="status" aria-atomic="true"></p>
+</aside><div class="dossier-grid"><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="false" data-phase="Ruhsatlı tedavi" data-target="Oksidatif stres yanıtında görev alan NRF2 yolu." data-results="MOXIe’nin 48 haftalık kontrollü verileri ve ruhsat değerlendirmesi EMA’da yer alıyor." data-source="https://www.ema.europa.eu/en/medicines/human/EPAR/skyclarys">
 <span class="badge">Diğer yaklaşımlar</span>
 <h2><a href="ilac-skyclarys.html">Omaveloxolone · Skyclarys</a></h2>
 <dl><div><dt>Aşama</dt><dd>Ruhsatlı tedavi</dd></div><div><dt>Geliştirici</dt><dd>Biogen</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Omaveloxolone, Skyclarys adıyla kullanılan ağızdan alınan bir tedavidir.</p>
-<a class="textlink" href="ilac-skyclarys.html" aria-label="Omaveloxolone · Skyclarys dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="true">
+<a class="textlink" href="ilac-skyclarys.html" aria-label="Omaveloxolone · Skyclarys dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="skyclarys"> Omaveloxolone · Skyclarys karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="true" data-phase="Faz III · PROVE-FA" data-target="Oksidatif stresle ilişkili hücresel yollar." data-results="MOVE-FA sonuçları yayımlandı. Yeni PROVE-FA çalışması ayrı bir veri seti oluşturacak." data-source="https://www.curefa.org/drug-development/vatiquinone-ptc-743/">
 <span class="badge">Diğer yaklaşımlar</span>
 <h2><a href="ilac-vatiquinone.html">Vatiquinone · PROVE-FA</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz III · PROVE-FA</dd></div><div><dt>Geliştirici</dt><dd>PTC Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>PTC Therapeutics’in geliştirdiği vatiquinone, PTC-743 ve eski yayınlarda EPI-743 adlarıyla da geçer.</p>
-<a class="textlink" href="ilac-vatiquinone.html" aria-label="Vatiquinone · PROVE-FA dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="frataxin" data-research="true">
+<a class="textlink" href="ilac-vatiquinone.html" aria-label="Vatiquinone · PROVE-FA dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="vatiquinone"> Vatiquinone · PROVE-FA karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="frataxin" data-research="true" data-phase="Faz III · FORWARD-FA" data-target="Hücrelere işlevsel frataxin proteini ulaştırmak." data-results="Larimar açık etiketli ara veriler paylaştı. Eşzamanlı plasebo kontrolü bulunmadığı için klinik etkiyi yorumlamak sınırlı." data-source="https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and">
 <span class="badge">Frataxin düzeyini hedefleyen tedaviler</span>
 <h2><a href="ilac-nomlabofusp.html">Nomlabofusp · FORWARD-FA</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz III · FORWARD-FA</dd></div><div><dt>Geliştirici</dt><dd>Larimar Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Larimar Therapeutics’in nomlabofusp programı, önceki adıyla CTI-1601, eksik frataxin proteinini yerine koymayı amaçlar.</p>
-<a class="textlink" href="ilac-nomlabofusp.html" aria-label="Nomlabofusp · FORWARD-FA dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="frataxin" data-research="true">
+<a class="textlink" href="ilac-nomlabofusp.html" aria-label="Nomlabofusp · FORWARD-FA dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="nomlabofusp"> Nomlabofusp · FORWARD-FA karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="frataxin" data-research="true" data-phase="Faz I/II · RESTORE-FA" data-target="Hücrenin kendi FXN geninden frataxin üretimini artırmak." data-results="Şirket dört haftalık erken verileri paylaştı. Doz grupları küçüktü ve daha uzun takip sürüyor." data-source="https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-four-week-iv-data-restore-fa-trial">
 <span class="badge">Frataxin düzeyini hedefleyen tedaviler</span>
 <h2><a href="ilac-dt216p2.html">DT-216P2 · RESTORE-FA</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz I/II · RESTORE-FA</dd></div><div><dt>Geliştirici</dt><dd>Design Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Design Therapeutics’in GeneTAC yaklaşımı, FXN genindeki genişlemiş GAA tekrarlarını hedefleyip genin okunmasını desteklemeyi amaçlar.</p>
-<a class="textlink" href="ilac-dt216p2.html" aria-label="DT-216P2 · RESTORE-FA dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true">
+<a class="textlink" href="ilac-dt216p2.html" aria-label="DT-216P2 · RESTORE-FA dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="dt216p2"> DT-216P2 · RESTORE-FA karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true" data-phase="Faz II · SUNRISE-FA 2" data-target="FXN gen kopyasını taşıyarak özellikle kalpte frataxin üretimini desteklemek." data-results="MDS 2026’da erken nörolojik ölçümler sunuldu. SUNRISE-FA 2’nin ana sonuçları ayrı bir veri seti olacak." data-source="https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/">
 <span class="badge">Gen temelli tedaviler</span>
 <h2><a href="ilac-lx2006.html">LX2006 · SUNRISE-FA 2</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz II · SUNRISE-FA 2</dd></div><div><dt>Geliştirici</dt><dd>Lexeo Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Lexeo Therapeutics’in LX2006 tedavisi FA’ya bağlı kardiyomiyopatiyi hedefleyerek geliştirildi.</p>
-<a class="textlink" href="ilac-lx2006.html" aria-label="LX2006 · SUNRISE-FA 2 dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true">
+<a class="textlink" href="ilac-lx2006.html" aria-label="LX2006 · SUNRISE-FA 2 dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="lx2006"> LX2006 · SUNRISE-FA 2 karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true" data-phase="Faz 1b · FALCON" data-target="FXN gen kopyasını beyin ve damar içi uygulama yoluyla hedef dokulara ulaştırmak." data-results="Şirket beş kişilik erken güvenlilik takibini bildirdi. İlk klinik verilerin açıklanması bekleniyor." data-source="https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results">
 <span class="badge">Gen temelli tedaviler</span>
 <h2><a href="ilac-sgt212.html">SGT-212 · FALCON</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz 1b · FALCON</dd></div><div><dt>Geliştirici</dt><dd>Solid Biosciences</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-08">8 Kasım 2026</time></dd></div></dl>
 <p>Solid Biosciences’in SGT-212 programı, frataxin genini hem sinir sistemi hem de kalp ve sistemik dokulara ulaştırmayı amaçlar.</p>
-<a class="textlink" href="ilac-sgt212.html" aria-label="SGT-212 · FALCON dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="true">
+<a class="textlink" href="ilac-sgt212.html" aria-label="SGT-212 · FALCON dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="sgt212"> SGT-212 · FALCON karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="true" data-phase="Faz IIa" data-target="ROCK2 enziminin etkinliğini baskılamak." data-results="Program için Faz IIa çalışma kaydı ve şirketin düzenleyici duyuruları var." data-source="https://clinicaltrials.gov/study/NCT07870590">
 <span class="badge">Diğer yaklaşımlar</span>
 <h2><a href="ilac-gv101.html">GV101 · ROCK2 inhibitörü</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz IIa</dd></div><div><dt>Geliştirici</dt><dd>Graviton BioScience</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Graviton BioScience’in GV101 adayı, ağızdan alınan seçici bir ROCK2 inhibitörüdür.</p>
-<a class="textlink" href="ilac-gv101.html" aria-label="GV101 · ROCK2 inhibitörü dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true">
+<a class="textlink" href="ilac-gv101.html" aria-label="GV101 · ROCK2 inhibitörü dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="gv101"> GV101 · ROCK2 inhibitörü karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true" data-phase="Klinik öncesi" data-target="Kök ve öncül kan hücrelerini genetik olarak değiştirerek frataxin üretimini desteklemek." data-results="Mevcut kamuya açık bilgiler klinik öncesi çalışmalar ve üretim hazırlıklarını kapsıyor." data-source="https://www.curefa.org/drug-development/ppl-001/">
 <span class="badge">Gen temelli tedaviler</span>
 <h2><a href="ilac-ppl001.html">PPL-001 · gen düzenlenmiş hücre tedavisi</a></h2>
 <dl><div><dt>Aşama</dt><dd>Klinik öncesi</dd></div><div><dt>Geliştirici</dt><dd>Papillon Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Papillon Therapeutics’in PPL-001 programı, kişinin kan yapıcı kök ve öncül hücrelerinde FXN ile ilişkili genetik kusuru düzeltmeyi amaçlar.</p>
-<a class="textlink" href="ilac-ppl001.html" aria-label="PPL-001 · gen düzenlenmiş hücre tedavisi dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true">
+<a class="textlink" href="ilac-ppl001.html" aria-label="PPL-001 · gen düzenlenmiş hücre tedavisi dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="ppl001"> PPL-001 · gen düzenlenmiş hücre tedavisi karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="gene" data-research="true" data-phase="Faz I · FACET duyurusu" data-target="AAV aracılığıyla işlevsel FXN gen kopyası taşımak." data-results="FACET Faz I araştırması duyuruldu. Voyager ilk katılımcı düzeyindeki verileri 2027’de bekliyor." data-source="https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating">
 <span class="badge">Gen temelli tedaviler</span>
 <h2><a href="ilac-nbib223.html">NBIB-223 · FACET</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz I · FACET duyurusu</dd></div><div><dt>Geliştirici</dt><dd>Neurocrine Biosciences / Voyager Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>Neurocrine Biosciences ve Voyager Therapeutics’in ortak programı NBIB-223, işlevsel FXN genini beyin ve kalp gibi FA’dan etkilenen dokulara ulaştırmayı amaçlar.</p>
-<a class="textlink" href="ilac-nbib223.html" aria-label="NBIB-223 · FACET dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="true">
+<a class="textlink" href="ilac-nbib223.html" aria-label="NBIB-223 · FACET dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="nbib223"> NBIB-223 · FACET karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="other" data-research="true" data-phase="Faz III · BRAVE" data-target="Omaveloxolone’un çocuklarda güvenlilik ve etkisini değerlendirmek." data-results="Biogen katılımcı alımının tamamlandığını bildirdi. Çalışma sonuçları bekleniyor." data-source="https://www.curefa.org/news/community-statement-update-from-biogen-4/">
 <span class="badge">Diğer yaklaşımlar</span>
 <h2><a href="ilac-brave.html">Omaveloxolone · BRAVE</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz III · BRAVE</dd></div><div><dt>Geliştirici</dt><dd>Biogen</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>BRAVE yeni bir ilaç adı değil, Biogen’in omaveloxolone için yürüttüğü çocuk araştırmasının adıdır.</p>
-<a class="textlink" href="ilac-brave.html" aria-label="Omaveloxolone · BRAVE dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article><article class="card dossier-card treatment-card" data-treatment-group="frataxin" data-research="true">
+<a class="textlink" href="ilac-brave.html" aria-label="Omaveloxolone · BRAVE dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="brave"> Omaveloxolone · BRAVE karşılaştırmaya ekle</label></article><article class="card dossier-card treatment-card" data-treatment-group="frataxin" data-research="true" data-phase="Faz II · Açık etiketli takip" data-target="Nomlabofusp’un uzun süreli kullanımını ve güvenliliğini izlemek." data-results="Larimar uzun süreli açık etiketli takipten ara sonuçlar yayımladı." data-source="https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and">
 <span class="badge">Frataxin düzeyini hedefleyen tedaviler</span>
 <h2><a href="ilac-jive.html">Nomlabofusp · JIVE/OLE</a></h2>
 <dl><div><dt>Aşama</dt><dd>Faz II · Açık etiketli takip</dd></div><div><dt>Geliştirici</dt><dd>Larimar Therapeutics</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="2026-11-01">1 Kasım 2026</time></dd></div></dl>
 <p>JIVE/OLE olarak anılan açık etiketli çalışma, nomlabofusp programının uzun süreli takip koludur; ayrı bir ilaç değildir.</p>
-<a class="textlink" href="ilac-jive.html" aria-label="Nomlabofusp · JIVE/OLE dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a></article></div>
+<a class="textlink" href="ilac-jive.html" aria-label="Nomlabofusp · JIVE/OLE dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<label class="compare-choice" hidden><input type="checkbox" value="jive"> Nomlabofusp · JIVE/OLE karşılaştırmaya ekle</label></article></div>
+<dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-dialog-title">
+<div class="compare-dialog-head"><h2 id="compare-dialog-title">Tedavi dosyaları karşılaştırması</h2><form method="dialog"><button type="submit" autofocus>Kapat</button></form></div>
+<div id="compare-content" tabindex="0" role="region" aria-label="Karşılaştırma tablosu"></div>
+</dialog>
 <p><a href="https://www.curefa.org/drug-development/">FARA’nın geliştirme hattı ve geçmiş programları ↗</a></p></section></main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer><script>const dossierRoutes={"skyclarys": "ilac-skyclarys.html", "vatiquinone": "ilac-vatiquinone.html", "nomlabofusp": "ilac-nomlabofusp.html", "dt216p2": "ilac-dt216p2.html", "lx2006": "ilac-lx2006.html", "sgt212": "ilac-sgt212.html", "gv101": "ilac-gv101.html", "ppl001": "ilac-ppl001.html", "nbib223": "ilac-nbib223.html", "brave": "ilac-brave.html", "jive": "ilac-jive.html"};const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script></body></html>

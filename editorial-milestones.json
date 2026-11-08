@@ -1,0 +1,400 @@
+{
+  "skyclarys": {
+    "target": "Oksidatif stres yanıtında görev alan NRF2 yolu.",
+    "results": "MOXIe’nin 48 haftalık kontrollü verileri ve ruhsat değerlendirmesi EMA’da yer alıyor.",
+    "source": [
+      "EMA: ruhsat, temel çalışma ve güvenlilik",
+      "https://www.ema.europa.eu/en/medicines/human/EPAR/skyclarys"
+    ],
+    "events": [
+      {
+        "date": "2024-02-09",
+        "title": "Skyclarys Avrupa Birliği’nde ruhsat aldı",
+        "summary": "EMA kaydında kullanım alanı Friedreich ataksisi olan 16 yaş ve üzeri kişiler olarak belirtiliyor.",
+        "kind": "Ruhsat",
+        "source": [
+          "EMA: ruhsat, temel çalışma ve güvenlilik",
+          "https://www.ema.europa.eu/en/medicines/human/EPAR/skyclarys"
+        ]
+      },
+      {
+        "date": "2023-02-28",
+        "title": "FDA Skyclarys’i onayladı",
+        "summary": "FDA kaydında onay tarihi ve kullanım alanı yer alıyor.",
+        "kind": "Ruhsat",
+        "source": [
+          "FDA ruhsat kaydı",
+          "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=461214"
+        ]
+      }
+    ]
+  },
+  "vatiquinone": {
+    "target": "Oksidatif stresle ilişkili hücresel yollar.",
+    "results": "MOVE-FA sonuçları yayımlandı. Yeni PROVE-FA çalışması ayrı bir veri seti oluşturacak.",
+    "source": [
+      "FARA: vatiquinone ve MOVE-FA geçmişi",
+      "https://www.curefa.org/drug-development/vatiquinone-ptc-743/"
+    ],
+    "events": [
+      {
+        "date": "2026-10-29",
+        "title": "PTC, PROVE-FA’nın başlatıldığını bildirdi",
+        "summary": "Şirket, yeni çalışmanın düzenleyici başvuruyu desteklemek üzere 2026’nın üçüncü çeyreğinde başlatıldığını açıkladı.",
+        "kind": "Çalışma güncellemesi",
+        "source": [
+          "PTC Therapeutics",
+          "https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-provides-corporate-update-and-reports-third-4"
+        ],
+        "article": "vatiquinone-prove"
+      }
+    ]
+  },
+  "nomlabofusp": {
+    "target": "Hücrelere işlevsel frataxin proteini ulaştırmak.",
+    "results": "Larimar açık etiketli ara veriler paylaştı. Eşzamanlı plasebo kontrolü bulunmadığı için klinik etkiyi yorumlamak sınırlı.",
+    "source": [
+      "Larimar: 29 Haziran 2026 verileri ve başvuru açıklaması",
+      "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+    ],
+    "events": [
+      {
+        "date": "2026-11-05",
+        "title": "ICAR 2026 için üç poster duyuruldu",
+        "summary": "Larimar, daha önce paylaşılan ara klinik veriler ile yeni lipid ve gen ifadesi analizlerinin kongrede sunulacağını açıkladı.",
+        "kind": "Kongre duyurusu",
+        "source": [
+          "Larimar Therapeutics",
+          "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "title": "Nomlabofusp için ilk BLA bölümü sunuldu: biyobelirteç, klinik işlev ve güvenlilik",
+        "summary": "Larimar kademeli ruhsat başvurusu ve açık etiketli izlem verilerini duyurdu. Başvurunun ilk bölümü onay anlamına gelmiyor.",
+        "kind": "Ara veri ve başvuru",
+        "source": [
+          "Larimar: 29 Haziran 2026 verileri ve başvuru açıklaması",
+          "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+        ],
+        "article": "nomlabofusp-bla"
+      }
+    ],
+    "expected": [
+      {
+        "window": "12 Kasım 2026",
+        "title": "ICAR’da üç poster sunumu planlandı.",
+        "source": [
+          "Larimar Therapeutics",
+          "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+        ]
+      }
+    ]
+  },
+  "dt216p2": {
+    "target": "Hücrenin kendi FXN geninden frataxin üretimini artırmak.",
+    "results": "Şirket dört haftalık erken verileri paylaştı. Doz grupları küçüktü ve daha uzun takip sürüyor.",
+    "source": [
+      "Design: dört haftalık veriler, 18 Mayıs 2026",
+      "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-four-week-iv-data-restore-fa-trial"
+    ],
+    "events": [
+      {
+        "date": "2026-11-04",
+        "title": "Design Therapeutics RESTORE-FA takvimini güncelledi",
+        "summary": "Şirket, geliştirme planı ve 12 haftalık veri paylaşımı için öngördüğü zaman aralıklarını açıkladı.",
+        "kind": "Takvim duyurusu",
+        "source": [
+          "Design Therapeutics",
+          "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-third-quarter-2026-financial"
+        ],
+        "article": "dt216p2-kasim"
+      },
+      {
+        "date": "2026-08-03",
+        "title": "RESTORE-FA takvimi güncellendi: 12 haftalık veri 2027 ilk çeyrekte bekleniyor",
+        "summary": "Design, dört haftalık verilerin ardından kohort değişikliklerini açıkladı. Kısa dönem bulgularla uzun dönem etkiyi ayırmak gerekiyor.",
+        "kind": "Geliştirme duyurusu",
+        "source": [
+          "Design: güncellenen plan, 3 Ağustos 2026",
+          "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-provides-restore-fa-clinical-development"
+        ],
+        "article": "dt216p2-takvim"
+      },
+      {
+        "date": "2026-05-18",
+        "title": "DT-216P2’nin ilk dört haftalık verisi: erken sinyal ne anlama geliyor?",
+        "summary": "16 kişilik doz araştırmasında frataxin ve klinik ölçümler bildirildi. Dört kişilik alt grubun değişimi bütün hastalara genellenemez.",
+        "kind": "Erken klinik veri",
+        "source": [
+          "Design: dört haftalık veriler, 18 Mayıs 2026",
+          "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-four-week-iv-data-restore-fa-trial"
+        ],
+        "article": "dt216p2-ilk-veri"
+      }
+    ],
+    "expected": [
+      {
+        "window": "2026 son çeyrek",
+        "title": "Ruhsatlandırmaya yönelik geliştirme planı hakkında şirket güncellemesi bekleniyor.",
+        "source": [
+          "Design Therapeutics",
+          "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-third-quarter-2026-financial"
+        ]
+      },
+      {
+        "window": "2027 ilk çeyrek",
+        "title": "12 haftalık RESTORE-FA verilerinin paylaşılması bekleniyor.",
+        "source": [
+          "Design Therapeutics",
+          "https://investors.designtx.com/news-releases/news-release-details/design-therapeutics-announces-third-quarter-2026-financial"
+        ]
+      }
+    ]
+  },
+  "lx2006": {
+    "target": "FXN gen kopyasını taşıyarak özellikle kalpte frataxin üretimini desteklemek.",
+    "results": "MDS 2026’da erken nörolojik ölçümler sunuldu. SUNRISE-FA 2’nin ana sonuçları ayrı bir veri seti olacak.",
+    "source": [
+      "MDS 2026: 17 katılımcılı nörolojik araştırma özeti",
+      "https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/"
+    ],
+    "events": [
+      {
+        "date": "2026-10-07",
+        "title": "LX2006: kalp odaklı araştırmada nörolojik bulgular nasıl yorumlanmalı?",
+        "summary": "MDS 2026 özeti, 17 yetişkinde erken nörolojik değerlendirmeleri sunuyor. Üst uzuv koordinasyonundaki bulgular önemli; eşzamanlı kontrol bulunmaması yorumu sınırlıyor.",
+        "kind": "Kongre verisi",
+        "source": [
+          "MDS 2026 araştırma özeti",
+          "https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/"
+        ],
+        "article": "lx2006-mds"
+      },
+      {
+        "date": "2026-08-12",
+        "title": "Lexeo SUNRISE-FA 2 protokolünü güncelledi",
+        "summary": "Firma çalışmanın protokolü ve sonuç takvimi hakkında bilgi verdi.",
+        "kind": "Çalışma duyurusu",
+        "source": [
+          "Lexeo: Ağustos 2026 SUNRISE-FA 2 güncellemesi",
+          "https://lexeotherapeutics.gcs-web.com/news-releases/news-release-details/lexeo-therapeutics-reports-second-quarter-2026-financial-results"
+        ]
+      }
+    ],
+    "expected": [
+      {
+        "window": "2027 ikinci yarı",
+        "title": "SUNRISE-FA 2’nin ana sonuçları için Lexeo’nun açıkladığı zaman aralığı.",
+        "source": [
+          "Lexeo: Ağustos 2026 SUNRISE-FA 2 güncellemesi",
+          "https://lexeotherapeutics.gcs-web.com/news-releases/news-release-details/lexeo-therapeutics-reports-second-quarter-2026-financial-results"
+        ]
+      }
+    ]
+  },
+  "sgt212": {
+    "target": "FXN gen kopyasını beyin ve damar içi uygulama yoluyla hedef dokulara ulaştırmak.",
+    "results": "Şirket beş kişilik erken güvenlilik takibini bildirdi. İlk klinik verilerin açıklanması bekleniyor.",
+    "source": [
+      "Solid Biosciences",
+      "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+    ],
+    "events": [
+      {
+        "date": "2026-11-04",
+        "title": "FALCON’da beş katılımcıya SGT-212 uygulandı",
+        "summary": "Solid Biosciences, 3 Kasım itibarıyla tedaviyle ilişkili ciddi advers olay gözlenmediğini bildirdi. Açıklama beş katılımcının erken güvenlilik takibini kapsıyor.",
+        "kind": "Erken güvenlilik güncellemesi",
+        "source": [
+          "Solid Biosciences",
+          "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+        ],
+        "article": "sgt212-kasim"
+      },
+      {
+        "date": "2026-10-26",
+        "title": "SGT-212’ye Avrupa yetim ilaç statüsü: FALCON’da beş katılımcı",
+        "summary": "Solid, Avrupa Komisyonu statüsünü ve beş kişilik erken güvenlilik takibini duyurdu. İlk klinik veriler için beklenti 2027’nin ilk çeyreği.",
+        "kind": "Düzenleyici gelişme",
+        "source": [
+          "Solid Biosciences",
+          "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-announces-european-commission-orphan"
+        ],
+        "article": "sgt212-avrupa"
+      }
+    ],
+    "expected": [
+      {
+        "window": "2027 ilk çeyrek",
+        "title": "Katılımcı alımına bağlı olarak ilk FALCON klinik verileri bekleniyor.",
+        "source": [
+          "Solid Biosciences",
+          "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+        ]
+      }
+    ]
+  },
+  "gv101": {
+    "target": "ROCK2 enziminin etkinliğini baskılamak.",
+    "results": "Program için Faz IIa çalışma kaydı ve şirketin düzenleyici duyuruları var.",
+    "source": [
+      "ClinicalTrials.gov: NCT07870590; ayrıntıları ayrıca teyit edin",
+      "https://clinicaltrials.gov/study/NCT07870590"
+    ],
+    "events": [
+      {
+        "date": "2026-11-03",
+        "title": "Graviton GV101 için FDA Fast Track statüsünü duyurdu",
+        "summary": "Bu statü, adayın geliştirme ve inceleme sürecini desteklemeyi amaçlıyor.",
+        "kind": "Düzenleyici gelişme",
+        "source": [
+          "Graviton BioScience",
+          "https://www.prnewswire.com/news-releases/graviton-bioscience-announces-fda-fast-track-designation-for-gv101-for-the-treatment-of-friedreichs-ataxia-302926880.html"
+        ]
+      },
+      {
+        "date": "2026-08-11",
+        "title": "Graviton insan çalışması için IND iznini duyurdu",
+        "summary": "Şirket Faz II araştırması için düzenleyici sürece ilişkin bilgi verdi.",
+        "kind": "Düzenleyici gelişme",
+        "source": [
+          "Sponsor basın açıklaması: FA araştırma planı",
+          "https://www.prnewswire.com/news-releases/graviton-bioscience-announces-clearance-of-investigational-new-drug-ind-for-gv101-for-the-treatment-of-friedreichs-ataxia-302848536.html"
+        ],
+        "article": "gv101"
+      }
+    ]
+  },
+  "ppl001": {
+    "target": "Kök ve öncül kan hücrelerini genetik olarak değiştirerek frataxin üretimini desteklemek.",
+    "results": "Mevcut kamuya açık bilgiler klinik öncesi çalışmalar ve üretim hazırlıklarını kapsıyor.",
+    "source": [
+      "FARA: PPL-001 ve klinik öncesi araştırmalar",
+      "https://www.curefa.org/drug-development/ppl-001/"
+    ],
+    "events": [
+      {
+        "date": "2026-07-21",
+        "title": "PPL-001 üretim ortaklığı: klinik başarı değil, araştırmaya hazırlık adımı",
+        "summary": "Cellares ve Papillon, araştırma adayının üretim sürecini otomatikleştirmek için iş birliği açıkladı.",
+        "kind": "Üretim hazırlığı",
+        "source": [
+          "Cellares ve Papillon: 21 Temmuz 2026 üretim ortaklığı",
+          "https://www.cellares.com/news/cellares-and-papillon-therapeutics-partner-to-automate-manufacturing-of-ppl-001-for-patients-with-friedreichs-ataxia/"
+        ],
+        "article": "ppl001-uretim"
+      }
+    ]
+  },
+  "nbib223": {
+    "target": "AAV aracılığıyla işlevsel FXN gen kopyası taşımak.",
+    "results": "FACET Faz I araştırması duyuruldu. Voyager ilk katılımcı düzeyindeki verileri 2027’de bekliyor.",
+    "source": [
+      "Voyager Therapeutics",
+      "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
+    ],
+    "events": [
+      {
+        "date": "2026-11-05",
+        "title": "Voyager, NBIB-223’ün klinik çalışma planını paylaştı",
+        "summary": "Şirket, Neurocrine’in önümüzdeki aylarda Faz I çalışmasına başlamayı öngördüğünü aktardı.",
+        "kind": "Çalışma duyurusu",
+        "source": [
+          "Voyager Therapeutics",
+          "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
+        ]
+      },
+      {
+        "date": "2026-10-07",
+        "title": "NBIB-223 için FACET duyurusu: ilk klinik aşamada hangi sorular var?",
+        "summary": "Neurocrine ve Voyager programı insan araştırmasına geçiş hazırlığında. Beyin ve kalbe yönelik gen ulaştırma hedefi henüz klinik yarar kanıtı değil.",
+        "kind": "Çalışma duyurusu",
+        "source": [
+          "FARA: NBIB-223 geliştirme ve Ekim 2026 klinik duyurusu",
+          "https://www.curefa.org/drug-development/neurocrine-biosciences-voyager-therapeutics-aav-gene-therapy/"
+        ],
+        "article": "nbib223-facet"
+      }
+    ],
+    "expected": [
+      {
+        "window": "Önümüzdeki aylar",
+        "title": "Voyager’ın 5 Kasım açıklamasında öngörülen Faz I başlangıcı.",
+        "source": [
+          "Voyager Therapeutics",
+          "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
+        ]
+      },
+      {
+        "window": "2027",
+        "title": "İlk katılımcı düzeyindeki veriler için şirket beklentisi.",
+        "source": [
+          "Voyager Therapeutics",
+          "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
+        ]
+      }
+    ]
+  },
+  "brave": {
+    "target": "Omaveloxolone’un çocuklarda güvenlilik ve etkisini değerlendirmek.",
+    "results": "Biogen katılımcı alımının tamamlandığını bildirdi. Çalışma sonuçları bekleniyor.",
+    "source": [
+      "Biogen topluluk açıklaması: alımın tamamlanması",
+      "https://www.curefa.org/news/community-statement-update-from-biogen-4/"
+    ],
+    "events": [
+      {
+        "date": "2026-08-03",
+        "title": "BRAVE’in alımı tamamlandı: çocuklar için sonuçlar hâlâ bekleniyor",
+        "summary": "Biogen’in çocuk araştırmasında yeni alım kapandı. Bu aşama araştırmanın bittiği veya çocuk ruhsatı verildiği anlamına gelmiyor.",
+        "kind": "Katılımcı alımı",
+        "source": [
+          "Biogen topluluk açıklaması: alımın tamamlanması",
+          "https://www.curefa.org/news/community-statement-update-from-biogen-4/"
+        ],
+        "article": "brave-alim"
+      }
+    ]
+  },
+  "jive": {
+    "target": "Nomlabofusp’un uzun süreli kullanımını ve güvenliliğini izlemek.",
+    "results": "Larimar uzun süreli açık etiketli takipten ara sonuçlar yayımladı.",
+    "source": [
+      "Larimar: Haziran 2026 uzun dönem ve güvenlilik açıklaması",
+      "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+    ],
+    "events": [
+      {
+        "date": "2026-11-05",
+        "title": "ICAR 2026 için üç poster duyuruldu",
+        "summary": "Larimar, daha önce paylaşılan ara klinik veriler ile yeni lipid ve gen ifadesi analizlerinin kongrede sunulacağını açıkladı.",
+        "kind": "Kongre duyurusu",
+        "source": [
+          "Larimar Therapeutics",
+          "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "title": "Açık etiketli izlemden ara veriler paylaşıldı",
+        "summary": "Larimar uzun süreli günlük uygulamadan klinik ve güvenlilik verileri açıkladı.",
+        "kind": "Ara klinik veri",
+        "source": [
+          "Larimar: Haziran 2026 uzun dönem ve güvenlilik açıklaması",
+          "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+        ]
+      }
+    ],
+    "expected": [
+      {
+        "window": "12 Kasım 2026",
+        "title": "Larimar’ın ICAR posterleri açık etiketli izlemden daha önce paylaşılan verileri de kapsıyor.",
+        "source": [
+          "Larimar Therapeutics",
+          "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+        ]
+      }
+    ]
+  }
+}
