@@ -172,7 +172,7 @@
           "url": "https://www.solidbio.com/letter-to-the-fa-community-nov2026/"
         },
         {
-          "label": "FARA – FALCON ve çalışma merkezleri",
+          "label": "FARA – FALCON araştırmacıları ve koordinatör iletişimi",
           "url": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/"
         },
         {
@@ -186,21 +186,45 @@
           "city": "Columbus",
           "country": "US",
           "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/",
-          "center": "merkez-us-columbus-ohio-ohio-state-university-wexner-medical-center-noroloji"
+          "center": "merkez-us-columbus-ohio-ohio-state-university-wexner-medical-center-noroloji",
+          "investigator": {
+            "name": "Dr. Yasushi Kisanuki",
+            "url": "https://wexnermedical.osu.edu/find-a-doctor/yasushi-kisanuki-100000354"
+          },
+          "contact": {
+            "name": "OSU Gen Tedavisi Araştırma Ekibi",
+            "email": "OSUgenetherapyresearch@osumc.edu"
+          }
         },
         {
           "name": "Children’s Hospital of Philadelphia (CHOP)",
           "city": "Philadelphia",
           "country": "US",
           "sourceUrl": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/",
-          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program"
+          "center": "merkez-us-philadelphia-pennsylvania-children-s-hospital-of-philadelphia-friedreich-s-ataxia-program",
+          "investigator": {
+            "name": "Dr. David Lynch",
+            "url": "https://www.chop.edu/doctors/lynch-david"
+          },
+          "contact": {
+            "name": "McKenzie Wells",
+            "email": "WELLSM@chop.edu"
+          }
         },
         {
           "name": "UCLA",
           "city": "Los Angeles",
           "country": "US",
           "sourceUrl": "https://www.uclahealth.org/clinical-trials/study-sgt-212-gene-therapy-friedreichs-ataxia",
-          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic"
+          "center": "merkez-us-los-angeles-california-ucla-health-ataxia-center-ve-neurogenetics-clinic",
+          "investigator": {
+            "name": "Dr. Perry B. Shieh",
+            "url": "https://www.uclahealth.org/providers/perry-shieh"
+          },
+          "contact": {
+            "name": "Dillan Hayward",
+            "email": "dhayward@mednet.ucla.edu"
+          }
         }
       ],
       "note": "Solid Biosciences’in Kasım 2026 açıklamasında ve FARA’nın çalışmaya özel sayfasında adı verilen ABD merkezleri."
@@ -983,5 +1007,115 @@
         "url": "https://clinical-trials-search.canada.ca/en/clinical-trial/300031-friedreich-ataxia"
       }
     }
-  ]
+  ],
+  "programSources": {
+    "lx2006": [
+      {
+        "label": "Lexeo Therapeutics – SUNRISE-FA 2 çalışma sayfası ve iletişim",
+        "url": "https://trials.lexeotx.com/clinical-trials/sunrise-fa2/"
+      },
+      {
+        "label": "FARA – SUNRISE-FA 2 webinar kaydı (Eylül 2026)",
+        "url": "https://www.curefa.org/news/webinar-recording-lexeo-therapeutics-september-2026/"
+      },
+      {
+        "label": "FARA – Lexeo ve Weill Cornell webinar kaydı (Mayıs 2026)",
+        "url": "https://www.curefa.org/news/webinar-recording-lexeo-therapeutics-may-2026/"
+      }
+    ],
+    "sgt212": [
+      {
+        "label": "Solid Biosciences – FALCON çalışma bilgileri",
+        "url": "https://www.solidbio.com/patients-families/resources-policies/clinical-trials/"
+      },
+      {
+        "label": "Solid Biosciences – Kasım 2026 merkez güncellemesi ve iletişim",
+        "url": "https://www.solidbio.com/letter-to-the-fa-community-nov2026/"
+      },
+      {
+        "label": "Solid Biosciences: 4 Kasım 2026 FALCON güncellemesi",
+        "url": "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+      }
+    ],
+    "dt216p2": [
+      {
+        "label": "Design Therapeutics – DT-216P2 programı",
+        "url": "https://www.designtx.com/our-programs/"
+      },
+      {
+        "label": "FARA – RESTORE-FA çalışması ve ekip iletişimi",
+        "url": "https://www.curefa.org/clinical-studies/a-multiple-ascending-dose-study-of-dt-216p2/"
+      }
+    ],
+    "gv101": [
+      {
+        "label": "Graviton BioScience – GV101 duyuruları",
+        "url": "https://gravitoncorp.com/news/"
+      },
+      {
+        "label": "Clinilabs – araştırma merkezi iletişimi",
+        "url": "https://clinilabs.com/contact/"
+      }
+    ],
+    "vatiquinone": [
+      {
+        "label": "PTC Therapeutics – PROVE-FA çalışma sayfası",
+        "url": "https://clinicaltrials.ptcbio.com/trials/PTC743-FA-304"
+      },
+      {
+        "label": "FARA – PROVE-FA merkezleri ve iletişim",
+        "url": "https://www.curefa.org/clinical-studies/long-term-efficacy-study-of-vatiquinone-for-the-treatment-of-friedreichs-ataxia-prove-fa/"
+      }
+    ],
+    "nomlabofusp": [
+      {
+        "label": "Larimar Therapeutics – Nomlabofusp programı",
+        "url": "https://larimartx.com/our-programs/cti-1601/"
+      },
+      {
+        "label": "FARA – FORWARD-FA merkezleri ve iletişim",
+        "url": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/"
+      }
+    ],
+    "jive": [
+      {
+        "label": "Larimar Therapeutics – Nomlabofusp programı",
+        "url": "https://larimartx.com/our-programs/cti-1601/"
+      },
+      {
+        "label": "UCSF – JIVE çalışma kaydı ve iletişim",
+        "url": "https://clinicaltrials.ucsf.edu/trial/NCT06447025"
+      }
+    ],
+    "brave": [
+      {
+        "label": "Biogen – BRAVE araştırma kaydı",
+        "url": "https://www.biogentriallink.com/en-us/home/find-a-clinical-trial/clinical-trials-study-details.html?nctId=NCT06953583"
+      },
+      {
+        "label": "FARA – BRAVE çalışma bilgileri",
+        "url": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/"
+      }
+    ],
+    "ppl001": [
+      {
+        "label": "Papillon Therapeutics – geliştirici firma",
+        "url": "https://papillon-tx.com/"
+      },
+      {
+        "label": "FARA – PPL-001 araştırma aşaması",
+        "url": "https://www.curefa.org/drug-development/ppl-001/"
+      }
+    ],
+    "nbib223": [
+      {
+        "label": "Neurocrine Biosciences – resmî geliştirme programları",
+        "url": "https://www.neurocrine.com/pipeline/"
+      },
+      {
+        "label": "FARA – NBIB-223 programı ve FACET duyurusu",
+        "url": "https://www.curefa.org/drug-development/neurocrine-biosciences-voyager-therapeutics-aav-gene-therapy/"
+      }
+    ]
+  }
 }

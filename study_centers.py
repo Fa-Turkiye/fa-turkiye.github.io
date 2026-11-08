@@ -32,6 +32,7 @@ class StudyCenters:
         if directory is None:
             directory = json.loads((root / "centers.json").read_text(encoding="utf-8"))
         self.programs = data["programs"]
+        self.program_sources = data.get("programSources", {})
         self.countries = {**directory["countries"], **data.get("countries", {})}
         self.checked_on = date.fromisoformat(data["checked_on"])
         self.by_program = defaultdict(list)
@@ -64,34 +65,43 @@ class StudyCenters:
     def dossier(self, program):
         trials = self.by_program.get(program, [])
         unpublished = self.unpublished.get(program)
-        if not trials and not unpublished:
+        program_sources = self.program_sources.get(program, [])
+        if not trials and not unpublished and not program_sources:
             return ""
         checked = self.checked_on.strftime("%d.%m.%Y")
         content = [
             '<section id="arastirma-merkezleri" class="article-section study-centers" aria-labelledby="study-centers-title">',
-            '<h2 id="study-centers-title">Araştırma merkezleri</h2>',
+            '<h2 id="study-centers-title">Resmî kaynaklar ve iletişim</h2>',
             f'<p class="article-meta">Merkez kaynakları <time datetime="{self.checked_on}">{checked}</time> tarihinde kontrol edildi.</p>',
         ]
+        if program_sources:
+            content.append('<h3>Firma ve program kaynakları</h3><ul>')
+            for source in program_sources:
+                content.append(f'<li>{source_link(source["url"], source["label"])}</li>')
+            content.append('</ul>')
         if trials:
             content.append(
-                '<p>Çalışma kaydında veya kurum duyurusunda adı yayımlanan yerler aşağıda. '
-                'Merkezin güncel katılım durumunu ilgili çalışma kaydından ve ekibinden doğrulayın.</p>'
+                '<p>Resmî kaydın “Contacts and Locations” bölümünde, yayımlandığı ölçüde araştırma ekibi, '
+                'merkezler ve iletişim bilgileri yer alır. Güncel durum için çalışma kaydını kontrol edin.</p>'
             )
         for trial in trials:
-            content.append(self.trial_locations(trial))
+            content.append(self.trial_locations(trial, program_sources))
         if unpublished:
+            if not trials:
+                content.append('<h3>Klinik çalışma ve merkez durumu</h3>')
             source = unpublished["source"]
             content.append(f'<p>{escape(unpublished["text"])}</p>')
             content.append(f'<p>{source_link(source["url"], source["label"])}</p>')
         content.append('<p><a href="merkezler.html">FA Merkezleri rehberini aç</a></p></section>')
         return "".join(content)
 
-    def trial_locations(self, trial):
+    def trial_locations(self, trial, program_sources):
         locations = trial["locations"]
         heading = f'<h3 id="calisma-{slug(trial["id"])}">{escape(trial["title"])}</h3>'
         note = f'<p>{escape(trial["note"])}</p>' if trial.get("note") else ""
-        sources = [{"url": trial["url"], "label": trial["sourceLabel"]}, *trial.get("extraSources", [])]
-        published_sources = {source["url"].split("#", 1)[0] for source in sources}
+        sources = trial.get("extraSources", [])
+        published_sources = {source["url"].split("#", 1)[0] for source in [*program_sources, *sources]}
+        published_sources.add(trial["url"])
         rows = []
         for location in locations:
             city = escape(location["city"])
@@ -104,6 +114,17 @@ class StudyCenters:
             reference = ""
             if url and url.split("#", 1)[0] not in published_sources:
                 reference = f'<small>{source_link(url, "Merkez kaynağı")}</small>'
+            investigator = location.get("investigator")
+            if investigator:
+                profile = source_link(investigator["url"], investigator["name"])
+                description += f'<small>Sorumlu araştırmacı · {profile}</small>'
+            contact = location.get("contact")
+            if contact:
+                email = escape(contact["email"])
+                description += (
+                    f'<small>Araştırma iletişimi · {escape(contact["name"])} · '
+                    f'<a href="mailto:{email}">{email}</a></small>'
+                )
             rows.append(f'<li><strong>{name}</strong><small>{city}, {country}</small>{description}{reference}</li>')
         listing = ""
         if rows:
@@ -112,8 +133,17 @@ class StudyCenters:
                 f'<details class="study-location-list"{open_attr}><summary>{len(rows)} merkez</summary>'
                 f'<ul>{"".join(rows)}</ul></details>'
             )
-        links = " · ".join(source_link(source["url"], source["label"]) for source in sources)
-        return f'<div class="study-location-group">{heading}{note}{listing}<p class="study-source-links">{links}</p></div>'
+        registry = source_link(
+            trial["url"], f'{trial["sourceLabel"]} · {trial["id"]} çalışma kaydı ve iletişim'
+        )
+        program_urls = {source["url"] for source in program_sources}
+        other_links = [
+            source_link(source["url"], source["label"]) for source in sources
+            if source["url"] not in program_urls
+        ]
+        links = " · ".join(other_links)
+        related = f'<p class="study-source-links">{links}</p>' if links else ""
+        return f'<div class="study-location-group">{heading}{note}<p>{registry}</p>{listing}{related}</div>'
 
     def card(self, identifier):
         links = self.by_center.get(identifier, [])

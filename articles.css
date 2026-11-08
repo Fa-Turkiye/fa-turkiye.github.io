@@ -53,3 +53,7 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
   font-size: .9rem;
   overflow-wrap: anywhere;
 }
+
+.study-location-list a[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}

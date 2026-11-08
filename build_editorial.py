@@ -34,17 +34,17 @@ def page(title, body, filename, description, active='ilaclar.html'):
 <link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js" defer></script><meta name="theme-color" content="#f7f7ef"></head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
 <main class="wrap editorial-main" id="main-content" tabindex="-1">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
 
-def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None, studies=''):
+def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None, studies='', checked_on='2026-11-01', checked_label='1 Kasım 2026'):
     count = sum(len(p.split()) for _, p in sections)
     lead_text = lead or '. '.join(sections[0][1].split('. ')[:2]).rstrip('.') + '.'
     toc = ''.join(f'<li><a href="#bolum-{i}">{esc(t)}</a></li>' for i,(t,_) in enumerate(sections,1))
     if studies:
-        toc += '<li><a href="#arastirma-merkezleri">Araştırma merkezleri</a></li>'
+        toc = '<li><a href="#arastirma-merkezleri">Resmî kaynaklar ve iletişim</a></li>' + toc
     paragraphs = ''.join(f'<section id="bolum-{i}" class="article-section"><h2>{esc(t)}</h2><p>{esc(p)}</p></section>' for i,(t,p) in enumerate(sections,1))
     src = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)} ↗</a></li>' for t,u in sources)
     return f'''<p class="breadcrumb"><a href="{back}">← {category}</a></p><article class="long-article">
 <div class="article-heading"><span class="badge">{esc(status)}</span><h1>{esc(title)}</h1>
-<p class="article-meta">Son kaynak kontrolü: <time datetime="2026-11-01">1 Kasım 2026</time> · Yaklaşık {max(2,math.ceil(count/160))} dakika okuma</p>
+<p class="article-meta">Son kaynak kontrolü: <time datetime="{esc(checked_on)}">{esc(checked_label)}</time> · Yaklaşık {max(2,math.ceil(count/160))} dakika okuma</p>
 {f'<p class="article-meta">Geliştirici: {esc(sponsor)}</p>' if sponsor else ''}<p class="article-lead">{esc(lead_text)}</p></div>
 <nav class="article-toc" aria-label="Yazı içindekiler"><h2>Bu yazıda</h2><ol>{toc}</ol></nav>
 <div class="article-prose">{paragraphs}{studies}{extra}<section id="kaynaklar" class="article-section article-sources"><h2>Kaynaklar ve doğrulama</h2><ol>{src}</ol><p class="article-meta">Özgün Türkçe açıklama ve değerlendirme. Şirket hedefleri, açıklanmış bulgular ve henüz doğrulanmayan noktalar metinde ayrılmıştır. Kaynak tarihleri ve merkezlerin alım durumları farklı olabilir.</p></section></div>
@@ -57,12 +57,12 @@ for key, item in profiles.items():
     if key=='skyclarys': more += '<p><a href="ilac-brave.html#arastirma-merkezleri">BRAVE çocuk çalışması ve merkezleri →</a></p>'
     if key=='brave': more += '<p><a href="ilac-skyclarys.html">Omaveloxolone’un ana ilaç dosyasını da okuyun →</a></p>'
     if key=='jive': more += '<p><a href="ilac-nomlabofusp.html">Nomlabofusp ana ilaç dosyasını da okuyun →</a></p>'
-    more += '<p><a href="katilim-rehberi.html#program-'+key+'">Bu programın katılım rehberini aç →</a></p>'
-    body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key))
+    review = item.get('source_review', {})
+    body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), **review)
     (ROOT / filename).write_text(page(item['title'],body,filename,item['sections'][0][1]))
 
 cards = ''.join(f'''<a class="card dossier-card" href="ilac-{k}.html"><span class="badge">{esc(v['status'])}</span><h2>{esc(names[k])}</h2><p>{esc(v['sections'][0][1].split('. ')[0])}.</p><b>Kapsamlı dosyayı oku →</b></a>''' for k,v in profiles.items())
-intro = '<div class="editorial-intro"><span class="badge">İLAÇ KÜTÜPHANESİ</span><h1>Bir özetten fazlası: FA tedavi dosyaları</h1><p>Hedef, mekanizma, geliştirme geçmişi, açıklanan sonuçlar, güvenlilik ve Türkiye’den katılım bilgileri. Her dosyada resmî kaynaklar ve kontrol tarihi bulunur.</p><p>Çalışma dosyalarındaki <strong>Araştırma merkezleri</strong> bölümünden kurum listesine ulaşabilirsiniz. <a href="merkezler.html">FA Merkezleri rehberi</a></p><p class="article-meta">9 tedavi/program dosyası ve aynı tedavilere ait 2 ayrı çalışma dosyası · 1 Kasım 2026</p></div>'
+intro = '<div class="editorial-intro"><span class="badge">İLAÇ KÜTÜPHANESİ</span><h1>Bir özetten fazlası: FA tedavi dosyaları</h1><p>Hedef, mekanizma, geliştirme geçmişi, açıklanan sonuçlar, güvenlilik ve Türkiye’den katılım bilgileri. Her dosyada resmî kaynaklar ve kontrol tarihi bulunur.</p><p>Çalışma dosyalarındaki <strong>Resmî kaynaklar ve iletişim</strong> bölümünden firma duyurularına, çalışma kayıtlarına ve yayımlanan merkez bilgilerine ulaşabilirsiniz. <a href="merkezler.html">FA Merkezleri rehberi</a></p><p class="article-meta">9 tedavi/program dosyası ve aynı tedavilere ait 2 ayrı çalışma dosyası · 1 Kasım 2026</p></div>'
 body = intro + '<div class="dossier-grid">'+cards+'</div><p><a href="https://www.curefa.org/drug-development/">FARA’nın tam geliştirme hattı ve geçmiş programları ↗</a></p>'
 aliases = json.dumps({k:f'ilac-{k}.html' for k in profiles})
 redirect = '<script>const dossierRoutes='+aliases+';const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script>'

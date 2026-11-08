@@ -237,7 +237,7 @@
   },
   "sgt212": {
     "title": "SGT-212: beyin ve kalbi birlikte hedefleyen çift yollu gen tedavisi",
-    "status": "Deneysel · Faz 1b FALCON; 26 Ekim 2026 şirket güncellemesi",
+    "status": "Deneysel · Faz 1b FALCON",
     "sections": [
       [
         "Hedefi neden iki uygulama yolunu içeriyor?",
@@ -253,15 +253,15 @@
       ],
       [
         "En yeni açıklama ve güvenlilik sınırı",
-        "26 Ekim 2026 şirket açıklamasında, 5 Ekim veri kesim tarihinde beş katılımcıya uygulama yapıldığı ve tedaviyle ilişkili ciddi advers olay gözlenmediği bildirildi. Beş kişilik erken takip, nadir veya gecikmiş riskleri dışlayamaz. Aynı duyuru ilk FALCON klinik verilerinin 2027’nin ilk çeyreğinde beklendiğini belirtiyor. Bu beklenti bir ruhsat veya piyasaya çıkış tarihi değildir."
+        "Solid Biosciences, 4 Kasım 2026 açıklamasında beş katılımcıya SGT-212 uygulandığını ve 3 Kasım 2026 itibarıyla tedaviyle ilişkili ciddi advers olay gözlenmediğini bildirdi. Beş kişinin erken takibi, nadir veya gecikmiş riskleri değerlendirmek için sınırlı kalır. Şirket, katılımcı alımına bağlı olarak ilk klinik verileri 2027’nin ilk çeyreğinde açıklamayı bekliyor."
       ],
       [
         "Avrupa yetim ilaç statüsü ne değiştiriyor?",
         "Şirket, Avrupa Komisyonu’nun SGT-212’ye yetim ilaç statüsü verdiğini duyurdu. Bu statü nadir hastalık tedavilerinin geliştirilmesini destekler; güvenlilik ve etkinliğin kanıtlandığı, ilacın satılabildiği veya Avrupa merkezlerinin başvuruya açıldığı anlamına gelmez. ABD’deki Fast Track ve diğer geliştirme statüleri de pazarlama ruhsatından ayrı tutulmalıdır."
       ],
       [
-        "Türkiye’den katılım ve okuyucu için anlamı",
-        "FALCON ABD’de, 18–40 yaş grubunda yürütülüyor. Bu kontrolde Türkiye ya da Avrupa’da aktif FALCON merkezi doğrulanmadı. İkamet, seyahat, cerrahi uygulama ve uzun süreli takip yükü çalışma ekibi tarafından açıklanmalıdır. Henüz kamuya açıklanmış kesin etkinlik sonucu bulunmadığından, araştırma dışında kanıtlanmış tedavi olarak sunulamaz. Katılım ve güncel merkezler resmî çalışma sayfasından teyit edilir. FARA’nın alım açık listesinde Ohio State ekibi OSUgenetherapyresearch@osumc.edu, Philadelphia merkezi WELLSM@chop.edu ve UCLA dhayward@mednet.ucla.edu adresleri yer alıyor. Merkezin yanıtı, uygunluk veya kabul garantisi değildir."
+        "Araştırma ekibi ve çalışma merkezleri",
+        "FALCON, ABD’de Ohio State, Children’s Hospital of Philadelphia ve UCLA merkezlerinde yürütülüyor. Merkezlerin yayımladığı çalışma ekibi bilgilerine ve kurumsal iletişim adreslerine bu sayfadaki resmî kaynaklar bölümünden ulaşabilirsiniz."
       ]
     ],
     "sources": [
@@ -277,7 +277,11 @@
         "FARA: FALCON çalışma bilgileri",
         "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/"
       ]
-    ]
+    ],
+    "source_review": {
+      "checked_on": "2026-11-08",
+      "checked_label": "8 Kasım 2026"
+    }
   },
   "gv101": {
     "title": "GV101: ROCK2 yolundan frataxin üretimine uzanan araştırma",
