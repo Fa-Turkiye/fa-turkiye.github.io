@@ -224,10 +224,10 @@
 .directory-page .directory-intro {
   margin-top: clamp(20px, 4vw, 44px);
   padding: clamp(24px, 5vw, 56px);
-  border: 1px solid #b6d8e9;
-  border-top: 5px solid var(--electric);
+  border: 1px solid #43636b;
+  border-top: 5px solid var(--aqua-jade);
   border-radius: 22px;
-  background: linear-gradient(118deg, #cde1ff, #bff4e9);
+  background: linear-gradient(118deg, #14333e, #28404a);
   color: var(--ink);
 }
 
@@ -278,13 +278,13 @@
 }
 
 .center-record {
-  border-top: 3px solid var(--turquoise);
-  background: linear-gradient(145deg, #def8f2, #f7fffc 74%);
+  border-top: 3px solid var(--aqua-jade);
+  background: linear-gradient(145deg, #19333d, #152337 74%);
 }
 
 .center-record:nth-child(even) {
-  border-top-color: var(--electric);
-  background: linear-gradient(145deg, #e1edff, #f7faff 74%);
+  border-top-color: var(--aqua-jade);
+  background: linear-gradient(145deg, #263245, #162339 74%);
 }
 
 .center-record[open] {
@@ -292,7 +292,7 @@
 }
 
 .directory-filters {
-  background: linear-gradient(125deg, #e3eeff, #e2f8f4);
+  background: linear-gradient(125deg, #1c2d43, #19383f);
 }
 
 .contrast :is(.center-record, .directory-filters) {

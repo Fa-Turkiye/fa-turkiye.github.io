@@ -2,7 +2,7 @@
 header .headrow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}
 header .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800}
 header .brand small{font-size:.75rem;color:var(--muted)}
-header .mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#7857e8,#126f7c);color:white}
+header .mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#374655,#11675f);color:white}
 .editorial-main{padding:30px 0 64px}.breadcrumb{margin:8px 0 24px}.long-article{max-width:880px;margin:0 auto}
 .article-heading h1,.editorial-intro h1{font-size:clamp(2rem,5vw,3.45rem);line-height:1.15;letter-spacing:-.035em;max-width:24ch;margin:18px 0}
 .article-heading .badge,.dossier-card .badge{white-space:normal;line-height:1.6;max-width:100%;overflow-wrap:anywhere}
@@ -196,13 +196,13 @@ header .mark{display:grid;place-items:center;width:42px;height:42px;border-radiu
 }
 
 html:has(link[rel="canonical"][href$="/haberler.html"]) .dossier-card {
-  --card: linear-gradient(145deg, #ffe1e8, #fff7f1 70%);
-  border-top: 4px solid var(--coral);
+  --card: linear-gradient(145deg, #38293d, #192538 70%);
+  border-top: 4px solid var(--baby-pink);
 }
 
 html:has(link[rel="canonical"][href$="/haberler.html"]) .dossier-card:nth-child(even) {
-  --card: linear-gradient(145deg, #ffedc2, #fff8e9 70%);
-  border-top-color: #c87700;
+  --card: linear-gradient(145deg, #17343e, #172439 70%);
+  border-top-color: #42dcc4;
 }
 
 html.contrast:has(link[rel="canonical"][href$="/haberler.html"]) .dossier-card {

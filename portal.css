@@ -7,17 +7,17 @@
   grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
   gap: clamp(20px, 4vw, 58px);
   align-items: center;
-  --ink: #fff7ff;
-  --muted: #f2e8ff;
-  --blue: #a6fbea;
-  --line: #c6a5ee;
-  --card: #40216c;
+  --ink: #f3f5fc;
+  --muted: #e3e5f1;
+  --blue: #42dcc4;
+  --line: #536580;
+  --card: #182b3e;
   margin-top: clamp(16px, 3vw, 34px);
   padding: clamp(26px, 5.3vw, 68px);
   border-radius: clamp(22px, 4vw, 46px) clamp(22px, 4vw, 46px) clamp(22px, 4vw, 46px) 12px;
-  background: radial-gradient(ellipse at 11% 4%, #db277766, transparent 52%),
-              radial-gradient(ellipse at 91% 74%, #2dd4bf9c, transparent 53%),
-              linear-gradient(112deg, #371650 9%, #541b87 53%, #2563eb 100%);
+  background: radial-gradient(ellipse at 11% 4%, #f5b7cf28, transparent 52%),
+              radial-gradient(ellipse at 91% 74%, #42dcc448, transparent 53%),
+              linear-gradient(112deg, #0a1224 9%, #192b3d 53%, #2b3148 100%);
 }
 
 .portal-label {
@@ -36,8 +36,8 @@
   height: 9px;
   flex: none;
   border-radius: 50%;
-  background: #8df5e3;
-  box-shadow: 0 0 16px #8df5e3a0;
+  background: #42dcc4;
+  box-shadow: 0 0 16px #42dcc4a0;
 }
 
 .research-hero h1 {
@@ -49,7 +49,7 @@
   text-wrap: pretty;
 }
 
-.research-hero :focus-visible { outline-color: #ffd166; }
+.research-hero :focus-visible { outline-color: #f5b7cf; }
 
 .research-hero .hero-lead {
   max-width: 48ch;
@@ -74,16 +74,16 @@
   padding: 8px 13px;
   text-decoration: none;
   color: var(--ink);
-  background: #efdfff;
+  background: #24304a;
   font-size: .87rem;
   font-weight: 700;
   transition: background-color .2s, border-color .2s, transform .2s;
 }
 
 .hero-destinations a:first-child {
-  background: linear-gradient(115deg, #e8d7ff, #ffcbe9);
-  border-color: #e7b9ff;
-  color: #3b185e;
+  background: linear-gradient(115deg, #aaf3e4, #42dcc4);
+  border-color: #42dcc4;
+  color: #0a1224;
 }
 
 .hero-destinations a:hover {
@@ -104,8 +104,8 @@
   isolation: isolate;
   overflow: hidden;
   border-radius: 46% 54% 40% 60% / 40% 43% 57% 60%;
-  background: radial-gradient(ellipse at 26% 48%, #bd5de59c, transparent 61%),
-              radial-gradient(ellipse at 72% 53%, #0fcebca6, transparent 65%);
+  background: radial-gradient(ellipse at 26% 48%, #f5b7cf44, transparent 61%),
+              radial-gradient(ellipse at 72% 53%, #42dcc45e, transparent 65%);
 }
 
 .helix-art::before {
@@ -113,7 +113,7 @@
   z-index: -1;
   inset: 7%;
   content: "";
-  background-image: radial-gradient(circle, #a8b5db7a 1px, transparent 1.2px);
+  background-image: radial-gradient(circle, #b3d4dd70 1px, transparent 1.2px);
   background-size: 23px 23px;
   mask-image: radial-gradient(ellipse, #000 5%, transparent 75%);
 }
@@ -122,7 +122,7 @@
   width: 108%;
   max-width: none;
   transform: rotate(-24deg);
-  filter: drop-shadow(0 0 9px #7ef7e188);
+  filter: drop-shadow(0 0 9px #42dcc488);
   animation: helix-drift 4.8s ease-in-out both;
 }
 
@@ -150,20 +150,20 @@
   display: flex;
   flex-direction: column;
   padding: clamp(18px, 2.5vw, 30px);
-  background: linear-gradient(145deg, #ffd8df, #fff5f3);
-  border: 1px solid #eac7d0;
-  border-top: 4px solid var(--coral);
+  background: linear-gradient(145deg, #3a293d, #182438);
+  border: 1px solid #564459;
+  border-top: 4px solid var(--baby-pink);
   border-radius: 3px 3px 15px 15px;
 }
 
 .home-dispatch .news-card:nth-child(2) {
-  background: linear-gradient(145deg, #ffe6a9, #fff8e4);
-  border-top-color: #c87700;
+  background: linear-gradient(145deg, #173840, #182438);
+  border-top-color: #42dcc4;
 }
 
 .home-dispatch .news-card:nth-child(3) {
-  background: linear-gradient(145deg, #f0dcff, #fff2fa);
-  border-top-color: var(--fuchsia);
+  background: linear-gradient(145deg, #342c44, #172439);
+  border-top-color: var(--baby-pink);
 }
 
 .home-dispatch time {
@@ -209,20 +209,20 @@
 }
 
 .modern-home .community-band {
-  background: linear-gradient(115deg, #582092, #862262 75%, #a73451);
-  color: #fff7ff;
+  background: linear-gradient(115deg, #15333d, #1d2a41 75%, #423047);
+  color: #f3f5fc;
 }
 
-.modern-home .community-symbol { color: #bfa9ff; }
-.modern-home .community-band .eyebrow { color: #d8cbff; }
+.modern-home .community-symbol { color: #f5b7cf; }
+.modern-home .community-band .eyebrow { color: #f5b7cf; }
 
 .treatment-intro {
   margin-top: clamp(20px, 4vw, 44px);
   padding: clamp(24px, 5vw, 56px);
   border: 1px solid var(--line);
-  border-top: 5px solid var(--violet);
+  border-top: 5px solid var(--baby-pink);
   border-radius: 22px;
-  background: linear-gradient(120deg, #e9d5ff, #ffd4ea);
+  background: linear-gradient(120deg, #34293e, #18343d);
   color: var(--ink);
 }
 
@@ -261,12 +261,12 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  border-top: 3px solid #487968;
+  border-top: 3px solid #42dcc4;
   transition: border-color .2s;
 }
 
-.treatment-card[data-treatment-group="gene"] { border-top-color: #7863a6; }
-.treatment-card[data-treatment-group="frataxin"] { border-top-color: #377f79; }
+.treatment-card[data-treatment-group="gene"] { border-top-color: #f5b7cf; }
+.treatment-card[data-treatment-group="frataxin"] { border-top-color: #42dcc4; }
 .treatment-card:hover, .treatment-card:focus-within { border-color: var(--blue); }
 .treatment-card h2 a { color: inherit; }
 .treatment-card h2 a:not(:hover) { text-decoration: none; }
@@ -293,9 +293,9 @@
   .research-hero {
     grid-template-columns: 1fr;
     gap: 14px;
-    background: radial-gradient(ellipse at 10% 2%, #db277766, transparent 51%),
-                radial-gradient(ellipse at 100% 100%, #2dd4bf99, transparent 42%),
-                linear-gradient(153deg, #371650 8%, #541b87 64%, #2563eb);
+    background: radial-gradient(ellipse at 10% 2%, #f5b7cf28, transparent 51%),
+                radial-gradient(ellipse at 100% 100%, #42dcc445, transparent 42%),
+                linear-gradient(153deg, #0a1224 8%, #192b3d 64%, #2b3148);
   }
   .research-hero h1 { font-size: clamp(2.55rem, 8.7vw, 4.2rem); }
   .helix-art { min-height: 145px; max-width: 460px; }
@@ -307,34 +307,34 @@
 }
 
 .modern-home .hero-destinations a:nth-child(2) {
-  background: linear-gradient(115deg, #dbe9ff, #baf9ec);
-  border-color: #94e3d8;
-  color: #14415d;
+  background: linear-gradient(115deg, #a3f2e3, #c5f8ed);
+  border-color: #42dcc4;
+  color: #0a1224;
 }
 
 .modern-home .hero-destinations a:nth-child(3) {
-  background: linear-gradient(115deg, #ffd9d4, #ffe6a3);
-  border-color: #ffd166;
-  color: #68223b;
+  background: linear-gradient(115deg, #ffd7e7, #f5b7cf);
+  border-color: #f5b7cf;
+  color: #0a1224;
 }
 
-.portal-discover .pathway:nth-child(1) .path-arrow { border-color: #99efd9; }
-.portal-discover .pathway:nth-child(2) .path-arrow { border-color: #c3aaff; }
-.portal-discover .pathway:nth-child(3) .path-arrow { border-color: #ffc8a9; }
+.portal-discover .pathway:nth-child(1) .path-arrow { border-color: #42dcc4; }
+.portal-discover .pathway:nth-child(2) .path-arrow { border-color: #f5b7cf; }
+.portal-discover .pathway:nth-child(3) .path-arrow { border-color: #42dcc4; }
 
 .treatment-card {
-  --card: linear-gradient(145deg, #ffecd9, #fffaff 65%);
-  border-top-color: #d45e5f;
+  --card: linear-gradient(145deg, #29283c, #162339 65%);
+  border-top-color: #42dcc4;
 }
 
 .treatment-card[data-treatment-group="gene"] {
-  --card: linear-gradient(145deg, #e9d7ff, #ffecf7 78%);
-  border-top-color: var(--violet);
+  --card: linear-gradient(145deg, #3b293f, #1c273c 78%);
+  border-top-color: var(--baby-pink);
 }
 
 .treatment-card[data-treatment-group="frataxin"] {
-  --card: linear-gradient(145deg, #f9daf1, #fff2fa 78%);
-  border-top-color: var(--fuchsia);
+  --card: linear-gradient(145deg, #173740, #172439 78%);
+  border-top-color: var(--baby-pink);
 }
 
 .contrast .treatment-card { --card: #111; }
@@ -380,7 +380,7 @@
   flex: none;
   width: 18px;
   height: 18px;
-  accent-color: var(--violet);
+  accent-color: var(--baby-pink);
 }
 
 .compare-dialog {
