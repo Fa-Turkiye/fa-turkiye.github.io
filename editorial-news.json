@@ -5,23 +5,23 @@
     "iso": "2026-11-04",
     "date": "4 Kasım 2026",
     "title": "FALCON’da beş katılımcıya SGT-212 uygulandı",
-    "summary": "Solid Biosciences, 3 Kasım itibarıyla tedaviyle ilişkili ciddi advers olay gözlenmediğini bildirdi. Şirket ilk klinik verileri 2027’nin ilk çeyreğinde açıklamayı bekliyor.",
+    "summary": "Solid Biosciences, 3 Kasım itibarıyla beş katılımcıda tedaviyle ilişkili ciddi advers olay gözlenmediğini bildirdi. Üç ABD merkezi aktif olarak katılımcı alıyor; klinik etkinlik sonucu henüz açıklanmadı.",
     "source_review": {
-      "checked_on": "2026-11-08",
-      "checked_label": "8 Kasım 2026"
+      "checked_on": "2026-11-09",
+      "checked_label": "9 Kasım 2026"
     },
     "primary_source": [
       "Solid Biosciences",
-      "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+      "https://www.solidbio.com/letter-to-the-fa-community-nov2026/"
     ],
     "sections": [
       [
         "FALCON güncellemesi",
-        "Faz 1b FALCON araştırmasının temel amacı güvenlilik ve tolerabiliteyi değerlendirmek. Şirket, ilk verilerin açıklanma zamanının katılımcı alımına bağlı olduğunu belirtti."
+        "Faz 1b FALCON açık etiketli ve doz belirlemeye yönelik bir araştırma; öncelikli amacı güvenlilik ve tolerabiliteyi değerlendirmek. Solid, Ohio State University, Children’s Hospital of Philadelphia ve UCLA merkezlerinin aktif olarak katılımcı aldığını bildirdi."
       ],
       [
         "Veri nasıl okunmalı?",
-        "Bu açıklama beş kişinin erken güvenlilik takibini kapsıyor. Klinik etkinliğin değerlendirilmesi için çalışma sonuçlarının yayımlanması bekleniyor."
+        "Bu açıklama beş kişinin erken güvenlilik takibini kapsıyor. Tedaviyle ilişkili ciddi advers olay bildirilmemesi, nadir veya daha geç ortaya çıkabilecek riskleri dışlamaz. Biyobelirteç ya da klinik işlev sonucu açıklanmadı; klinik etkinliğin değerlendirilmesi için daha fazla katılımcı ve izlem verisi gerekiyor."
       ]
     ]
   },
@@ -48,6 +48,40 @@
       [
         "RESTORE-FA hangi soruları inceliyor?",
         "Çalışma, DT-216P2’nin artan çoklu dozlarında güvenlilik, tolerabilite ve ilacın vücuttaki seyrini değerlendiriyor. Sonuçlar açıklandığında doz, takip süresi ve ölçülen klinik göstergeler birlikte incelenebilir."
+      ]
+    ]
+  },
+  {
+    "id": "omaveloxolone-gercek-yasam-2026",
+    "drug": "skyclarys",
+    "iso": "2026-10-29",
+    "date": "29 Ekim 2026",
+    "title": "İleri evre FA grubunda kısa dönem omaveloxolone gerçek yaşam verileri yayımlandı",
+    "summary": "Gallo ve çalışma arkadaşları, 27 kişilik ileri hastalık kohortunda 3–6 aylık omaveloxolone izlemini bildirdi. mFARS’taki 1,5 puanlık düşüş kısa dönemli ve kontrolsüz bir gözlemdir; kesin klinik etki kanıtı olarak yorumlanamaz.",
+    "source_review": {
+      "checked_on": "2026-11-09",
+      "checked_label": "9 Kasım 2026"
+    },
+    "primary_source": [
+      "Movement Disorders Clinical Practice · PubMed",
+      "https://pubmed.ncbi.nlm.nih.gov/42953992/"
+    ],
+    "sections": [
+      [
+        "Çalışma kimleri ve hangi süreyi kapsadı?",
+        "Silvia Gallo ve çalışma arkadaşlarının Torino ve Verona’daki kurumlarla yürüttüğü ileriye dönük gözlemsel çalışmaya genetik olarak doğrulanmış 27 FA hastası alındı; 26 kişi omaveloxolone tedavisinde en az üç ay kaldı. Ortanca yaş 42,5, ortanca hastalık süresi 24,5 yıldı ve izlem 3–6 ay sürdü. Bu metin, ilgili makaledeki araştırmacı bulgularının Türkçe özetidir."
+      ],
+      [
+        "Klinik ölçümlerde ne bildirildi?",
+        "Araştırmacılar toplam mFARS puanında başlangıca göre 1,5 puanlık düşüş bildirdi (p=0,007); daha düşük puan daha az nörolojik bozulmayı ifade eder. Alt ekstremite koordinasyonu alt puanı 1,5 puan düştü (p=0,022). Katılımcıların yüzde 42,3’ü Hasta Küresel Değişim İzlenimi ölçeğinde iyileşme algısı bildirdi. Yürüyebilen ve yürüyemeyen gruplar arasında değişim farkı saptanmadı."
+      ],
+      [
+        "Güvenlilik ve biyobelirteç açısından ne biliniyor?",
+        "Makale özetinde ciddi advers olay bildirilmedi. Bu çalışma bir biyobelirteç etkinliği araştırması olarak sunulmadı; bildirilen ana bulgular klinik ölçek ve hasta algısı ölçümleridir. Kısa takipte ciddi olay görülmemesi, daha seyrek veya uzun dönemde ortaya çıkabilecek riskleri dışlamaz."
+      ],
+      [
+        "Sınırlamalar neden önemli?",
+        "Çalışma küçük, tek kollu ve 3–6 aylık olduğundan tedavi alan grup eşzamanlı plasebo ya da tedavisiz kontrol grubuyla karşılaştırılmadı. Ölçüm tekrarı, beklenti etkisi ve doğal dalgalanma gibi etkenler sonuçları etkileyebilir. Bulgular ileri hastalık düzeyindeki bu kohort için kısa dönem gerçek yaşam gözlemi sağlar; omaveloxolone’un kesin etkinliğini, uzun dönem yararını veya bütün FA gruplarındaki sonucu tek başına göstermez."
       ]
     ]
   },

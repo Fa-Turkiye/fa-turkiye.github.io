@@ -1,12 +1,23 @@
 {
   "skyclarys": {
     "target": "Oksidatif stres yanıtında görev alan NRF2 yolu.",
-    "results": "MOXIe’nin 48 haftalık kontrollü verileri ve ruhsat değerlendirmesi EMA’da yer alıyor.",
+    "results": "MOXIe’nin 48 haftalık kontrollü verileri ve ruhsat değerlendirmesi EMA’da yer alıyor. İleri hastalık grubundaki kısa dönem gerçek yaşam gözlemi kontrolsüzdür ve ayrı değerlendirilmelidir.",
     "source": [
       "EMA: ruhsat, temel çalışma ve güvenlilik",
       "https://www.ema.europa.eu/en/medicines/human/EPAR/skyclarys"
     ],
     "events": [
+      {
+        "date": "2026-10-29",
+        "title": "İleri evre FA grubunda kısa dönem gerçek yaşam verileri yayımlandı",
+        "summary": "Gallo ve çalışma arkadaşları 27 kişilik, kontrolsüz gözlemsel kohortta 3–6 aylık sonuçları bildirdi. Bulgular kısa dönemlidir ve eşzamanlı karşılaştırma grubu yoktur.",
+        "kind": "Hakemli gerçek yaşam çalışması",
+        "source": [
+          "Movement Disorders Clinical Practice · PubMed",
+          "https://pubmed.ncbi.nlm.nih.gov/42953992/"
+        ],
+        "article": "omaveloxolone-gercek-yasam-2026"
+      },
       {
         "date": "2024-02-09",
         "title": "Skyclarys Avrupa Birliği’nde ruhsat aldı",
@@ -218,7 +229,7 @@
     "results": "Şirket beş kişilik erken güvenlilik takibini bildirdi. İlk klinik verilerin açıklanması bekleniyor.",
     "source": [
       "Solid Biosciences",
-      "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+      "https://www.solidbio.com/letter-to-the-fa-community-nov2026/"
     ],
     "events": [
       {
@@ -228,7 +239,7 @@
         "kind": "Erken güvenlilik güncellemesi",
         "source": [
           "Solid Biosciences",
-          "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-reports-third-quarter-2026-financial-results"
+          "https://www.solidbio.com/letter-to-the-fa-community-nov2026/"
         ],
         "article": "sgt212-kasim"
       },
