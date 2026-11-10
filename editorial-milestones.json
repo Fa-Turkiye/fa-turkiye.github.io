@@ -63,12 +63,23 @@
   },
   "nomlabofusp": {
     "target": "Hücrelere işlevsel frataxin proteini ulaştırmak.",
-    "results": "Larimar açık etiketli ara veriler paylaştı. Eşzamanlı plasebo kontrolü bulunmadığı için klinik etkiyi yorumlamak sınırlı.",
+    "results": "Kademeli BLA başvurusu tamamlandı. Başvuru deri frataxinini olası ikame sonlanım noktası olarak kullanıyor; açık etiketli klinik yönelimler eşzamanlı plasebo kontrolü olmadan bildirilmiştir.",
     "source": [
-      "Larimar: 29 Haziran 2026 verileri ve başvuru açıklaması",
-      "https://investors.larimartx.com/news-releases/news-release-details/larimar-therapeutics-reports-positive-open-label-data-and"
+      "Larimar Therapeutics",
+      "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-completes-rolling-bla-submission-seeking"
     ],
     "events": [
+      {
+        "date": "2026-11-09",
+        "title": "Nomlabofusp için kademeli BLA başvurusu tamamlandı",
+        "summary": "Larimar bütün başvuru bölümlerinin FDA’ya sunulduğunu açıkladı. Dosyanın sunulması FDA kabulü veya ruhsat kararı değildir.",
+        "kind": "Düzenleyici başvuru",
+        "source": [
+          "Larimar Therapeutics",
+          "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-completes-rolling-bla-submission-seeking"
+        ],
+        "article": "nomlabofusp-bla-tamamlandi"
+      },
       {
         "date": "2026-11-05",
         "title": "ICAR 2026 için üç poster duyuruldu",
@@ -93,6 +104,14 @@
       }
     ],
     "expected": [
+      {
+        "window": "2027 başı",
+        "title": "Larimar, FDA’nın BLA dosyasını incelemeye kabul kararını bu dönemde bekliyor.",
+        "source": [
+          "Larimar Therapeutics",
+          "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-completes-rolling-bla-submission-seeking"
+        ]
+      },
       {
         "window": "12 Kasım 2026",
         "title": "ICAR’da üç poster sunumu planlandı.",

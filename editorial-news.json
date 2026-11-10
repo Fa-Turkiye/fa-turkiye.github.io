@@ -1,5 +1,47 @@
 [
   {
+    "id": "nomlabofusp-bla-tamamlandi",
+    "drug": "nomlabofusp",
+    "iso": "2026-11-09",
+    "date": "9 Kasım 2026",
+    "title": "Nomlabofusp için kademeli BLA başvurusu tamamlandı",
+    "summary": "Larimar, nomlabofusp için hızlandırılmış onay talep eden kademeli BLA dosyasının bütün bölümlerini FDA’ya sunduğunu açıkladı. Dosyanın sunulması kabul veya onay kararı değildir.",
+    "source_review": {
+      "checked_on": "2026-11-10",
+      "checked_label": "10 Kasım 2026"
+    },
+    "primary_source": [
+      "Larimar Therapeutics",
+      "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-completes-rolling-bla-submission-seeking"
+    ],
+    "sections": [
+      [
+        "Düzenleyici süreçte ne değişti?",
+        "Larimar, 29 Haziran’da ilk bölümü sunulan kademeli Biyolojik Ruhsat Başvurusu’nun bütün bölümlerinin 9 Kasım’da FDA’ya iletildiğini bildirdi. Başvuru, nomlabofusp için hızlandırılmış onay talep ediyor. FDA’nın dosyayı incelemeye kabul etmesi, değerlendirmesi ve olası onay kararı ayrı aşamalardır; bu duyuru ilacın onaylandığı veya kullanıma sunulduğu anlamına gelmez."
+      ],
+      [
+        "Başvurunun biyobelirteç dayanağı nedir?",
+        "Şirket, başvurunun deride ölçülen frataxin düzeyindeki artışı olası yeni bir ikame sonlanım noktası olarak kullandığını açıkladı. Larimar’ın aktardığı toplantı tutanaklarına göre FDA bu yaklaşımı değerlendirmeye istekli olduğunu bildirdi; nihai kabul edilebilirlik inceleme sırasında belirlenecek. Deri frataxininin artması biyolojik aktivite göstergesidir, yürüme, el becerisi veya günlük yaşamda klinik iyileşmeyle aynı sonuç değildir."
+      ],
+      [
+        "Klinik bulgular hangi sınırlamalarla sunuldu?",
+        "Başvuru, devam eden uzun dönem açık etiketli çalışmaya ve daha önce açıklanan verilere dayanıyor. Sponsor, bazı klinik ölçümlerde doğal seyir referans grubuna göre olumlu yönelimler bildirdi. Eşzamanlı, randomize plasebo kontrolü bulunmadığından bu karşılaştırmalar kesin klinik etkinlik kanıtı olarak yorumlanamaz. FORWARD-FA Faz III çalışması günlük nomlabofusp ile plaseboyu 18 ay boyunca karşılaştırarak klinik yararı doğrulamayı amaçlıyor."
+      ],
+      [
+        "Güvenlilik neden ayrıca izlenmeli?",
+        "Haziran 2026 açıklamasında 43 katılımcının 10’unda anafilaksi bildirilmişti. Başvurunun tamamlanması bu ciddi alerjik reaksiyon riskini ortadan kaldırmaz. FDA değerlendirmesinde güvenlilik verileri, tedaviyi bırakanlar, maruziyet süresi ve risk azaltma önlemleri klinik bulgularla birlikte incelenecek."
+      ],
+      [
+        "Kurum ve uzman açıklamalarının bağlamı",
+        "Larimar CEO’su Dr. Carole Ben-Maimon, şirket açıklamasında güvenini sürdürülen deri frataxin artışına ve klinik ölçümlerdeki yönelimlere dayandırdı; bu, sponsorun değerlendirmesidir. FARA CEO’su Jen Farmer, aynı şirket duyurusunda başvurunun 12–17 yaş grubundan veri içermesinin önemini vurguladı. Bu açıklamalar FDA’nın bağımsız inceleme sonucu veya onay kararı değildir."
+      ],
+      [
+        "Sıradaki doğrulanabilir eşikler",
+        "Larimar, FDA’nın başvuruyu incelemeye kabul edip etmeyeceğine ilişkin bildirimi 2027 başında beklediğini ve olası karar için 2027 ortasını hedeflediğini belirtti. Bunlar şirketin öngörüleridir; kurum takvimi değişebilir. Yakın dönemde izlenecek somut noktalar FDA’nın başvuruyu kabul kararı, inceleme takvimi, açık etiketli güvenlilik güncellemesi ve FORWARD-FA’nın ilerlemesidir."
+      ]
+    ]
+  },
+  {
     "id": "sgt212-kasim",
     "drug": "sgt212",
     "iso": "2026-11-04",

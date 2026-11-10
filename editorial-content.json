@@ -89,7 +89,7 @@
   },
   "nomlabofusp": {
     "title": "Nomlabofusp: frataxin yerine koyma, uzun dönem veriler ve FORWARD-FA",
-    "status": "Deneysel · Faz III FORWARD-FA; kademeli BLA başvurusunun ilk bölümü sunuldu",
+    "status": "Deneysel · Faz III FORWARD-FA; kademeli BLA başvurusu tamamlandı",
     "sections": [
       [
         "Tedavinin amacı ve nasıl çalıştığı",
@@ -109,7 +109,7 @@
       ],
       [
         "Firma nereye ulaştı, sırada ne var?",
-        "Şirket, hızlandırılmış onay hedefiyle kademeli BLA dosyasının ilk bölümünü Haziran 2026’da FDA’ya sunduğunu açıkladı. İlk bölümün sunulması, bütün başvurunun tamamlandığı veya onay verildiği anlamına gelmez. FORWARD-FA Faz III araştırması, günlük nomlabofusp ile plaseboyu 72 hafta boyunca karşılaştırıyor. Bölgeler için belirlenen ana ölçümler dik duruş alt skoru veya toplam mFARS değişimini içeriyor."
+      "Larimar, hızlandırılmış onay hedefiyle kademeli BLA dosyasının bütün bölümlerini 9 Kasım 2026’da FDA’ya sunduğunu açıkladı. Dosyanın tamamlanması, FDA’nın başvuruyu incelemeye kabul ettiği veya onay verdiği anlamına gelmez. Şirket kabul bildirimini 2027 başında bekliyor. FORWARD-FA Faz III araştırması, günlük nomlabofusp ile plaseboyu 72 hafta boyunca karşılaştırıyor; klinik yararın doğrulanması bu kontrollü araştırmanın temel amaçlarından biridir."
       ],
       [
         "Türkiye’den katılım ve Avrupa merkezleri",
@@ -117,6 +117,10 @@
       ]
     ],
     "sources": [
+    [
+      "Larimar: kademeli BLA başvurusunun tamamlanması, 9 Kasım 2026",
+      "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-completes-rolling-bla-submission-seeking"
+    ],
       [
         "FARA: nomlabofusp mekanizması ve geçmişi",
         "https://www.curefa.org/drug-development/nomlabofusp/"
@@ -139,8 +143,8 @@
       ]
     ],
     "source_review": {
-      "checked_on": "2026-11-08",
-      "checked_label": "8 Kasım 2026"
+    "checked_on": "2026-11-10",
+    "checked_label": "10 Kasım 2026"
     }
   },
   "dt216p2": {
