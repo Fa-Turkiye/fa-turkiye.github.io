@@ -14,7 +14,10 @@
     let count = 0;
     for (const card of cards) {
       const matchesGroup = !group.value || card.dataset.treatmentGroup === group.value;
-      const matchesScope = !scope.value || (card.dataset.research === "true") === (scope.value === "arastirma");
+      const isResearch = card.dataset.research === "true";
+      const matchesScope = !scope.value || (scope.value === "arastirma"
+        ? isResearch || card.dataset.includesResearch === "true"
+        : !isResearch);
       card.hidden = !matchesGroup || !matchesScope;
       if (!card.hidden) count += 1;
     }
