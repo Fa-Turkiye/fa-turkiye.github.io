@@ -18,7 +18,8 @@ profiles['gv101']['sources'].append(['Hakemli ROCK1/ROCK2 araştırması: PubMed
 profiles['vatiquinone']['sources'].append(['PTC: 2026 üçüncü çeyrek geliştirme güncellemesi', 'https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-provides-corporate-update-and-reports-third-4'])
 news_extensions = {'vatiquinone-prove':[2,3], 'sgt212-avrupa':[3,4], 'lx2006-mds':[0,2], 'nbib223-facet':[0,2], 'dt216p2-takvim':[0,4], 'brave-alim':[0,2], 'ppl001-uretim':[0,3], 'nomlabofusp-bla':[0,3], 'dt216p2-ilk-veri':[1,2]}
 for item in news:
-    item['sections'].extend(expansion[item['drug']][i] for i in news_extensions.get(item['id'], []))
+    if item['id'] in news_extensions:
+        item['sections'].extend(expansion[item['drug']][i] for i in news_extensions[item['id']])
 esc = html.escape
 base = (ROOT / 'ilaclar.html').read_text()
 header = re.search(r'<header>.*?</header>', base, re.S).group()
@@ -80,7 +81,7 @@ def article_body(title, status, sections, sources, category, back, sponsor=None,
 
 for key, item in profiles.items():
     filename = f'ilac-{key}.html'
-    related = [n for n in news if n['drug']==key]
+    related = [n for n in news if n.get('drug') == key]
     more = '<aside class="article-related"><h2>İlgili ayrıntılı haberler</h2><ul>'+''.join(f'<li><a href="haber-{n["id"]}.html">{esc(n["title"])}</a></li>' for n in related)+'</ul></aside>' if related else ''
     if key=='skyclarys': more += '<p><a href="ilac-brave.html#arastirma-merkezleri">BRAVE çocuk çalışması ve merkezleri →</a></p>'
     if key=='brave': more += '<p><a href="ilac-skyclarys.html">Omaveloxolone’un ana ilaç dosyasını da okuyun →</a></p>'
@@ -152,12 +153,18 @@ library = library.replace('</head>', '<link rel="stylesheet" href="portal.css?v=
 
 for n in news:
     primary = n.get('primary_source') if n.get('source_review') else None
-    sources = ([primary] if primary else []) + [source for source in profiles[n['drug']]['sources'] if not primary or source[1] != primary[1]]
-    extra = f'<aside class="article-related"><h2>Programın tamamını inceleyin</h2><p><a href="ilac-{n["drug"]}.html">{esc(names[n["drug"]])}: mekanizma, kanıt, güvenlilik ve katılım →</a></p></aside>'
+    drug = n.get('drug')
+    profile_sources = profiles[drug]['sources'] if drug else []
+    sources = ([primary] if primary else []) + [source for source in profile_sources if not primary or source[1] != primary[1]]
+    if drug:
+        extra = f'<aside class="article-related"><h2>Programın tamamını inceleyin</h2><p><a href="ilac-{drug}.html">{esc(names[drug])}: mekanizma, kanıt, güvenlilik ve katılım →</a></p></aside>'
+    else:
+        extra = '<aside class="article-related"><h2>İlgili rehber</h2><p><a href="klinik-arastirmalar.html">Klinik araştırma aşamalarını ve sonuç ölçümlerini inceleyin →</a></p></aside>'
     review = n.get('source_review', {})
     reviewed = review.get('checked_label', '1 Kasım 2026')
     if review:
-        scope_text = f'Gelişmenin tarihi {n["date"]}. Kaynaklar {reviewed} tarihinde kontrol edildi. Sonraki açıklamalar için ilaç dosyasına bakabilirsiniz.'
+        followup = 'Sonraki açıklamalar için ilaç dosyasına bakabilirsiniz.' if drug else 'Sonraki çalışmalar için haber arşivini ve klinik araştırma rehberini izleyebilirsiniz.'
+        scope_text = f'Gelişmenin tarihi {n["date"]}. Kaynaklar {reviewed} tarihinde kontrol edildi. {followup}'
     else:
         scope_text = f'Gelişmenin tarihi: {n["date"]}. Bu haber 1 Kasım 2026 kaynak kontrolüyle hazırlanmıştır; sonraki açıklamalar için ilgili ilaç dosyasına bakın.'
     sections = [('Haber tarihi ve kapsamı', scope_text)] + n['sections']
@@ -173,18 +180,20 @@ gvbody = article_body('GV101 için klinik araştırma izni: ne değişti, ne hen
 ordered_news = sorted(news, key=lambda item: item['iso'], reverse=True)
 newscards = ''.join(f'<article class="card dossier-card"><time class="badge" datetime="{n["iso"]}">{n["date"]}</time><h2><a href="haber-{n["id"]}.html">{esc(n["title"])}</a></h2><p>{esc(n["summary"])}</p><a class="textlink" href="haber-{n["id"]}.html">Haberin tamamını oku →</a></article>' for n in ordered_news)
 def home_news_card(item):
-    label, url = item.get('primary_source') or profiles[item['drug']]['sources'][0]
-    key = item['drug']
+    drug = item.get('drug')
+    label, url = item.get('primary_source') or profiles[drug]['sources'][0]
+    dossier = f'<a href="ilac-{drug}.html">{esc(names[drug])} dosyası</a>' if drug else '<a href="klinik-arastirmalar.html">Klinik araştırma rehberi</a>'
     return f'''<article class="news-card">
       <time datetime="{esc(item['iso'])}">{esc(item['date'])}</time>
       <h3><a href="haber-{item['id']}.html">{esc(item['title'])}</a></h3>
       <p>{esc(item['summary'])}</p>
-      <div class="dispatch-links"><a href="ilac-{key}.html">{esc(names[key])} dosyası</a><a href="{esc(url)}">{esc(label)} ↗</a></div>
+      <div class="dispatch-links">{dossier}<a href="{esc(url)}">{esc(label)} ↗</a></div>
     </article>'''
 
 home_path = ROOT / 'index.html'
 home = home_path.read_text(encoding='utf-8')
-home_news = '\n    '.join(home_news_card(item) for item in ordered_news[:3])
+home_ordered_news = sorted(news, key=lambda item: item.get('homepage_added_iso', item['iso']), reverse=True)
+home_news = '\n    '.join(home_news_card(item) for item in home_ordered_news[:3])
 home = re.sub(r'<!-- home-news:start -->.*?<!-- home-news:end -->',
               lambda _: f'<!-- home-news:start -->\n    {home_news}\n    <!-- home-news:end -->', home, count=1, flags=re.S)
 home_path.write_text(home, encoding='utf-8')
@@ -204,7 +213,7 @@ search_data = {
     'Tedavi dosyaları': [[names[key], f'ilac-{key}.html', sponsors[key], milestones[key]['target'] + ' ' + card_details[key][1]]
                          for key in profiles],
     'FA Merkezleri': search_centers,
-    'Haberler': [[item['title'], f'haber-{item["id"]}.html', item['date'], names[item['drug']]]
+    'Haberler': [[item['title'], f'haber-{item["id"]}.html', item['date'], names[item['drug']] if item.get('drug') else item['topic_label']]
                  for item in ordered_news] + [
                      ['GV101 için FA klinik araştırma izni', 'haber-gv101.html', '11 Ağustos 2026', 'Graviton BioScience']
                  ],

@@ -42,6 +42,45 @@
     ]
   },
   {
+    "id": "uss-olcum-2026",
+    "topic_label": "Klinik sonuç ölçümleri",
+    "iso": "2026-11-04",
+    "homepage_added_iso": "2026-11-11",
+    "date": "4 Kasım 2026",
+    "title": "USS çalışması, FA’da denge ölçümünün güçlü ve sınırlı yönlerini gösterdi",
+    "summary": "Rummey ve çalışma arkadaşları, 343 yürüyebilen FA katılımcısının kesitsel verilerinde Upright Stability Score’un yerleşik ölçeklerle güçlü ilişki gösterdiğini bildirdi. Çalışma tedavi etkisini veya zaman içindeki değişime duyarlılığı sınamadı.",
+    "source_review": {
+      "checked_on": "2026-11-11",
+      "checked_label": "11 Kasım 2026"
+    },
+    "primary_source": [
+      "Annals of Clinical and Translational Neurology · PubMed",
+      "https://pubmed.ncbi.nlm.nih.gov/42984128/"
+    ],
+    "sections": [
+      [
+        "Araştırmanın amacı ve tasarımı",
+        "Christian Rummey ve çok merkezli araştırma ekibi, Upright Stability Score’un (USS) yürüyebilen Friedreich ataksisi ve spinoserebellar ataksi gruplarındaki ölçüm özelliklerini SARA, işlevsel SARA (f-SARA) ve FA Günlük Yaşam Aktiviteleri ölçeğiyle karşılaştırdı. Analiz, UNIFAI doğal seyir çalışmasındaki 343 FA katılımcısı ile CRC-SCA çalışmasındaki 406 katılımcının tek bir zamandaki verilerine dayanıyor. Bu metin, ilgili makaledeki araştırmacı bulgularının özgün Türkçe özetidir."
+      ],
+      [
+        "FA grubunda ne bulundu?",
+        "Araştırmacılar USS’un FA grubunda SARA, f-SARA ve FA-ADL ile güçlü ilişki gösterdiğini bildirdi. Ancak FA’da erken propriosepsiyon kaybı, özellikle gözler kapalı ayakta durma görevlerinde birçok katılımcının zorlanmasına yol açarak puanların değişkenliğini daralttı. Bu nedenle bir ölçeğin toplam puan dağılımı iyi görünse bile bazı denge maddeleri FA’nın farklı evrelerini ayrıntılı biçimde ayırt edemeyebilir."
+      ],
+      [
+        "Sonuç ölçümü açısından anlamı",
+        "USS, yürüyebilen FA ve SCA gruplarında yerleşik ölçeklerle uyumlu kesitsel geçerlilik gösterdi ve günlük yaşamda algılanan hastalık yüküyle en az SARA kadar ilişkiliydi. Bu bulgu, klinik araştırmalarda eksenel işlev ve dengeyi değerlendirmek için USS’un yararlı olabileceğini destekliyor. Bununla birlikte çalışma, USS’un bir tedavinin etkisini diğer ölçeklerden daha iyi yakaladığını kanıtlamadı."
+      ],
+      [
+        "Etkinlik veya klinik iyileşme sonucu değil",
+        "Araştırmada bir ilaç ya da başka bir müdahale uygulanmadı; biyobelirteç değişimi veya klinik iyileşme değerlendirilmedi. Bulgular, klinik araştırmalarda kullanılabilecek ölçüm aracının psikometrik özellikleriyle ilgilidir. Ölçekler arasındaki güçlü ilişki, herhangi bir tedavinin etkili olduğu anlamına gelmez."
+      ],
+      [
+        "Başlıca sınırlamalar",
+        "Veriler kesitsel olduğu için USS’un zaman içindeki hastalık ilerlemesine veya tedaviyle oluşabilecek küçük değişimlere ne ölçüde duyarlı olduğu bu analizden belirlenemez. Yalnızca yürüyebilen katılımcılar incelendi; sonuçlar yürüyemeyen FA grubuna doğrudan genellenemez. Araştırmacılar ayrıca FA ve SCA grupları arasındaki belirgin yaş farkını sınırlama olarak bildirdi. Boylamsal doğrulama, klinik araştırmalarda birincil sonlanım olarak kullanım için gerekli olmaya devam ediyor."
+      ]
+    ]
+  },
+  {
     "id": "sgt212-kasim",
     "drug": "sgt212",
     "iso": "2026-11-04",
