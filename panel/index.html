@@ -4,67 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js; style-src 'self'; img-src 'self' https:; connect-src https://*.supabase.co; base-uri 'none'; form-action 'self'">
 <title>Editör paneli · FA Türkiye</title>
-<style>
-:root { color-scheme: dark; --base:#0c1728; --panel:#13243a; --line:#36526b; --muted:#b7c9da; --jade:#82e5c9; --pink:#ffd1e3; font-family:"Instrument Sans",system-ui,sans-serif; color:#f4f8fc; background:var(--base); }
-* { box-sizing:border-box; }
-body { margin:0; line-height:1.5; }
-header { background:#101d30; border-bottom:1px solid var(--line); }
-.bar, main { width:min(100% - 2rem, 70rem); margin:auto; }
-.bar { min-height:4.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.75rem; padding:.65rem 0; }
-.brand { display:flex; align-items:center; gap:.7rem; font-weight:700; }
-.mark { border:1px solid var(--jade); border-radius:.5rem; color:var(--jade); padding:.22rem .55rem; }
-main { padding:2.5rem 0; }
-h1,h2,h3,p { margin:0 0 .75rem; }
-h1 { font-size:clamp(2rem, 5vw, 3.3rem); letter-spacing:-.045em; line-height:1.1; }
-h2 { line-height:1.2; }
-p { color:var(--muted); }
-.notice { max-width:62ch; }
-nav,.actions { display:flex; gap:.5rem; flex-wrap:wrap; margin:1rem 0; }
-nav { border-bottom:1px solid var(--line); padding-bottom:1rem; }
-button,input,textarea,select { font:inherit; }
-button,select { min-height:2.75rem; }
-button { cursor:pointer; border:1px solid var(--line); border-radius:.5rem; background:#192d45; color:inherit; padding:.45rem .85rem; }
-button[aria-pressed="true"],.primary { background:var(--jade); color:#0b2c23; border-color:var(--jade); font-weight:700; }
-button:disabled { opacity:.55; cursor:default; }
-:focus-visible { outline:3px solid var(--pink); outline-offset:3px; }
-.grid { display:grid; grid-template-columns:minmax(0, 2fr) minmax(0, 1fr); gap:1rem; align-items:start; }
-.card,dialog { padding:clamp(1rem, 3vw, 1.55rem); background:var(--panel); border:1px solid var(--line); border-radius:.75rem; }
-label { display:block; font-weight:650; }
-input,textarea,select { display:block; color:inherit; background:#0c1829; border:1px solid var(--line); border-radius:.4rem; padding:.55rem .65rem; max-width:100%; }
-label input,label textarea { width:100%; margin:.3rem 0 .85rem; }
-textarea { resize:vertical; }
-fieldset { border:1px solid var(--line); border-radius:.5rem; margin:1rem 0; min-inline-size:0; }
-legend { color:var(--jade); }
-ul,ol { padding-left:1.3rem; }
-li { margin-bottom:.6rem; overflow-wrap:anywhere; }
-li button { margin:.25rem; }
-a { color:var(--jade); }
-output { display:block; color:var(--jade); margin:.75rem 0; }
-dialog { color:inherit; width:min(42rem, calc(100% - 2rem)); max-height:85vh; overflow:auto; }
-dialog::backdrop { background:#07101cba; }
-#preview img { max-width:100%; max-height:18rem; object-fit:contain; }
-#preview article { white-space:pre-wrap; overflow-wrap:anywhere; }
-.role { display:flex; gap:.6rem; align-items:center; flex-wrap:wrap; }
-[hidden] { display:none !important; }
-@media(max-width:740px) { .grid { grid-template-columns:1fr; } main { padding-top:1.5rem; } }
-</style>
+<link rel="stylesheet" href="./panel.css">
 </head>
 <body>
-<header><div class="bar"><div class="brand"><span class="mark" aria-hidden="true">fa</span> FA Türkiye</div><label class="role">Deneme rolü
-<select id="role"><option value="author">Yazar</option><option value="editor">Editör</option><option value="admin">Yönetici</option></select></label></div></header>
+<header><div class="bar"><div class="brand"><span class="mark" aria-hidden="true">fa</span> FA Türkiye</div><div id="session" class="session" hidden>
+<span id="identity"></span>
+<button type="button" id="sign-out">Çıkış yap</button>
+</div></div></header>
 <main>
 <h1>Editör paneli</h1>
-<p class="notice">Bu prototip verileri bu tarayıcıda saklar. Deneme rolleriyle haber akışını inceleyebilirsin. Gerçek giriş, e-posta gönderimi ve canlı yayın bağlantısı kapalıdır.</p>
+<output id="status" aria-live="polite">Panel bağlantısı kontrol ediliyor.</output>
+<form id="sign-in" class="card" hidden>
+<h2>Ekibe giriş</h2>
+<p class="notice">Yetkili e-posta adresine gelen bağlantıyla giriş yapabilirsin.</p>
+<label>E-posta adresi <input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+<button class="primary">Giriş bağlantısı gönder</button>
+</form>
+<div id="workspace" hidden>
 <nav aria-label="Panel bölümleri">
 <button type="button" data-page="news" aria-pressed="true">Haberler</button>
 <button type="button" data-page="layout" aria-pressed="false">Ana sayfa sırası</button>
 <button type="button" data-page="team" aria-pressed="false">Ekip ve davetler</button>
+<button type="button" id="reload">Akışı yenile</button>
 </nav>
-<output id="status" aria-live="polite"></output>
 <section id="news" class="grid" aria-label="Haberler">
 <form id="story" class="card">
-<h2 id="story-heading">Haber yaz</h2>
+<h2 id="story-heading" tabindex="-1">Haber yaz</h2>
 <label>Başlık <input name="title" maxlength="160" required></label>
 <label>İlaç veya araştırma adı <input name="topic" maxlength="120"></label>
 <label>Kısa özet <textarea name="summary" rows="2" maxlength="600" required></textarea></label>
@@ -86,231 +54,28 @@ dialog::backdrop { background:#07101cba; }
 </section>
 <section id="layout" class="card" hidden>
 <h2>Ana sayfa sırası</h2>
-<p>Bölümleri yukarı ve aşağı taşıyarak sırayı dene.</p>
+<p>Ana sayfa için bölüm sırasını düzenle.</p>
 <ol id="sections"></ol>
 </section>
 <section id="team" class="card" hidden>
 <h2>Ekip ve davetler</h2>
 <p>Yazar haber hazırlar. Editör kaynağı kontrol eder ve yayını onaylar. Yönetici ekip erişimini yönetir.</p>
 <form id="invite">
-<label>E-posta adresi <input name="email" type="email" required></label>
+<label>E-posta adresi <input name="email" type="email" maxlength="254" required></label>
 <label>Yetki <select name="permission"><option value="author">Yazar</option><option value="editor">Editör</option></select></label>
-<div class="actions"><button class="primary">Davet taslağı oluştur</button></div>
+<div class="actions"><button class="primary">Davet gönder veya yetkiyi güncelle</button></div>
 </form>
 <ul id="invitations"></ul>
 </section>
+</div>
 </main>
 <dialog id="preview" aria-labelledby="preview-heading">
 <h2 id="preview-heading">Haber önizlemesi</h2>
 <article></article>
 <form method="dialog"><button autofocus>Kapat</button></form>
 </dialog>
-<script>
-const byId = id => document.getElementById(id);
-const storageKey = 'fa-turkiye-panel-demo-v1';
-const initial = { stories: [], team: [], layout: ['Karşılama', 'Son Haberler', 'FA’yı keşfet', 'Topluluk'] };
-let state = structuredClone(initial);
-let editing = null;
-let page = 'news';
-
-try {
-  const stored = localStorage.getItem(storageKey);
-  if (stored) state = JSON.parse(stored);
-} catch {
-  message('Tarayıcı kaydı okunamadı. Yeni bir deneme açıldı.');
-}
-
-const storyForm = byId('story');
-const role = () => byId('role').value;
-const canReview = () => role() !== 'author';
-const statuses = { draft: 'Taslak', review: 'İncelemede', approved: 'Yayına hazır' };
-const permissions = { author: 'Yazar', editor: 'Editör' };
-
-function message(text) {
-  byId('status').textContent = text;
-}
-
-function save(text) {
-  try {
-    localStorage.setItem(storageKey, JSON.stringify(state));
-    message(text);
-  } catch {
-    message('Bu tarayıcı değişikliği saklayamadı. Değişiklik açık sayfada kullanılabilir.');
-  }
-  render();
-}
-
-function button(text, action) {
-  const item = document.createElement('button');
-  item.type = 'button';
-  item.textContent = text;
-  item.addEventListener('click', action);
-  return item;
-}
-
-function formData(form) {
-  return Object.fromEntries([...new FormData(form)].map(([key, value]) => [key, value.trim()]));
-}
-
-function validSource(value) {
-  try {
-    const url = new URL(value);
-    return url.protocol === 'https:' && url.hostname && !url.username && !url.password;
-  } catch {
-    return false;
-  }
-}
-
-function saveStory(status) {
-  const current = state.stories.find(item => item.id === editing);
-  if (current && current.status !== 'draft') return;
-  const data = formData(storyForm);
-  if (status === 'review' && (!data.title || !data.summary || !data.body || !data.source || !validSource(data.url))) {
-    message('İnceleme için başlık, özet, haber metni ve HTTPS birincil kaynak adresi gerekli.');
-    return;
-  }
-  if (status === 'review' && data.image && (!validSource(data.image) || !data.alt)) {
-    message('Görsel eklemek için HTTPS adresi ve görsel açıklaması gerekli.');
-    return;
-  }
-  const record = { ...data, id: editing || crypto.randomUUID(), status };
-  state.stories = [record, ...state.stories.filter(item => item.id !== record.id)];
-  openStory(record);
-  save(status === 'review' ? 'Haber deneme akışında editör incelemesine gönderildi.' : 'Haber taslağı bu tarayıcıya kaydedildi.');
-}
-
-function openStory(record) {
-  storyForm.reset();
-  editing = record?.id ?? null;
-  for (const field of storyForm.elements) {
-    if (!field.name) continue;
-    field.value = record?.[field.name] ?? '';
-    field.readOnly = Boolean(record && record.status !== 'draft');
-  }
-  byId('story-heading').textContent = record ? statuses[record.status] : 'Haber yaz';
-  byId('save-button').disabled = byId('submit-button').disabled = Boolean(record && record.status !== 'draft');
-}
-
-function render() {
-  if ((page === 'team' && role() !== 'admin') || (page === 'layout' && !canReview())) page = 'news';
-  for (const item of document.querySelectorAll('nav [data-page]')) {
-    const name = item.dataset.page;
-    item.hidden = (name === 'team' && role() !== 'admin') || (name === 'layout' && !canReview());
-    item.setAttribute('aria-pressed', String(name === page));
-    byId(name).hidden = name !== page;
-  }
-
-  const storyList = byId('stories');
-  storyList.replaceChildren();
-  byId('flow-note').textContent = state.stories.length ? 'Bir haberi açarak taslağı veya inceleme durumunu gör.' : 'Henüz haber taslağı yok.';
-  for (const record of state.stories) {
-    const item = document.createElement('li');
-    item.append(button(record.title || 'Başlıksız taslak', () => openStory(record)), document.createTextNode(statuses[record.status]));
-    if (canReview() && record.status === 'review') {
-      item.append(button('Düzeltmeye gönder', () => review(record, 'draft')));
-      item.append(button('Kaynağı kontrol ettim, onayla', () => review(record, 'approved')));
-    }
-    storyList.append(item);
-  }
-
-  const sections = byId('sections');
-  sections.replaceChildren();
-  state.layout.forEach((name, index) => {
-    const row = document.createElement('li');
-    row.textContent = name;
-    for (const [direction, label] of [[-1, 'Yukarı taşı'], [1, 'Aşağı taşı']]) {
-      const target = index + direction;
-      const move = button(label, () => {
-        if (!canReview()) return;
-        [state.layout[index], state.layout[target]] = [state.layout[target], state.layout[index]];
-        save('Ana sayfa sırası deneme için kaydedildi.');
-        const controls = sections.children[target].querySelectorAll('button');
-        const sameDirection = controls[direction < 0 ? 0 : 1];
-        (sameDirection.disabled ? controls[direction < 0 ? 1 : 0] : sameDirection).focus();
-      });
-      move.disabled = target < 0 || target >= state.layout.length;
-      move.setAttribute('aria-label', name + ': ' + label);
-      row.append(move);
-    }
-    sections.append(row);
-  });
-
-  const invitations = byId('invitations');
-  invitations.replaceChildren();
-  for (const entry of state.team) {
-    const item = document.createElement('li');
-    item.textContent = entry.email + ' · ' + permissions[entry.permission] + ' · Davet taslağı';
-    item.append(button('Kaldır', () => {
-      if (role() !== 'admin') return;
-      state.team = state.team.filter(invite => invite !== entry);
-      save('Davet taslağı kaldırıldı.');
-    }));
-    invitations.append(item);
-  }
-}
-
-function review(record, status) {
-  if (!canReview() || record.status !== 'review') return;
-  record.status = status;
-  if (editing === record.id) openStory(record);
-  save(status === 'approved' ? 'Haber deneme akışında yayına hazır olarak işaretlendi.' : 'Haber deneme akışında düzeltmeye gönderildi.');
-}
-
-document.querySelectorAll('nav [data-page]').forEach(item => item.addEventListener('click', () => {
-  page = item.dataset.page;
-  render();
-}));
-byId('role').addEventListener('change', render);
-byId('reset-button').addEventListener('click', () => {
-  openStory();
-  storyForm.elements.title.focus();
-});
-byId('save-button').addEventListener('click', () => saveStory('draft'));
-storyForm.addEventListener('submit', event => {
-  event.preventDefault();
-  saveStory('review');
-});
-
-byId('preview-button').addEventListener('click', () => {
-  const data = formData(storyForm);
-  const dialog = byId('preview');
-  const article = dialog.querySelector('article');
-  article.replaceChildren();
-  for (const [tag, text] of [['h3', data.title || 'Başlıksız haber'], ['p', data.topic], ['p', data.summary], ['p', data.body]]) {
-    if (!text) continue;
-    const element = document.createElement(tag);
-    element.textContent = text;
-    article.append(element);
-  }
-  if (validSource(data.image) && data.alt) {
-    const image = document.createElement('img');
-    image.src = data.image;
-    image.alt = data.alt;
-    image.referrerPolicy = 'no-referrer';
-    article.append(image);
-  }
-  if (validSource(data.url)) {
-    const link = document.createElement('a');
-    link.href = data.url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = data.source || 'Birincil kaynağı aç';
-    article.append(link);
-  }
-  dialog.showModal();
-});
-
-byId('invite').addEventListener('submit', event => {
-  event.preventDefault();
-  if (role() !== 'admin') return;
-  const entry = formData(event.currentTarget);
-  entry.email = entry.email.toLowerCase();
-  state.team = [...state.team.filter(item => item.email !== entry.email), entry];
-  event.currentTarget.reset();
-  save('Davet taslağı kaydedildi. Bu denemede e-posta gönderilmedi.');
-});
-
-render();
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js" integrity="sha384-uteMfOloLDGt042uDz+xHGF3ym63/WQ6rFq7murQRG8Ih7QrXGEGNtWd8688sb4O" crossorigin="anonymous"></script>
+<script defer src="./config.js"></script>
+<script defer src="./panel.js"></script>
 </body>
 </html>

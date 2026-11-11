@@ -1,0 +1,4 @@
+project_id = "fa-turkiye-editorial"
+
+[functions.fa-panel-invite]
+verify_jwt = true
