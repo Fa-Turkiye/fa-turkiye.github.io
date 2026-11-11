@@ -12,7 +12,7 @@ Taslaklar, kaynak kontrolü ve bölüm sırası Supabase'de tutulur. Kaynak kont
 
 ## Kurulum
 
-1. FA Türkiye'nin Supabase projesini seç. Veritabanının mevcut tablolarını ve migration geçmişini kontrol et. Depodaki `supabase/migrations` dosyasını hedef projeye uygula ve `fa-panel-invite` Edge Function'ını JWT doğrulaması açık olarak dağıt. Supabase CLI v3 ile önce `supabase db push --remote=PROJE_REF --dry-run`, ardından `supabase db push --remote=PROJE_REF` ve `supabase functions deploy fa-panel-invite --remote=PROJE_REF --use-api` kullanılabilir.
+1. FA Türkiye'nin Supabase projesini seç. Veritabanının mevcut tablolarını ve migration geçmişini kontrol et. Depodaki `supabase/migrations` dosyasını hedef projeye uygula ve `fa-panel-invite` Edge Function'ını dağıt. İşlev, oturumu Supabase Auth ile ve yönetici yetkisini veritabanında doğrular. Depodaki işlev ayarı yeni Supabase imzalama anahtarlarıyla uyumludur. Supabase CLI v3 ile önce `supabase db push --remote=PROJE_REF --dry-run`, ardından `supabase db push --remote=PROJE_REF` ve `supabase functions deploy fa-panel-invite --remote=PROJE_REF --use-api` kullanılabilir.
 2. Supabase Authentication ayarlarında e-posta sağlayıcısını ve e-posta doğrulamasını etkinleştir. Redirect URLs listesine tam panel adresini ekle. Ekip üyelerine e-posta göndermek için özel SMTP'yi yapılandır. Davet ve Magic Link şablonlarının `ConfirmationURL` bağlantısını kullandığını kontrol et.
 3. İlk yöneticinin e-posta doğrulaması tamamlandıktan sonra, SQL Editor'da doğrulanmış e-posta adresiyle tek bir yönetici kaydı oluştur.
 

@@ -1,4 +1,5 @@
 project_id = "fa-turkiye-editorial"
 
 [functions.fa-panel-invite]
-verify_jwt = true
+# Oturum ve yönetici yetkisi işlevin içinde doğrulanır.
+verify_jwt = false

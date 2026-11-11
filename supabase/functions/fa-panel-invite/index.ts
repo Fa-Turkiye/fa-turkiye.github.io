@@ -40,6 +40,12 @@ Deno.serve(async (request) => {
     const secretKey = projectKey("SUPABASE_SECRET_KEYS", "SUPABASE_SERVICE_ROLE_KEY");
     if (!projectUrl || !publicKey || !secretKey) return reply(503, { error: "project_not_configured" });
 
+    const identity = await fetch(new URL("/auth/v1/user", projectUrl), {
+      headers: { apikey: publicKey, Authorization: authorization },
+    });
+    if (identity.status === 401 || identity.status === 403) return reply(401, { error: "authentication_required" });
+    if (!identity.ok) return reply(503, { error: "project_unavailable" });
+
     const assignRole = () => fetch(new URL("/rest/v1/rpc/fa_panel_set_member_role", projectUrl), {
       method: "POST",
       headers: { apikey: publicKey, Authorization: authorization, "Content-Type": "application/json" },
@@ -56,9 +62,11 @@ Deno.serve(async (request) => {
 
     const inviteUrl = new URL("/auth/v1/invite", projectUrl);
     inviteUrl.searchParams.set("redirect_to", panelUrl);
+    const inviteHeaders = new Headers({ apikey: secretKey, "Content-Type": "application/json" });
+    if (!secretKey.startsWith("sb_secret_")) inviteHeaders.set("Authorization", "Bearer " + secretKey);
     const invitation = await fetch(inviteUrl, {
       method: "POST",
-      headers: { apikey: secretKey, Authorization: "Bearer " + secretKey, "Content-Type": "application/json" },
+      headers: inviteHeaders,
       body: JSON.stringify({ email }),
     });
 
