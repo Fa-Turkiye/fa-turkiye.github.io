@@ -14,3 +14,8 @@ for (const mark of document.querySelectorAll("header .brand-mark > span, footer 
   icon.style.verticalAlign = "middle";
   mark.replaceChildren(icon);
 }
+
+// Published visual edits are optional. A service outage leaves the static page usable.
+window.addEventListener("load", () => {
+  import("./page-layout.js").then(module => module.showPublishedLayout()).catch(() => {});
+}, { once: true });

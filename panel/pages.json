@@ -1,0 +1,194 @@
+[
+  {
+    "path": "index.html",
+    "title": "Ana sayfa"
+  },
+  {
+    "path": "arastirma-takvimi.html",
+    "title": "Araştırma Takvimi"
+  },
+  {
+    "path": "avrupa-merkezleri.html",
+    "title": "Avrupa Merkezleri"
+  },
+  {
+    "path": "fa-hakkinda.html",
+    "title": "FA Hakkında"
+  },
+  {
+    "path": "merkezler.html",
+    "title": "FA Merkezleri"
+  },
+  {
+    "path": "gv101.html",
+    "title": "GV101: ROCK2 yolundan frataxin üretimine uzanan araştırma"
+  },
+  {
+    "path": "haberler.html",
+    "title": "Haberler"
+  },
+  {
+    "path": "haftalik-guncellemeler.html",
+    "title": "Haftalık güncellemeler arşivi"
+  },
+  {
+    "path": "ilaclar.html",
+    "title": "İlaç kütüphanesi"
+  },
+  {
+    "path": "kaynaklar.html",
+    "title": "Kaynaklar"
+  },
+  {
+    "path": "klinik-arastirmalar.html",
+    "title": "Klinik Araştırmalar"
+  },
+  {
+    "path": "katilim-rehberi.html",
+    "title": "Klinik araştırmalara katılım rehberi"
+  },
+  {
+    "path": "arama.html",
+    "title": "Site araması"
+  },
+  {
+    "path": "tedaviler.html",
+    "title": "Tedaviler"
+  },
+  {
+    "path": "topluluk.html",
+    "title": "Topluluk ve Dernek Bağlantısı"
+  },
+  {
+    "path": "haber-ati105-faz1.html",
+    "title": "ATI-105 Faz I çalışmasında ilk sağlıklı gönüllüye doz verildi"
+  },
+  {
+    "path": "ilac-ati105.html",
+    "title": "ATI-105 ve sağlıklı gönüllülerde Faz I araştırması"
+  },
+  {
+    "path": "ilac-brave.html",
+    "title": "BRAVE: omaveloxolone’un 2–15 yaş araştırması nasıl yürütülüyor?"
+  },
+  {
+    "path": "haber-brave-alim.html",
+    "title": "BRAVE’in alımı tamamlandı: çocuklar için sonuçlar hâlâ bekleniyor"
+  },
+  {
+    "path": "ilac-dt216p2.html",
+    "title": "DT-216P2: FXN geninin yeniden okunması ve RESTORE-FA verileri"
+  },
+  {
+    "path": "haber-dt216p2-ilk-veri.html",
+    "title": "DT-216P2’nin ilk dört haftalık verisi: erken sinyal ne anlama geliyor?"
+  },
+  {
+    "path": "haber-sgt212-kasim.html",
+    "title": "FALCON’da beş katılımcıya SGT-212 uygulandı"
+  },
+  {
+    "path": "haber-gv101-fast-track.html",
+    "title": "Graviton, GV101 için FDA Fast Track statüsünü duyurdu"
+  },
+  {
+    "path": "haber-gv101.html",
+    "title": "GV101 için klinik araştırma izni"
+  },
+  {
+    "path": "ilac-gv101.html",
+    "title": "GV101: ROCK2 yolundan frataxin üretimine uzanan araştırma"
+  },
+  {
+    "path": "haber-omaveloxolone-gercek-yasam-2026.html",
+    "title": "İleri evre FA grubunda kısa dönem omaveloxolone gerçek yaşam verileri yayımlandı"
+  },
+  {
+    "path": "haber-lx2006-icar.html",
+    "title": "LX2006 için ICAR öncesi yeni ara veriler duyuruldu"
+  },
+  {
+    "path": "ilac-lx2006.html",
+    "title": "LX2006: kalp hedefinden erken nörolojik bulgulara"
+  },
+  {
+    "path": "haber-lx2006-mds.html",
+    "title": "LX2006: kalp odaklı araştırmada nörolojik bulgular nasıl yorumlanmalı?"
+  },
+  {
+    "path": "haber-nbib223-facet.html",
+    "title": "NBIB-223 için FACET duyurusu: ilk klinik aşamada hangi sorular var?"
+  },
+  {
+    "path": "ilac-nbib223.html",
+    "title": "NBIB-223 ve FACET: beyin ile kalbe gen ulaştırma hedefi"
+  },
+  {
+    "path": "ilac-jive.html",
+    "title": "Nomlabofusp açık etiketli takip: JIVE/OLE programının amacı ve katılımı"
+  },
+  {
+    "path": "haber-nomlabofusp-icar.html",
+    "title": "Nomlabofusp için ICAR 2026’da üç poster planlandı"
+  },
+  {
+    "path": "haber-nomlabofusp-bla.html",
+    "title": "Nomlabofusp için ilk BLA bölümü sunuldu: biyobelirteç, klinik işlev ve güvenlilik"
+  },
+  {
+    "path": "haber-nomlabofusp-bla-tamamlandi.html",
+    "title": "Nomlabofusp için kademeli BLA başvurusu tamamlandı"
+  },
+  {
+    "path": "ilac-nomlabofusp.html",
+    "title": "Nomlabofusp: frataxin yerine koyma, uzun dönem veriler ve FORWARD-FA"
+  },
+  {
+    "path": "haber-ppl001-jci.html",
+    "title": "PPL-001 yaklaşımına ilişkin fare çalışması JCI’da yayımlandı"
+  },
+  {
+    "path": "haber-ppl001-uretim.html",
+    "title": "PPL-001 üretim ortaklığı: klinik başarı değil, araştırmaya hazırlık adımı"
+  },
+  {
+    "path": "ilac-ppl001.html",
+    "title": "PPL-001: gen düzenlenmiş kök hücre yaklaşımı ve klinik öncesi kanıt"
+  },
+  {
+    "path": "haber-vatiquinone-prove.html",
+    "title": "PROVE-FA için şirket ve merkez durumları neden farklı görünüyor?"
+  },
+  {
+    "path": "haber-dt216p2-takvim.html",
+    "title": "RESTORE-FA takvimi güncellendi: 12 haftalık veri 2027 ilk çeyrekte bekleniyor"
+  },
+  {
+    "path": "haber-dt216p2-kasim.html",
+    "title": "RESTORE-FA’nın 12 haftalık verileri 2027 başında bekleniyor"
+  },
+  {
+    "path": "ilac-sgt212.html",
+    "title": "SGT-212: beyin ve kalbi birlikte hedefleyen çift yollu gen tedavisi"
+  },
+  {
+    "path": "haber-sgt212-avrupa.html",
+    "title": "SGT-212’ye Avrupa yetim ilaç statüsü: FALCON’da beş katılımcı"
+  },
+  {
+    "path": "ilac-skyclarys.html",
+    "title": "Skyclarys: onaylı tedavinin amacı, kanıtları ve çocuk araştırmaları"
+  },
+  {
+    "path": "haber-uss-olcum-2026.html",
+    "title": "USS çalışması, FA’da denge ölçümünün güçlü ve sınırlı yönlerini gösterdi"
+  },
+  {
+    "path": "ilac-vatiquinone.html",
+    "title": "Vatiquinone: MOVE-FA sonuçlarından PROVE-FA programına"
+  },
+  {
+    "path": "haber-nbib223-kasim.html",
+    "title": "Voyager, NBIB-223’ün Faz I çalışma planını güncelledi"
+  }
+]

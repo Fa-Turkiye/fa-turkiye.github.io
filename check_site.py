@@ -116,9 +116,18 @@ def check_news(pages):
         yield "haber-gv101.html: arşiv haberi veya HTTPS kaynağı eksik"
 
 
+def check_page_catalog(pages):
+    entries = json.loads((ROOT / "panel" / "pages.json").read_text(encoding="utf-8"))
+    paths = [entry["path"] for entry in entries]
+    if set(paths) != set(pages) or len(paths) != len(pages) or paths[0] != "index.html":
+        yield "Panelin sayfa listesi yayımlanan sayfalarla eşleşmiyor."
+    if any(not entry["title"].strip() for entry in entries):
+        yield "Panelin sayfa listesinde başlıksız sayfa var."
+
+
 def main():
     pages = {path.name: Page(path) for path in sorted(ROOT.glob("*.html"))}
-    errors = [*check_links(pages), *check_news(pages)]
+    errors = [*check_links(pages), *check_news(pages), *check_page_catalog(pages)]
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
