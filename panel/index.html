@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js; style-src 'self'; img-src 'self' https:; connect-src https://*.supabase.co; base-uri 'none'; form-action 'self'">
+<title>Editör paneli · FA Türkiye</title>
+<link rel="stylesheet" href="./panel.css">
+</head>
+<body>
+<header><div class="bar"><div class="brand"><span class="mark" aria-hidden="true">fa</span> FA Türkiye</div><div id="session" class="session" hidden>
+<span id="identity"></span>
+<button type="button" id="sign-out">Çıkış yap</button>
+</div></div></header>
+<main>
+<h1>Editör paneli</h1>
+<output id="status" aria-live="polite">Panel bağlantısı kontrol ediliyor.</output>
+<form id="sign-in" class="card" hidden>
+<h2>Ekibe giriş</h2>
+<p class="notice">Yetkili e-posta adresine gelen bağlantıyla giriş yapabilirsin.</p>
+<label>E-posta adresi <input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+<button class="primary">Giriş bağlantısı gönder</button>
+</form>
+<div id="workspace" hidden>
+<nav aria-label="Panel bölümleri">
+<button type="button" data-page="news" aria-pressed="true">Haberler</button>
+<button type="button" data-page="layout" aria-pressed="false">Ana sayfa sırası</button>
+<button type="button" data-page="team" aria-pressed="false">Ekip ve davetler</button>
+<button type="button" id="reload">Akışı yenile</button>
+</nav>
+<section id="news" class="grid" aria-label="Haberler">
+<form id="story" class="card">
+<h2 id="story-heading" tabindex="-1">Haber yaz</h2>
+<label>Başlık <input name="title" maxlength="160" required></label>
+<label>İlaç veya araştırma adı <input name="topic" maxlength="120"></label>
+<label>Kısa özet <textarea name="summary" rows="2" maxlength="600" required></textarea></label>
+<label>Haber metni <textarea name="body" rows="9" maxlength="30000" required></textarea></label>
+<label>Görsel bağlantısı <input name="image" type="url" maxlength="1500" placeholder="https://"></label>
+<label>Görsel açıklaması <input name="alt" maxlength="200"></label>
+<fieldset><legend>Birincil kaynak</legend>
+<label>Kaynak adı <input name="source" maxlength="160" required></label>
+<label>Kaynak adresi <input name="url" type="url" maxlength="1500" placeholder="https://" required></label>
+</fieldset>
+<div class="actions">
+<button type="button" id="preview-button">Önizle</button>
+<button type="button" id="save-button">Taslak kaydet</button>
+<button type="submit" class="primary" id="submit-button">İncelemeye gönder</button>
+<button type="button" id="reset-button">Yeni haber</button>
+</div>
+</form>
+<aside class="card"><h2>Haber akışı</h2><p id="flow-note"></p><ul id="stories"></ul></aside>
+</section>
+<section id="layout" class="card" hidden>
+<h2>Ana sayfa sırası</h2>
+<p>Ana sayfa için bölüm sırasını düzenle.</p>
+<ol id="sections"></ol>
+</section>
+<section id="team" class="card" hidden>
+<h2>Ekip ve davetler</h2>
+<p>Yazar haber hazırlar. Editör kaynağı kontrol eder ve yayını onaylar. Yönetici ekip erişimini yönetir.</p>
+<form id="invite">
+<label>E-posta adresi <input name="email" type="email" maxlength="254" required></label>
+<label>Yetki <select name="permission"><option value="author">Yazar</option><option value="editor">Editör</option></select></label>
+<div class="actions"><button class="primary">Davet gönder veya yetkiyi güncelle</button></div>
+</form>
+<ul id="invitations"></ul>
+</section>
+</div>
+</main>
+<dialog id="preview" aria-labelledby="preview-heading">
+<h2 id="preview-heading">Haber önizlemesi</h2>
+<article></article>
+<form method="dialog"><button autofocus>Kapat</button></form>
+</dialog>
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js" integrity="sha384-uteMfOloLDGt042uDz+xHGF3ym63/WQ6rFq7murQRG8Ih7QrXGEGNtWd8688sb4O" crossorigin="anonymous"></script>
+<script defer src="./config.js"></script>
+<script defer src="./panel.js"></script>
+</body>
+</html>
