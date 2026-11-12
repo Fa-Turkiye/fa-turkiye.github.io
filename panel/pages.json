@@ -109,7 +109,7 @@
   },
   {
     "path": "haber-lx2006-icar.html",
-    "title": "LX2006 için ICAR öncesi yeni ara veriler duyuruldu"
+    "title": "LX2006 için ICAR özetlerinde kalp ve nörolojik ara bulgular"
   },
   {
     "path": "ilac-lx2006.html",
@@ -132,10 +132,6 @@
     "title": "Nomlabofusp açık etiketli takip: JIVE/OLE programının amacı ve katılımı"
   },
   {
-    "path": "haber-nomlabofusp-icar.html",
-    "title": "Nomlabofusp için ICAR 2026’da üç poster planlandı"
-  },
-  {
     "path": "haber-nomlabofusp-bla.html",
     "title": "Nomlabofusp için ilk BLA bölümü sunuldu: biyobelirteç, klinik işlev ve güvenlilik"
   },
@@ -146,6 +142,10 @@
   {
     "path": "ilac-nomlabofusp.html",
     "title": "Nomlabofusp: frataxin yerine koyma, uzun dönem veriler ve FORWARD-FA"
+  },
+  {
+    "path": "haber-nomlabofusp-icar.html",
+    "title": "Nomlabofusp’un ICAR posterlerinde iki biyobelirteç analizi"
   },
   {
     "path": "haber-ppl001-jci.html",

@@ -486,26 +486,39 @@
     "drug": "nomlabofusp",
     "iso": "2026-11-05",
     "date": "5 Kasım 2026",
-    "title": "Nomlabofusp için ICAR 2026’da üç poster planlandı",
-    "summary": "Larimar, 12 Kasım’da daha önce açıklanan ara klinik verileri ve yeni plazma lipidleri ile gen ifadesi analizlerini sunmayı planlıyor.",
+    "title": "Nomlabofusp’un ICAR posterlerinde iki biyobelirteç analizi",
+    "summary": "Kongre özetleri, nomlabofusp çalışmalarında bazı plazma trigliseritlerinin azaldığını ve ağız içi hücrelerinde 27 genin ifadesinin sağlıklı gönüllülerdeki düzeylere yaklaşma eğilimi gösterdiğini bildiriyor.",
     "primary_source": [
-      "Larimar Therapeutics",
-      "https://larimar.gcs-web.com/news-releases/news-release-details/larimar-therapeutics-announces-three-poster-presentations-0"
+      "ICAR 2026 resmî özet kitabı (B65, B66 ve EC16)",
+      "https://ataxiacongress.org/wp-content/uploads/2026/10/ICAR_2026_Abstract_Book_Final-V2-1.pdf#page=161"
     ],
     "source_review": {
-      "checked_on": "2026-11-08",
-      "checked_label": "8 Kasım 2026"
+      "checked_on": "2026-11-12",
+      "checked_label": "12 Kasım 2026"
     },
     "sections": [
       [
-        "Sunumların kapsamı",
-        "Üç poster uzun süreli açık etiketli izlemin daha önce paylaşılan klinik verilerini ve ek biyolojik analizleri ele alacak."
+        "12 Kasım poster oturumunda ne var?",
+        "Larimar’ın duyurusuna göre üç poster Atlanta’da 12 Kasım 18.30–19.30, Türkiye’de 13 Kasım 02.30–03.30 için programlandı. Kongre kitabındaki B65 ve B66 özetleri, plazma lipitleri ile ağız içi hücrelerindeki gen ifadesini inceliyor. EC16 posteri, daha önce açıklanan uzun dönem açık etiketli çalışmanın ara verilerini ele alıyor."
       ],
       [
-        "Veriler nasıl ayrılmalı?",
-        "Lipid ve gen ifadesi ölçümleri biyolojik değişimleri inceler. Klinik işlev ve güvenlilik bulguları kendi ölçümleri ve çalışma tasarımıyla değerlendirilir."
+        "Bazı plazma trigliseritleri azaldı",
+        "Üç klinik çalışmadan alınan örneklerin analizinde, çoklu doymamış yağ asidi içeren bazı plazma trigliseritleri FA’lı katılımcılarda sağlıklı gönüllülere göre daha yüksek bulundu. En fazla bir aylık nomlabofusp kullanımından sonra bu trigliseritlerin düzeyi azaldı. Plasebo kontrollü doz araştırmasında 28. günde doza bağlı değişim bildirildi. Bazı trigliseritlerdeki düşüş, derideki frataxin artışıyla ilişkiliydi."
+      ],
+      [
+        "Ağız içi hücrelerinde 27 gen için değişim bildirildi",
+        "İki klinik çalışmanın ağız içi hücre örneklerinde, FA’lı katılımcılarla sağlıklı gönüllüler arasında 68 genin ifadesinde farklılık saptandı. Nomlabofusp sonrasında bunların 27’sinde ifadenin sağlıklı gönüllü düzeylerine yaklaşma eğilimi bildirildi. İkinci bir analiz yaklaşımı yedi gende aynı yöndeki eğilimi destekledi. Araştırmacılar bu ölçümlerin tedaviye biyolojik yanıtı izlemek için kullanılıp kullanılamayacağını değerlendiriyor."
+      ],
+      [
+        "Uzun dönem izlemde güvenlilik",
+        "Açık etiketli ara analiz, en az bir doz alan 41 kişiyi kapsadı. İzlemde bazı katılımcılar iki yıla kadar tedavi aldı. Deri ve ağız içi örneklerinde ölçülen frataxin düzeyleri altıncı aya kadar yükseldi ve ardından dengelendi. Nörolojik muayene, günlük işlev ve el becerisi için grup ortalamaları iki yıla kadar başlangıç düzeyinde veya altında kaldı. En sık bildirilen olaylar hafif veya orta şiddette enjeksiyon yeri reaksiyonlarıydı. Bazı katılımcılarda anafilaksi (ciddi alerjik reaksiyon) görüldü. Vakaların neredeyse tamamı daha önce başka bir çalışmada nomlabofusp kullanmış kişilerde bildirildi."
+      ],
+      [
+        "Bu ölçümler hangi soruya yanıt veriyor?",
+        "İki biyobelirteç analizi, tedavi sonrasında ölçülebilen biyolojik değişimlerin yönünü gösteriyor. Plasebo kontrollü Faz 3 FORWARD-FA araştırması klinik etkililik ve güvenliliği değerlendiriyor. Larimar, hızlandırılmış onay talep eden biyolojik ruhsat başvurusunun tamamlandığını 9 Kasım’da duyurdu. Kararı FDA’nın değerlendirmesi belirleyecek."
       ]
-    ]
+    ],
+    "homepage_added_iso": "2026-11-12"
   },
   {
     "id": "gv101-fast-track",
@@ -538,26 +551,39 @@
     "drug": "lx2006",
     "iso": "2026-11-02",
     "date": "2 Kasım 2026",
-    "title": "LX2006 için ICAR öncesi yeni ara veriler duyuruldu",
-    "summary": "Lexeo, 24 ay izlenen 11 katılımcıda mFARS değişiminin eşleştirilmiş UNIFAI doğal seyir grubuna göre olumlu olduğunu bildirdi. Sunum 11 Kasım için planlandı.",
+    "title": "LX2006 için ICAR özetlerinde kalp ve nörolojik ara bulgular",
+    "summary": "ICAR’da iki erken faz çalışmasının kalp bulguları ve LX2006 alan 16 kişinin nörolojik seyrinin 45 doğal seyir katılımcısıyla karşılaştırılması paylaşıldı.",
     "primary_source": [
-      "Lexeo Therapeutics",
-      "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
+      "ICAR 2026 resmî özet kitabı (EC9, EC8 ve C115)",
+      "https://ataxiacongress.org/wp-content/uploads/2026/10/ICAR_2026_Abstract_Book_Final-V2-1.pdf#page=35"
     ],
     "source_review": {
-      "checked_on": "2026-11-08",
-      "checked_label": "8 Kasım 2026"
+      "checked_on": "2026-11-12",
+      "checked_label": "12 Kasım 2026"
     },
     "sections": [
       [
-        "Şirket ne açıkladı?",
-        "Lexeo’nun açıklaması erken faz araştırmalardan gelen ara bulguları içeriyor. Şirket 24 aylık takip grubunda mFARS farkını eşleştirilmiş doğal seyir grubuna göre iki yılda 4,26 puan olarak bildirdi."
+        "Kongrede hangi veriler sunuldu?",
+        "Lexeo’nun 2 Kasım’da açıkladığı programda, Atlanta’da 11 Kasım’da LX2006’nın kardiyomiyopati bulguları sözlü oturumda (EC9), nörolojik seyir analizi poster oturumunda (EC8) yer aldı. İki analiz, FA ile ilişkili kardiyomiyopatide yürütülen açık etiketli Faz 1/2 araştırmalarına dayanıyor. İlk şirket duyurusu, 24 ay izlenen 11 katılımcının ayrı analizinde, eşleştirilmiş doğal seyir grubuna göre iki yılda 4,26 mFARS puanlık fark bildirmişti."
       ],
       [
-        "Karşılaştırmanın sınırı",
-        "Karşılaştırma için ayrı bir doğal seyir çalışmasından benzer katılımcılar seçildi. Erken verinin yorumu küçük örneklem, gruplar arasındaki olası farklar ve takip süresiyle sınırlı. SUNRISE-FA 2 ayrı bir araştırma."
+        "Kalp bulguları ve bildirilen miyokardit",
+        "Birleştirilen iki çalışmada FA kardiyomiyopatisi olan 17 yetişkine LX2006 uygulandı. En son takipte sol ventrikül kütle indeksinde 16 kişide ortalama yüzde 10,5 düşüş bildirildi. Yüksek duyarlıklı troponin I ölçümü, miyokardit görülen kişinin dışarıda bırakıldığı 15 kişilik grupta ortalama yüzde 52,9 düştü. Araştırmacılar 12. ayda bir katılımcıda görülen ikinci derece miyokarditi ciddi advers olay olarak kaydetti ve tedaviyle olası ilişkisini bildirdi."
+      ],
+      [
+        "Nörolojik karşılaştırmada en belirgin fark üst ekstremitede",
+        "Poster, LX2006 alan 16 yetişkinin mFARS seyrini UNIFAI doğal seyir çalışmasından eşleştirilen 45 kişiyle karşılaştırdı. İstatistiksel model, yıllık mFARS değişiminde LX2006 grubu lehine 2,33 puanlık fark bildirdi. Yüzde 95 güven aralığı 0,82–3,84 puandı. Fark en belirgin olarak üst ekstremite koordinasyonunda görüldü. Alt ekstremite koordinasyonu ve ayakta dengeye ilişkin farklar istatistiksel belirsizlik içinde kaldı."
+      ],
+      [
+        "Nörolojik farkın yorumunu ne sınırlıyor?",
+        "Karşılaştırma grubu ayrı bir doğal seyir çalışmasından seçildi. LX2006 alan grup küçüktü, araştırmalar açık etiketliydi ve eşzamanlı omaveloxolone kullanımı gruplar arasında farklıydı. Eşleştirme omaveloxolone kullanımını hesaba katmadı. Bu koşullar, gözlenen farkın ne kadarının LX2006’ya bağlı olduğunu belirlemeyi güçleştiriyor."
+      ],
+      [
+        "12 Kasım’da hasta katılımı posteri",
+        "Lexeo’nun C115 posteri, Atlanta’da 12 Kasım 18.00–19.30, Türkiye’de 13 Kasım 02.00–03.30 için programlandı. FA Kardiyak Danışma Konseyi’nde FA kardiyomiyopatisiyle yaşayan kişiler ve bakım verenler yer aldı. İlk yılın değerlendirmesinde üyeler kalp tutulumuna ilişkin eğitimi, araştırma süreci hakkında açık iletişimi ve hastaların araştırmaya düzenli katılımını öncelik olarak belirtti."
       ]
-    ]
+    ],
+    "homepage_added_iso": "2026-11-12"
   },
   {
     "id": "ati105-faz1",
