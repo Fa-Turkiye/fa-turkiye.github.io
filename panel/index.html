@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js; style-src 'self'; img-src 'self' https:; connect-src https://*.supabase.co; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js; style-src 'self'; img-src 'self' https:; connect-src 'self' https://*.supabase.co; frame-src 'self'; base-uri 'none'; form-action 'self'">
 <title>Editör paneli · FA Türkiye</title>
 <link rel="stylesheet" href="./panel.css">
 </head>
@@ -25,14 +25,14 @@
 </form>
 <div id="workspace" hidden>
 <nav aria-label="Panel bölümleri">
-<button type="button" data-page="news" aria-pressed="true">Haberler</button>
-<button type="button" data-page="layout" aria-pressed="false">Ana sayfa sırası</button>
+<button type="button" data-page="layout" aria-pressed="false">Sayfalar</button>
+<button type="button" data-page="news" aria-pressed="true">Yeni haber</button>
 <button type="button" data-page="team" aria-pressed="false">Ekip ve davetler</button>
 <button type="button" id="reload">Akışı yenile</button>
 </nav>
 <section id="news" class="grid" aria-label="Haberler">
 <form id="story" class="card">
-<h2 id="story-heading" tabindex="-1">Haber yaz</h2>
+<h2 id="story-heading" tabindex="-1">Yeni haber</h2>
 <label>Başlık <input name="title" maxlength="160" required></label>
 <label>İlaç veya araştırma adı <input name="topic" maxlength="120"></label>
 <label>Kısa özet <textarea name="summary" rows="2" maxlength="600" required></textarea></label>
@@ -52,14 +52,48 @@
 </form>
 <aside class="card"><h2>Haber akışı</h2><p id="flow-note"></p><ul id="stories"></ul></aside>
 </section>
-<section id="layout" class="card" hidden>
-<h2>Ana sayfa sırası</h2>
-<p>Ana sayfa için bölüm sırasını düzenle.</p>
-<ol id="sections"></ol>
+<section id="layout" class="page-workbench" aria-label="Sayfa düzenleyici" hidden>
+<aside class="page-rail">
+<h2>Sayfalar</h2>
+<label for="page-search">Sayfa ara</label>
+<input id="page-search" type="search" autocomplete="off">
+<ul id="page-list" aria-label="Site sayfaları"></ul>
+</aside>
+<div class="page-stage">
+<div class="page-toolbar">
+<div>
+<h2 id="page-title">Sayfalar</h2>
+<output id="page-status" aria-live="polite"></output>
+</div>
+<div class="page-actions">
+<button id="page-save" type="button" disabled>Taslak kaydet</button>
+<button id="page-publish" class="primary" type="button" disabled>Düzeni yayımla</button>
+</div>
+</div>
+<iframe id="page-preview" title="Seçilen sayfanın düzenlenebilir önizlemesi" sandbox="allow-scripts allow-same-origin"></iframe>
+</div>
+<aside class="page-inspector" aria-label="Bölüm düzenleme">
+<h2>Düzenle</h2>
+<label for="page-section">Sayfadaki bölümler</label>
+<select id="page-section"><option value="">Bölüm seç</option></select>
+<p id="page-selection-note">Önizlemede bir metne veya görsele tıkla. Bölümleri listeden sürükleyerek taşı.</p>
+<form id="page-properties" hidden>
+<h3 id="page-selected-label" tabindex="-1"></h3>
+<div id="page-fields"></div>
+<div class="page-actions" id="page-move">
+<button id="page-up" type="button">Yukarı taşı</button>
+<button id="page-down" type="button">Aşağı taşı</button>
+</div>
+</form>
+<section id="page-order-region" hidden aria-labelledby="page-order-title">
+<h3 id="page-order-title">Bölüm sırası</h3>
+<ol id="page-order"></ol>
+</section>
+</aside>
 </section>
 <section id="team" class="card" hidden>
 <h2>Ekip ve davetler</h2>
-<p>Yazar haber hazırlar. Editör kaynağı kontrol eder ve yayını onaylar. Yönetici ekip erişimini yönetir.</p>
+<p>Yazar haber hazırlar. Editör site sayfalarını düzenler ve haberleri inceler. Yönetici ekip erişimini yönetir.</p>
 <form id="invite">
 <label>E-posta adresi <input name="email" type="email" maxlength="254" required></label>
 <label>Yetki <select name="permission"><option value="author">Yazar</option><option value="editor">Editör</option></select></label>
@@ -76,6 +110,6 @@
 </dialog>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js" integrity="sha384-uteMfOloLDGt042uDz+xHGF3ym63/WQ6rFq7murQRG8Ih7QrXGEGNtWd8688sb4O" crossorigin="anonymous"></script>
 <script defer src="./config.js"></script>
-<script defer src="./panel.js"></script>
+<script type="module" src="./panel.js"></script>
 </body>
 </html>

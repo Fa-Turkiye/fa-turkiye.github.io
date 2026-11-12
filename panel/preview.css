@@ -1,0 +1,10 @@
+[data-fa-editable] { cursor: text; }
+[data-fa-block] { cursor: grab; }
+[data-fa-editable]:hover, [data-fa-editable]:focus-visible {
+  outline: 2px dashed #71efc8;
+  outline-offset: 2px;
+}
+[data-fa-selected] { outline: 2px solid #71efc8; outline-offset: 2px; }
+[data-fa-field-selected] { outline: 2px solid #ffd1e3; outline-offset: 2px; }
+[data-fa-dragging] { opacity: .6; cursor: grabbing; }
+[data-fa-drop] { outline: 3px solid #ffd1e3; outline-offset: 2px; }

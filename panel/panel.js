@@ -1,3 +1,5 @@
+import { createPageWorkspace } from './pages.js';
+
 const byId = id => document.getElementById(id);
 const panelUrl = 'https://fa-turkiye.github.io/panel/';
 const roleLabels = { author: 'Yazar', editor: 'Editör', admin: 'Yönetici' };
@@ -18,7 +20,7 @@ let editing = null;
 let draftId;
 let stories = [];
 let members = [];
-let layout = null;
+let pageWorkspace;
 
 const canReview = () => role === 'editor' || role === 'admin';
 
@@ -65,7 +67,7 @@ function openStory(record = null) {
     field.readOnly = readOnly;
   }
 
-  byId('story-heading').textContent = record ? statusLabels[record.status] : 'Haber yaz';
+  byId('story-heading').textContent = record ? statusLabels[record.status] : 'Yeni haber';
   byId('save-button').disabled = readOnly;
   byId('submit-button').disabled = readOnly;
 }
@@ -79,11 +81,10 @@ function clearWorkspace() {
   page = 'news';
   stories = [];
   members = [];
-  layout = null;
+  pageWorkspace?.clear();
   openStory();
   byId('invite').reset();
   byId('stories').replaceChildren();
-  byId('sections').replaceChildren();
   byId('invitations').replaceChildren();
   if (preview.open) preview.close();
   preview.querySelector('article').replaceChildren();
@@ -126,7 +127,6 @@ async function fetchStories() {
 async function fetchWorkspace() {
   return Promise.all([
     fetchStories(),
-    canReview() ? client.from('fa_panel_layout').select().eq('id', 1).single().then(unwrap) : null,
     role === 'admin' ? client.from('fa_panel_members').select('user_id,email,role').order('email').then(unwrap) : [],
   ]);
 }
@@ -135,7 +135,7 @@ function refresh(control, note = 'Haber akışı güncellendi.') {
   return runAction(control, async active => {
     const next = await fetchWorkspace();
     if (!active()) return;
-    [stories, layout, members] = next;
+    [stories, members] = next;
     render();
     message(note);
   }, 'Panel verileri yenilenemedi. Tekrar dene.');
@@ -173,10 +173,11 @@ async function syncSession(session) {
 
     clearWorkspace();
     role = membership.role;
+    page = canReview() ? 'layout' : 'news';
     const next = await fetchWorkspace();
     if (check !== authCheck) return;
 
-    [stories, layout, members] = next;
+    [stories, members] = next;
     byId('identity').textContent = account.email + ' · ' + roleLabels[role];
     render();
     workspace.hidden = false;
@@ -300,41 +301,6 @@ function renderStories() {
   }
 }
 
-function renderLayout() {
-  const sections = byId('sections');
-  sections.replaceChildren();
-  if (!layout) return;
-
-  layout.sections.forEach((name, index) => {
-    const row = document.createElement('li');
-    row.textContent = name;
-    for (const [direction, label] of [[-1, 'Yukarı taşı'], [1, 'Aşağı taşı']]) {
-      const target = index + direction;
-      const move = button(label, event => runAction(event.currentTarget, async active => {
-        const order = [...layout.sections];
-        [order[index], order[target]] = [order[target], order[index]];
-        const saved = unwrap(await client.from('fa_panel_layout').update({ sections: order })
-          .eq('id', 1).eq('revision', layout.revision).select().maybeSingle());
-        if (!active()) return;
-        if (!saved) {
-          message('Bölüm sırası başka bir oturumda değişti. Akışı yenile.');
-          return;
-        }
-        layout = saved;
-        renderLayout();
-        const controls = sections.children[target].querySelectorAll('button');
-        const sameDirection = controls[direction < 0 ? 0 : 1];
-        (sameDirection.disabled ? controls[direction < 0 ? 1 : 0] : sameDirection).focus();
-        message('Ana sayfa sırası kaydedildi.');
-      }, 'Bölüm sırası kaydedilemedi. Tekrar dene.'));
-      move.disabled = target < 0 || target >= layout.sections.length;
-      move.setAttribute('aria-label', name + ' bölümünü ' + label.toLocaleLowerCase('tr-TR'));
-      row.append(move);
-    }
-    sections.append(row);
-  });
-}
-
 function renderTeam() {
   const list = byId('invitations');
   list.replaceChildren();
@@ -365,10 +331,11 @@ function render() {
     const name = item.dataset.page;
     item.hidden = (name === 'team' && role !== 'admin') || (name === 'layout' && !canReview());
     item.setAttribute('aria-pressed', String(name === page));
-    byId(name).hidden = name !== page;
+    byId(name).hidden = item.hidden || name !== page;
   }
   renderStories();
-  renderLayout();
+  byId('reload').hidden = page === 'layout';
+  if (canReview() && page === 'layout') pageWorkspace.open();
   renderTeam();
 }
 
@@ -453,8 +420,14 @@ byId('sign-in').addEventListener('submit', async event => {
       options: { shouldCreateUser: false, emailRedirectTo: panelUrl },
     }));
     message('Giriş bağlantısı gönderildi. Gelen kutunu kontrol et.');
-  } catch {
-    message('Giriş bağlantısı gönderilemedi. E-posta adresini ve ekip davetini kontrol et.');
+  } catch (error) {
+    if (error?.status === 429) {
+      message('E-posta gönderim sınırına ulaşıldı. Gelen kutundaki en son geçerli giriş bağlantısını aç veya bir süre sonra tekrar dene.');
+    } else if (error?.code === 'email_address_not_authorized') {
+      message('E-posta hizmeti bu adrese bağlantı gönderemedi. Panel yöneticisiyle iletişime geç.');
+    } else {
+      message('Giriş bağlantısı gönderilemedi. E-posta adresini ve ekip davetini kontrol et.');
+    }
   } finally {
     control.disabled = false;
   }
@@ -486,6 +459,7 @@ if (!/^https:\/\/[a-z0-9]+\.supabase\.co$/.test(supabaseUrl ?? '') || !/^sb_publ
   client = window.supabase.createClient(supabaseUrl, publishableKey, {
     auth: { flowType: 'implicit', storageKey: 'fa-turkiye-editor-session' },
   });
+  pageWorkspace = createPageWorkspace(client);
   client.auth.onAuthStateChange((_event, session) => {
     setTimeout(() => syncSession(session), 0);
   });

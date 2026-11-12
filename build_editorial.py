@@ -272,3 +272,20 @@ for path in ROOT.glob('*.html'):
 
 print(json.dumps({'profiles':len(profiles),'news':len(news)+1,'profile_words':{k:sum(len(p.split()) for _,p in v['sections']) for k,v in profiles.items()}},ensure_ascii=False))
 
+
+# Keep the panel's page selector in sync with the complete static site.
+page_catalog = []
+page_labels = {
+    'index.html': 'Ana sayfa',
+    'merkezler.html': 'FA Merkezleri',
+    'ilaclar.html': 'İlaç kütüphanesi',
+    'haberler.html': 'Haberler',
+}
+for path in ROOT.glob('*.html'):
+    title = html.unescape(re.search(r'<title>(.*?)</title>', path.read_text(), re.S).group(1)).strip()
+    title = re.sub(r'\s*[·|—–-]\s*FA Türkiye(?: Haber Merkezi)?$', '', title)
+    page_catalog.append({'path': path.name, 'title': page_labels.get(path.name, title)})
+page_catalog.sort(key=lambda item: (
+    item['path'] != 'index.html', item['path'].startswith(('haber-', 'ilac-')), item['title'].casefold(),
+))
+(ROOT / 'panel' / 'pages.json').write_text(json.dumps(page_catalog, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
