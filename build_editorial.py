@@ -40,13 +40,16 @@ def page(title, body, filename, description, active='ilaclar.html'):
 
 months = ('Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık')
 
+def date_label(day):
+    return f'{day.day} {months[day.month - 1]} {day.year}'
+
 def source_anchor(source):
     label, url = source
     return f'<a href="{esc(url)}">{esc(label)} ↗</a>'
 
 def milestone_event(item, heading):
     day = date.fromisoformat(item['date'])
-    stamp = f'{day.day} {months[day.month - 1]} {day.year}'
+    stamp = date_label(day)
     article = f' <a href="haber-{esc(item["article"])}.html">Ayrıntılı haber</a>' if item.get('article') else ''
     return f'''<div class="milestone-event"><p class="milestone-meta"><time datetime="{day.isoformat()}">{stamp}</time> <span>{esc(item['kind'])}</span></p>
 <{heading}>{esc(item['title'])}</{heading}><p>{esc(item['summary'])}</p>
@@ -183,8 +186,13 @@ def home_news_card(item):
     drug = item.get('drug')
     label, url = item.get('primary_source') or profiles[drug]['sources'][0]
     dossier = f'<a href="ilac-{drug}.html">{esc(names[drug])} dosyası</a>' if drug else '<a href="klinik-arastirmalar.html">Klinik araştırma rehberi</a>'
+    card_iso = item['iso']
+    card_date = item['date']
+    if 'homepage_updated_iso' in item:
+        card_iso = item['homepage_updated_iso']
+        card_date = f'{date_label(date.fromisoformat(card_iso))} · Güncellendi'
     return f'''<article class="news-card">
-      <time datetime="{esc(item['iso'])}">{esc(item['date'])}</time>
+      <time datetime="{esc(card_iso)}">{esc(card_date)}</time>
       <h3><a href="haber-{item['id']}.html">{esc(item['title'])}</a></h3>
       <p>{esc(item['summary'])}</p>
       <div class="dispatch-links">{dossier}<a href="{esc(url)}">{esc(label)} ↗</a></div>
@@ -192,7 +200,10 @@ def home_news_card(item):
 
 home_path = ROOT / 'index.html'
 home = home_path.read_text(encoding='utf-8')
-home_ordered_news = sorted(news, key=lambda item: item.get('homepage_added_iso', item['iso']), reverse=True)
+home_ordered_news = sorted(news, key=lambda item: (
+    item.get('homepage_updated_iso', item.get('homepage_added_iso', item['iso'])),
+    'homepage_updated_iso' in item,
+), reverse=True)
 home_news = '\n    '.join(home_news_card(item) for item in home_ordered_news[:3])
 home = re.sub(r'<!-- home-news:start -->.*?<!-- home-news:end -->',
               lambda _: f'<!-- home-news:start -->\n    {home_news}\n    <!-- home-news:end -->', home, count=1, flags=re.S)
