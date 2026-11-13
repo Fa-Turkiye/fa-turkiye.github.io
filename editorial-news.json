@@ -586,6 +586,49 @@
     "homepage_updated_iso": "2026-11-12"
   },
   {
+    "id": "falff-fmri-2026",
+    "topic_label": "Hakemli yayın · Beyin görüntüleme",
+    "iso": "2026-10-28",
+    "homepage_added_iso": "2026-11-13",
+    "date": "28 Ekim 2026",
+    "title": "Hakemli fMRI çalışması, FA’da serebello-kortikal ağ etkinliği farklılıkları bildirdi",
+    "summary": "Naeije ve çalışma arkadaşları, 28 FA’lı yetişkin ile 28 eşleştirilmiş kontrolde dinlenim durumu fMRI ölçümlerinin motor ve bilişsel bulgularla kesitsel ilişkilerini inceledi. Çalışma tedavi etkisi veya doğrulanmış bir biyobelirteç göstermiyor.",
+    "primary_source": [
+      "Brain and Behavior · Hakemli tam metin",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13715069/"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-13",
+      "checked_label": "13 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Yayın ve araştırma ekibi",
+        "Brain and Behavior dergisinde 28 Ekim 2026’da çevrim içi yayımlanan çalışma, Hôpital Erasme ve Université Libre de Bruxelles’den Gilles Naeije, Nicola Trotta, Antonin Rovai ve çalışma arkadaşları tarafından yürütüldü. Bu metin, ilgili makaledeki araştırmacı bulgularının özgün Türkçe özetidir; makalenin kopyası değildir."
+      ],
+      [
+        "Çalışma nasıl yapıldı?",
+        "Araştırmacılar genetik olarak doğrulanmış Friedreich ataksisi bulunan 28 yetişkini yaş ve cinsiyet açısından eşleştirilmiş 28 sağlıklı kontrolle karşılaştırdı. Altı dakikalık dinlenim durumu fonksiyonel manyetik rezonans görüntülemede, düşük frekanslı sinyal dalgalanmalarının toplam sinyale oranı olan fALFF ölçüldü. FA grubunda bu ölçümler SARA motor puanı ve Serebellar Bilişsel-Duygulanımsal Sendrom Ölçeği sonuçlarıyla ilişkilendirildi; analizlerde yaş, cinsiyet, baş hareketi ve serebellar gri madde hacmi hesaba katıldı."
+      ],
+      [
+        "Hangi farklılıklar bildirildi?",
+        "FA grubunda kontrollere kıyasla medial ve lateral prefrontal bölgelerde daha düşük fALFF bulundu. Daha yüksek SARA puanları; oksipital, duyu-motor, posterior singulat ve serebellar bölgelerde daha düşük fALFF ile ilişkiliydi. Kesin bilişsel-duygulanımsal sendrom ölçütlerini karşılayan FA grubunda, bilişsel açıdan korunmuş FA grubuna göre iki taraflı frontal ve insular bölgelerde daha düşük değerler bildirildi."
+      ],
+      [
+        "Araştırmacılar sonucu nasıl yorumladı?",
+        "Yazarlar bulguların, serebellum ve çıkış yollarındaki hasarın bağlantılı kortikal bölgelerin dinlenim etkinliğini etkileyebileceği ‘diaschisis benzeri’ bir mekanizmayla uyumlu olduğunu değerlendirdi. Bu yorum, görüntüleme örüntüleri ve klinik puanlar arasındaki ilişkiye dayanır; uzak beyin bölgeleri arasındaki neden-sonuç zincirini doğrudan kanıtlamaz."
+      ],
+      [
+        "Biyobelirteç veya klinik iyileşme sonucu değil",
+        "Araştırmada ilaç ya da başka bir müdahale uygulanmadı. fALFF farkları tedavi yanıtı, hastalık ilerlemesinin durması veya günlük işlevde iyileşme göstermez. Ölçümün tanı, prognoz veya klinik araştırma sonlanımı olarak kullanılabilmesi için aynı kişileri zaman içinde izleyen, bağımsız ve daha büyük çalışmalar gerekir."
+      ],
+      [
+        "Başlıca sınırlamalar",
+        "Çalışma küçük, tek merkezli ve yalnızca yetişkinleri kapsayan kesitsel bir karşılaştırmadır; bu nedenle çocuklara, farklı hastalık evrelerine veya zaman içindeki ilerlemeye doğrudan genellenemez. fALFF, kan oksijenlenmesine bağlı dolaylı bir sinyaldir ve görüntü işleme tercihleri ile hareketten etkilenebilir. Klinik puanlarla bulunan ilişkiler nedenselliği göstermez ve bağımsız örneklemlerde doğrulanmalıdır."
+      ]
+    ]
+  },
+  {
     "id": "ati105-faz1",
     "drug": "ati105",
     "iso": "2026-10-28",
