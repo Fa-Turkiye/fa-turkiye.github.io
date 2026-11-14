@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-11-07",
+  "checked_on": "2026-11-14",
   "programs": {
     "lx2006": "LX2006",
     "sgt212": "SGT-212",
@@ -160,6 +160,41 @@
         }
       ],
       "note": "Weill Cornell araştırmacılarının yürüttüğü ayrı, tek merkezli çalışma."
+    },
+    {
+      "id": "NCT07934303",
+      "program": "nbib223",
+      "title": "FACET – NBIB-223 ilk insan Faz 1 çalışması",
+      "url": "https://clinicaltrials.gov/study/NCT07934303",
+      "sourceLabel": "ClinicalTrials.gov",
+      "locations": [
+        {
+          "name": "Neurocrine Clinical Site",
+          "city": "Los Angeles, California",
+          "country": "US"
+        },
+        {
+          "name": "Neurocrine Clinical Site",
+          "city": "Gainesville, Florida",
+          "country": "US"
+        },
+        {
+          "name": "Neurocrine Clinical Site",
+          "city": "Tampa, Florida",
+          "country": "US"
+        },
+        {
+          "name": "Neurocrine Clinical Site",
+          "city": "Iowa City, Iowa",
+          "country": "US"
+        },
+        {
+          "name": "Neurocrine Clinical Site",
+          "city": "Philadelphia, Pennsylvania",
+          "country": "US"
+        }
+      ],
+      "note": "Kayıt 8–40 yaşta tahmini 24 katılımcı planlıyor ve henüz katılımcı almıyor. Kurum adları resmî kayıtta açıklanmadığı için şehirlerden kurum tahmini yapılmadı."
     },
     {
       "id": "NCT07180355",
@@ -977,14 +1012,6 @@
   ],
   "unpublished": [
     {
-      "program": "nbib223",
-      "text": "Neurocrine, FACET Faz 1 çalışmasını duyurdu. Voyager, 5 Kasım 2026 açıklamasında klinik başlangıcı önümüzdeki aylar için beklediğini bildirdi. 7 Kasım 2026 kontrolünde kamuya açık bir merkez adı doğrulanamadı.",
-      "source": {
-        "label": "Voyager Therapeutics – 5 Kasım 2026 program güncellemesi",
-        "url": "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
-      }
-    },
-    {
       "program": "ppl001",
       "text": "Papillon Therapeutics, PPL-001’in henüz insan çalışmalarında değerlendirilmediğini bildiriyor. 7 Kasım 2026 itibarıyla hasta çalışmasına ait bir merkez doğrulanamadı.",
       "source": {
@@ -1117,6 +1144,10 @@
       }
     ],
     "nbib223": [
+      {
+        "label": "ClinicalTrials.gov · FACET NCT07934303",
+        "url": "https://clinicaltrials.gov/study/NCT07934303"
+      },
       {
         "label": "Neurocrine Biosciences – resmî geliştirme programları",
         "url": "https://www.neurocrine.com/pipeline/"

@@ -351,12 +351,23 @@
   },
   "nbib223": {
     "target": "AAV aracılığıyla işlevsel FXN gen kopyası taşımak.",
-    "results": "FACET Faz I araştırması duyuruldu. Voyager ilk katılımcı düzeyindeki verileri 2027’de bekliyor.",
+    "results": "FACET Faz I kaydı yayımlandı; çalışma henüz katılımcı almıyor ve insanlarda sonuç açıklanmadı.",
     "source": [
-      "Voyager Therapeutics",
-      "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
+      "ClinicalTrials.gov · NCT07934303",
+      "https://clinicaltrials.gov/study/NCT07934303"
     ],
     "events": [
+      {
+        "date": "2026-11-12",
+        "title": "FACET protokolü ClinicalTrials.gov’da yayımlandı",
+        "summary": "Kayıt, 8–40 yaşta 24 kişilik üç bölümlü planı ve beş ABD çalışma noktasını açıklıyor; durum henüz katılımcı almıyor.",
+        "kind": "Resmî çalışma kaydı",
+        "source": [
+          "ClinicalTrials.gov · NCT07934303",
+          "https://clinicaltrials.gov/study/NCT07934303"
+        ],
+        "article": "nbib223-facet-kaydi"
+      },
       {
         "date": "2026-11-05",
         "title": "Voyager, NBIB-223’ün klinik çalışma planını paylaştı",
@@ -381,14 +392,6 @@
       }
     ],
     "expected": [
-      {
-        "window": "Önümüzdeki aylar",
-        "title": "Voyager’ın 5 Kasım açıklamasında öngörülen Faz I başlangıcı.",
-        "source": [
-          "Voyager Therapeutics",
-          "https://ir.voyagertherapeutics.com/news-releases/news-release-details/voyager-reports-third-quarter-2026-financial-and-operating"
-        ]
-      },
       {
         "window": "2027",
         "title": "İlk katılımcı düzeyindeki veriler için şirket beklentisi.",

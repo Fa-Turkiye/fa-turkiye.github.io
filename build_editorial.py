@@ -66,7 +66,7 @@ def treatment_updates(key):
 <h2 id="milestone-title">Bu tedavide ne değişti?</h2><p class="milestone-label">Son açıklanan gelişme</p>
 {milestone_event(events[0], 'h3')}{timeline}{planned}</section>'''
 
-def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None, studies='', checked_on='2026-11-01', checked_label='1 Kasım 2026', updates=''):
+def article_body(title, status, sections, sources, category, back, sponsor=None, extra='', lead=None, studies='', checked_on='2026-11-01', checked_label='1 Kasım 2026', updates='', quick=''):
     count = sum(len(p.split()) for _, p in sections)
     lead_text = lead or '. '.join(sections[0][1].split('. ')[:2]).rstrip('.') + '.'
     toc = ''.join(f'<li><a href="#bolum-{i}">{esc(t)}</a></li>' for i,(t,_) in enumerate(sections,1))
@@ -78,7 +78,7 @@ def article_body(title, status, sections, sources, category, back, sponsor=None,
 <div class="article-heading"><span class="badge">{esc(status)}</span><h1>{esc(title)}</h1>
 <p class="article-meta">Son kaynak kontrolü: <time datetime="{esc(checked_on)}">{esc(checked_label)}</time> · Yaklaşık {max(2,math.ceil(count/160))} dakika okuma</p>
 {f'<p class="article-meta">Geliştirici: {esc(sponsor)}</p>' if sponsor else ''}<p class="article-lead">{esc(lead_text)}</p></div>
-{updates}<nav class="article-toc" aria-label="Yazı içindekiler"><h2>Bu yazıda</h2><ol>{toc}</ol></nav>
+{quick}{updates}<nav class="article-toc" aria-label="Yazı içindekiler"><h2>Bu yazıda</h2><ol>{toc}</ol></nav>
 <div class="article-prose">{paragraphs}{studies}{extra}<section id="kaynaklar" class="article-section article-sources"><h2>Kaynaklar ve doğrulama</h2><ol>{src}</ol><p class="article-meta">Özgün Türkçe açıklama ve değerlendirme. Şirket hedefleri, açıklanmış bulgular ve henüz doğrulanmayan noktalar metinde ayrılmıştır. Kaynak tarihleri ve merkezlerin alım durumları farklı olabilir.</p></section></div>
 <p class="article-end"><a href="{back}">← {category} sayfasına dön</a></p></article>'''
 
@@ -89,8 +89,16 @@ for key, item in profiles.items():
     if key=='skyclarys': more += '<p><a href="ilac-brave.html#arastirma-merkezleri">BRAVE çocuk çalışması ve merkezleri →</a></p>'
     if key=='brave': more += '<p><a href="ilac-skyclarys.html">Omaveloxolone’un ana ilaç dosyasını da okuyun →</a></p>'
     if key=='jive': more += '<p><a href="ilac-nomlabofusp.html">Nomlabofusp ana ilaç dosyasını da okuyun →</a></p>'
+    quick = ''
+    if key == 'nbib223':
+        quick = '''<section class="article-section" id="kisa-ozet" aria-labelledby="kisa-ozet-baslik">
+<h2 id="kisa-ozet-baslik">Kısaca</h2><ul>
+<li><strong>Neyi hedefliyor?</strong> Beyin ve kalp gibi dokulara işlevsel bir FXN gen kopyası ulaştırmayı hedefler.</li>
+<li><strong>Hangi aşamada?</strong> FACET Faz I kaydı yayımlandı; çalışma henüz katılımcı almıyor.</li>
+<li><strong>Bugüne kadar ne biliyoruz?</strong> Protokol 24 kişilik planı açıklıyor; insanlarda güvenlilik veya etkinlik sonucu henüz yayımlanmadı.</li>
+</ul><p><a href="#kaynaklar">Kaynakları incele ↓</a></p></section>'''
     review = item.get('source_review', {})
-    body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), updates=treatment_updates(key), **review)
+    body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), updates=treatment_updates(key), quick=quick, **review)
     (ROOT / filename).write_text(page(item['title'],body,filename,item['sections'][0][1]))
 
 treatment_groups = {
@@ -107,7 +115,7 @@ card_details = {
     'sgt212': ('gene', 'Faz 1b · FALCON'),
     'gv101': ('other', 'Faz IIa'),
     'ppl001': ('gene', 'Klinik öncesi'),
-    'nbib223': ('gene', 'Faz I · FACET duyurusu'),
+    'nbib223': ('gene', 'Faz I · FACET kayıtlı; alım açık değil'),
     'brave': ('other', 'Faz III · BRAVE'),
     'jive': ('frataxin', 'Faz II · Açık etiketli takip'),
     'ati105': ('other', 'Faz I · Sağlıklı gönüllüler'),
@@ -257,11 +265,19 @@ for key, item in guide.items():
     contact = esc(item['contact'])
     contact = re.sub(r'[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}', lambda m: f'<a href="mailto:{m.group()}">{m.group()}</a>', contact)
     guide_sections += f'''<section id="program-{key}" class="article-section guide-program"><span class="badge">{esc(item['label'])}</span><h2>{esc(names[key])}</h2><h3>Koşullar ve araştırma yükü</h3><p>{esc(item['criteria'])}</p><h3>Türkiye’den ve Avrupa’dan katılım</h3><p>{esc(item['action'])}</p><h3>İletişim ve sonraki adım</h3><p>{contact}</p><p><a href="{esc(item['source'])}" target="_blank" rel="noopener">Resmî bilgi / çalışma kaydı ↗</a> · <a href="ilac-{key}.html">Kapsamlı ilaç ve çalışma dosyası →</a></p></section>'''
-guide_intro = '<p class="breadcrumb"><a href="index.html">← Ana Sayfa</a></p><article class="long-article"><div class="article-heading"><span class="badge">KLİNİK ARAŞTIRMAYA KATILIM</span><h1>Her program için ayrı bir yol haritası</h1><p class="article-lead">11 ilaç ve çalışma başlığı: kimler değerlendirilebilir, nerede yürütülüyor, Türkiye’den ne sorulmalı ve hangi iletişim kullanılmalı?</p><p class="article-meta">Kaynak kontrolü: 1 Kasım 2026. Merkezlerin durumu başvuru günü yeniden teyit edilmelidir.</p></div>'
+guide_intro = '<p class="breadcrumb"><a href="index.html">← Ana Sayfa</a></p><article class="long-article"><div class="article-heading"><span class="badge">KLİNİK ARAŞTIRMAYA KATILIM</span><h1>Her program için ayrı bir yol haritası</h1><p class="article-lead">12 ilaç ve çalışma başlığı: kimler değerlendirilebilir, nerede yürütülüyor, Türkiye’den ne sorulmalı ve hangi iletişim kullanılmalı?</p><p class="article-meta">Kaynak kontrolü: 14 Kasım 2026. Merkezlerin durumu başvuru günü yeniden teyit edilmelidir.</p></div>'
 steps = '<section class="article-section"><h2>İlk iletişimden önce</h2><ol><li>İlacın, araştırmanın ve sponsorun tam adını kontrol edin. Aynı ilacın farklı çalışmaları farklı koşullar taşıyabilir.</li><li>Yaş, genetik tanı ve ikamet koşullarını okuyun; kayıtlı merkezin fiilen tarama yaptığını sorun.</li><li>Türkiye’de yaşadığınızı belirtip seyahat, konaklama, bakım veren ve uzun dönem takip koşullarını öğrenin.</li><li>Mevcut ilaçlarınızı kendi başınıza değiştirmeyin. Uygunluk ve güvenlilik değerlendirmesini hekim ve çalışma ekibi yapar.</li><li>İlk aşamada bilgi isteyin; sağlık belgelerini yalnızca doğrulanmış kurumun istediği güvenli kanaldan iletin.</li></ol></section>'
 questions = '<section class="article-section"><h2>Çalışma ekibine sorulabilecek sorular</h2><p>Türkiye’de ikamet edenleri kabul ediyor musunuz? Hangi kohort taramaya açık? Kaç ziyaret ve ne kadar bölgede kalış gerekiyor? Bakım veren gerekli mi? Seyahat desteği neleri kapsıyor? Kullanılan ilaçlar uygunluğu nasıl etkiliyor? Değerlendirme sonucunu kim ve hangi kanaldan bildiriyor?</p><p>Bu site başvuru toplamaz ve kişisel uygunluk kararı vermez. Açık alım kaydı bile kabul garantisi değildir. Ruhsatlı tedaviye erişim, webinar kaydı ve klinik araştırma başvurusu birbirinden farklı süreçlerdir.</p></section>'
 guide_body = guide_intro + guide_toc + '<div class="article-prose">' + steps + guide_sections + questions + '</div></article>'
-(ROOT / 'katilim-rehberi.html').write_text(page('Klinik araştırmalara katılım rehberi',guide_body,'katilim-rehberi.html','11 FA ilaç ve çalışma programı için katılım, merkez ve resmî iletişim rehberi.','katilim-rehberi.html'))
+(ROOT / 'katilim-rehberi.html').write_text(page('Klinik araştırmalara katılım rehberi',guide_body,'katilim-rehberi.html','12 FA ilaç ve çalışma programı için katılım, merkez ve resmî iletişim rehberi.','katilim-rehberi.html'))
+
+# Keep the manually authored research calendar aligned with material registry changes.
+calendar_path = ROOT / 'arastirma-takvimi.html'
+calendar = calendar_path.read_text(encoding='utf-8')
+facet_event = '<div class="event"><strong>12 Kasım 2026 · NBIB-223 FACET</strong><p>ClinicalTrials.gov, 8–40 yaşta 24 kişilik Faz I protokolünü ve beş ABD çalışma noktasını yayımladı. Çalışma henüz katılımcı almıyor.</p><a href="haber-nbib223-facet-kaydi.html">FACET kayıt haberi ↗</a></div>'
+if 'haber-nbib223-facet-kaydi.html' not in calendar:
+    calendar = calendar.replace('<h2>Açıklanan gelişmeler</h2>', '<h2>Açıklanan gelişmeler</h2>' + facet_event, 1)
+calendar_path.write_text(calendar, encoding='utf-8')
 
 # Replace old query links throughout retained pages; old shared URLs still resolve.
 newslinks = {'lx2006':'lx2006-mds','dt216p2':'dt216p2-ilk-veri','brave':'brave-alim'}

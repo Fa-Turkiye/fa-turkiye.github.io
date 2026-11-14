@@ -417,7 +417,7 @@
   },
   "nbib223": {
     "title": "NBIB-223 ve FACET: beyin ile kalbe gen ulaştırma hedefi",
-    "status": "Deneysel · Faz I; ilk klinik araştırma FACET duyuruldu",
+    "status": "Deneysel · Faz I; FACET kayıtlı, henüz katılımcı almıyor",
     "sections": [
       [
         "İlacın amacı ve ortakların rolleri",
@@ -429,7 +429,7 @@
       ],
       [
         "Firma programı nereye ilerletti?",
-        "FARA’nın geçmiş özetinde 2019 ortaklığı, 2024 geliştirme adayı seçimi ve 2026 klinik hazırlıkları yer alıyor. Ekim 2026 topluluk duyurusu FDA’nın klinik aşamaya geçişe izin verdiğini ve FACET adlı ilk insan araştırmasının planlandığını bildiriyor. Faz I etiketi, programın insanlarda erken değerlendirme aşamasını ifade eder; etkili veya ruhsatlı tedavi olduğu anlamına gelmez. Voyager 5 Kasım 2026’da, Neurocrine’in Faz I çalışmasına önümüzdeki aylarda başlamayı öngördüğünü ve ilk katılımcı verilerini 2027’de beklediğini bildirdi."
+        "FARA’nın geçmiş özetinde 2019 ortaklığı, 2024 geliştirme adayı seçimi ve 2026 klinik hazırlıkları yer alıyor. Voyager 5 Kasım’da çalışmanın önümüzdeki aylarda başlamasını beklediğini açıkladı. ClinicalTrials.gov’da 12 Kasım 2026’da yayımlanan NCT07934303 kaydı artık FACET’in üç bölümlü, açık etiketli tasarımını; 8–40 yaş aralığını, tahmini 24 kişilik planı ve beş ABD çalışma noktasını doğruluyor. Kayıt durumu henüz katılımcı almıyor."
       ],
       [
         "Hangi sonuçlar henüz açıklanmadı?",
@@ -437,14 +437,18 @@
       ],
       [
         "Statüler ve sıradaki bilgi kaynağı",
-        "FARA, FDA yetim ilaç ve nadir pediatrik hastalık statülerini listeliyor. Bu statüler ruhsat değildir. FARA ayrıca Neurocrine’ın 4 Kasım 2026 saat 12.00 ET’de FACET hakkında bilgilendirme webinarını duyuruyor; Türkiye saatiyle 20.00’dir. Webinarın amacı yaklaşan araştırmayı açıklamaktır. Katılım ve çalışma bilgileri için FARA’nın resmî etkinlik sayfasındaki kayıt bağlantısı izlenmelidir."
+        "FARA, FDA yetim ilaç ve nadir pediatrik hastalık statülerini listeliyor; bunlar ruhsat değildir. FACET kaydında tek damar içi uygulamadan sonraki 48 haftada tedaviyle ortaya çıkan advers olaylar birincil, frataxin protein ifadesindeki değişim ikincil sonuç ölçütüdür. Kayıt bulunması insanlarda güvenlilik, biyobelirteç veya klinik işlev sonucu açıklandığı anlamına gelmez."
       ],
       [
         "Türkiye, Avrupa ve katılım belirsizlikleri",
-        "Bu kontrolde FACET’in ayrıntılı merkez listesi, yaş sınırları, Türkiye’den ikamet kabulü veya katılımcıya özel e-posta adresi doğrulanmadı. Bilgi bulunmaması, kesin olarak Avrupa’da çalışma yapılmayacağı anlamına gelmez. Araştırma duyurusu, webinar kaydı ve klinik çalışma başvurusu üç ayrı süreçtir. Klinik katılım kararı ancak yayımlanan protokol ve çalışma ekibinin uygunluk değerlendirmesiyle verilebilir."
+        "Kayıt Los Angeles, Gainesville, Tampa, Iowa City ve Philadelphia’da beş ABD çalışma noktası listeliyor; kurum adları kamuya açık kayıtta ‘Neurocrine Clinical Site’ olarak geçiyor. Avrupa veya Türkiye merkezi yayımlanmış değil. Merkezlerin listelenmesi alımın başladığını göstermez; durum henüz katılımcı almıyor. Türkiye’den kabul ve kişisel uygunluk ancak çalışma ekibi tarafından doğrulanabilir."
       ]
     ],
     "sources": [
+      [
+        "ClinicalTrials.gov · FACET NCT07934303",
+        "https://clinicaltrials.gov/study/NCT07934303"
+      ],
       [
         "FARA: NBIB-223 geliştirme ve Ekim 2026 klinik duyurusu",
         "https://www.curefa.org/drug-development/neurocrine-biosciences-voyager-therapeutics-aav-gene-therapy/"
@@ -463,8 +467,8 @@
       ]
     ],
     "source_review": {
-      "checked_on": "2026-11-08",
-      "checked_label": "8 Kasım 2026"
+      "checked_on": "2026-11-14",
+      "checked_label": "14 Kasım 2026"
     }
   },
   "brave": {

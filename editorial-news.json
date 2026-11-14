@@ -456,6 +456,49 @@
     ]
   },
   {
+    "id": "nbib223-facet-kaydi",
+    "drug": "nbib223",
+    "iso": "2026-11-12",
+    "date": "12 Kasım 2026",
+    "homepage_added_iso": "2026-11-14",
+    "title": "NBIB-223 FACET protokolü yayımlandı: 24 kişilik ilk insan çalışması henüz alıma açık değil",
+    "summary": "ClinicalTrials.gov kaydı, tek damar içi NBIB-223 uygulamasını değerlendirecek üç bölümlü Faz 1 çalışmasının 8–40 yaşta 24 katılımcı ve beş ABD merkezi planladığını gösteriyor. Kayıt henüz katılımcı almıyor ve klinik sonuç içermiyor.",
+    "primary_source": [
+      "ClinicalTrials.gov · NCT07934303",
+      "https://clinicaltrials.gov/study/NCT07934303"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-14",
+      "checked_label": "14 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Resmî kayıt hangi aşamayı doğruladı?",
+        "Neurocrine Biosciences sponsorlu FACET kaydı ClinicalTrials.gov’da 12 Kasım 2026 tarihinde ilk kez yayımlandı. Kayıt, NBIB-223’ü genetik ve klinik olarak doğrulanmış Friedreich ataksisi olan kişilerde değerlendirecek ilk insan araştırması olarak tanımlıyor. Çalışmanın resmî faz alanı Faz 1; protokol başlığı ise Faz 1/2, açık etiketli ve doz artırımlı çalışma ifadesini kullanıyor. Kayıt durumu ‘henüz katılımcı almıyor’; tahmini başlangıç ayının Kasım 2026 yazması, ilk dozun uygulandığını veya alımın açıldığını doğrulamaz."
+      ],
+      [
+        "Kimler ve kaç kişi planlanıyor?",
+        "Kayıtta 8–40 yaş arasında tahmini 24 katılımcı ve üç bölüm yer alıyor. Bölüm A yetişkinlerde doz artırımı, Bölüm B çocuklarda doz genişletme, Bölüm C ise FA ile ilişkili kardiyomiyopatisi olan yetişkin ve/veya çocuklarda genişletme için tasarlanmış. Bunlar planlanan kohortlardır; 24 kişinin kaydedildiği veya bütün bölümlerin aynı anda açıldığı anlamına gelmez."
+      ],
+      [
+        "Araştırma neyi ölçecek?",
+        "Tek damar içi NBIB-223 uygulamasından sonraki 48 haftada tedaviyle ortaya çıkan advers olayların sayısı birincil sonuç ölçütü olarak belirtiliyor. Frataxin protein ifadesindeki başlangıca göre değişim ikincil sonuç ölçütü. Güvenlilik, biyobelirteç değişimi ve klinik işlev farklı sorulardır: frataxin artışı görülse bile bu tek başına nörolojik veya kardiyak klinik iyileşmeyi kanıtlamaz."
+      ],
+      [
+        "Merkezler ve katılım durumu",
+        "Kayıt Los Angeles, Gainesville, Tampa, Iowa City ve Philadelphia’da beş ABD çalışma noktası listeliyor; kurum adlarını ‘Neurocrine Clinical Site’ olarak gösteriyor. Avrupa veya Türkiye merkezi yayımlanmış değil. Çalışma henüz alıma açık olmadığından iletişim bilgisinin bulunması başvuru kabulünün başladığı anlamına gelmez. Güncel durum ve kişisel uygunluk resmî kayıt ile çalışma ekibinden yeniden doğrulanmalıdır."
+      ],
+      [
+        "Önemli uygunluk ayrıntıları",
+        "Temel ölçütler arasında iki FXN alelinde patojenik GAA tekrar genişlemesi, semptomatik nörolojik FA, mFARS toplam puanının 15 ile 80 arasında olması ve yürüyüş puanı bulunuyor. Omaveloxolone kullananların tedaviye en az bir yıl önce başlamış ve tarama öncesinde en az 12 hafta sabit dozda olması isteniyor; kullanmayanların ilk 48 haftada başlamamayı kabul etmesi gerekiyor. Ayrıntılı ölçütleri ve tıbbi uygunluğu yalnızca araştırma ekibi değerlendirebilir."
+      ],
+      [
+        "Bu gelişme neyi göstermiyor?",
+        "Protokolün yayımlanması, daha önceki ‘çalışma yakında başlayacak’ açıklamasını somut tasarım ve merkez bilgileriyle ilerletiyor. Bununla birlikte henüz dozlanmış katılımcı, güvenlilik sonucu, frataxin değişimi veya klinik etkinlik sonucu açıklanmadı. NBIB-223 ruhsatlı bir tedavi değildir; kaydın yayımlanması tedavinin güvenli ya da etkili olduğunun kanıtı değildir."
+      ]
+    ]
+  },
+  {
     "id": "nbib223-kasim",
     "drug": "nbib223",
     "iso": "2026-11-05",
