@@ -203,7 +203,7 @@ def home_news_card(item):
       <time datetime="{esc(card_iso)}">{esc(card_date)}</time>
       <h3><a href="haber-{item['id']}.html">{esc(item['title'])}</a></h3>
       <p>{esc(item['summary'])}</p>
-      <div class="dispatch-links">{dossier}<a href="{esc(url)}">{esc(label)} ↗</a></div>
+      <div class="dispatch-links">{dossier}<a href="{esc(url)}">{esc(label)}</a></div>
     </article>'''
 
 home_path = ROOT / 'index.html'
