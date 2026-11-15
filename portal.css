@@ -1,81 +1,4 @@
-/* The homepage keeps the brand colors in the artwork and primary controls. */
-.modern-home {
-  --card: #111d2e;
-  --soft: #172439;
-  --line: #37465e;
-  --muted: #b8c5d9;
-  background: var(--paper);
-}
-
-.modern-home > header,
-.modern-home > footer {
-  background: var(--paper);
-}
-
-.modern-home .headrow {
-  min-height: 64px;
-  padding-block: 8px;
-}
-
-.modern-home .brand {
-  gap: 12px;
-  font-size: 1.125rem;
-  font-weight: 650;
-}
-
-.modern-home .brand-mark {
-  font-size: 2.5rem;
-}
-
-.modern-home .brand-mark img {
-  inline-size: 28px;
-  block-size: 35px;
-}
-
-.modern-home .nav {
-  gap: 4px 8px;
-  padding-block: 0;
-}
-
-.modern-home .nav > a,
-.modern-home .nav summary {
-  min-height: 44px;
-  padding-inline: 4px;
-  font-weight: 500;
-}
-
-.modern-home .nav > a:last-child {
-  margin-inline-start: 0;
-}
-
-.modern-home .nav summary::after {
-  content: "";
-  inline-size: 6px;
-  block-size: 6px;
-  border: solid currentColor;
-  border-width: 0 1.5px 1.5px 0;
-  transform: translateY(-2px) rotate(45deg);
-}
-
-.modern-home .nav-group[open] > summary::after {
-  transform: translateY(2px) rotate(225deg);
-}
-
-.modern-home .nav > a:last-child span[aria-hidden="true"] {
-  display: none;
-}
-
-.modern-home .menu-toggle span[aria-hidden="true"] {
-  font-size: 0;
-  inline-size: 16px;
-  block-size: 10px;
-  border-block: 2px solid currentColor;
-}
-
-html:has(.modern-home) {
-  scroll-padding-top: 124px;
-}
-
+/* Homepage and treatment library layouts. */
 .modern-home .research-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
@@ -117,7 +40,7 @@ html:has(.modern-home) {
 
 .research-hero .site-search-form input {
   min-height: 48px;
-  border-color: #667690;
+  border-color: var(--control-line);
   border-radius: 8px;
 }
 
@@ -303,6 +226,9 @@ html:has(.modern-home) {
 }
 
 .portal-discover .path-arrow {
+  position: absolute;
+  display: grid;
+  place-items: center;
   inset: 20px 16px auto auto;
   inline-size: 20px;
   block-size: 20px;
@@ -379,29 +305,7 @@ html:has(.modern-home) {
   color: var(--blue);
 }
 
-.contrast .modern-home {
-  --card: #111;
-  --soft: #111;
-  --line: #aaa;
-  --muted: #f0f0f0;
-}
-
 @media (max-width: 800px) {
-  html:has(.modern-home) {
-    scroll-padding-top: 12px;
-  }
-
-  .modern-home .nav {
-    gap: 0;
-    padding-block: 8px;
-  }
-
-  .modern-home .nav > a,
-  .modern-home .nav summary {
-    min-height: 48px;
-    padding-inline: 8px;
-  }
-
   .modern-home .research-hero {
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;
@@ -444,37 +348,30 @@ html:has(.modern-home) {
   }
 }
 
-.treatment-intro {
-  margin-top: clamp(20px, 4vw, 44px);
-  padding: clamp(24px, 5vw, 56px);
-  border: 1px solid var(--line);
-  border-top: 5px solid var(--baby-pink);
-  border-radius: 22px;
-  background: linear-gradient(120deg, #34293e, #18343d);
-  color: var(--ink);
+.treatment-browse {
+  padding-block-start: 16px;
+  border-block-start: 1px solid var(--line);
 }
 
-.treatment-intro h1 { color: inherit; }
-.treatment-intro p { color: var(--muted); }
-
-.treatment-browse {
-  padding-top: 24px;
+.treatment-browse > h2 {
+  margin-block-end: 16px;
+  font-size: clamp(1.375rem, 3vw, 1.875rem);
 }
 
 .treatment-filters {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-  padding: 18px;
+  padding: 16px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: var(--soft);
+  background: var(--card);
 }
 
 .treatment-filters label {
   display: grid;
   gap: 4px;
-  font-weight: 650;
+  font-weight: 600;
   min-width: 0;
 }
 
@@ -489,18 +386,15 @@ html:has(.modern-home) {
   display: flex;
   flex-direction: column;
   align-items: start;
-  border-top: 3px solid #42dcc4;
   transition: border-color .2s;
 }
 
-.treatment-card[data-treatment-group="gene"] { border-top-color: #f5b7cf; }
-.treatment-card[data-treatment-group="frataxin"] { border-top-color: #42dcc4; }
 .treatment-card:hover, .treatment-card:focus-within { border-color: var(--blue); }
 .treatment-card h2 a { color: inherit; }
 .treatment-card h2 a:not(:hover) { text-decoration: none; }
 
 .treatment-card dl {
-  margin: 6px 0 0;
+  margin: 4px 0 12px;
   width: 100%;
   border-block: 1px solid var(--line);
   padding: 8px 0;
@@ -508,7 +402,7 @@ html:has(.modern-home) {
 
 .treatment-card dl div {
   display: grid;
-  grid-template-columns: minmax(0, .8fr) minmax(0, 1fr);
+  grid-template-columns: minmax(7rem, .85fr) minmax(0, 1fr);
   gap: 8px;
   font-size: .9rem;
 }
@@ -518,33 +412,15 @@ html:has(.modern-home) {
 .treatment-card .textlink { margin-top: auto; min-height: 44px; }
 
 @media (max-width: 540px) {
-  .treatment-filters { grid-template-columns: 1fr; }
+  .treatment-filters { grid-template-columns: minmax(0, 1fr); }
 }
-
-.treatment-card {
-  --card: linear-gradient(145deg, #29283c, #162339 65%);
-  border-top-color: #42dcc4;
-}
-
-.treatment-card[data-treatment-group="gene"] {
-  --card: linear-gradient(145deg, #3b293f, #1c273c 78%);
-  border-top-color: var(--baby-pink);
-}
-
-.treatment-card[data-treatment-group="frataxin"] {
-  --card: linear-gradient(145deg, #173740, #172439 78%);
-  border-top-color: var(--baby-pink);
-}
-
-.contrast .treatment-card { --card: #111; }
 
 .compare-toolbar {
-  margin: 16px 0 22px;
-  padding: clamp(16px, 3vw, 26px);
+  margin: 16px 0 24px;
+  padding: 16px;
   border: 1px solid var(--line);
-  border-left: 3px solid var(--page-accent);
   border-radius: 12px;
-  background: var(--soft);
+  background: transparent;
 }
 
 .compare-toolbar h3,
@@ -579,7 +455,7 @@ html:has(.modern-home) {
   flex: none;
   width: 18px;
   height: 18px;
-  accent-color: var(--baby-pink);
+  accent-color: var(--page-accent);
 }
 
 .compare-dialog {
@@ -588,8 +464,8 @@ html:has(.modern-home) {
   background: var(--paper);
   color: var(--ink);
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: clamp(12px, 3vw, 26px);
+  border-radius: 12px;
+  padding: clamp(12px, 3vw, 24px);
 }
 
 .compare-dialog::backdrop {
@@ -615,7 +491,7 @@ html:has(.modern-home) {
 }
 
 #compare-content table {
-  min-width: 34rem;
+  min-width: 36rem;
 }
 
 #compare-content th,

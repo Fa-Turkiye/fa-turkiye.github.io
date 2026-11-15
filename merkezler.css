@@ -1,9 +1,9 @@
 .directory-page .directory-intro {
-  padding-bottom: 24px;
+  padding-block-end: 24px;
 }
 
 .directory-intro h1 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
 }
 
 .directory-intro p,
@@ -15,7 +15,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 24px;
+  gap: 8px 20px;
+  font-variant-numeric: tabular-nums;
   padding-top: 8px;
   color: var(--muted);
 }
@@ -32,13 +33,13 @@
 
 .directory-filters {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 16px;
-  padding: clamp(16px, 3vw, 24px);
-  background: var(--soft);
+  padding: 16px;
+  background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .directory-field {
@@ -48,7 +49,7 @@
 }
 
 .directory-field label {
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .directory-field small {
@@ -69,15 +70,16 @@
 }
 
 .directory-page .center-country {
-  padding: 30px 0 22px;
+  padding-block: 24px;
+  border-block-start: 1px solid var(--line);
 }
 
 .center-country h2 {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 6px 14px;
-  margin: 0 0 14px;
+  gap: 4px 12px;
+  margin: 0 0 12px;
   font-size: clamp(1.5rem, 3vw, 2rem);
   text-wrap: wrap;
 }
@@ -99,11 +101,12 @@
   min-width: 0;
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
-.center-record:target {
-  border-color: var(--blue);
+.center-record:target,
+.center-record[open] {
+  border-color: var(--page-accent);
 }
 
 .center-record summary {
@@ -121,12 +124,11 @@
 
 .center-record summary::after {
   position: absolute;
-  top: 22px;
-  right: 20px;
-  width: 9px;
-  height: 9px;
-  border-right: 2px solid var(--ink);
-  border-bottom: 2px solid var(--ink);
+  inset: 22px 20px auto auto;
+  inline-size: 8px;
+  block-size: 8px;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
   transform: rotate(45deg);
   content: "";
 }
@@ -136,7 +138,7 @@
 }
 
 .center-name {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -150,6 +152,10 @@
   flex-wrap: wrap;
   gap: 4px;
   margin-top: 4px;
+}
+
+.center-kinds .tag {
+  padding-inline: 6px;
 }
 
 .center-info {
@@ -211,90 +217,29 @@
 
 .directory-method {
   margin-top: 24px;
-  border-top: 1px solid var(--line);
-}
-
-@media (max-width: 640px) {
-  .directory-filters {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
-
-.directory-page .directory-intro {
-  margin-top: clamp(20px, 4vw, 44px);
-  padding: clamp(24px, 5vw, 56px);
-  border: 1px solid #43636b;
-  border-top: 5px solid var(--aqua-jade);
-  border-radius: 22px;
-  background: linear-gradient(118deg, #14333e, #28404a);
-  color: var(--ink);
-}
-
-.directory-intro h1,
-.directory-intro .directory-facts strong {
-  color: inherit;
-}
-
-.directory-page .directory-intro p,
-.directory-intro .directory-facts {
-  color: var(--muted);
-}
-
-.directory-intro a {
-  color: var(--blue);
-}
-
-.directory-intro a:focus-visible {
-  outline-color: var(--page-accent);
-}
-
-.directory-filters {
-  margin-top: 18px;
-  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+  border-block-start: 1px solid var(--line);
 }
 
 .directory-reset {
   justify-self: start;
   min-height: 44px;
-  padding: 6px 12px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--card);
+  padding: 8px 12px;
+  border: 1px solid var(--control-line);
+  border-radius: 8px;
+  background: var(--soft);
   color: var(--ink);
-  font-weight: 650;
+  font-size: .9375rem;
+  font-weight: 600;
 }
 
 .directory-reset:hover {
-  border-color: var(--blue);
-}
-
-@media (max-width: 900px) {
-  .directory-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-@media (max-width: 530px) {
-  .directory-filters { grid-template-columns: 1fr; }
-}
-
-.center-record {
-  border-top: 3px solid var(--aqua-jade);
-  background: linear-gradient(145deg, #19333d, #152337 74%);
-}
-
-.center-record:nth-child(even) {
-  border-top-color: var(--aqua-jade);
-  background: linear-gradient(145deg, #263245, #162339 74%);
-}
-
-.center-record[open] {
   border-color: var(--page-accent);
 }
 
-.directory-filters {
-  background: linear-gradient(125deg, #1c2d43, #19383f);
+@media (max-width: 960px) {
+  .directory-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-.contrast :is(.center-record, .directory-filters) {
-  background: #111;
+@media (max-width: 540px) {
+  .directory-filters { grid-template-columns: minmax(0, 1fr); }
 }

@@ -34,7 +34,7 @@ def page(title, body, filename, description, active='ilaclar.html'):
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} · FA Türkiye</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="https://fa-turkiye.github.io/{filename}">
-<link rel="stylesheet" href="style.css?v=aqua-jade-1"><link rel="stylesheet" href="articles.css?v=aqua-jade-1">
+<link rel="stylesheet" href="style.css?v=sitewide-1"><link rel="stylesheet" href="articles.css?v=sitewide-1">
 <link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js?v=aqua-jade-1" defer></script><meta name="theme-color" content="#0a1224">{glossary}</head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
 <main class="wrap editorial-main" id="main-content" tabindex="-1">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
 
@@ -45,7 +45,7 @@ def date_label(day):
 
 def source_anchor(source):
     label, url = source
-    return f'<a href="{esc(url)}">{esc(label)} ↗</a>'
+    return f'<a href="{esc(url)}">{esc(label)}</a>'
 
 def milestone_event(item, heading):
     day = date.fromisoformat(item['date'])
@@ -73,7 +73,7 @@ def article_body(title, status, sections, sources, category, back, sponsor=None,
     if studies:
         toc = '<li><a href="#arastirma-merkezleri">Resmî kaynaklar ve iletişim</a></li>' + toc
     paragraphs = ''.join(f'<section id="bolum-{i}" class="article-section"><h2>{esc(t)}</h2><p>{esc(p)}</p></section>' for i,(t,p) in enumerate(sections,1))
-    src = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)} ↗</a></li>' for t,u in sources)
+    src = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t,u in sources)
     return f'''<p class="breadcrumb"><a href="{back}">← {category}</a></p><article class="long-article">
 <div class="article-heading"><span class="badge">{esc(status)}</span><h1>{esc(title)}</h1>
 <p class="article-meta">Son kaynak kontrolü: <time datetime="{esc(checked_on)}">{esc(checked_label)}</time> · Yaklaşık {max(2,math.ceil(count/160))} dakika okuma</p>
@@ -134,11 +134,11 @@ def treatment_card(key, item):
 <dl><div><dt>Aşama</dt><dd>{esc(phase)}</dd></div><div><dt>Geliştirici</dt><dd>{esc(sponsors[key])}</dd></div>
 <div><dt>Kaynak kontrolü</dt><dd><time datetime="{esc(checked_on)}">{esc(checked_label)}</time></dd></div></dl>
 <p>{esc(item['sections'][0][1].split('. ')[0])}.</p>
-<a class="textlink" href="ilac-{key}.html" aria-label="{esc(names[key])} dosyasını oku">Dosyayı oku <span aria-hidden="true">↗</span></a>
+<a class="textlink" href="ilac-{key}.html" aria-label="{esc(names[key])} dosyasını oku">Dosyayı oku</a>
 <label class="compare-choice" hidden><input type="checkbox" value="{key}"> {esc(names[key])} karşılaştırmaya ekle</label></article>'''
 
 cards = ''.join(treatment_card(key, item) for key, item in profiles.items())
-intro = '''<div class="editorial-intro treatment-intro"><span class="badge">FA Türkiye</span><h1>FA tedavi dosyaları</h1><p>Ruhsatlı tedaviyi ve araştırılan adayları inceleyin. Her dosyada tedavinin amacı, bilinen bulgular, resmî kaynaklar ve yayımlanan çalışma iletişimi bulunur.</p></div>'''
+intro = '''<div class="editorial-intro treatment-intro"><h1>FA tedavi dosyaları</h1><p>Ruhsatlı tedaviyi ve araştırılan adayları inceleyin. Her dosyada tedavinin amacı, bilinen bulgular, resmî kaynaklar ve yayımlanan çalışma iletişimi bulunur.</p></div>'''
 group_options = ''.join(f'<option value="{key}">{esc(label)}</option>' for key, label in treatment_groups.items())
 filters = f'''<section class="treatment-browse" id="arastirilan" aria-labelledby="treatment-browse-title">
 <h2 id="treatment-browse-title">Tedavileri incele</h2>
@@ -155,11 +155,11 @@ filters = f'''<section class="treatment-browse" id="arastirilan" aria-labelledby
 <div class="compare-dialog-head"><h2 id="compare-dialog-title">Tedavi dosyaları karşılaştırması</h2><form method="dialog"><button type="submit" autofocus>Kapat</button></form></div>
 <div id="compare-content" tabindex="0" role="region" aria-label="Karşılaştırma tablosu"></div>
 </dialog>
-<p><a href="https://www.curefa.org/drug-development/">FARA’nın geliştirme hattı ve geçmiş programları ↗</a></p></section>'''
+<p><a href="https://www.curefa.org/drug-development/">FARA’nın geliştirme hattı ve geçmiş programları</a></p></section>'''
 aliases = json.dumps({k:f'ilac-{k}.html' for k in profiles})
 redirect = '<script>const dossierRoutes='+aliases+';const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script>'
 library = page('İlaç kütüphanesi',intro + filters,'ilaclar.html','FA için kaynaklı ilaç ve çalışma profilleri.')
-library = library.replace('</head>', '<link rel="stylesheet" href="portal.css?v=aqua-jade-1"><script src="tedavi-filtreleri.js" defer></script></head>')
+library = library.replace('</head>', '<link rel="stylesheet" href="portal.css?v=sitewide-1"><script src="tedavi-filtreleri.js" defer></script></head>')
 (ROOT / 'ilaclar.html').write_text(library.replace('</body>',redirect+'</body>'))
 
 for n in news:
@@ -251,7 +251,7 @@ search_data = {
 gvcard = '<article class="card dossier-card"><time class="badge" datetime="2026-08-11">11 Ağustos 2026</time><h2><a href="haber-gv101.html">GV101 için FA klinik araştırma izni</a></h2><p>ROCK2 hedefi, planlanan araştırma ve henüz doğrulanmayan katılım bilgileri.</p><a class="textlink" href="haber-gv101.html">Haberin tamamını oku →</a></article>'
 marker = '<article class="card dossier-card"><time class="badge" datetime="2026-08-03">'
 newscards = newscards.replace(marker,gvcard+marker,1)
-body = '<div class="editorial-intro"><span class="badge">SON HABERLER</span><h1>Gelişmenin arkasındaki bilim</h1><p>Ne açıklandı, hangi veriye dayanıyor, hastalar için ne ifade ediyor? Kısa kartlardan kaynaklı tam haberlere geçin.</p><p class="article-meta">Haber tarihleri gelişmenin tarihini gösterir. Her yazıda kaynak kontrol tarihini bulabilirsiniz.</p></div><div class="dossier-grid">'+newscards+'</div>'
+body = '<div class="editorial-intro"><h1>Friedreich ataksisi haberleri</h1><p>Ne açıklandı, hangi veriye dayanıyor, hastalar için ne ifade ediyor? Kısa kartlardan kaynaklı tam haberlere geçin.</p><p class="article-meta">Haber tarihleri gelişmenin tarihini gösterir. Her yazıda kaynak kontrol tarihini bulabilirsiniz.</p></div><div class="dossier-grid news-archive">'+newscards+'</div>'
 (ROOT / 'haberler.html').write_text(page('Son haberler',body,'haberler.html','FA araştırmalarını ayrıntılı ve kaynaklı Türkçe haberlerle takip edin.','haberler.html'))
 
 # Existing dedicated GV101 address remains useful and consistent.
@@ -264,8 +264,8 @@ guide_sections = ''
 for key, item in guide.items():
     contact = esc(item['contact'])
     contact = re.sub(r'[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}', lambda m: f'<a href="mailto:{m.group()}">{m.group()}</a>', contact)
-    guide_sections += f'''<section id="program-{key}" class="article-section guide-program"><span class="badge">{esc(item['label'])}</span><h2>{esc(names[key])}</h2><h3>Koşullar ve araştırma yükü</h3><p>{esc(item['criteria'])}</p><h3>Türkiye’den ve Avrupa’dan katılım</h3><p>{esc(item['action'])}</p><h3>İletişim ve sonraki adım</h3><p>{contact}</p><p><a href="{esc(item['source'])}" target="_blank" rel="noopener">Resmî bilgi / çalışma kaydı ↗</a> · <a href="ilac-{key}.html">Kapsamlı ilaç ve çalışma dosyası →</a></p></section>'''
-guide_intro = '<p class="breadcrumb"><a href="index.html">← Ana Sayfa</a></p><article class="long-article"><div class="article-heading"><span class="badge">KLİNİK ARAŞTIRMAYA KATILIM</span><h1>Her program için ayrı bir yol haritası</h1><p class="article-lead">12 ilaç ve çalışma başlığı: kimler değerlendirilebilir, nerede yürütülüyor, Türkiye’den ne sorulmalı ve hangi iletişim kullanılmalı?</p><p class="article-meta">Kaynak kontrolü: 14 Kasım 2026. Merkezlerin durumu başvuru günü yeniden teyit edilmelidir.</p></div>'
+    guide_sections += f'''<section id="program-{key}" class="article-section guide-program"><span class="badge">{esc(item['label'])}</span><h2>{esc(names[key])}</h2><h3>Koşullar ve araştırma yükü</h3><p>{esc(item['criteria'])}</p><h3>Türkiye’den ve Avrupa’dan katılım</h3><p>{esc(item['action'])}</p><h3>İletişim ve sonraki adım</h3><p>{contact}</p><p><a href="{esc(item['source'])}" target="_blank" rel="noopener">Resmî bilgi / çalışma kaydı</a> · <a href="ilac-{key}.html">Kapsamlı ilaç ve çalışma dosyası →</a></p></section>'''
+guide_intro = '<p class="breadcrumb"><a href="index.html">← Ana Sayfa</a></p><article class="long-article"><div class="article-heading"><span class="badge">Klinik araştırmaya katılım</span><h1>Her program için ayrı bir yol haritası</h1><p class="article-lead">12 ilaç ve çalışma başlığı: kimler değerlendirilebilir, nerede yürütülüyor, Türkiye’den ne sorulmalı ve hangi iletişim kullanılmalı?</p><p class="article-meta">Kaynak kontrolü: 14 Kasım 2026. Merkezlerin durumu başvuru günü yeniden teyit edilmelidir.</p></div>'
 steps = '<section class="article-section"><h2>İlk iletişimden önce</h2><ol><li>İlacın, araştırmanın ve sponsorun tam adını kontrol edin. Aynı ilacın farklı çalışmaları farklı koşullar taşıyabilir.</li><li>Yaş, genetik tanı ve ikamet koşullarını okuyun; kayıtlı merkezin fiilen tarama yaptığını sorun.</li><li>Türkiye’de yaşadığınızı belirtip seyahat, konaklama, bakım veren ve uzun dönem takip koşullarını öğrenin.</li><li>Mevcut ilaçlarınızı kendi başınıza değiştirmeyin. Uygunluk ve güvenlilik değerlendirmesini hekim ve çalışma ekibi yapar.</li><li>İlk aşamada bilgi isteyin; sağlık belgelerini yalnızca doğrulanmış kurumun istediği güvenli kanaldan iletin.</li></ol></section>'
 questions = '<section class="article-section"><h2>Çalışma ekibine sorulabilecek sorular</h2><p>Türkiye’de ikamet edenleri kabul ediyor musunuz? Hangi kohort taramaya açık? Kaç ziyaret ve ne kadar bölgede kalış gerekiyor? Bakım veren gerekli mi? Seyahat desteği neleri kapsıyor? Kullanılan ilaçlar uygunluğu nasıl etkiliyor? Değerlendirme sonucunu kim ve hangi kanaldan bildiriyor?</p><p>Bu site başvuru toplamaz ve kişisel uygunluk kararı vermez. Açık alım kaydı bile kabul garantisi değildir. Ruhsatlı tedaviye erişim, webinar kaydı ve klinik araştırma başvurusu birbirinden farklı süreçlerdir.</p></section>'
 guide_body = guide_intro + guide_toc + '<div class="article-prose">' + steps + guide_sections + questions + '</div></article>'
@@ -274,7 +274,7 @@ guide_body = guide_intro + guide_toc + '<div class="article-prose">' + steps + g
 # Keep the manually authored research calendar aligned with material registry changes.
 calendar_path = ROOT / 'arastirma-takvimi.html'
 calendar = calendar_path.read_text(encoding='utf-8')
-facet_event = '<div class="event"><strong>12 Kasım 2026 · NBIB-223 FACET</strong><p>ClinicalTrials.gov, 8–40 yaşta 24 kişilik Faz I protokolünü ve beş ABD çalışma noktasını yayımladı. Çalışma henüz katılımcı almıyor.</p><a href="haber-nbib223-facet-kaydi.html">FACET kayıt haberi ↗</a></div>'
+facet_event = '<div class="event"><strong>12 Kasım 2026 · NBIB-223 FACET</strong><p>ClinicalTrials.gov, 8–40 yaşta 24 kişilik Faz I protokolünü ve beş ABD çalışma noktasını yayımladı. Çalışma henüz katılımcı almıyor.</p><a href="haber-nbib223-facet-kaydi.html">FACET kayıt haberi</a></div>'
 if 'haber-nbib223-facet-kaydi.html' not in calendar:
     calendar = calendar.replace('<h2>Açıklanan gelişmeler</h2>', '<h2>Açıklanan gelişmeler</h2>' + facet_event, 1)
 calendar_path.write_text(calendar, encoding='utf-8')
@@ -294,7 +294,7 @@ for path in ROOT.glob('*.html'):
         text=text.replace('href="ilaclar.html?ilac='+k+'"','href="ilac-'+k+'.html"')
     if path.name=='tedaviler.html':
         if 'Skyclarys kapsamlı dosyasını oku' not in text:
-            text=text.replace('EMA ürün bilgisi ↗</a>', 'EMA ürün bilgisi ↗</a><p><a href="ilac-skyclarys.html">Skyclarys kapsamlı dosyasını oku →</a></p>')
+            text=text.replace('EMA ürün bilgisi</a>', 'EMA ürün bilgisi</a><p><a href="ilac-skyclarys.html">Skyclarys kapsamlı dosyasını oku →</a></p>')
     path.write_text(text)
 
 print(json.dumps({'profiles':len(profiles),'news':len(news)+1,'profile_words':{k:sum(len(p.split()) for _,p in v['sections']) for k,v in profiles.items()}},ensure_ascii=False))

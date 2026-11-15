@@ -150,8 +150,8 @@ def build():
   <meta name="description" content="Friedreich ataksisi kliniklerini, tanı ve araştırma merkezlerini ülkeye, şehre veya hekime göre bulun. Kurum adresleri, iletişim bilgileri ve kaynaklar.">
   <link rel="canonical" href="https://fa-turkiye.github.io/merkezler.html">
   <link rel="icon" href="fa-logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=aqua-jade-1">
-  <link rel="stylesheet" href="merkezler.css?v=aqua-jade-1">
+  <link rel="stylesheet" href="style.css?v=sitewide-1">
+  <link rel="stylesheet" href="merkezler.css?v=sitewide-1">
   <script src="script.js?v=aqua-jade-1" defer></script>
   <script src="merkezler.js" defer></script>
 </head>
