@@ -722,5 +722,36 @@
         "Fare verileri biyolojik yaklaşımın araştırılmasını destekliyor. İnsanlarda güvenlilik ve klinik etki ayrı klinik araştırmalarla değerlendirilecek."
       ]
     ]
+  },
+  {
+    "id": "track-fa-icar-2026",
+    "iso": "2026-11-10",
+    "date": "10 Kasım 2026",
+    "title": "TRACK-FA, iki yıllık MR takibinde yaşa göre farklı örüntüler bildirdi",
+    "summary": "ICAR 2026’da sunulan gözlemsel analiz, 158 Friedreich ataksili kişi ile 90 kontrolün beyin ve omurilik görüntülerinde yaşa göre farklı değişimler bildirdi.",
+    "topic_label": "TRACK-FA · Nörogörüntüleme",
+    "homepage_added_iso": "2026-11-15",
+    "primary_source": [
+      "ICAR 2026 · TRACK-FA sözlü sunum özeti (B22)",
+      "https://ataxiacongress.org/wp-content/uploads/2026/10/ICAR_2026_Abstract_Book_Final-V2-1.pdf#page=27"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-15",
+      "checked_label": "15 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Kimler izlendi?",
+        "Araştırmacılar başlangıçta, 12. ve 24. aylarda beyin ve omurilik görüntülemesi ile klinik değerlendirmeler yaptı. En az iki değerlendirmesi bulunan 248 kişiyi analize aldı. Bunların 158’i Friedreich ataksisiyle yaşıyor, 90’ı kontrol grubunda yer alıyordu. Ekip, değişim hızlarını 5–10 yaş, 11–17 yaş ve yetişkin gruplarında ayrı ayrı karşılaştırdı."
+      ],
+      [
+        "Çocuklarda ve yetişkinlerde hangi değişimler görüldü?",
+        "5–10 yaşındaki kontrollerde beyin sapı ve beyincik hacimleri ile boyun bölgesindeki omuriliğin kesit alanı arttı. Aynı yaştaki FA grubunda beyin sapı ve beyincik hacimleri belirgin değişim göstermezken omuriliğin kesit alanı azaldı. Yetişkin kontrollerde bu ölçümlerde anlamlı bir değişim saptanmadı. FA’lı yetişkinlerde ise üç ölçüm de azaldı. Ergenlerdeki yapısal değişimler çocuk ve yetişkin grupları arasında bir örüntü gösterdi."
+      ],
+      [
+        "Bu bulgu araştırmalarda nasıl kullanılabilir?",
+        "Özette, ergenlerde ve yetişkinlerde bazı beyin hacmi ölçümlerinin zaman içindeki değişime klinik ölçeklerden daha duyarlı olabildiği bildirildi. Bu ölçümler gelecekteki çalışmalarda hastalık seyrini izlemeye yardımcı olabilir. Gözlemsel tasarım bir tedavi etkisini ölçmedi. Kongre özeti, her yaş grubundaki katılımcı sayısını ve ölçümlere ait tüm belirsizlik aralıklarını vermiyor. MR ölçümlerinin tedavi yanıtını güvenilir biçimde yansıtıp yansıtmadığı ayrı araştırmalar gerektiriyor."
+      ]
+    ]
   }
 ]
