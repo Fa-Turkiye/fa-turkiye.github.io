@@ -1,5 +1,44 @@
 [
   {
+    "id": "ferroptoz-kan-biyobelirtecleri-2026",
+    "topic_label": "Hakemli yayın · Kan biyobelirteçleri",
+    "iso": "2026-11-09",
+    "homepage_added_iso": "2026-11-18",
+    "date": "9 Kasım 2026",
+    "title": "Kan temelli çalışma, FA’da GPX4 ve lipid peroksidasyonu için ön biyobelirteç sinyalleri bildirdi",
+    "summary": "Sarro ve çalışma arkadaşları, 62 FA’lı kişi ile 63 yaş eşleştirilmiş kontrolde oksidatif stres ve ferroptozla ilişkili kan ölçümlerini karşılaştırdı. Bulgular tedavi etkisi veya doğrulanmış hastalık ilerleme biyobelirteci değil; özellikle çocuk alt grubundaki GPX4 sonucu ön niteliktedir.",
+    "source_review": {
+      "checked_on": "2026-11-18",
+      "checked_label": "18 Kasım 2026"
+    },
+    "primary_source": [
+      "Movement Disorders · PubMed",
+      "https://pubmed.ncbi.nlm.nih.gov/43004558/"
+    ],
+    "sections": [
+      [
+        "Araştırmanın amacı ve tasarımı",
+        "Lidia Sarro, Caterina Mariotti ve çalışma arkadaşları; Milano’daki Fondazione IRCCS Istituto Neurologico Carlo Besta, Roma’daki Bambino Gesù Çocuk Hastanesi ve Milano Üniversitesi bağlantılı ekiplerle FA’da oksidatif stres ve ferroptozla ilişkili kan ölçümlerini inceledi. Çalışmaya 48 yetişkin ve 14 çocuk olmak üzere 62 FA’lı kişi ile 63 yaş eşleştirilmiş sağlıklı kontrol katıldı. Klinik ve biyokimyasal değerlendirmeler başlangıçta ve bir yıllık takipte yapıldı. Bu metin, ilgili makaledeki araştırmacı bulgularının özgün Türkçe özetidir."
+      ],
+      [
+        "Başlangıç ölçümlerinde ne bulundu?",
+        "Araştırmacılar FA grubunda plazma 4-hidroksi-2-nonenal (4-HNE) ve kandaki oksitlenmiş glutatyonun (GSSG) kontrol grubundan daha yüksek, indirgenmiş glutatyonun (GSH) ise daha düşük olduğunu bildirdi. Çocuk FA alt grubunda glutatyon peroksidaz 4 (GPX4) mRNA düzeyi yetişkin FA grubundan daha düşüktü. Bu ölçümler periferik kandaki biyolojik farklılıklardır; yürüme, denge veya günlük işlevde klinik iyileşme sonucu değildir."
+      ],
+      [
+        "Bir yıllık takip ve klinik ilişkiler",
+        "Bir yıllık izlemde plazma 4-HNE düzeyi genel olarak sabit kaldı; GPX4 mRNA artışı yalnızca yetişkin kohortunda bildirildi. GPX4 ölçümü yaş, hastalık süresi ve klinik puanlarla ilişkiliydi. İlişki bulunması, GPX4 değişiminin hastalık ilerlemesine neden olduğunu veya ilerlemeyi tek başına öngörebildiğini göstermez."
+      ],
+      [
+        "Biyobelirteç adayı ile tedavi hedefi nasıl ayrılmalı?",
+        "Yazarlar erken hastalık döneminde GPX4 ifadesindeki bozukluğa ilişkin ön kanıt sunduklarını ve GPX4’ün hastalık ilerlemesi için biyobelirteç adayı ya da gelecekte araştırılabilecek bir tedavi hedefi olabileceğini belirtti. ‘Aday’ ifadesi önemlidir: çalışma GPX4’ü klinik kullanım için doğrulamadı, tanı testi geliştirmedi ve GPX4’ü değiştiren bir tedaviyi sınamadı."
+      ],
+      [
+        "Başlıca sınırlamalar",
+        "Çalışma gözlemseldir ve müdahale ya da randomize kontrol içermez. Çocuk alt grubu 14 kişiyle sınırlıdır; periferik kan ölçümleri sinir sistemi veya kalp dokusundaki süreçleri doğrudan göstermeyebilir. PubMed özetinde bütün etki büyüklükleri ve çoklu karşılaştırma ayrıntıları yer almıyor. GPX4 ve diğer ölçümlerin hastalık ilerlemesini güvenilir biçimde izleyip izlemediği, daha büyük bağımsız kohortlarda ve tekrarlanan uzun dönem ölçümlerle doğrulanmalıdır."
+      ]
+    ]
+  },
+  {
     "id": "nomlabofusp-bla-tamamlandi",
     "drug": "nomlabofusp",
     "iso": "2026-11-09",

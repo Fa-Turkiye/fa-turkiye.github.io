@@ -108,12 +108,12 @@
     "title": "ICAR 2026’da üç erken FA araştırması: hücresel atlas, kalp modeli ve serebellar devreler"
   },
   {
-    "path": "haber-track-fa-icar-2026.html",
-    "title": "TRACK-FA, iki yıllık MR takibinde yaşa göre farklı örüntüler bildirdi"
-  },
-  {
     "path": "haber-omaveloxolone-gercek-yasam-2026.html",
     "title": "İleri evre FA grubunda kısa dönem omaveloxolone gerçek yaşam verileri yayımlandı"
+  },
+  {
+    "path": "haber-ferroptoz-kan-biyobelirtecleri-2026.html",
+    "title": "Kan temelli çalışma, FA’da GPX4 ve lipid peroksidasyonu için ön biyobelirteç sinyalleri bildirdi"
   },
   {
     "path": "haber-lx2006-icar.html",
@@ -194,6 +194,10 @@
   {
     "path": "ilac-skyclarys.html",
     "title": "Skyclarys: onaylı tedavinin amacı, kanıtları ve çocuk araştırmaları"
+  },
+  {
+    "path": "haber-track-fa-icar-2026.html",
+    "title": "TRACK-FA, iki yıllık MR takibinde yaşa göre farklı örüntüler bildirdi"
   },
   {
     "path": "haber-uss-olcum-2026.html",
