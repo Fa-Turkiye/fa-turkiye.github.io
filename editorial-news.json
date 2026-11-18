@@ -1,5 +1,114 @@
 [
   {
+    "id": "lx2006-kasim-uzun-izlem",
+    "drug": "lx2006",
+    "iso": "2026-11-16",
+    "homepage_added_iso": "2026-11-18",
+    "date": "16 Kasım 2026",
+    "title": "LX2006: Lexeo uzun izlem ara verilerini ve SUNRISE-FA 2 planını yayımladı",
+    "summary": "Lexeo’nun 16 Kasım sunumunda, erken faz LX2006 çalışmalarından 36 aya ulaşan yedi kişilik nörolojik izlem ve başlangıçta kalp kütle indeksi yüksek altı kişilik kalp MR analizi yer aldı. Küçük, açık etiketli grupların sonuçları henüz etkinlik veya ruhsat kanıtı değil.",
+    "primary_source": [
+      "Lexeo Therapeutics · 16 Kasım 2026 yatırımcı sunumu (SEC 8-K eki)",
+      "https://ir.lexeotx.com/static-files/f84a4acb-927b-4317-a4b5-fe18839ec5ca"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-18",
+      "checked_label": "18 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Ne açıklandı?",
+        "Lexeo Therapeutics, 16 Kasım 2026 tarihli yatırımcı sunumunda LX2006’nın iki erken faz çalışmasından derlenen ara sonuçları ve SUNRISE-FA 2 çalışmasının tasarımını yeniden paylaştı. Verilerin kesim tarihi Eylül 2026; sunum tarihi yeni bir hasta alımı, FDA kararı veya sonuçlandırılmış Faz II çalışması anlamına gelmiyor. LX2006, FA ile ilişkili kardiyomiyopati için araştırılan damar içi AAV gen tedavisidir."
+      ],
+      [
+        "Kalp MR ölçümünde hangi değişim görüldü?",
+        "Başlangıçta sol ventrikül kütle indeksi (LVMi) yüksek olan ve MR ile izlenen altı katılımcıda, ortalama LVMi değişimi 6. ayda yüzde 18, 12. ayda yüzde 23 ve 24. ayda yüzde 25 düşüş olarak sunuldu. Bu sayılar bütün 17 tedavi edilen kişinin ortalaması değildir. Çalışmalar küçük ve açık etiketli olduğu için kalp görüntülemesindeki değişim klinik olaylarda kanıtlanmış yarar olarak yorumlanamaz."
+      ],
+      [
+        "36 aylık nörolojik izlem ne söylüyor?",
+        "Sunumda 36. aya ulaşan yedi katılımcının mFARS puanında başlangıca göre ortalama dört puanın üzerinde düşüş bildirildi; düşük puan daha az nörolojik işlev kaybını gösterir. Ayrı bir 24 aylık analizde, tedavi alan 16 kişinin seyri UNIFAI doğal seyir grubundan eşleştirilen kişilerle karşılaştırıldı. 36 aylık yedi kişilik sonuç için eşzamanlı randomize kontrol yoktur; az sayıda kişinin izlem verisi bütün FA grubuna genellenemez."
+      ],
+      [
+        "Güvenlilik ve çalışmanın durumu",
+        "Lexeo, tedavi edilen 17 kişide bugüne kadar tedaviyle ilişkili üçüncü derece ciddi advers olay bildirmediğini söyledi. Daha önce açıklanan, 12. ayda görülen belirtisiz ikinci derece miyokardit olayı tedaviyle olası ilişkili olarak kaydedildi. Devam eden SUNRISE-FA 2, FA kardiyomiyopatisinde açık etiketli, karşılaştırma kollu Faz II araştırmasıdır; sunumdaki ana çalışma planı 26 katılımcı ve 6. ayda kalp MR ile LVMi ölçümüdür."
+      ],
+      [
+        "Sonraki tarihler ve kanıt sınırı",
+        "Şirket, SUNRISE-FA 2 ana sonuçlarını 2027’nin ikinci yarısında, olası hızlandırılmış ruhsat başvurusunu 2028’in ilk yarısında bekliyor. Bunlar şirketin hedeflediği tarihlerdir; FDA onayı veya başvurunun kabulü değildir. Erken faz karşılaştırmasında doğal seyir verisi kullanılması ve katılımcı sayısının küçük olması, görülen değişimlerin ilaç etkisini kesin olarak ayırmayı güçleştiriyor."
+      ]
+    ]
+  },
+  {
+    "id": "minicircle-fxn-fare-2026",
+    "topic_label": "Hakemli yayın · Klinik öncesi gen taşıma",
+    "iso": "2026-10-31",
+    "homepage_added_iso": "2026-11-18",
+    "date": "31 Ekim 2026",
+    "title": "Virüs dışı FXN taşıma yöntemi FA hücrelerinde ve farelerin kalbinde sınandı",
+    "summary": "Gene Therapy dergisindeki klinik öncesi çalışma, saflaştırılmış minicircle DNA ile hasta hücrelerinde frataxin düzeyinin sağlıklı hücre aralığına ulaştığını; farelerde 72 saat sonra karaciğer ve kalpte artış ölçüldüğünü bildirdi. İnsanlarda etkinlik ve uzun dönem güvenlilik bilinmiyor.",
+    "primary_source": [
+      "Gene Therapy · Hakemli tam metin (Mozafari ve ark.)",
+      "https://www.nature.com/articles/s41434-026-00653-x"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-18",
+      "checked_label": "18 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Araştırmanın amacı",
+        "Mozafari ve çalışma arkadaşlarının 31 Ekim’de yayımlanan araştırması, frataxin (FXN) genini taşıyan virüs dışı küçük halka DNA parçalarını (minicircle) saflaştırma yöntemini ve bu DNA’nın FA modellerinde FXN üretip üretmediğini inceledi. Bu bir ilaç ruhsatı, hasta denemesi veya klinik araştırma kayıt duyurusu değil; laboratuvar ve farelerde bir yöntem denemesidir."
+      ],
+      [
+        "Hasta hücrelerinde ne ölçüldü?",
+        "FA’lı kişiden elde edilmiş fibroblastlara FXN taşıyan minicircle DNA aktarıldığında araştırmacılar FXN mesajcı RNA’sında artış ve frataxin proteininde sağlıklı hücrelere yakın düzeyler bildirdi. Hücre kültüründeki protein ölçümü, sinir dokusuna ulaşan ya da kişide belirtileri düzelten bir tedavi sonucu değildir."
+      ],
+      [
+        "Farelerde 72 saatlik sonuç",
+        "FA fare modeline özel bir yüksek hacimli kuyruk damarı enjeksiyonuyla uygulamadan 72 saat sonra, frataxin düzeyi tedavi edilmeyen FA farelerine göre karaciğerde yaklaşık 18, kalpte yaklaşık 3 kat yüksekti. Tedavi kolunda beş, kontrol kolunda dört fare vardı. Bu katlar sağlıklı farelerin normal düzeyine göre değil, başlangıçta frataxin eksikliği olan kontrol grubuna göredir. Akciğerde artış saptanmadı."
+      ],
+      [
+        "İnsan tedavisine giden yol neden uzun?",
+        "Çalışma 72 saatten sonraki kalıcılığı, davranışsal ya da kalp işlevindeki düzelmeyi ve uzun dönem güvenliliği ölçmedi. Kullanılan hidrodinamik enjeksiyon yöntemi daha çok karaciğere ulaşır; beyin, omurilik ve duyusal sinir düğümlerine yeterli DNA taşındığı gösterilmedi. Araştırmacılar hedef dokulara uygun taşıma, doz ve uzun dönem güvenlilik çalışmalarının gerekli olduğunu belirtiyor."
+      ]
+    ]
+  },
+  {
+    "id": "sulforafan-hucre-calismasi-2026",
+    "topic_label": "Hakemli yayın · Klinik öncesi hücre çalışması",
+    "iso": "2026-07-20",
+    "homepage_added_iso": "2026-11-18",
+    "date": "20 Temmuz 2026",
+    "title": "Sülforafan FA hasta hücrelerinde incelendi: brokoli tüketimi tedavi kanıtı değil",
+    "summary": "Kasım 2026 dergi sayısında da yer alan çalışma ilk kez 20 Temmuz’da çevrim içi yayımlandı. Üç FA hastasından üretilmiş duyusal sinir hücresi hattında sülforafanla laboratuvar bulguları görüldü; insanlarda doz, güvenlilik ve klinik yarar araştırılmadı.",
+    "primary_source": [
+      "Antioxidants & Redox Signaling · Yang ve ark. (ilk çevrim içi yayın 20 Temmuz 2026)",
+      "https://journals.sagepub.com/doi/10.1177/15230864261470377"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-18",
+      "checked_label": "18 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Çalışmanın gerçek tarihi ve kapsamı",
+        "Yang ve çalışma arkadaşlarının makalesi 20 Temmuz 2026’da ilk kez çevrim içi yayımlandı; Kasım 2026 tarihli dergi sayısında da yer aldı. Araştırmacılar, farklı GAA tekrar uzunluklarına sahip üç FA hastasının kök hücrelerinden üretilmiş duyusal sinir hücrelerinde sülforafan, omaveloxolone ve dimetil fumaratı karşılaştırdı. Çalışmada FA’lı kişilere ilaç veya brokoli verilmedi."
+      ],
+      [
+        "Laboratuvar sonuçları",
+        "Sülforafan uygulanan hücrelerde oksidatif stres ve iltihaplanmayla ilişkili ölçümlerde olumlu değişimler üç hücre hattında da görüldü. Bazı hatlarda hücre canlılığı arttı; bir hatta frataxin proteini artışı bildirildi. Yanıtlar genetik profillere göre değişti. Bu deney koşullarında bazı ölçümlerde sülforafan daha güçlü görünse de sonuçlar insanlarda omaveloxolone’dan daha etkili olduğu anlamına gelmiyor."
+      ],
+      [
+        "Brokoliyle tedavi iddiası destekleniyor mu?",
+        "Sülforafan brokoli gibi turpgillerle ilişkilendirilen bir bileşiktir; makalenin sınadığı şey laboratuvar hücrelerine verilen bileşiktir. Besinle alınan miktarın hücre deneyindeki düzeylere ulaşıp ulaşmadığı veya FA belirtilerini değiştirip değiştirmediği bu çalışmada incelenmedi. Makale herhangi bir doz, ürün ya da diyet tedavisi önermiyor."
+      ],
+      [
+        "Sonraki adım",
+        "Araştırmacılar klinik değerlendirme gerektiğini belirtiyor. Bu, henüz FA’da kanıtlanmış sülforafan tedavisi bulunduğu veya klinik araştırmada etkinlik gösterildiği anlamına gelmez. Tedavi değişikliği için hücre çalışması tek başına yeterli kanıt sağlamaz."
+      ]
+    ]
+  },
+  {
     "id": "ferroptoz-kan-biyobelirtecleri-2026",
     "topic_label": "Hakemli yayın · Kan biyobelirteçleri",
     "iso": "2026-11-09",

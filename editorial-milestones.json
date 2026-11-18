@@ -185,12 +185,23 @@
   },
   "lx2006": {
     "target": "FXN gen kopyasını taşıyarak özellikle kalpte frataxin üretimini desteklemek.",
-    "results": "Lexeo 24 aylık takipten erken mFARS verisi bildirdi. Karşılaştırma eşleştirilmiş doğal seyir grubuyla yapıldı.",
+    "results": "Lexeo erken faz açık etiketli verilerde 36 aya ulaşan yedi kişinin mFARS izlemine ve başlangıçta LVMi yüksek altı kişinin kalp MR ölçümlerine yer verdi. Sonuçlar küçük gruplardan geliyor.",
     "source": [
       "Lexeo Therapeutics",
       "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
     ],
     "events": [
+      {
+        "date": "2026-11-16",
+        "title": "Lexeo LX2006 uzun izlem verilerini yatırımcı sunumunda paylaştı",
+        "summary": "36 aya ulaşan yedi katılımcıda mFARS değişimi ve başlangıçta kalp kütle indeksi yüksek altı kişide MR ölçümleri paylaşıldı. Erken faz ara verilerinin kesim tarihi Eylül 2026; SUNRISE-FA 2 devam ediyor.",
+        "kind": "Sponsor ara verisi",
+        "source": [
+          "Lexeo Therapeutics · SEC 8-K sunum eki",
+          "https://ir.lexeotx.com/static-files/f84a4acb-927b-4317-a4b5-fe18839ec5ca"
+        ],
+        "article": "lx2006-kasim-uzun-izlem"
+      },
       {
         "date": "2026-11-02",
         "title": "LX2006 için ICAR öncesi yeni ara veriler duyuruldu",
@@ -225,14 +236,6 @@
       }
     ],
     "expected": [
-      {
-        "window": "11 Kasım 2026",
-        "title": "LX2006 ara verilerinin ICAR’da sözlü sunumu planlandı.",
-        "source": [
-          "Lexeo Therapeutics",
-          "https://ir.lexeotx.com/news-releases/news-release-details/lexeo-therapeutics-present-multiple-oral-and-poster"
-        ]
-      },
       {
         "window": "2027 ikinci yarı",
         "title": "SUNRISE-FA 2’nin ana sonuçları için Lexeo’nun açıkladığı zaman aralığı.",
