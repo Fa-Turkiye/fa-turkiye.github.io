@@ -1,5 +1,40 @@
 [
   {
+    "id": "tepe-oksuruk-akimi-2026",
+    "topic_label": "Hakemli yayın · Solunum değerlendirmesi",
+    "iso": "2026-06-08",
+    "homepage_added_iso": "2026-11-19",
+    "date": "8 Haziran 2026",
+    "title": "FA’da öksürük gücü çalışması: Katılımcıların yüzde 36’sında tepe akım düşüktü",
+    "summary": "Smith ve çalışma arkadaşlarının kesitsel araştırmasında, testi tamamlayan 47 FA’lı kişinin 17’sinde tepe öksürük akımı 270 L/dk’nın altındaydı. Sonuç, solunum kas gücü değerlendirmesinin önemine işaret ediyor; tedavi etkisi veya gelecekteki solunum komplikasyonlarını öngören doğrulanmış bir eşik göstermiyor.",
+    "primary_source": [
+      "Journal of Neuromuscular Diseases · Smith ve ark. (ilk çevrim içi yayın 8 Haziran 2026)",
+      "https://pubmed.ncbi.nlm.nih.gov/42253100/"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-19",
+      "checked_label": "19 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Çalışma neyi inceledi?",
+        "Barbara K. Smith ve çalışma arkadaşları, moleküler olarak doğrulanmış Friedreich ataksisi bulunan 51 kişide öksürük etkinliğini ve solunum kas gücünü kesitsel olarak değerlendirdi. Florida Üniversitesi bünyesindeki ekip; tepe öksürük akımı, solunum fonksiyon testleri, azami inspiratuvar ve ekspiratuvar basınçlar, burundan çekme basıncı ve dil gücü ölçümlerini kullandı. Bu bir tedavi denemesi değil, gözlemsel bir solunum değerlendirmesidir."
+      ],
+      [
+        "Ana bulgular",
+        "Tepe öksürük akımı testini 47 kişi tamamladı; grubun yaş ortalaması 22,6 yıl, 29’u yürüyebiliyordu. On yedi katılımcıda (yüzde 36,2) tepe öksürük akımı 270 L/dk’nın altındaydı. Daha düşük akım; daha düşük inspiratuvar ve ekspiratuvar kas gücü ile daha düşük zorlu vital kapasite ölçümleriyle ilişkiliydi. Çok değişkenli analizde azami inspiratuvar basınç ve belirtilerin başlangıç yaşı başlıca ilişkili değişkenler olarak bildirildi."
+      ],
+      [
+        "Klinik açıdan ne ifade ediyor?",
+        "Araştırmacıların bulgularının özeti, yalnızca standart spirometriye bakmak yerine öksürük akımı ve solunum kas gücünün birlikte değerlendirilmesinin hava yolu temizleme güçlüğünü fark etmeye yardımcı olabileceğidir. Bununla birlikte çalışma, belirli bir solunum egzersizinin, cihazın veya tedavinin komplikasyonları önlediğini sınamadı. Bireysel takip ve müdahale kararları nöroloji ile solunum ekiplerince verilmelidir."
+      ],
+      [
+        "Sınırlamalar",
+        "Araştırma tek zamanlı ve 47 tamamlanmış ölçümle sınırlıdır; bu nedenle öksürük akımının zaman içindeki değişimini, zatürre veya hastaneye yatış gibi sonuçları öngörüp öngörmediğini göstermez. 270 L/dk sınırı FA’ya özgü olarak doğrulanmış bir hastalık ilerleme biyobelirteci değildir. Bulgular tedavi etkisi, klinik iyileşme veya bütün FA topluluğu için kesin risk oranı olarak yorumlanmamalıdır."
+      ]
+    ]
+  },
+  {
     "id": "lx2006-kasim-uzun-izlem",
     "drug": "lx2006",
     "iso": "2026-11-16",
