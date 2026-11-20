@@ -1,5 +1,44 @@
 [
   {
+    "id": "metabolik-islev-bozuklugu-derleme-2026",
+    "topic_label": "Hakemli derleme · Metabolizma ve biyobelirteçler",
+    "iso": "2026-11-04",
+    "homepage_added_iso": "2026-11-20",
+    "date": "4 Kasım 2026",
+    "title": "Hakemli derleme, FA’daki metabolik bozukluk için bütüncül bir model önerdi",
+    "summary": "David Lynch ve University of Pennsylvania ekibinin derlemesi, frataxin eksikliğinin hücre içi enerji üretimiyle birlikte organlar arası yakıt dağıtımını da etkileyebileceği görüşünü ele alıyor. Önerilen kan ölçümleri ve tedavi hedefleri araştırma hipotezidir; çalışma yeni bir hasta kohortu, doğrulanmış biyobelirteç veya klinik tedavi sonucu sunmuyor.",
+    "primary_source": [
+      "Open Biology · Lynch ve ark. · Hakemli açık erişim derleme",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13750920/"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-20",
+      "checked_label": "20 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Yayın ne tür bir çalışma?",
+        "University of Pennsylvania Nöroloji ve Farmakoloji bölümlerinden David Lynch, Clementina Mesaros, Elizabeth Mercado Ayon ve Yi Na Dong’un yazdığı makale, FA’daki metabolik bozukluklara ilişkin hücre, hayvan ve insan çalışmalarını bir araya getiren hakemli bir derlemedir. Yeni katılımcı alınmadı, yeni bir ilaç uygulanmadı ve klinik araştırma fazı yoktur. Aşağıdaki açıklamalar araştırmacıların mevcut literatürden çıkardığı modelin Türkçe özetidir."
+      ],
+      [
+        "İki düzeyli metabolik model",
+        "Yazarlar, frataxin eksikliğine bağlı demir-kükürt kümesi bozukluğunun elektron taşıma zinciri, Krebs döngüsü, yağ asidi oksidasyonu ve keton kullanımını aynı anda etkileyebileceğini vurguluyor. Buna hücre içi enerji üretimi düzeyi diyorlar. İkinci düzeyde ise karaciğer ve yağ dokusunun kalp, iskelet kası ve sinir sistemine yakıt sağlama rolünün aksayabileceğini öne sürüyorlar. Organlar arası ‘yakıt dağıtımı’ açıklaması, derlemenin bütünleştirici hipotezidir; doğrudan yeni bir insan deneyiyle kanıtlanmış değildir."
+      ],
+      [
+        "Önerilen kan biyobelirteçleri",
+        "Derleme; frataxin proteinine ek olarak zincir uzunluğuna göre seramid ölçümlerini ve süksinat:fumarat, beta-hidroksibütirat:asetoasetat, NAD+:NADH ile GSH:GSSG oranlarını aday bir panelde birleştirmeyi öneriyor. Bu göstergelerin her biri farklı metabolik veya redoks süreçlerini temsil edebilir. Ancak panel FA’da ileriye dönük bir klinik kohortta birlikte doğrulanmış, hastalık ilerlemesini kesin ölçen veya tedavi yanıtını öngören onaylı bir biyobelirteç seti değildir."
+      ],
+      [
+        "Tedavi araştırmaları açısından anlamı",
+        "Yazarlar NRF2 aktivasyonu, ferroptozun baskılanması, NAD+ ve sirtuin yolları, PPAR-gama, anapleroz ve keton metabolizmasını araştırma hedefleri olarak tartışıyor. Bunların bir kısmı klinik ya da klinik öncesi programlarla ilişkilidir; hedef olarak anılmaları güvenli ve etkili tedavi olduklarını göstermez. Özellikle keton, beslenme ürünü veya takviye kullanımı için bu derleme doz, güvenlilik ya da klinik yarar kanıtı sağlamaz."
+      ],
+      [
+        "Kanıt sınırları",
+        "Makale anlatısal bir derlemedir ve ek veri seti içermediğini açıkça bildirir. Bir araya getirilen bulguların bir bölümü hasta örneklerinden, bir bölümü hücre ve hayvan modellerinden, bazıları da küçük veya eski çalışmalardan gelir; aynı kanıt düzeyinde değildir. Önerilen metabolik model ile biyobelirteç panelinin değeri, bağımsız ve ileriye dönük insan çalışmalarında tekrarlanabilirlik, zaman içindeki değişim ve klinik sonuçlarla ilişki gösterilerek sınanmalıdır."
+      ]
+    ]
+  },
+  {
     "id": "tepe-oksuruk-akimi-2026",
     "topic_label": "Hakemli yayın · Solunum değerlendirmesi",
     "iso": "2026-06-08",
