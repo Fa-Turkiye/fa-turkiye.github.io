@@ -975,5 +975,36 @@
         "Özette, ergenlerde ve yetişkinlerde bazı beyin hacmi ölçümlerinin zaman içindeki değişime klinik ölçeklerden daha duyarlı olabildiği bildirildi. Bu ölçümler gelecekteki çalışmalarda hastalık seyrini izlemeye yardımcı olabilir. Gözlemsel tasarım bir tedavi etkisini ölçmedi. Kongre özeti, her yaş grubundaki katılımcı sayısını ve ölçümlere ait tüm belirsizlik aralıklarını vermiyor. MR ölçümlerinin tedavi yanıtını güvenilir biçimde yansıtıp yansıtmadığı ayrı araştırmalar gerektiriyor."
       ]
     ]
+  },
+  {
+    "id": "nrf2-fa-kalp-fare-2026",
+    "iso": "2026-11-17",
+    "date": "17 Kasım 2026",
+    "title": "Fare çalışması, FA kalp modelinde Nrf2 tedavilerine farklı yanıtlar bildirdi",
+    "summary": "Figueroa ve arkadaşları, dimetil fumarat ile omaveloxolone’un sekiz haftalık etkilerini karşılaştırdı. Kalp bulguları cinsiyete ve ölçüme göre değişti.",
+    "topic_label": "Preklinik araştırma · Kalp",
+    "homepage_added_iso": "2026-11-20",
+    "primary_source": [
+      "Antioxidants · Figueroa ve ark. · Hakemli fare çalışması",
+      "https://www.mdpi.com/2076-3921/15/11/1490"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-20",
+      "checked_label": "20 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Deney nasıl yapıldı?",
+        "17 Kasım’da Antioxidants’ta yayımlanan araştırmada, frataxini deneysel olarak azaltılmış fareler kontrol ve tedavi gruplarına rastgele ayrıldı. Hücresel stres yanıtıyla ilişkili Nrf2 yolunu etkinleştiren iki ilaç sekiz hafta verildi. Ekokardiyografi analizleri erkeklerde grup başına 8–12, dişilerde 8–13 hayvana dayanıyordu. Diğer ölçümlerde örneklem büyüklükleri farklıydı."
+      ],
+      [
+        "Hangi sonuçlar bildirildi?",
+        "Dimetil fumarat erkek farelerde atım hacmi ve bazı metabolik ölçümleri kısmen iyileştirdi. Kalbin gevşeme bozukluğu sürdü. Omaveloxolone verilen dişilerde ritim düzensizliğinin artması dahil elektriksel değişimler görüldü. Her iki ilaç bazı yapısal ölçümleri etkilerken kalpteki fibrotik değişimler devam etti."
+      ],
+      [
+        "İnsanlara aktarımın sınırı",
+        "Sonuçlar belirli bir fare modeli ve deneysel dozlara aittir. İnsanlarda cinsiyete göre yarar veya risk düzeyini belirlemez. Küçük ölçüm grupları ve modelin özellikleri, klinik araştırmalarla ayrıca değerlendirme gerektiriyor."
+      ]
+    ]
   }
 ]
