@@ -1,5 +1,44 @@
 [
   {
+    "id": "noroinflamasyon-beyin-rna-2026",
+    "topic_label": "Hakemli yayın · İnsan beyin dokusu",
+    "iso": "2026-11-17",
+    "homepage_added_iso": "2026-11-21",
+    "date": "17 Kasım 2026",
+    "title": "İnsan beyin dokusu çalışması, kalıtsal ataksilerde ortak nöroimmün sinyaller bildirdi",
+    "summary": "Chen ve çalışma arkadaşları, farklı kalıtsal ataksilerden ölüm sonrası beyin dokularında bağışıklık ve inflamasyonla ilişkili ortak gen ifadesi örüntüleri bildirdi. FA alt grubu yalnızca dört donörden oluştu ve FA’ya özgü karşılaştırmalarda az sayıda değişiklik saptandı; sonuçlar tedavi hedefi veya klinik biyobelirteç kanıtı değildir.",
+    "primary_source": [
+      "Acta Neuropathologica · Chen ve ark. · Hakemli açık erişim özgün araştırma",
+      "https://link.springer.com/article/10.1007/s00401-026-03115-1"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-21",
+      "checked_label": "21 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Çalışma nasıl yapıldı?",
+        "Zhongbo Chen ve çok kurumlu araştırma ekibi, iki beyin bankasından alınmış ölüm sonrası insan dokularında toplu RNA dizileme ve tek çekirdek RNA dizileme yöntemlerini kullandı. Toplam 46 donörden 91 serebellum ve frontal korteks örneği incelendi: 23 donörde kalıtsal ataksi, 23 donörde nörolojik hastalık öyküsü olmayan eşleştirilmiş kontrol dokusu vardı. Ataksi grubunda SCA1, SCA2, SCA6 ve diğer alt tiplerin yanında dört Friedreich ataksisi donörü bulunuyordu. Bu, klinik araştırma veya ilaç denemesi değildir."
+      ],
+      [
+        "Ataksiler birlikte değerlendirildiğinde ne görüldü?",
+        "Araştırmacıların bulgularının özeti, farklı tekrarlı dizi genişlemesi ataksilerinde bağışıklık ve inflamasyonla ilişkili gen yollarının ortak biçimde etkinleştiğidir. Tek çekirdek analizlerinde bu sinyaller özellikle mikroglia ve astrosit gibi nöron dışı hücrelerde belirgindi. Serebellumda nöronal ve sinaptik süreçlerle ilişkili gen ifadesinde azalma, nöron kaybı ve glial hücre oranında göreli artışla birlikte gözlendi."
+      ],
+      [
+        "FA açısından bulgu ne kadar güçlü?",
+        "Çalışmanın genel sonucu bütün ataksi alt tiplerinin birlikte ve ayrı karşılaştırmalarından geliyor; yalnızca FA’ya ait bir çalışma değildir. FA grubunda sadece dört donör vardı. Yazarlar, FA ile kontroller karşılaştırıldığında her iki beyin bölgesinde de diğer ataksi alt tiplerine göre daha az farklı ifade edilen gen bulunduğunu bildiriyor. Bu nedenle ortak inflamasyon örüntüsünü güçlü ve doğrulanmış bir FA’ya özgü imza olarak sunmak doğru değildir."
+      ],
+      [
+        "Tedavi araştırmaları açısından anlamı",
+        "Makale, bağışıklık sinyallemesinin kalıtsal ataksilerde ortak hastalık biyolojisinin bir parçası olabileceğini ve araştırılabilecek yollar sunduğunu belirtiyor. Ancak bir yolun etkin görünmesi, onu baskılayan bir ilacın FA’da güvenli veya yararlı olduğunu göstermez. Çalışmada ilaç uygulanmadı; klinik işlev, hastalık ilerleme hızı veya tedavi yanıtı ölçülmedi."
+      ],
+      [
+        "Başlıca sınırlamalar",
+        "Ölüm sonrası ve tek zamanlı dokular, gen ifadesi değişikliklerinin hastalığın nedeni mi yoksa ilerlemiş doku hasarının sonucu mu olduğunu ayıramaz. FA örnekleminin dört kişiyle sınırlı olması, yaş ve hastalık evresi farklılıkları ile hücre kaybına bağlı doku bileşimi değişimleri yorumu sınırlar. Bulgular canlı hastalarda doğrulanmış biyobelirteç, klinik iyileşme veya anti-inflamatuvar tedavi önerisi değildir."
+      ]
+    ]
+  },
+  {
     "id": "metabolik-islev-bozuklugu-derleme-2026",
     "topic_label": "Hakemli derleme · Metabolizma ve biyobelirteçler",
     "iso": "2026-11-04",

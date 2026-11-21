@@ -88,6 +88,10 @@
     "title": "FALCON’da beş katılımcıya SGT-212 uygulandı"
   },
   {
+    "path": "haber-nrf2-fa-kalp-fare-2026.html",
+    "title": "Fare çalışması, FA kalp modelinde Nrf2 tedavilerine farklı yanıtlar bildirdi"
+  },
+  {
     "path": "haber-tepe-oksuruk-akimi-2026.html",
     "title": "FA’da öksürük gücü çalışması: Katılımcıların yüzde 36’sında tepe akım düşüktü"
   },
@@ -118,6 +122,10 @@
   {
     "path": "haber-omaveloxolone-gercek-yasam-2026.html",
     "title": "İleri evre FA grubunda kısa dönem omaveloxolone gerçek yaşam verileri yayımlandı"
+  },
+  {
+    "path": "haber-noroinflamasyon-beyin-rna-2026.html",
+    "title": "İnsan beyin dokusu çalışması, kalıtsal ataksilerde ortak nöroimmün sinyaller bildirdi"
   },
   {
     "path": "haber-ferroptoz-kan-biyobelirtecleri-2026.html",
@@ -230,9 +238,5 @@
   {
     "path": "haber-nbib223-kasim.html",
     "title": "Voyager, NBIB-223’ün Faz I çalışma planını güncelledi"
-  },
-  {
-    "path": "haber-nrf2-fa-kalp-fare-2026.html",
-    "title": "Fare çalışması, FA kalp modelinde Nrf2 tedavilerine farklı yanıtlar bildirdi"
   }
 ]
