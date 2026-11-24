@@ -116,6 +116,7 @@
   {
     "id": "NCT06447025",
     "phase": "Faz II / uzun dönem",
+    "program_label": "JIVE · Nomlabofusp",
     "status": "open",
     "status_label": "Alım açık; ABD ikamet koşulunu inceleyin",
     "age_min": 2,
@@ -127,6 +128,7 @@
   {
     "id": "NCT06953583",
     "phase": "Faz III",
+    "program_label": "BRAVE · Omaveloxolone",
     "status": "closed",
     "status_label": "Katılımcı alımı kapandı",
     "age_min": 2,
