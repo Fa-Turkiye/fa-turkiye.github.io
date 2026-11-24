@@ -1,0 +1,64 @@
+.trial-finder {
+  border-block: 1px solid var(--line);
+  padding-block: 28px 52px;
+}
+
+.trial-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+}
+
+.trial-intro p { margin-block: 0 16px; }
+.trial-intro > a { display: inline-flex; align-items: center; min-height: 44px; }
+
+.trial-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 8px;
+  padding: 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.trial-filters label { display: grid; gap: 5px; min-width: 0; font-weight: 600; }
+.trial-filters input, .trial-filters select { width: 100%; min-width: 0; min-height: 48px; font-weight: 400; }
+.trial-reset { grid-column: 1 / -1; justify-self: start; min-height: 44px; }
+.trial-result, .trial-caution { color: var(--muted); }
+.trial-result { margin-block: 14px 20px; }
+.trial-caution { max-inline-size: 74ch; font-size: .9375rem; }
+
+.trial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.trial-card {
+  min-width: 0;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--control-line);
+  border-radius: 10px;
+}
+.trial-card[data-status="open"] { border-inline-start-color: var(--aqua-jade); }
+.trial-card[data-status="planned"] { border-inline-start-color: var(--baby-pink); }
+.trial-card-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; color: var(--muted); font-size: .875rem; }
+.trial-status { color: var(--ink); font-weight: 650; }
+.trial-card h3 { margin: 14px 0; font-size: clamp(1.125rem, 2vw, 1.375rem); }
+.trial-card .trial-meta { margin-block: 6px; font-size: .9375rem; }
+.trial-card .trial-meta strong { color: var(--ink); }
+.trial-check { margin-block: 14px; color: var(--muted); font-size: .8125rem; }
+.trial-links { display: flex; flex-wrap: wrap; gap: 0 18px; border-top: 1px solid var(--line); padding-top: 10px; }
+.trial-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; }
+
+@media (max-width: 900px) { .trial-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) {
+  .trial-filters, .trial-grid { grid-template-columns: minmax(0, 1fr); }
+  .trial-card { padding: 16px; }
+}

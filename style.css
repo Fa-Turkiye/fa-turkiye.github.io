@@ -183,6 +183,7 @@ header {
 .nav-group:has([aria-current="page"]) > summary { border-bottom-color: var(--page-accent); }
 
 .nav > a[href="haberler.html"] > span[aria-hidden="true"] { display: none; }
+.nav > a[href="arama.html"] { color: var(--aqua-jade); font-weight: 700; }
 .nav-group { position: relative; }
 
 .nav-dropdown {

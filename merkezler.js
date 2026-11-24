@@ -80,7 +80,10 @@
       group.element.hidden = count === 0;
       total += count;
     }
-    result.textContent = total ? total + " merkez gösteriliyor" : "Eşleşen merkez bulunamadı";
+    result.textContent = total ? total + " merkez gösteriliyor" +
+      (country.value === "TR" && !query.value && !kind.value && !city.value
+        ? " · Türkiye görünümündesiniz; ülke filtresinden tüm ülkeleri seçebilirsiniz." : "")
+      : "Eşleşen merkez bulunamadı";
     empty.hidden = total !== 0;
   }
 
@@ -103,6 +106,8 @@
   city.addEventListener("change", filterCenters);
   reset.addEventListener("click", clearFilters);
   kind.addEventListener("change", filterCenters);
+  // Land on the most useful local list; preserve links to a country or a center.
+  if (!location.hash) country.value = "TR";
   updateCities();
   filterCenters();
   filters.hidden = false;

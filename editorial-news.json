@@ -36,7 +36,9 @@
         "Sonuç nasıl yorumlanmalı?",
         "Hücrelerde frataxin ve frataxine bağımlı bir enzim olan akonitazın değişmesi, GV101’in biyolojik gerekçesini destekleyen erken bir sinyaldir. Bunun FA’lı kişilerde güvenli doza, kalp veya sinir dokusuna ulaşan etkiye ve klinik yarara dönüşüp dönüşmediği henüz bilinmiyor. Bulgular hakemli tam makale yerine kongre posteri ve sponsor duyurusuyla sınırlı; FA hastalarında güvenlilik, biyobelirteç ve işlev sonuçları planlanan klinik çalışmada ayrı ayrı değerlendirilmelidir."
       ]
-    ]
+    ],
+    "category": "preclinical",
+    "drug": "gv101"
   },
   {
     "id": "noroinflamasyon-beyin-rna-2026",
@@ -75,7 +77,8 @@
         "Başlıca sınırlamalar",
         "Ölüm sonrası ve tek zamanlı dokular, gen ifadesi değişikliklerinin hastalığın nedeni mi yoksa ilerlemiş doku hasarının sonucu mu olduğunu ayıramaz. FA örnekleminin dört kişiyle sınırlı olması, yaş ve hastalık evresi farklılıkları ile hücre kaybına bağlı doku bileşimi değişimleri yorumu sınırlar. Bulgular canlı hastalarda doğrulanmış biyobelirteç, klinik iyileşme veya anti-inflamatuvar tedavi önerisi değildir."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "metabolik-islev-bozuklugu-derleme-2026",
@@ -114,7 +117,8 @@
         "Kanıt sınırları",
         "Makale anlatısal bir derlemedir ve ek veri seti içermediğini açıkça bildirir. Bir araya getirilen bulguların bir bölümü hasta örneklerinden, bir bölümü hücre ve hayvan modellerinden, bazıları da küçük veya eski çalışmalardan gelir; aynı kanıt düzeyinde değildir. Önerilen metabolik model ile biyobelirteç panelinin değeri, bağımsız ve ileriye dönük insan çalışmalarında tekrarlanabilirlik, zaman içindeki değişim ve klinik sonuçlarla ilişki gösterilerek sınanmalıdır."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "tepe-oksuruk-akimi-2026",
@@ -149,7 +153,8 @@
         "Sınırlamalar",
         "Araştırma tek zamanlı ve 47 tamamlanmış ölçümle sınırlıdır; bu nedenle öksürük akımının zaman içindeki değişimini, zatürre veya hastaneye yatış gibi sonuçları öngörüp öngörmediğini göstermez. 270 L/dk sınırı FA’ya özgü olarak doğrulanmış bir hastalık ilerleme biyobelirteci değildir. Bulgular tedavi etkisi, klinik iyileşme veya bütün FA topluluğu için kesin risk oranı olarak yorumlanmamalıdır."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "lx2006-kasim-uzun-izlem",
@@ -188,7 +193,8 @@
         "Sonraki tarihler ve kanıt sınırı",
         "Şirket, SUNRISE-FA 2 ana sonuçlarını 2027’nin ikinci yarısında, olası hızlandırılmış ruhsat başvurusunu 2028’in ilk yarısında bekliyor. Bunlar şirketin hedeflediği tarihlerdir; FDA onayı veya başvurunun kabulü değildir. Erken faz karşılaştırmasında doğal seyir verisi kullanılması ve katılımcı sayısının küçük olması, görülen değişimlerin ilaç etkisini kesin olarak ayırmayı güçleştiriyor."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "minicircle-fxn-fare-2026",
@@ -223,7 +229,8 @@
         "İnsan tedavisine giden yol neden uzun?",
         "Çalışma 72 saatten sonraki kalıcılığı, davranışsal ya da kalp işlevindeki düzelmeyi ve uzun dönem güvenliliği ölçmedi. Kullanılan hidrodinamik enjeksiyon yöntemi daha çok karaciğere ulaşır; beyin, omurilik ve duyusal sinir düğümlerine yeterli DNA taşındığı gösterilmedi. Araştırmacılar hedef dokulara uygun taşıma, doz ve uzun dönem güvenlilik çalışmalarının gerekli olduğunu belirtiyor."
       ]
-    ]
+    ],
+    "category": "preclinical"
   },
   {
     "id": "sulforafan-hucre-calismasi-2026",
@@ -258,7 +265,8 @@
         "Sonraki adım",
         "Araştırmacılar klinik değerlendirme gerektiğini belirtiyor. Bu, henüz FA’da kanıtlanmış sülforafan tedavisi bulunduğu veya klinik araştırmada etkinlik gösterildiği anlamına gelmez. Tedavi değişikliği için hücre çalışması tek başına yeterli kanıt sağlamaz."
       ]
-    ]
+    ],
+    "category": "preclinical"
   },
   {
     "id": "ferroptoz-kan-biyobelirtecleri-2026",
@@ -297,7 +305,8 @@
         "Başlıca sınırlamalar",
         "Çalışma gözlemseldir ve müdahale ya da randomize kontrol içermez. Çocuk alt grubu 14 kişiyle sınırlıdır; periferik kan ölçümleri sinir sistemi veya kalp dokusundaki süreçleri doğrudan göstermeyebilir. PubMed özetinde bütün etki büyüklükleri ve çoklu karşılaştırma ayrıntıları yer almıyor. GPX4 ve diğer ölçümlerin hastalık ilerlemesini güvenilir biçimde izleyip izlemediği, daha büyük bağımsız kohortlarda ve tekrarlanan uzun dönem ölçümlerle doğrulanmalıdır."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "nomlabofusp-bla-tamamlandi",
@@ -339,7 +348,9 @@
         "Sıradaki doğrulanabilir eşikler",
         "Larimar, FDA’nın başvuruyu incelemeye kabul edip etmeyeceğine ilişkin bildirimi 2027 başında beklediğini ve olası karar için 2027 ortasını hedeflediğini belirtti. Bunlar şirketin öngörüleridir; kurum takvimi değişebilir. Yakın dönemde izlenecek somut noktalar FDA’nın başvuruyu kabul kararı, inceleme takvimi, açık etiketli güvenlilik güncellemesi ve FORWARD-FA’nın ilerlemesidir."
       ]
-    ]
+    ],
+    "category": "regulatory",
+    "homepage_featured": true
   },
   {
     "id": "icar2026-erken-fa-arastirmalari",
@@ -382,7 +393,8 @@
         "Başlıca sınırlamalar ve sonraki adımlar",
         "Özet kitabı, her çalışma için tam örneklem ayrıntılarını, bütün istatistikleri ve yöntemsel kalite değerlendirmesini sunmuyor. Bulguların önemli bölümü iPSC hücreleri veya fare modellerinden geliyor; hücredeki kısmi düzelme klinik yararla aynı sonuç değildir. Tam makaleler yayımlandığında örneklem büyüklüğü, körleme, tekrar deneyleri, etki büyüklüğü ve olası çıkar çatışmaları ayrıca değerlendirilmelidir."
       ]
-    ]
+    ],
+    "category": "preclinical"
   },
   {
     "id": "uss-olcum-2026",
@@ -421,7 +433,8 @@
         "Başlıca sınırlamalar",
         "Veriler kesitsel olduğu için USS’un zaman içindeki hastalık ilerlemesine veya tedaviyle oluşabilecek küçük değişimlere ne ölçüde duyarlı olduğu bu analizden belirlenemez. Yalnızca yürüyebilen katılımcılar incelendi; sonuçlar yürüyemeyen FA grubuna doğrudan genellenemez. Araştırmacılar ayrıca FA ve SCA grupları arasındaki belirgin yaş farkını sınırlama olarak bildirdi. Boylamsal doğrulama, klinik araştırmalarda birincil sonlanım olarak kullanım için gerekli olmaya devam ediyor."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "sgt212-kasim",
@@ -447,7 +460,8 @@
         "Veri nasıl okunmalı?",
         "Bu açıklama beş kişinin erken güvenlilik takibini kapsıyor. Tedaviyle ilişkili ciddi advers olay bildirilmemesi, nadir veya daha geç ortaya çıkabilecek riskleri dışlamaz. Biyobelirteç ya da klinik işlev sonucu açıklanmadı; klinik etkinliğin değerlendirilmesi için daha fazla katılımcı ve izlem verisi gerekiyor."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "dt216p2-kasim",
@@ -473,7 +487,8 @@
         "RESTORE-FA hangi soruları inceliyor?",
         "Çalışma, DT-216P2’nin artan çoklu dozlarında güvenlilik, tolerabilite ve ilacın vücuttaki seyrini değerlendiriyor. Sonuçlar açıklandığında doz, takip süresi ve ölçülen klinik göstergeler birlikte incelenebilir."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "omaveloxolone-gercek-yasam-2026",
@@ -507,7 +522,8 @@
         "Sınırlamalar neden önemli?",
         "Çalışma küçük, tek kollu ve 3–6 aylık olduğundan tedavi alan grup eşzamanlı plasebo ya da tedavisiz kontrol grubuyla karşılaştırılmadı. Ölçüm tekrarı, beklenti etkisi ve doğal dalgalanma gibi etkenler sonuçları etkileyebilir. Bulgular ileri hastalık düzeyindeki bu kohort için kısa dönem gerçek yaşam gözlemi sağlar; omaveloxolone’un kesin etkinliğini, uzun dönem yararını veya bütün FA gruplarındaki sonucu tek başına göstermez."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "vatiquinone-prove",
@@ -537,7 +553,8 @@
     "primary_source": [
       "PTC Therapeutics",
       "https://clinicaltrials.ptcbio.com/trials/PTC743-FA-304"
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "sgt212-avrupa",
@@ -567,7 +584,8 @@
     "primary_source": [
       "Solid Biosciences",
       "https://solidbio.gcs-web.com/news-releases/news-release-details/solid-biosciences-announces-european-commission-orphan"
-    ]
+    ],
+    "category": "regulatory"
   },
   {
     "id": "lx2006-mds",
@@ -597,7 +615,8 @@
     "primary_source": [
       "MDS 2026 araştırma özeti",
       "https://www.mdsabstracts.org/abstract/intravenous-aavrh-10hfxn-lx2006-gene-therapy-in-friedreich-ataxia-early-neurologic-assessment-from-two-phase-1-and-2-studies/"
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "nbib223-facet",
@@ -623,7 +642,8 @@
         "4 Kasım bilgilendirmesi ve katılım",
         "FARA, 4 Kasım 2026 saat 12.00 ET’de, Türkiye saatiyle 20.00’de Neurocrine ile bilgilendirme webinarı duyuruyor. Güncel etkinlik ve kayıt bağlantısına FARA’nın resmî etkinlik listesinden ulaşılabilir. Webinar kaydı, klinik çalışmaya başvuru değildir. Türkiye’den kabul ve Avrupa merkezleri için yayımlanacak protokol ve çalışma ekibi açıklamaları beklenmelidir."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "dt216p2-takvim",
@@ -649,7 +669,8 @@
         "Hastalar için pratik karşılığı",
         "Bir sonraki duyuruda kişi sayısı, takip süresi, kontrol yapısı, frataxin protein ölçümleri ve güvenlilik birlikte incelenmeli. Araştırmaya katılım ayrı bir karardır; Sidney’de kalış ve tarama gereklilikleri vardır. Güncel iletişim, uygulama geçmişi ve bilinen sınırlılıklar ayrıntılı ilaç dosyasında yer alıyor."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "brave-alim",
@@ -675,7 +696,8 @@
         "Aileler açısından ne değişti?",
         "Yeni başvurular için alım açık olarak sunulmamalı; mevcut katılımcılar kendi merkezleriyle görüşmeli. Bir sonraki önemli aşama veri toplama, analiz ve sonuç açıklamasıdır. Alımın tamamlanmasından çocuklarda kullanım izni çıkarılamaz. Ayrıntılı BRAVE dosyası, araştırmanın amacını mevcut ruhsatlı kullanımdan ayırarak anlatıyor."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "ppl001-uretim",
@@ -701,7 +723,8 @@
         "Bundan sonra hangi eşikler var?",
         "Gerekli klinik öncesi veri ve üretim doğrulamalarını insan araştırması için düzenleyici değerlendirme izler. Daha sonra güvenlilik, uygun uygulama ve etkinlik soruları araştırılacaktır. Bu kontrolde hasta başvurusuna açık FA çalışması veya kesin piyasaya çıkış takvimi doğrulanmadı. Gen düzenleme mantığı ve çoklu organ hedefinin belirsizlikleri ayrıntılı dosyada anlatılıyor."
       ]
-    ]
+    ],
+    "category": "development"
   },
   {
     "id": "nomlabofusp-bla",
@@ -727,7 +750,8 @@
         "Doğrulayıcı araştırma ve katılım",
         "FORWARD-FA Faz III araştırması 72 haftalık nomlabofusp-plasebo karşılaştırmasıyla daha güçlü klinik kanıt üretmeyi amaçlıyor. FARA alımı açık gösterse de ABD merkezleri yalnızca ABD’de yaşayanları kabul ediyor. Avrupa ve Türkiye’den katılımın ayrıca teyit edilmesi gerekiyor. Ana ilaç dosyası, açık etiketli takip ile doğrulayıcı araştırmayı ayrı başlıklarda anlatıyor."
       ]
-    ]
+    ],
+    "category": "regulatory"
   },
   {
     "id": "dt216p2-ilk-veri",
@@ -753,7 +777,8 @@
         "Daha sonraki güncelleme",
         "Bu ilk duyurudan sonra şirket Ağustos’ta araştırma planını güncelledi ve 12 haftalık sonuçları 2027 ilk çeyreğinde beklediğini bildirdi. Bu haber tarihsel ilk veriyi anlatır; güncel takvim için Ağustos haberine ve ayrıntılı ilaç dosyasına bakılmalıdır. Uzun süreli etki, doz seçimi ve daha güçlü karşılaştırmalı kanıt hâlâ önem taşır."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "nbib223-facet-kaydi",
@@ -796,7 +821,8 @@
         "Bu gelişme neyi göstermiyor?",
         "Protokolün yayımlanması, daha önceki ‘çalışma yakında başlayacak’ açıklamasını somut tasarım ve merkez bilgileriyle ilerletiyor. Bununla birlikte henüz dozlanmış katılımcı, güvenlilik sonucu, frataxin değişimi veya klinik etkinlik sonucu açıklanmadı. NBIB-223 ruhsatlı bir tedavi değildir; kaydın yayımlanması tedavinin güvenli ya da etkili olduğunun kanıtı değildir."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "nbib223-kasim",
@@ -822,7 +848,8 @@
         "İzlenecek sonraki adım",
         "Çalışma protokolü ve merkez listesi yayımlandığında katılım bilgileri resmî kayıttan kontrol edilebilir."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "nomlabofusp-icar",
@@ -861,7 +888,8 @@
         "İki biyobelirteç analizi, tedavi sonrasında ölçülebilen biyolojik değişimlerin yönünü gösteriyor. Plasebo kontrollü Faz 3 FORWARD-FA araştırması klinik etkililik ve güvenliliği değerlendiriyor. Larimar, hızlandırılmış onay talep eden biyolojik ruhsat başvurusunun tamamlandığını 9 Kasım’da duyurdu. Kararı FDA’nın değerlendirmesi belirleyecek."
       ]
     ],
-    "homepage_updated_iso": "2026-11-12"
+    "homepage_updated_iso": "2026-11-12",
+    "category": "clinical"
   },
   {
     "id": "gv101-fast-track",
@@ -887,7 +915,8 @@
         "Düzenleyici statünün kapsamı",
         "Fast Track, araştırma ve değerlendirme sürecini kolaylaştırabilen bir statüdür. Ruhsat değerlendirmesi ile klinik çalışma sonuçları ayrı süreçlerdir."
       ]
-    ]
+    ],
+    "category": "regulatory"
   },
   {
     "id": "lx2006-icar",
@@ -926,7 +955,8 @@
         "Lexeo’nun C115 posteri, Atlanta’da 12 Kasım 18.00–19.30, Türkiye’de 13 Kasım 02.00–03.30 için programlandı. FA Kardiyak Danışma Konseyi’nde FA kardiyomiyopatisiyle yaşayan kişiler ve bakım verenler yer aldı. İlk yılın değerlendirmesinde üyeler kalp tutulumuna ilişkin eğitimi, araştırma süreci hakkında açık iletişimi ve hastaların araştırmaya düzenli katılımını öncelik olarak belirtti."
       ]
     ],
-    "homepage_updated_iso": "2026-11-12"
+    "homepage_updated_iso": "2026-11-12",
+    "category": "clinical"
   },
   {
     "id": "falff-fmri-2026",
@@ -969,7 +999,8 @@
         "Başlıca sınırlamalar",
         "Çalışma küçük, tek merkezli ve yalnızca yetişkinleri kapsayan kesitsel bir karşılaştırmadır; bu nedenle çocuklara, farklı hastalık evrelerine veya zaman içindeki ilerlemeye doğrudan genellenemez. fALFF, kan oksijenlenmesine bağlı dolaylı bir sinyaldir ve görüntü işleme tercihleri ile hareketten etkilenebilir. Klinik puanlarla bulunan ilişkiler nedenselliği göstermez ve bağımsız örneklemlerde doğrulanmalıdır."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "ati105-faz1",
@@ -995,7 +1026,8 @@
         "FA araştırması için şirket planı",
         "Adjuvia, FA hastalarında Faz I/II araştırmalarına 2027’de geçmeyi planladığını bildirdi. Bu aşamada açıklanan gelişme sağlıklı gönüllü çalışmasındaki ilk doz."
       ]
-    ]
+    ],
+    "category": "clinical"
   },
   {
     "id": "ppl001-jci",
@@ -1021,7 +1053,8 @@
         "Klinik karşılığı nasıl değerlendirilecek?",
         "Fare verileri biyolojik yaklaşımın araştırılmasını destekliyor. İnsanlarda güvenlilik ve klinik etki ayrı klinik araştırmalarla değerlendirilecek."
       ]
-    ]
+    ],
+    "category": "preclinical"
   },
   {
     "id": "track-fa-icar-2026",
@@ -1052,7 +1085,8 @@
         "Bu bulgu araştırmalarda nasıl kullanılabilir?",
         "Özette, ergenlerde ve yetişkinlerde bazı beyin hacmi ölçümlerinin zaman içindeki değişime klinik ölçeklerden daha duyarlı olabildiği bildirildi. Bu ölçümler gelecekteki çalışmalarda hastalık seyrini izlemeye yardımcı olabilir. Gözlemsel tasarım bir tedavi etkisini ölçmedi. Kongre özeti, her yaş grubundaki katılımcı sayısını ve ölçümlere ait tüm belirsizlik aralıklarını vermiyor. MR ölçümlerinin tedavi yanıtını güvenilir biçimde yansıtıp yansıtmadığı ayrı araştırmalar gerektiriyor."
       ]
-    ]
+    ],
+    "category": "publication"
   },
   {
     "id": "nrf2-fa-kalp-fare-2026",
@@ -1083,6 +1117,7 @@
         "İnsanlara aktarımın sınırı",
         "Sonuçlar belirli bir fare modeli ve deneysel dozlara aittir. İnsanlarda cinsiyete göre yarar veya risk düzeyini belirlemez. Küçük ölçüm grupları ve modelin özellikleri, klinik araştırmalarla ayrıca değerlendirme gerektiriyor."
       ]
-    ]
+    ],
+    "category": "preclinical"
   }
 ]

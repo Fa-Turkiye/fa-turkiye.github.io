@@ -155,7 +155,10 @@ class StudyCenters:
         for trial, location in links:
             program = trial["program"]
             label = escape(trial["title"])
-            dossier = f'ilac-{escape(program)}.html#calisma-{slug(trial["id"])}'
+            # BRAVE and JIVE are study sections of existing treatment dossiers.
+            parent = {'brave': 'skyclarys', 'jive': 'nomlabofusp'}.get(program, program)
+            prefix = f'{program}-' if parent != program else ''
+            dossier = f'ilac-{escape(parent)}.html#{prefix}calisma-{slug(trial["id"])}'
             url = location.get("sourceUrl") or trial["url"]
             source = source_link(trial["url"], trial["sourceLabel"])
             if url.split("#", 1)[0] != trial["url"]:

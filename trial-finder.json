@@ -1,0 +1,138 @@
+[
+  {
+    "id": "NCT07721025",
+    "phase": "Faz II",
+    "status": "open",
+    "status_label": "Alım açık",
+    "age_min": 16,
+    "age_max": null,
+    "age_label": "İlk kohort 16+; 6–15 yaş kohortu güvenlilik değerlendirmesine bağlı",
+    "status_source": "https://www.curefa.org/clinical-studies/study-of-lx2006-gene-therapy-in-friedreich-ataxia-cardiomyopathy-sunrise-fa-2/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT05445323",
+    "phase": "Faz I/II",
+    "status": "check",
+    "status_label": "Merkez durumunu doğrulayın",
+    "age_min": null,
+    "age_max": null,
+    "age_label": "Yaş ve alım koşulları için kayda bakın",
+    "status_source": "https://clinicaltrials.gov/study/NCT05445323",
+    "checked_on": "2026-11-14"
+  },
+  {
+    "id": "NCT05302271",
+    "phase": "Faz I",
+    "program": "aavrh10hfxn",
+    "program_label": "AAVrh.10hFXN (Weill Cornell)",
+    "dossier": null,
+    "status": "open",
+    "status_label": "Alım açık (FARA)",
+    "age_min": 12,
+    "age_max": 50,
+    "age_label": "12–50 yaş",
+    "status_source": "https://www.curefa.org/clinical-studies/phase-1-clinical-trial-of-an-investigational-gene-therapy-for-cardiac-disease-associated-with-friedreichs-ataxia-aavrh-10hfxn/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT07934303",
+    "phase": "Faz I",
+    "status": "planned",
+    "status_label": "Henüz alım başlamadı",
+    "age_min": 8,
+    "age_max": 40,
+    "age_label": "8–40 yaş",
+    "status_source": "https://www.curefa.org/clinical-studies/study-of-nbib-223-gene-therapy-in-friedreichs-ataxia-facet/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT07180355",
+    "phase": "Faz 1b",
+    "status": "open",
+    "status_label": "Alım açık",
+    "age_min": 18,
+    "age_max": 40,
+    "age_label": "18–40 yaş; kohorta göre ek koşullar var",
+    "status_source": "https://www.curefa.org/clinical-studies/a-study-of-sgt-212-gene-therapy-in-friedreichs-ataxia-falcon/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT06874010",
+    "phase": "Faz I/II",
+    "status": "open",
+    "status_label": "Alım açık",
+    "age_min": 18,
+    "age_max": 65,
+    "age_label": "18–65 yaş",
+    "status_source": "https://www.curefa.org/clinical-studies/a-multiple-ascending-dose-study-of-dt-216p2/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT07870590",
+    "phase": "Faz IIa",
+    "status": "planned",
+    "status_label": "Henüz alım başlamadı",
+    "age_min": 16,
+    "age_max": 40,
+    "age_label": "16–40 yaş; kayıt koşulları teyit edilmeli",
+    "status_source": "https://clinicaltrials.gov/study/NCT07870590",
+    "checked_on": "2026-11-14"
+  },
+  {
+    "id": "NCT07681713",
+    "phase": "Faz III",
+    "status": "planned",
+    "status_label": "FARA’da henüz alım yok; merkezden teyit edin",
+    "age_min": 7,
+    "age_max": 21,
+    "age_label": "7–21 yaş",
+    "status_source": "https://www.curefa.org/clinical-studies/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT04577352",
+    "phase": "Faz III",
+    "status": "check",
+    "status_label": "Geçmiş çalışma; kaydı doğrulayın",
+    "age_min": null,
+    "age_max": null,
+    "age_label": "Yeni katılım için kayıt koşullarına bakın",
+    "status_source": "https://clinicaltrials.gov/study/NCT04577352",
+    "checked_on": "2026-11-14"
+  },
+  {
+    "id": "NCT07778836",
+    "phase": "Faz III",
+    "status": "open",
+    "status_label": "Alım açık",
+    "age_min": 12,
+    "age_max": 40,
+    "age_label": "Kayıtlı merkezlerde 12–40 yaş; sonraki çocuk kohortunu ayrıca doğrulayın",
+    "country_note": "Fransa’da CTIS kaydı yayımlanmış olsa da merkez alımını ayrıca doğrulayın.",
+    "status_source": "https://www.curefa.org/clinical-studies/a-study-to-evaluate-the-efficacy-and-safety-of-subcutaneous-nomlabofusp-in-subjects-with-friedreichs-ataxia-forward-fa/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT06447025",
+    "phase": "Faz II / uzun dönem",
+    "status": "open",
+    "status_label": "Alım açık; ABD ikamet koşulunu inceleyin",
+    "age_min": 2,
+    "age_max": 60,
+    "age_label": "Yeni katılımcı için 2–60 yaş",
+    "status_source": "https://www.curefa.org/clinical-studies/an-open-label-extension-study-of-nomlabofusp-in-subjects-with-friedreichs-ataxia-jive/",
+    "checked_on": "2026-11-24"
+  },
+  {
+    "id": "NCT06953583",
+    "phase": "Faz III",
+    "status": "closed",
+    "status_label": "Katılımcı alımı kapandı",
+    "age_min": 2,
+    "age_max": 15,
+    "age_label": "2–15 yaş (yeni alım kapalı)",
+    "status_source": "https://www.curefa.org/clinical-studies/a-study-to-learn-more-about-the-effects-and-long-term-safety-of-biib141-omaveloxolone-in-participants-with-friedreichs-ataxia-aged-2-to-15-years-old/",
+    "checked_on": "2026-11-24"
+  }
+]

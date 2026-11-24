@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import posixpath
+import re
 import sys
 from urllib.parse import unquote, urlsplit
 
@@ -125,9 +126,39 @@ def check_page_catalog(pages):
         yield "Panelin sayfa listesinde başlıksız sayfa var."
 
 
+def check_discovery():
+    items = json.loads((ROOT / 'editorial-news.json').read_text(encoding='utf-8'))
+    featured = [item for item in items if item.get('homepage_featured')]
+    home = (ROOT / 'index.html').read_text(encoding='utf-8')
+    feature = re.search(r'<!-- home-feature:start -->(.*?)<!-- home-feature:end -->', home, re.S)
+    latest = re.search(r'<!-- home-news:start -->(.*?)<!-- home-news:end -->', home, re.S)
+    if len(featured) != 1 or not feature or f'haber-{featured[0]["id"]}.html' not in feature.group(1):
+        yield 'Ana sayfada kaynaklı öne çıkan gelişme eksik.'
+    if not latest:
+        yield 'Ana sayfanın son haber bölümü eksik.'
+    else:
+        times = re.findall(r'<time datetime="(\d{4}-\d{2}-\d{2})"', latest.group(1))
+        if len(times) != 3 or times != sorted(times, reverse=True):
+            yield 'Ana sayfada son üç haber gelişme tarihine göre sıralı değil.'
+    dossier = (ROOT / 'ilac-gv101.html').read_text(encoding='utf-8')
+    first = re.search(r'<section class="milestone-panel".*?<time datetime="([^"]+)".*?</section>', dossier, re.S)
+    latest_gv = max((item for item in items if item.get('drug') == 'gv101' and item.get('primary_source')),
+                    key=lambda item: item['iso'])
+    if not first or first.group(1) < latest_gv['iso'] or (
+            first.group(1) == latest_gv['iso'] and f'haber-{latest_gv["id"]}.html' not in first.group(0)):
+        yield 'GV101 dosyasında son kaynaklı haber gelişme çizelgesine yansımıyor.'
+    entries = json.loads((ROOT / 'trial-finder.json').read_text(encoding='utf-8'))
+    finder = (ROOT / 'klinik-arastirmalar.html').read_text(encoding='utf-8')
+    if len(re.findall(r'class="trial-card"', finder)) != len(entries):
+        yield 'Klinik araştırma kartları kaynak verisiyle eşleşmiyor.'
+    for item in entries:
+        if item['id'] not in finder or item['checked_on'] not in finder or item['status_source'].replace('&', '&amp;') not in finder:
+            yield f'{item["id"]}: çalışma kaydı, kaynak bağlantısı veya kontrol tarihi eksik.'
+
+
 def main():
     pages = {path.name: Page(path) for path in sorted(ROOT.glob("*.html"))}
-    errors = [*check_links(pages), *check_news(pages), *check_page_catalog(pages)]
+    errors = [*check_links(pages), *check_news(pages), *check_page_catalog(pages), *check_discovery()]
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

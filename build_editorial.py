@@ -3,6 +3,7 @@ import json, re, html, math
 from pathlib import Path
 from datetime import date
 from study_centers import StudyCenters, center_id
+from trial_finder import build as build_trial_finder
 
 ROOT = Path(__file__).resolve().parent
 study_centers = StudyCenters(ROOT)
@@ -26,6 +27,9 @@ header = re.search(r'<header>.*?</header>', base, re.S).group()
 header = header.replace(' aria-current="page"', '')
 names = {'skyclarys':'Omaveloxolone · Skyclarys','vatiquinone':'Vatiquinone · PROVE-FA','nomlabofusp':'Nomlabofusp · FORWARD-FA','dt216p2':'DT-216P2 · RESTORE-FA','lx2006':'LX2006 · SUNRISE-FA 2','sgt212':'SGT-212 · FALCON','gv101':'GV101 · ROCK2 inhibitörü','ppl001':'PPL-001 · gen düzenlenmiş hücre tedavisi','nbib223':'NBIB-223 · FACET','brave':'Omaveloxolone · BRAVE','jive':'Nomlabofusp · JIVE/OLE','ati105':'ATI-105'}
 sponsors = {'skyclarys':'Biogen','vatiquinone':'PTC Therapeutics','nomlabofusp':'Larimar Therapeutics','dt216p2':'Design Therapeutics','lx2006':'Lexeo Therapeutics','sgt212':'Solid Biosciences','gv101':'Graviton BioScience','ppl001':'Papillon Therapeutics','nbib223':'Neurocrine Biosciences / Voyager Therapeutics','brave':'Biogen','jive':'Larimar Therapeutics','ati105':'Adjuvia Therapeutics'}
+news_categories = {'regulatory': 'Ruhsat ve düzenleyici süreç', 'clinical': 'Klinik araştırma', 'preclinical': 'Laboratuvar ve hayvan çalışması', 'publication': 'Bilimsel yayın', 'development': 'Geliştirme haberi'}
+if any(n.get('category') not in news_categories for n in news):
+    raise ValueError('Her haberin doğrulanmış bir konu kategorisi olmalı')
 
 def page(title, body, filename, description, active='ilaclar.html'):
     nav = header.replace(f'href="{active}"', f'href="{active}" aria-current="page"')
@@ -57,7 +61,15 @@ def milestone_event(item, heading):
 
 def treatment_updates(key):
     item = milestones[key]
-    events = sorted(item['events'], key=lambda event: event['date'], reverse=True)
+    events = list(item['events'])
+    linked = {event.get('article') for event in events}
+    for story in news:
+        if story.get('drug') != key or not story.get('primary_source') or story['id'] in linked:
+            continue
+        events.append({'date': story['iso'], 'kind': news_categories[story['category']],
+                       'title': story['title'], 'summary': story['summary'],
+                       'source': story['primary_source'], 'article': story['id']})
+    events.sort(key=lambda event: event['date'], reverse=True)
     older = ''.join(f'<li>{milestone_event(event, "h4")}</li>' for event in events[1:])
     timeline = f'<details class="milestone-history"><summary>Önceki gelişmeler ({len(events) - 1})</summary><ol>{older}</ol></details>' if older else ''
     expected = ''.join(f'<li><strong>{esc(event["window"])}</strong><p>{esc(event["title"])}</p>{source_anchor(event["source"])}</li>' for event in item.get('expected', []))
@@ -98,8 +110,20 @@ for key, item in profiles.items():
 <li><strong>Bugüne kadar ne biliyoruz?</strong> Protokol 24 kişilik planı açıklıyor; insanlarda güvenlilik veya etkinlik sonucu henüz yayımlanmadı.</li>
 </ul><p><a href="#kaynaklar">Kaynakları incele ↓</a></p></section>'''
     review = item.get('source_review', {})
+    path = ROOT / filename
+    if path.exists():
+        existing = path.read_text(encoding='utf-8')
+        # Curated dossiers include extra study sections and safety context. Only
+        # refresh their sourced timeline, leaving that editorial content intact.
+        if key not in ('brave', 'jive'):
+            pattern = r'<section class="milestone-panel" id="son-gelismeler".*?</section>'
+            if len(re.findall(pattern, existing, flags=re.S)) != 1:
+                raise ValueError(f'{filename}: gelişme çizelgesi bulunamadı')
+            existing = re.sub(pattern, lambda _: treatment_updates(key), existing, count=1, flags=re.S)
+            path.write_text(existing, encoding='utf-8')
+        continue
     body = article_body(item['title'],item['status'],item['sections'],item['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors[key],more,studies=study_centers.dossier(key), updates=treatment_updates(key), quick=quick, **review)
-    (ROOT / filename).write_text(page(item['title'],body,filename,item['sections'][0][1]))
+    path.write_text(page(item['title'],body,filename,item['sections'][0][1]), encoding='utf-8')
 
 treatment_groups = {
     'gene': 'Gen temelli tedaviler',
@@ -160,8 +184,11 @@ aliases = json.dumps({k:f'ilac-{k}.html' for k in profiles})
 redirect = '<script>const dossierRoutes='+aliases+';const requested=new URLSearchParams(location.search).get("ilac");if(Object.hasOwn(dossierRoutes,requested)){location.replace(dossierRoutes[requested]+location.hash);}</script>'
 library = page('İlaç kütüphanesi',intro + filters,'ilaclar.html','FA için kaynaklı ilaç ve çalışma profilleri.')
 library = library.replace('</head>', '<link rel="stylesheet" href="portal.css?v=sitewide-1"><script src="tedavi-filtreleri.js" defer></script></head>')
-(ROOT / 'ilaclar.html').write_text(library.replace('</body>',redirect+'</body>'))
+if not (ROOT / 'ilaclar.html').exists():
+    (ROOT / 'ilaclar.html').write_text(library.replace('</body>',redirect+'</body>'))
 
+curated_news_pages = {'nbib223-facet', 'nbib223-kasim',
+                      'nrf2-fa-kalp-fare-2026', 'track-fa-icar-2026'}
 for n in news:
     primary = n.get('primary_source') if n.get('source_review') else None
     drug = n.get('drug')
@@ -181,7 +208,9 @@ for n in news:
     sections = [('Haber tarihi ve kapsamı', scope_text)] + n['sections']
     body = article_body(n['title'],n['date'],sections,sources,'Son haberler','haberler.html',extra=extra,lead=n['summary'], **review)
     fn = f'haber-{n["id"]}.html'
-    (ROOT / fn).write_text(page(n['title'],body,fn,n['summary'],'haberler.html'))
+    path = ROOT / fn
+    if not path.exists() or n['id'] not in curated_news_pages:
+        path.write_text(page(n['title'],body,fn,n['summary'],'haberler.html'))
 
 # Preserve the existing GV101 news URL and expand its contents.
 g = profiles['gv101']
@@ -189,29 +218,39 @@ gvbody = article_body('GV101 için klinik araştırma izni: ne değişti, ne hen
 (ROOT / 'haber-gv101.html').write_text(page('GV101 için klinik araştırma izni',gvbody,'haber-gv101.html','GV101 IND izni, FA araştırmasının amacı ve kanıt sınırları.','haberler.html'))
 
 ordered_news = sorted(news, key=lambda item: item['iso'], reverse=True)
-newscards = ''.join(f'<article class="card dossier-card"><time class="badge" datetime="{n["iso"]}">{n["date"]}</time><h2><a href="haber-{n["id"]}.html">{esc(n["title"])}</a></h2><p>{esc(n["summary"])}</p><a class="textlink" href="haber-{n["id"]}.html">Haberin tamamını oku →</a></article>' for n in ordered_news)
+gvcard = '<article class="card dossier-card" data-news-category="clinical" data-news-drug="gv101"><span class="badge">Klinik araştırma</span> <time class="badge" datetime="2026-08-11">11 Ağustos 2026</time><h2><a href="haber-gv101.html">GV101 için FA klinik araştırma izni</a></h2><p>ROCK2 hedefi, planlanan araştırma ve henüz doğrulanmayan katılım bilgileri.</p><a class="textlink" href="haber-gv101.html">Haberin tamamını oku →</a></article>'
+newscards = ''.join(
+    (gvcard if n['iso'] < '2026-08-11' and (i == 0 or ordered_news[i - 1]['iso'] >= '2026-08-11') else '')
+    + f'<article class="card dossier-card" data-news-category="{esc(n["category"])}" data-news-drug="{esc(n.get("drug", ""))}"><span class="badge">{esc(news_categories[n["category"]])}</span> <time class="badge" datetime="{n["iso"]}">{n["date"]}</time><h2><a href="haber-{n["id"]}.html">{esc(n["title"])}</a></h2><p>{esc(n["summary"])}</p><a class="textlink" href="haber-{n["id"]}.html">Haberin tamamını oku →</a></article>'
+    for i, n in enumerate(ordered_news)
+)
 def home_news_card(item):
     drug = item.get('drug')
     label, url = item.get('primary_source') or profiles[drug]['sources'][0]
     dossier = f'<a href="ilac-{drug}.html">{esc(names[drug])} dosyası</a>' if drug else '<a href="klinik-arastirmalar.html">Klinik araştırma rehberi</a>'
-    card_iso = item['iso']
-    card_date = item['date']
-    if 'homepage_updated_iso' in item:
-        card_iso = item['homepage_updated_iso']
-        card_date = f'{date_label(date.fromisoformat(card_iso))} · Güncellendi'
+    revised = f' <small>· {date_label(date.fromisoformat(item["homepage_updated_iso"]))} tarihinde güncellendi</small>' if item.get('homepage_updated_iso') else ''
     return f'''<article class="news-card">
-      <time datetime="{esc(card_iso)}">{esc(card_date)}</time>
+      <p class="news-card-meta"><time datetime="{esc(item['iso'])}">{esc(item['date'])}</time> · {esc(news_categories[item['category']])}{revised}</p>
       <h3><a href="haber-{item['id']}.html">{esc(item['title'])}</a></h3>
-      <p>{esc(item['summary'])}</p>
+      <p>{esc(item['summary'].split('. ')[0])}.</p>
       <div class="dispatch-links">{dossier}<a href="{esc(url)}">{esc(label)}</a></div>
     </article>'''
 
 home_path = ROOT / 'index.html'
 home = home_path.read_text(encoding='utf-8')
-home_ordered_news = sorted(news, key=lambda item: (
-    item.get('homepage_updated_iso', item.get('homepage_added_iso', item['iso'])),
-    'homepage_updated_iso' in item,
-), reverse=True)
+featured_news = [item for item in news if item.get('homepage_featured')]
+if len(featured_news) != 1:
+    raise ValueError('Ana sayfada bir doğrulanmış önemli gelişme seçilmeli')
+featured = featured_news[0]
+featured_dossier = f'<a href="ilac-{featured["drug"]}.html">İlaç dosyasını oku</a>' if featured.get('drug') else ''
+featured_html = f'''<article class="home-feature-card"><div><p class="home-feature-label">Öne çıkan gelişme · {esc(news_categories[featured['category']])}</p><time datetime="{esc(featured['iso'])}">{esc(featured['date'])}</time>
+<h3><a href="haber-{esc(featured['id'])}.html">{esc(featured['title'])}</a></h3><p>{esc(featured['summary'])}</p></div>
+<div class="home-feature-actions"><a href="haber-{esc(featured['id'])}.html">Gelişmenin ayrıntılarını oku</a>{featured_dossier}</div></article>'''
+if '<!-- home-feature:start -->' not in home:
+    raise ValueError('Ana sayfada önemli haber alanı bulunamadı')
+home = re.sub(r'<!-- home-feature:start -->.*?<!-- home-feature:end -->',
+              lambda _: f'<!-- home-feature:start -->{featured_html}<!-- home-feature:end -->', home, count=1, flags=re.S)
+home_ordered_news = [item for item in ordered_news if item['id'] != featured['id']]
 home_news = '\n    '.join(home_news_card(item) for item in home_ordered_news[:3])
 home = re.sub(r'<!-- home-news:start -->.*?<!-- home-news:end -->',
               lambda _: f'<!-- home-news:start -->\n    {home_news}\n    <!-- home-news:end -->', home, count=1, flags=re.S)
@@ -247,15 +286,27 @@ search_data = {
 }
 (ROOT / 'arama-verileri.json').write_text(json.dumps(search_data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
 
-# Put August GV101 news in chronological order, rather than at the end.
-gvcard = '<article class="card dossier-card"><time class="badge" datetime="2026-08-11">11 Ağustos 2026</time><h2><a href="haber-gv101.html">GV101 için FA klinik araştırma izni</a></h2><p>ROCK2 hedefi, planlanan araştırma ve henüz doğrulanmayan katılım bilgileri.</p><a class="textlink" href="haber-gv101.html">Haberin tamamını oku →</a></article>'
-marker = '<article class="card dossier-card"><time class="badge" datetime="2026-08-03">'
-newscards = newscards.replace(marker,gvcard+marker,1)
-body = '<div class="editorial-intro"><h1>Friedreich ataksisi haberleri</h1><p>Ne açıklandı, hangi veriye dayanıyor, hastalar için ne ifade ediyor? Kısa kartlardan kaynaklı tam haberlere geçin.</p><p class="article-meta">Haber tarihleri gelişmenin tarihini gösterir. Her yazıda kaynak kontrol tarihini bulabilirsiniz.</p></div><div class="dossier-grid news-archive">'+newscards+'</div>'
-(ROOT / 'haberler.html').write_text(page('Son haberler',body,'haberler.html','FA araştırmalarını ayrıntılı ve kaynaklı Türkçe haberlerle takip edin.','haberler.html'))
+category_options = ''.join(f'<option value="{key}">{esc(value)}</option>' for key,value in news_categories.items())
+drug_options = ''.join(f'<option value="{key}">{esc(names[key])}</option>' for key in names if any(n.get('drug') == key for n in news))
+news_filters = f'''<form class="news-filters" id="news-filters" role="search" aria-label="Haberleri filtrele" hidden>
+<label>Haberde ara<input type="search" id="news-query" placeholder="Örn. GV101, kalp"></label>
+<label>Konu<select id="news-category"><option value="">Tüm konular</option>{category_options}</select></label>
+<label>İlaç veya program<select id="news-drug"><option value="">Tüm programlar</option>{drug_options}</select></label>
+<button type="reset">Filtreleri temizle</button></form><p class="article-meta" id="news-result" role="status" aria-atomic="true" hidden></p>'''
+body = '<div class="editorial-intro"><h1>Friedreich ataksisi haberleri</h1><p>Ne açıklandı, hangi veriye dayanıyor, hastalar için ne ifade ediyor? Kısa kartlardan kaynaklı tam haberlere geçin.</p><p class="article-meta">Haber tarihleri gelişmenin tarihini gösterir. Her yazıda kaynak kontrol tarihini bulabilirsiniz.</p></div>'+news_filters+'<div class="dossier-grid news-archive">'+newscards+'</div><p id="news-empty" class="note" hidden>Eşleşen haber bulunamadı. Arama sözcüğünü kısaltın veya filtreleri temizleyin.</p>'
+archive = page('Son haberler',body,'haberler.html','FA araştırmalarını ayrıntılı ve kaynaklı Türkçe haberlerle takip edin.','haberler.html')
+archive = archive.replace('</head>', '<script src="haber-filtreleri.js?v=1" defer></script></head>')
+(ROOT / 'haberler.html').write_text(archive)
 
 # Existing dedicated GV101 address remains useful and consistent.
-(ROOT / 'gv101.html').write_text(page(g['title'],article_body(g['title'],g['status'],g['sections'],g['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors['gv101'],studies=study_centers.dossier('gv101'), updates=treatment_updates('gv101')),'gv101.html',g['sections'][0][1]))
+legacy_gv = ROOT / 'gv101.html'
+if legacy_gv.exists():
+    legacy = legacy_gv.read_text(encoding='utf-8')
+    pattern = r'<section class="milestone-panel" id="son-gelismeler".*?</section>'
+    legacy = re.sub(pattern, lambda _: treatment_updates('gv101'), legacy, count=1, flags=re.S)
+    legacy_gv.write_text(legacy, encoding='utf-8')
+else:
+    legacy_gv.write_text(page(g['title'],article_body(g['title'],g['status'],g['sections'],g['sources'],'İlaç kütüphanesi','ilaclar.html',sponsors['gv101'],studies=study_centers.dossier('gv101'), updates=treatment_updates('gv101')),'gv101.html',g['sections'][0][1]))
 
 # Generate a participation guide for every listed program, including closed/preclinical ones.
 guide = json.loads((ROOT / 'participation-guide.json').read_text())
@@ -270,6 +321,8 @@ steps = '<section class="article-section"><h2>İlk iletişimden önce</h2><ol><l
 questions = '<section class="article-section"><h2>Çalışma ekibine sorulabilecek sorular</h2><p>Türkiye’de ikamet edenleri kabul ediyor musunuz? Hangi kohort taramaya açık? Kaç ziyaret ve ne kadar bölgede kalış gerekiyor? Bakım veren gerekli mi? Seyahat desteği neleri kapsıyor? Kullanılan ilaçlar uygunluğu nasıl etkiliyor? Değerlendirme sonucunu kim ve hangi kanaldan bildiriyor?</p><p>Bu site başvuru toplamaz ve kişisel uygunluk kararı vermez. Açık alım kaydı bile kabul garantisi değildir. Ruhsatlı tedaviye erişim, webinar kaydı ve klinik araştırma başvurusu birbirinden farklı süreçlerdir.</p></section>'
 guide_body = guide_intro + guide_toc + '<div class="article-prose">' + steps + guide_sections + questions + '</div></article>'
 (ROOT / 'katilim-rehberi.html').write_text(page('Klinik araştırmalara katılım rehberi',guide_body,'katilim-rehberi.html','12 FA ilaç ve çalışma programı için katılım, merkez ve resmî iletişim rehberi.','katilim-rehberi.html'))
+
+build_trial_finder(ROOT)
 
 # Keep the manually authored research calendar aligned with material registry changes.
 calendar_path = ROOT / 'arastirma-takvimi.html'
