@@ -13,17 +13,6 @@ if (mainNavigation && !mainNavigation.querySelector('a[href="arama.html"]')) {
 const themeColor = document.querySelector('meta[name="theme-color"]');
 if (themeColor) themeColor.content = "#0a1224";
 
-for (const mark of document.querySelectorAll("header .brand-mark > span, footer .brand-mark > span")) {
-  if (mark.textContent.trim() !== "✳") continue;
-  const icon = document.createElement("img");
-  icon.src = "fa-dna-simgesi.svg";
-  icon.alt = "";
-  icon.width = 32;
-  icon.height = 40;
-  icon.style.verticalAlign = "middle";
-  mark.replaceChildren(icon);
-}
-
 // Published visual edits are optional. A service outage leaves the static page usable.
 window.addEventListener("load", () => {
   import("./page-layout.js").then(module => module.showPublishedLayout()).catch(() => {});

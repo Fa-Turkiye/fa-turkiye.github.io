@@ -39,7 +39,7 @@ def page(title, body, filename, description, active='ilaclar.html'):
 <title>{esc(title)} · FA Türkiye</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="https://fa-turkiye.github.io/{filename}">
 <link rel="stylesheet" href="style.css?v=sitewide-1"><link rel="stylesheet" href="articles.css?v=sitewide-1">
-<link rel="icon" type="image/svg+xml" href="fa-logo.svg"><script src="script.js?v=aqua-jade-1" defer></script><meta name="theme-color" content="#0a1224">{glossary}</head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
+<link rel="icon" type="image/png" href="fa-turkiye-logo.png"><script src="script.js?v=aqua-jade-1" defer></script><meta name="theme-color" content="#0a1224">{glossary}</head><body><a class="skip-link" href="#main-content">İçeriğe geç</a>{nav}
 <main class="wrap editorial-main" id="main-content" tabindex="-1">{body}</main><footer><div class="wrap">FA Türkiye · Haber Merkezi. Kaynaklara dayalı bağımsız bilgilendirme. Tedavi ve katılım kararları hekim ve çalışma ekibiyle değerlendirilir.</div></footer></body></html>'''
 
 months = ('Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık')
@@ -336,10 +336,10 @@ calendar_path.write_text(calendar, encoding='utf-8')
 newslinks = {'lx2006':'lx2006-mds','dt216p2':'dt216p2-ilk-veri','brave':'brave-alim'}
 for path in ROOT.glob('*.html'):
     text=path.read_text()
-    text=re.sub(r'<span class="mark"(?: aria-hidden="true")?>FA</span>', '<img class="brand-symbol" src="fa-logo.svg" width="52" height="52" alt="" aria-hidden="true">', text)
-    text=text.replace('<a class="brand" href="index.html">FA Türkiye Haber Merkezi</a>', '<a class="brand" href="index.html"><img class="brand-symbol" src="fa-logo.svg" width="52" height="52" alt="" aria-hidden="true"><span>FA Türkiye<br><small>Haber Merkezi</small></span></a>')
+    text=re.sub(r'<span class="mark"(?: aria-hidden="true")?>FA</span>', '<img class="brand-symbol" src="fa-turkiye-logo.png" width="52" height="52" alt="" aria-hidden="true">', text)
+    text=text.replace('<a class="brand" href="index.html">FA Türkiye Haber Merkezi</a>', '<a class="brand" href="index.html"><img class="brand-symbol" src="fa-turkiye-logo.png" width="52" height="52" alt="" aria-hidden="true"><span>FA Türkiye<br><small>Haber Merkezi</small></span></a>')
     if '<link rel="icon"' not in text:
-        text=text.replace('</head>', '<link rel="icon" type="image/svg+xml" href="fa-logo.svg"></head>')
+        text=text.replace('</head>', '<link rel="icon" type="image/png" href="fa-turkiye-logo.png"></head>')
     if path.name=='index.html':
         for k,v in newslinks.items():
             text=text.replace('href="ilaclar.html?ilac='+k+'"','href="haber-'+v+'.html"')

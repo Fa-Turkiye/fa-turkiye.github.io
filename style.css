@@ -114,26 +114,10 @@ header {
   font-weight: 400;
 }
 
-.brand-mark {
-  display: flex;
-  align-items: center;
-  font-size: 2.5rem;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: -.12em;
-}
-
-.brand-mark > span {
-  margin-inline-start: 8px;
-  color: var(--page-accent);
-  font-size: 1.75rem;
-  letter-spacing: 0;
-}
-
-.brand-mark img {
+.brand-symbol {
   display: block;
-  inline-size: 28px;
-  block-size: 35px;
+  flex: none;
+  border-radius: 10px;
 }
 
 .navrail { border-top: 1px solid var(--line); }
