@@ -1,5 +1,45 @@
 [
   {
+    "id": "meg-motor-fizyoloji-2026",
+    "topic_label": "Hakemli yayın · MEG ve motor fizyoloji",
+    "iso": "2026-11-19",
+    "homepage_added_iso": "2026-11-25",
+    "date": "19 Kasım 2026",
+    "title": "MEG çalışması, FA’daki duyu girdisi ve kortikal işleyişi birlikte ölçtü",
+    "summary": "Georgiev ve çalışma arkadaşları, 30 FA’lı kişi ile 30 yaşı eşleştirilmiş kontrolde magnetoensefalografi kullanarak proprioseptif duyu girdisini ve dinlenim durumundaki motor korteks fizyolojisini inceledi. Bazı MEG ölçümleri ataksi şiddetiyle ilişkiliydi; çalışma kesitsel olduğundan hastalık ilerlemesini veya tedavi yanıtını izleyen doğrulanmış bir biyobelirteç göstermiyor.",
+    "primary_source": [
+      "Clinical Neurophysiology · Georgiev ve ark. · Hakemli özgün araştırma",
+      "https://pubmed.ncbi.nlm.nih.gov/43068542/"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-25",
+      "checked_label": "25 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Çalışma nasıl yapıldı?",
+        "Université libre de Bruxelles ve Hôpital Erasme bağlantılı Christian Georgiev, Mathieu Bourguignon, Pierre Cabaraux, Daria Digileva ve Gilles Naeije’nin ekibi, genetik olarak doğrulanmış Friedreich ataksisi bulunan 30 kişi ile yaşı eşleştirilmiş 30 kontrolü magnetoensefalografi (MEG) ile karşılaştırdı. Pasif parmak hareketi sırasında beyine ulaşan proprioseptif duyu girdisinin korteksle eşzamanlılığı, dinlenim sırasında ise beta etkinliği ve periyodik olmayan spektral eğim ölçüldü. Bu, ilaç uygulanmayan kesitsel ve gözlemsel bir fizyoloji çalışmasıdır."
+      ],
+      [
+        "Proprioseptif ölçümde ne bulundu?",
+        "Araştırmacıların bulgularının özeti, üç harmonik üzerinden hesaplanan kortikokinematik koheransın FA grubunda kontrollere göre daha düşük olduğudur (p=0,005). Bu ölçüm ile SARA ataksi şiddeti puanı arasında orta düzeyde ters yönlü ilişki görüldü (rho=-0,45; p=0,012); koherans azaldıkça ataksi puanı yükselme eğilimindeydi. On dokuz FA katılımcısındaki tekrar ölçüm güvenilirliği ICC=0,71 olarak bildirildi. Korelasyon, ölçümün hastalığın nedeni olduğunu veya tek başına bireysel gidişatı öngördüğünü göstermez."
+      ],
+      [
+        "Motor korteks ölçümleri ne gösterdi?",
+        "FA grubunda normalize beta genliği daha düşüktü (p=0,048), ancak beta patlamalarının sıklık ve süre örüntülerini bir araya getiren ‘burstiness’ ölçümü gruplar arasında farklı değildi. Periyodik olmayan spektral eğim SARA puanıyla daha zayıf bir ilişki gösterdi (rho=-0,37; p=0,043). İncelenen MEG ölçümlerinin hiçbiri genetik yükle anlamlı ilişki göstermedi. Bu sonuçlar farklı fizyolojik eksenlerin birbirini tamamlayabileceğini düşündürüyor; klinik yarar veya tedavi etkinliği ölçülmedi."
+      ],
+      [
+        "Hastalar ve araştırmalar için ne anlama geliyor?",
+        "Çalışma, duyusal sinyallerin motor kortekse ulaşması ile korteksin dinlenim fizyolojisinin aynı kişide, girişim gerektirmeyen bir yöntemle ayrı ayrı ölçülebileceğini gösteriyor. Bu yaklaşım, FA’daki kişiden kişiye farklılıkları araştırmak ve gelecekteki çalışmalarda aday fizyolojik sonuç ölçümleri geliştirmek için yararlı olabilir. Ancak MEG ölçümleri FA tanısı koyan, günlük klinik takibi belirleyen veya bir tedavinin işe yaradığını kanıtlayan onaylı biyobelirteçler değildir."
+      ],
+      [
+        "Başlıca sınırlamalar",
+        "Örneklem 30 FA katılımcısıyla sınırlıdır ve değerlendirme tek zaman noktasında yapılmıştır; bu nedenle ölçümlerin hastalık ilerlemesiyle zaman içinde değişip değişmediği bilinmiyor. Tekrar güvenilirliği yalnızca 19 kişide sınandı. Bazı istatistiksel sonuçlar eşik değere yakındı ve çok sayıdaki MEG ölçümünün bağımsız bir kohortta tekrarlanması gerekiyor. Çalışma tedavi alan ve almayan grupları karşılaştırmadı; sonuçlar klinik iyileşme veya tedavi yanıtı olarak yorumlanmamalıdır."
+      ]
+    ],
+    "category": "publication"
+  },
+  {
     "id": "gv101-icar-hucre-verileri-2026",
     "topic_label": "ICAR 2026 · Klinik öncesi GV101",
     "iso": "2026-11-23",
