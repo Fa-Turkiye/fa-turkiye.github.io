@@ -566,6 +566,51 @@
     "category": "clinical"
   },
   {
+    "id": "omaveloxolone-il6-48-hafta-2026",
+    "drug": "skyclarys",
+    "topic_label": "Hakemli yayın · Omaveloxolone ve IL-6",
+    "iso": "2026-10-07",
+    "homepage_added_iso": "2026-11-26",
+    "date": "7 Ekim 2026",
+    "title": "48 haftalık omaveloxolone takibinde IL-6 azaldı; klinik etkinlik kanıtı değil",
+    "summary": "Di Stefano ve çalışma arkadaşları, Palermo'daki aynı 20 kişilik omaveloxolone kohortunun takibini 48 haftaya uzattı. Araştırmacılar IL-6 düzeyinde zamanla anlamlı azalma ve klinik ölçeklerde stabilizasyon bildirdi; tek merkezli, kontrolsüz gözlem ilacın klinik etkinliğini kanıtlamıyor ve IL-6'yı doğrulanmış tedavi yanıtı biyobelirteci yapmıyor.",
+    "primary_source": [
+      "Journal of the Neurological Sciences · Di Stefano ve ark. · Hakemli gerçek yaşam çalışması",
+      "https://pubmed.ncbi.nlm.nih.gov/42849276/"
+    ],
+    "source_review": {
+      "checked_on": "2026-11-26",
+      "checked_label": "26 Kasım 2026"
+    },
+    "sections": [
+      [
+        "Yayın ve çalışma nasıl tanımlandı?",
+        "University of Palermo Nöroloji Biriminden Vincenzo Di Stefano, Salvatore Maria Lima ve çalışma arkadaşlarının hakemli makalesi 7 Ekim 2026'da çevrim içi yayımlandı. Genetik olarak doğrulanmış Friedreich ataksisi bulunan, 16 yaş ve üzerindeki, başlangıç mFARS puanı 80'in altında olan 20 kişi omaveloxolone 150 mg/gün kullanırken 48 hafta izlendi. mFARS, SARA, Yorgunluk Şiddeti Ölçeği, FA Günlük Yaşam Aktiviteleri ve laboratuvar ölçümleri değerlendirildi. Bu, randomize bir klinik araştırma değil; tek merkezli, kontrol grubu bulunmayan gözlemsel gerçek yaşam takibidir."
+      ],
+      [
+        "Bu yeni bir hasta grubu mu?",
+        "Hayır. Bu yayın, Palermo ekibinin daha önce 24 haftalık sonuçlarını bildirdiği aynı 20 kişilik kohortun 48 haftaya uzatılmış takibidir; bağımsız bir doğrulama kohortu değildir. Bu nedenle iki makalenin katılımcıları ayrı örneklemler gibi toplanmamalı ve 48 haftalık yayın yeni bir hasta grubunda tekrarlanmış sonuç olarak sunulmamalıdır."
+      ],
+      [
+        "Biyobelirteçte ne değişti?",
+        "Araştırmacıların bulgularının özeti, inflamasyonla ilişkili interlökin-6 (IL-6) düzeyinin takip boyunca ilerleyici ve istatistiksel olarak anlamlı biçimde azaldığıdır. Bu bir biyobelirteç değişimidir; nörolojik işlevde iyileşme ile aynı şey değildir. Makale özeti 48 haftalık IL-6 değişiminin sayısal büyüklüğünü, güven aralığını veya bireysel yanıt dağılımını vermiyor. IL-6, FA'da omaveloxolone yanıtını belirleyen doğrulanmış bir klinik biyobelirteç değildir."
+      ],
+      [
+        "Klinik sonuçlar ve güvenlilik nasıl ayrılmalı?",
+        "Yazarlar 48 hafta boyunca klinik ölçeklerde 'stabilizasyon' bildirdi; bu ifade araştırmacıların sonuç yorumudur ve klinik iyileşme anlamına gelmez. Ciddi advers olay bildirilmedi, bir kişi tedaviyi bıraktı ve geçici karaciğer enzimi yükselmelerinin tedavinin kalıcı olarak kesilmesine yol açmadığı belirtildi. Yine de eşzamanlı kontrol grubu olmadığı için stabilizasyonun ne kadarının tedaviye, doğal değişkenliğe, seçilmiş örnekleme veya tekrarlanan ölçümlere bağlı olduğu ayrılamaz. Küçük örneklem seyrek ya da geç ortaya çıkan güvenlilik sorunlarını dışlamaz."
+      ],
+      [
+        "Hastalar için ne anlama geliyor?",
+        "Çalışma, omaveloxolone kullanan sınırlı bir gerçek yaşam grubunda 48 haftalık biyobelirteç ve güvenlilik izlemi sağlıyor; IL-6'nın gelecekte araştırılmasına gerekçe oluşturabilir. Ancak tedavinin başlanması, bırakılması veya izlem planının değiştirilmesi için tek başına yeterli kanıt değildir. Omaveloxolone kullanırken karaciğer testleri ve diğer takipler ruhsat bilgisi ile izleyen hekimin planına göre yürütülmelidir; kişiler tedavilerini kendi başlarına değiştirmemelidir."
+      ],
+      [
+        "Başlıca sınırlamalar",
+        "Örneklem 20 kişiyle ve tek merkezle sınırlıydı; plasebo, körleme veya eşzamanlı doğal seyir karşılaştırması yoktu. Yaş ve başlangıç mFARS ölçütleri daha ağır ya da farklı özellikteki FA gruplarına genellemeyi sınırlar. Aynı kohortun önceki 24 haftalık yayını bulunması bağımsız tekrar kanıtı sağlamaz. IL-6 keşif amaçlı bir biyobelirteçtir; 48 haftalık makale özetinde klinik ölçeklerin etki büyüklükleri ve güven aralıkları sunulmadığından stabilizasyonun büyüklüğü kamuya açık özetten ayrıntılı değerlendirilemiyor."
+      ]
+    ],
+    "category": "publication"
+  },
+  {
     "id": "vatiquinone-prove",
     "date": "29 Ekim 2026",
     "iso": "2026-10-29",
